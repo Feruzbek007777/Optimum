@@ -1,259 +1,337 @@
-# database/database.py
 import sqlite3
-from typing import Optional, List, Tuple, Any
+import os
+from config import DATABASE_PATH
 
 
-class Database:
-    def __init__(self, db_name: str = "main.db"):
-        self.database = db_name
+def create_connection() :
+    """Ma'lumotlar bazasiga ulanish yaratish"""
+    conn = None
+    try :
+        conn = sqlite3.connect(DATABASE_PATH)
+        return conn
+    except sqlite3.Error as e :
+        print(f"Xatolik: {e}")
+    return conn
 
-    # Universal execute helper
-    def execute(self, sql: str, *args,
-                commit: bool = False,
-                fetchone: bool = False,
-                fetchall: bool = False) -> Optional[Any]:
-        with sqlite3.connect(self.database) as db:
-            cur = db.cursor()
-            cur.execute(sql, args)
-            res = None
-            if fetchone:
-                res = cur.fetchone()
-            elif fetchall:
-                res = cur.fetchall()
-            if commit:
-                db.commit()
-        return res
 
-    # ---------- USERS ----------
-    def create_table_users(self):
-        sql = '''CREATE TABLE IF NOT EXISTS users(
-            telegram_id INTEGER NOT NULL UNIQUE,
-            full_name TEXT,
-            phone_number VARCHAR(13),
-            lang VARCHAR(3)
-        )'''
-        self.execute(sql, commit=True)
+def init_database() :
+    """Ma'lumotlar bazasini ishga tushirish"""
+    conn = create_connection()
+    if conn is not None :
+        try :
+            cursor = conn.cursor()
 
-    def insert_telegram_id(self, telegram_id: int):
-        sql = "INSERT OR IGNORE INTO users(telegram_id) VALUES (?)"
-        self.execute(sql, telegram_id, commit=True)
+            # Kurslar jadvali
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS courses (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name TEXT NOT NULL UNIQUE
+                )
+            ''')
 
-    def update_lang(self, lang: str, telegram_id: int):
-        sql = "UPDATE users SET lang = ? WHERE telegram_id = ?"
-        self.execute(sql, lang, telegram_id, commit=True)
+            # Kurs ma'lumotlari jadvali
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS course_details (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    course_id INTEGER NOT NULL,
+                    price TEXT,
+                    schedule TEXT,
+                    description TEXT,
+                    image_path TEXT,
+                    FOREIGN KEY (course_id) REFERENCES courses (id)
+                )
+            ''')
 
-    def get_user(self, telegram_id: int):
-        sql = "SELECT * FROM users WHERE telegram_id = ?"
-        return self.execute(sql, telegram_id, fetchone=True)
+            # O'qituvchilar jadvali
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS teachers (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    course_id INTEGER NOT NULL,
+                    full_name TEXT NOT NULL,
+                    achievements TEXT,
+                    image_path TEXT,
+                    FOREIGN KEY (course_id) REFERENCES courses (id)
+                )
+            ''')
 
-    def save_phone_number_and_full_name(self, full_name: str, phone_number: str, telegram_id: int):
-        sql = "UPDATE users SET full_name = ?, phone_number = ? WHERE telegram_id = ?"
-        self.execute(sql, full_name, phone_number, telegram_id, commit=True)
+            # Talabalar jadvali
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS students (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    full_name TEXT NOT NULL,
+                    phone_number TEXT NOT NULL,
+                    username TEXT,
+                    course_id INTEGER,
+                    registered_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                    approved BOOLEAN DEFAULT FALSE,
+                    FOREIGN KEY (course_id) REFERENCES courses (id)
+                )
+            ''')
 
-    # ---------- COURSES ----------
-    def create_table_courses(self):
-        sql = """CREATE TABLE IF NOT EXISTS courses(
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT UNIQUE,
-            description TEXT,
-            price TEXT,
-            schedule TEXT,
-            image_url TEXT,
-            teacher_id INTEGER
-        )"""
-        self.execute(sql, commit=True)
+            # E'lonlar jadvali
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS announcements (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    message TEXT NOT NULL,
+                    image_path TEXT,
+                    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+                )
+            ''')
 
-    def insert_course(self, name: str) -> Optional[int]:
-        # need lastrowid, so use manual connection
-        with sqlite3.connect(self.database) as db:
-            cur = db.cursor()
-            cur.execute("INSERT OR IGNORE INTO courses(name) VALUES (?)", (name,))
-            db.commit()
-            if cur.lastrowid:
-                return cur.lastrowid
-            cur.execute("SELECT id FROM courses WHERE name = ?", (name,))
-            row = cur.fetchone()
-            return row[0] if row else None
+            # Admin guruhlari jadvali
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS admin_groups (
+                    group_id INTEGER PRIMARY KEY,
+                    group_title TEXT NOT NULL,
+                    added_at DATETIME DEFAULT CURRENT_TIMESTAMP
+                )
+            ''')
 
-    def update_course(self, course_id: int,
-                      name: str = None,
-                      description: str = None,
-                      price: str = None,
-                      schedule: str = None,
-                      image_url: str = None,
-                      teacher_id: int = None):
-        fields, params = [], []
-        if name is not None:
-            fields.append("name = ?"); params.append(name)
-        if description is not None:
-            fields.append("description = ?"); params.append(description)
-        if price is not None:
-            fields.append("price = ?"); params.append(price)
-        if schedule is not None:
-            fields.append("schedule = ?"); params.append(schedule)
-        if image_url is not None:
-            fields.append("image_url = ?"); params.append(image_url)
-        if teacher_id is not None:
-            fields.append("teacher_id = ?"); params.append(teacher_id)
+            conn.commit()
+            print("✅ Ma'lumotlar bazasi muvaffaqiyatli yaratildi!")
+        except sqlite3.Error as e :
+            print(f"Xatolik: {e}")
+        finally :
+            conn.close()
+    else :
+        print("❌ Ma'lumotlar bazasiga ulanib bo'lmadi!")
 
-        if not fields:
-            return
-        params.append(course_id)
-        sql = f"UPDATE courses SET {', '.join(fields)} WHERE id = ?"
-        self.execute(sql, *params, commit=True)
 
-    def delete_course(self, course_id: int):
-        sql = "DELETE FROM courses WHERE id = ?"
-        self.execute(sql, course_id, commit=True)
+# ----------- KURS OPERATSIYALARI -----------
+def get_courses() :
+    """Barcha kurslarni olish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, name FROM courses ORDER BY name")
+    courses = cursor.fetchall()
+    conn.close()
+    return courses
 
-    def get_courses(self) -> List[Tuple[int, str]]:
-        sql = "SELECT id, name FROM courses ORDER BY id"
-        rows = self.execute(sql, fetchall=True)
-        return rows or []
 
-    def get_course_by_id(self, course_id: int):
-        sql = "SELECT id, name, description, price, schedule, image_url, teacher_id FROM courses WHERE id = ?"
-        return self.execute(sql, course_id, fetchone=True)
+def get_course_details(course_id) :
+    """Kurs ma'lumotlarini olish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT cd.price, cd.schedule, cd.description, cd.image_path, c.name 
+        FROM course_details cd 
+        JOIN courses c ON cd.course_id = c.id 
+        WHERE cd.course_id = ?
+    ''', (course_id,))
+    course_info = cursor.fetchone()
+    conn.close()
+    return course_info
 
-    # add_course_info helper (update subset)
-    def add_course_info(self, course_id: int,
-                        description: str = None,
-                        price: str = None,
-                        schedule: str = None):
-        fields, params = [], []
-        if description is not None:
-            fields.append("description = ?"); params.append(description)
-        if price is not None:
-            fields.append("price = ?"); params.append(price)
-        if schedule is not None:
-            fields.append("schedule = ?"); params.append(schedule)
 
-        if not fields:
-            return
-        params.append(course_id)
-        sql = f"UPDATE courses SET {', '.join(fields)} WHERE id = ?"
-        self.execute(sql, *params, commit=True)
+def add_course(name) :
+    """Yangi kurs qo'shish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    try :
+        cursor.execute("INSERT INTO courses (name) VALUES (?)", (name,))
+        conn.commit()
+        return True
+    except sqlite3.IntegrityError :
+        return False
+    finally :
+        conn.close()
 
-    # ---------- TEACHERS ----------
-    def create_table_teachers(self):
-        sql = """CREATE TABLE IF NOT EXISTS teachers(
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            full_name TEXT,
-            bio TEXT,
-            achievements TEXT,
-            image_url TEXT,
-            course_id INTEGER
-        )"""
-        self.execute(sql, commit=True)
 
-    def insert_teacher(self, full_name: str, bio: str, achievements: str, image_url: str, course_id: int) -> int:
-        with sqlite3.connect(self.database) as db:
-            cur = db.cursor()
-            cur.execute(
-                "INSERT INTO teachers(full_name, bio, achievements, image_url, course_id) VALUES (?, ?, ?, ?, ?)",
-                (full_name, bio, achievements, image_url, course_id)
-            )
-            db.commit()
-            return cur.lastrowid
+def add_course_details(course_id, price, schedule, description, image_path) :
+    """Kurs ma'lumotlarini qo'shish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute(
+        "INSERT INTO course_details (course_id, price, schedule, description, image_path) VALUES (?, ?, ?, ?, ?)",
+        (course_id, price, schedule, description, image_path)
+    )
+    conn.commit()
+    conn.close()
 
-    def update_teacher(self, teacher_id: int,
-                       full_name: str = None,
-                       bio: str = None,
-                       achievements: str = None,
-                       image_url: str = None,
-                       course_id: int = None):
-        fields, params = [], []
-        if full_name is not None:
-            fields.append("full_name = ?"); params.append(full_name)
-        if bio is not None:
-            fields.append("bio = ?"); params.append(bio)
-        if achievements is not None:
-            fields.append("achievements = ?"); params.append(achievements)
-        if image_url is not None:
-            fields.append("image_url = ?"); params.append(image_url)
-        if course_id is not None:
-            fields.append("course_id = ?"); params.append(course_id)
 
-        if not fields:
-            return
-        params.append(teacher_id)
-        sql = f"UPDATE teachers SET {', '.join(fields)} WHERE id = ?"
-        self.execute(sql, *params, commit=True)
+def delete_course(course_id) :
+    """Kursni o'chirish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    try :
+        # Avval bog'liq ma'lumotlarni o'chiramiz
+        cursor.execute("DELETE FROM course_details WHERE course_id = ?", (course_id,))
+        cursor.execute("DELETE FROM teachers WHERE course_id = ?", (course_id,))
+        cursor.execute("DELETE FROM students WHERE course_id = ?", (course_id,))
+        cursor.execute("DELETE FROM courses WHERE id = ?", (course_id,))
+        conn.commit()
+        return True
+    except sqlite3.Error :
+        return False
+    finally :
+        conn.close()
 
-    def get_teacher_by_id(self, teacher_id: int):
-        sql = "SELECT id, full_name, bio, achievements, image_url, course_id FROM teachers WHERE id = ?"
-        return self.execute(sql, teacher_id, fetchone=True)
 
-    def get_teachers_by_course(self, course_id: int):
-        sql = "SELECT id, full_name FROM teachers WHERE course_id = ?"
-        rows = self.execute(sql, course_id, fetchall=True)
-        return rows or []
+# ----------- O'QITUVCHI OPERATSIYALARI -----------
+def get_teacher(course_id) :
+    """Kurs o'qituvchisini olish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, full_name, achievements, image_path FROM teachers WHERE course_id = ?", (course_id,))
+    teacher_info = cursor.fetchone()
+    conn.close()
+    return teacher_info
 
-    # ---------- STUDENTS ----------
-    def create_table_students(self):
-        sql = """CREATE TABLE IF NOT EXISTS students(
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            user_id INTEGER,
-            full_name TEXT,
-            phone TEXT,
-            course_id INTEGER,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )"""
-        self.execute(sql, commit=True)
 
-    def add_student(self, user_id: int, full_name: str, phone: str, course_id: int):
-        sql = "INSERT INTO students(user_id, full_name, phone, course_id) VALUES (?, ?, ?, ?)"
-        self.execute(sql, user_id, full_name, phone, course_id, commit=True)
+def get_all_teachers() :
+    """Barcha o'qituvchilarni olish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, course_id, full_name FROM teachers ORDER BY full_name")
+    teachers = cursor.fetchall()
+    conn.close()
+    return teachers
 
-    def get_all_students(self):
-        sql = """SELECT s.id, s.full_name, s.phone, c.name as course_name, s.created_at
-                 FROM students s
-                 LEFT JOIN courses c ON s.course_id = c.id
-                 ORDER BY s.created_at DESC"""
-        rows = self.execute(sql, fetchall=True)
-        return rows or []
 
-    # ---------- GROUPS ----------
-    def create_table_groups(self):
-        sql = """CREATE TABLE IF NOT EXISTS groups(
-            chat_id INTEGER PRIMARY KEY,
-            title TEXT,
-            added_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )"""
-        self.execute(sql, commit=True)
+def add_teacher(course_id, full_name, achievements, image_path) :
+    """Yangi o'qituvchi qo'shish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute(
+        "INSERT INTO teachers (course_id, full_name, achievements, image_path) VALUES (?, ?, ?, ?)",
+        (course_id, full_name, achievements, image_path)
+    )
+    conn.commit()
+    conn.close()
 
-    def add_group(self, chat_id: int, title: str = None):
-        sql = "INSERT OR REPLACE INTO groups(chat_id, title) VALUES (?, ?)"
-        self.execute(sql, chat_id, title, commit=True)
 
-    def get_groups(self):
-        sql = "SELECT chat_id FROM groups"
-        rows = self.execute(sql, fetchall=True)
-        return [r[0] for r in rows] if rows else []
+def delete_teacher(teacher_id) :
+    """O'qituvchini o'chirish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    try :
+        cursor.execute("DELETE FROM teachers WHERE id = ?", (teacher_id,))
+        conn.commit()
+        return True
+    except sqlite3.Error :
+        return False
+    finally :
+        conn.close()
 
-    # ---------- ANNOUNCEMENTS ----------
-    def create_table_announcements(self):
-        sql = """CREATE TABLE IF NOT EXISTS announcements(
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            text TEXT,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )"""
-        self.execute(sql, commit=True)
 
-    def insert_announcement(self, text: str):
-        sql = "INSERT INTO announcements(text) VALUES (?)"
-        self.execute(sql, text, commit=True)
+# ----------- TALABA OPERATSIYALARI -----------
+def add_student(full_name, phone_number, username, course_id) :
+    """Talaba qo'shish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute(
+        "INSERT INTO students (full_name, phone_number, username, course_id) VALUES (?, ?, ?, ?)",
+        (full_name, phone_number, username, course_id)
+    )
+    conn.commit()
+    conn.close()
 
-    def get_announcements(self, limit: int = 20):
-        sql = "SELECT id, text FROM announcements ORDER BY id DESC LIMIT ?"
-        rows = self.execute(sql, limit, fetchall=True)
-        return rows or []
 
-    # ---------- INIT ----------
-    def init_db(self):
-        self.create_table_users()
-        self.create_table_courses()
-        self.create_table_teachers()
-        self.create_table_students()
-        self.create_table_groups()
-        self.create_table_announcements()
+def approve_student(full_name, phone_number, course_id) :
+    """Talabani tasdiqlash"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute(
+        "UPDATE students SET approved = TRUE WHERE full_name = ? AND phone_number = ? AND course_id = ?",
+        (full_name, phone_number, course_id)
+    )
+    conn.commit()
+    conn.close()
+
+
+def delete_student(full_name, phone_number, course_id) :
+    """Talabani o'chirish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute(
+        "DELETE FROM students WHERE full_name = ? AND phone_number = ? AND course_id = ?",
+        (full_name, phone_number, course_id)
+    )
+    conn.commit()
+    conn.close()
+
+
+def get_approved_students() :
+    """Tasdiqlangan talabalarni olish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute('''
+        SELECT s.id, s.full_name, s.phone_number, s.username, s.registered_at, c.name 
+        FROM students s 
+        LEFT JOIN courses c ON s.course_id = c.id 
+        WHERE s.approved = TRUE
+    ''')
+    students = cursor.fetchall()
+    conn.close()
+    return students
+
+
+# ----------- E'LON OPERATSIYALARI -----------
+def get_announcements() :
+    """E'lonlarni olish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT message, image_path FROM announcements ORDER BY created_at DESC LIMIT 5")
+    announcements = cursor.fetchall()
+    conn.close()
+    return announcements
+
+
+def add_announcement(message, image_path=None) :
+    """Yangi e'lon qo'shish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute(
+        "INSERT INTO announcements (message, image_path) VALUES (?, ?)",
+        (message, image_path)
+    )
+    conn.commit()
+    conn.close()
+
+
+# ----------- GURUH OPERATSIYALARI -----------
+def add_admin_group(group_id, group_title) :
+    """Yangi admin guruhini qo'shish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    try :
+        cursor.execute(
+            "INSERT OR REPLACE INTO admin_groups (group_id, group_title) VALUES (?, ?)",
+            (group_id, group_title)
+        )
+        conn.commit()
+        return True
+    except sqlite3.Error as e :
+        print(f"Guruh qo'shishda xatolik: {e}")
+        return False
+    finally :
+        conn.close()
+
+
+def get_all_admin_groups() :
+    """Barcha admin guruhlarini olish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT group_id, group_title FROM admin_groups ORDER BY group_title")
+    groups = cursor.fetchall()
+    conn.close()
+    return groups
+
+
+def delete_admin_group(group_id) :
+    """Admin guruhini o'chirish"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    try :
+        cursor.execute("DELETE FROM admin_groups WHERE group_id = ?", (group_id,))
+        conn.commit()
+        return True
+    except sqlite3.Error as e :
+        print(f"Guruh o'chirishda xatolik: {e}")
+        return False
+    finally :
+        conn.close()
+
+
+if __name__ == "__main__" :
+    init_database()

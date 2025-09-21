@@ -1,80 +1,48 @@
-from data.loader import bot
-from telebot.types import Message
-from keyboards.default import main_menu, make_buttons, request_contact_markup
-from keyboards.inline import course_detail_inline
-from database.database import Database
+import telebot
+from telebot.types import ReplyKeyboardRemove
+from config import CONTACT_INFO
+from database.database import get_announcements
+from keyboards.default import main_menu_keyboard, phone_keyboard, yes_no_keyboard
+from keyboards.inline import generate_courses_keyboard
 
-db = Database()
+def setup_user_text_handlers(bot):
+    @bot.message_handler(func=lambda message: message.text == "🔙 Asosiy menyu")
+    def back_to_main(message):
+        bot.send_message(message.chat.id, "Asosiy menyu:", reply_markup=main_menu_keyboard())
 
-
-user_states = {}
-
-@bot.message_handler(func=lambda m: m.text == "ℹ️ Kurslar haqida ma’lumot")
-def info_courses(message: Message):
-    courses = [name for _, name in db.get_courses()]
-    if not courses:
-        bot.send_message(message.chat.id, "Hozircha kurslar qo‘shilmagan.")
-    else:
-        bot.send_message(message.chat.id, "Kurslardan birini tanlang:", reply_markup=make_buttons(courses, back=True))
-
-@bot.message_handler(func=lambda m: m.text == "📚 Kursga yozilish")
-def enroll_courses(message: Message):
-    courses = [name for _, name in db.get_courses()]
-    if not courses:
-        bot.send_message(message.chat.id, "Hozircha kurslar yo'q.")
-    else:
-        bot.send_message(message.chat.id, "Qaysi kursga yozilmoqchisiz?", reply_markup=make_buttons(courses, back=True))
-
-
-@bot.message_handler(func=lambda m: m.text == "📖 Biz haqimizda")
-def about_us(message: Message):
-    text = ("📍 Manzil: Toshkent, Chilonzor 7\n"
-            "📞 Telefon: +998 90 123 45 67\n"
-            "🌐 Instagram: https://instagram.com/oqvu_markaz\n"
-            "🌐 Telegram: https://t.me/oqvu_markaz\n")
-    bot.send_message(message.chat.id, text)
-
-@bot.message_handler(func=lambda m: m.text == "📢 E’lonlar")
-def announcements(message: Message):
-    anns = db.get_announcements()
-    if not anns:
-        bot.send_message(message.chat.id, "Hozircha e'lonlar yo'q.")
-        return
-    for aid, text in anns:
-        bot.send_message(message.chat.id, f"📢 {text}")
-
-@bot.message_handler(func=lambda m: m.text == "🔙 Orqaga")
-def go_back(message: Message):
-    bot.send_message(message.chat.id, "Bosh menyu:", reply_markup=main_menu())
-    user_states.pop(message.from_user.id, None)
-
-@bot.message_handler(func=lambda m: True, content_types=['text'])
-def generic_text_handler(message: Message):
-    txt = message.text.strip()
-    user_id = message.from_user.id
-
-    state = user_states.get(user_id)
-    if state and state.get("step") == "awaiting_name":
-        full_name = txt
-        state["temp_name"] = full_name
-        user_states[user_id] = state
-        bot.send_message(message.chat.id, "Iltimos telefon raqamingizni jo'nating:", reply_markup=request_contact_markup())
-        return
-
-
-    course = db.get_course_by_name(txt)
-    if course:
-
-        _id, name, desc, price, teacher_id, schedule, image_url = course
-        caption = f"📚 <b>{name}</b>\n\n💰 Narxi: {price or '—'}\n🕒 Vaqti: {schedule or '—'}\n\n{desc or '—'}"
-        reply_markup = course_detail_inline(_id)
-        if image_url:
-            try:
-                bot.send_photo(message.chat.id, photo=image_url, caption=caption, reply_markup=reply_markup)
-            except Exception as e:
-                bot.send_message(message.chat.id, caption, reply_markup=reply_markup)
+    @bot.message_handler(func=lambda message: message.text == "📚 Kurslar haqida ma'lumot")
+    def courses_info(message):
+        keyboard = generate_courses_keyboard("info")
+        if keyboard.keyboard:
+            bot.send_message(message.chat.id, "Kursni tanlang:", reply_markup=keyboard)
         else:
-            bot.send_message(message.chat.id, caption, reply_markup=reply_markup)
-        return
+            bot.send_message(message.chat.id, "❌ Hozircha hech qanday kurs mavjud emas.")
 
-    bot.send_message(message.chat.id, "Iltimos menyudan tanlang yoki /start bosing.", reply_markup=main_menu())
+    @bot.message_handler(func=lambda message: message.text == "📝 Kursga yozilish")
+    def course_registration(message):
+        keyboard = generate_courses_keyboard("register")
+        if keyboard.keyboard:
+            bot.send_message(message.chat.id, "Kursni tanlang:", reply_markup=keyboard)
+        else:
+            bot.send_message(message.chat.id, "❌ Hozircha hech qanday kurs mavjud emas.")
+
+    @bot.message_handler(func=lambda message: message.text == "📞 Biz bilan bog'lanish")
+    def contact_us(message):
+        bot.send_message(message.chat.id, CONTACT_INFO)
+
+    @bot.message_handler(func=lambda message: message.text == "📢 E'lonlar")
+    def show_announcements(message):
+        announcements = get_announcements()
+        if announcements:
+            for announcement in announcements:
+                msg, image_path = announcement
+                if image_path:
+                    try:
+                        with open(image_path, 'rb') as photo:
+                            bot.send_photo(message.chat.id, photo, caption=msg)
+                    except:
+                        bot.send_message(message.chat.id, msg)
+                else:
+                    bot.send_message(message.chat.id, msg)
+        else:
+            bot.send_message(message.chat.id, "❌ Hozircha hech qanday e'lon mavjud emas.")

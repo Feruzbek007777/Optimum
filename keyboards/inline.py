@@ -1,44 +1,69 @@
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-from database.database import Database
-
-db = Database()
-
-from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
-from database.database import Database
-
-db = Database()
-
-def courses_inline(prefix: str = "course"):
-    markup = InlineKeyboardMarkup()
-    courses = db.get_courses()
-    if not courses:
-        return markup
-
-    for course_id, name in courses:
-        markup.add(
-            InlineKeyboardButton(
-                text=name,
-                callback_data=f"{prefix}_{course_id}"  # 🔑 prefix bilan
-            )
-        )
-    return markup
+from database.database import get_courses, get_all_teachers, get_all_admin_groups
 
 
+def generate_courses_keyboard(action) :
+    courses = get_courses()
 
-def course_detail_inline(course_id: int):
-    markup = InlineKeyboardMarkup(row_width=1)
-    markup.add(
-        InlineKeyboardButton("👨‍🏫 Ustoz haqida", callback_data=f"teacher_{course_id}"),
-        InlineKeyboardButton("📝 Kursga yozilish", callback_data=f"enroll_{course_id}"),
-        InlineKeyboardButton("🔙 Orqaga", callback_data="back_courses")
-    )
-    return markup
+    keyboard = InlineKeyboardMarkup(row_width=2)
+    buttons = []
+    for course_id, course_name in courses :
+        buttons.append(InlineKeyboardButton(course_name, callback_data=f"{action}_{course_id}"))
 
-def teachers_inline_for_course(course_id: int):
-    markup = InlineKeyboardMarkup(row_width=1)
-    teachers = db.get_teachers_by_course(course_id)
-    if teachers:
-        for teacher_id, name in teachers:
-            markup.add(InlineKeyboardButton(name, callback_data=f"teacherid_{teacher_id}"))
-    markup.add(InlineKeyboardButton("🔙 Orqaga", callback_data="back_course_teachers"))
-    return markup
+    for i in range(0, len(buttons), 2) :
+        if i + 1 < len(buttons) :
+            keyboard.add(buttons[i], buttons[i + 1])
+        else :
+            keyboard.add(buttons[i])
+
+    return keyboard
+
+
+def generate_teachers_keyboard() :
+    teachers = get_all_teachers()
+
+    keyboard = InlineKeyboardMarkup()
+    for teacher_id, course_id, full_name in teachers :
+        keyboard.add(InlineKeyboardButton(full_name, callback_data=f"teacher_{teacher_id}"))
+
+    return keyboard
+
+
+def generate_teachers_delete_keyboard() :
+    teachers = get_all_teachers()
+
+    keyboard = InlineKeyboardMarkup()
+    for teacher_id, course_id, full_name in teachers :
+        keyboard.add(InlineKeyboardButton(f"❌ {full_name}", callback_data=f"delete_teacher_{teacher_id}"))
+
+    return keyboard
+
+
+def generate_courses_delete_keyboard() :
+    courses = get_courses()
+
+    keyboard = InlineKeyboardMarkup()
+    for course_id, course_name in courses :
+        keyboard.add(InlineKeyboardButton(f"❌ {course_name}", callback_data=f"delete_course_{course_id}"))
+
+    return keyboard
+
+
+def generate_groups_keyboard(action) :
+    groups = get_all_admin_groups()
+
+    keyboard = InlineKeyboardMarkup()
+    for group_id, group_title in groups :
+        keyboard.add(InlineKeyboardButton(group_title, callback_data=f"{action}_{group_id}"))
+
+    # Barcha guruhlarga yuborish tugmasi
+    if groups :
+        keyboard.add(InlineKeyboardButton("📢 BARCHA GURUHGA YUBORISH", callback_data=f"{action}_all"))
+
+    return keyboard
+
+
+def back_button() :
+    keyboard = InlineKeyboardMarkup()
+    keyboard.add(InlineKeyboardButton("🔙 Orqaga", callback_data="back"))
+    return keyboard

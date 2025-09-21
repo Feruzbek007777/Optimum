@@ -1,68 +1,36 @@
-# handlers/users/commands.py
-from data.loader import bot
-from telebot.types import Message
-from config import ADMIN_ID
-from database.database import Database
-from keyboards.default import main_menu, request_contact_markup, make_buttons
-from keyboards.inline import courses_inline
-
-db = Database()
+import telebot
+from telebot.types import ReplyKeyboardMarkup, KeyboardButton
+from config import ADMINS
+from keyboards.default import main_menu_keyboard, admin_menu_keyboard
 
 
-@bot.message_handler(commands=['start'])
-def start_handler(message: Message):
-    user_id = message.from_user.id
-    db.insert_telegram_id(user_id)
-    if user_id == ADMIN_ID:
-        from keyboards.default import admin_main_menu
-        bot.send_message(message.chat.id, "👋 Assalomu alaykum, Admin!", reply_markup=admin_main_menu())
-    else:
-        bot.send_message(message.chat.id, "👋 Assalomu alaykum! Botga xush kelibsiz.\nQuyidagi menyudan tanlang:", reply_markup=main_menu())
+def setup_user_commands(bot) :
+    @bot.message_handler(commands=['start'])
+    def send_welcome(message) :
+        if message.from_user.id in ADMINS :
+            bot.send_message(message.chat.id, "👨‍💻 Admin menyusiga xush kelibsiz!", reply_markup=admin_menu_keyboard())
+        else :
+            bot.send_message(message.chat.id, "🤖 Xush kelibsiz! Quyidagi menyudan kerakli bo'limni tanlang:",
+                             reply_markup=main_menu_keyboard())
 
+    @bot.message_handler(commands=['admin'])
+    def admin_panel(message) :
+        if message.from_user.id in ADMINS :
+            bot.send_message(message.chat.id, "👨‍💻 Admin menyusiga xush kelibsiz!", reply_markup=admin_menu_keyboard())
+        else :
+            bot.send_message(message.chat.id, "❌ Sizda admin huquqi yo'q!")
 
-@bot.message_handler(func=lambda msg: msg.text == "ℹ️ Kurslar haqida ma’lumot")
-def info_courses(message: Message):
-    markup = courses_inline(prefix="course")
-    if markup:
-        bot.send_message(message.chat.id, "Quyidagi kurslardan tanlang:", reply_markup=markup)
-    else:
-        bot.send_message(message.chat.id, "Hozircha kurslar mavjud emas.")
+    @bot.message_handler(commands=['id'])
+    def get_chat_id(message) :
+        chat_id = message.chat.id
+        chat_type = message.chat.type
+        chat_title = message.chat.title or "Shaxsiy chat"
 
+        response = f"""
+📋 Chat ma'lumotlari:
 
-@bot.message_handler(func=lambda msg: msg.text == "📚 Kursga yozilish")
-def enroll_menu(message: Message):
-    markup = courses_inline(prefix="enroll")
-    if markup:
-        bot.send_message(message.chat.id, "Qaysi kursga yozilmoqchisiz? Tanlang:", reply_markup=markup)
-    else:
-        bot.send_message(message.chat.id, "Hozircha kurslar mavjud emas.")
-
-
-@bot.message_handler(func=lambda msg: msg.text == "📞 Biz haqimizda")
-def about_us(message: Message):
-    text = ("📍 Manzil: Misol ko'chasi 12\n"
-            "📞 Telefon: +998 90 000 00 00\n"
-            "🌐 Instagram: https://instagram.com/your_instagram\n"
-            "📢 Telegram: https://t.me/your_channel")
-    bot.send_message(message.chat.id, text)
-
-
-@bot.message_handler(func=lambda msg: msg.text == "📢 E’lonlar")
-def show_announcements(message: Message):
-    anns = db.get_announcements(limit=10)
-    if not anns:
-        bot.send_message(message.chat.id, "Hozircha e'lonlar mavjud emas.")
-        return
-    text = "📢 Oxirgi e'lonlar:\n\n" + "\n\n".join([f"- {a[1]}" for a in anns])
-    bot.send_message(message.chat.id, text)
-
-
-# back handler for users (shows main menu)
-@bot.message_handler(func=lambda msg: msg.text == "🔙 Orqaga")
-def go_back(message: Message):
-    # if admin show admin menu, else main menu
-    if message.from_user.id == ADMIN_ID:
-        from keyboards.default import admin_main_menu
-        bot.send_message(message.chat.id, "🔙 Admin menyuga qaytdingiz.", reply_markup=admin_main_menu())
-    else:
-        bot.send_message(message.chat.id, "🔙 Bosh menyuga qaytdingiz.", reply_markup=main_menu())
+🆔 ID: `{chat_id}`
+🏷️ Nomi: {chat_title}
+📊 Turi: {chat_type}
+"""
+        bot.send_message(message.chat.id, response, parse_mode='Markdown')

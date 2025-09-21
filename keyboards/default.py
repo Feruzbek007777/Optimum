@@ -1,44 +1,27 @@
-# keyboards/default.py
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
+def main_menu_keyboard():
+    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
+    keyboard.add(KeyboardButton("📚 Kurslar haqida ma'lumot"), KeyboardButton("📝 Kursga yozilish"))
+    keyboard.add(KeyboardButton("📞 Biz bilan bog'lanish"), KeyboardButton("📢 E'lonlar"))
+    return keyboard
 
-def main_menu():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    markup.add(
-        KeyboardButton("ℹ️ Kurslar haqida ma’lumot"),
-        KeyboardButton("📚 Kursga yozilish"),
-        KeyboardButton("📞 Biz haqimizda"),
-        KeyboardButton("📢 E’lonlar")
-    )
-    return markup
+def admin_menu_keyboard():
+    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
+    keyboard.add(KeyboardButton("➕ Kurs qo'shish"), KeyboardButton("ℹ️ Kursga ma'lumot qo'shish"))
+    keyboard.add(KeyboardButton("👨‍🏫 Ustoz qo'shish"), KeyboardButton("🗑️ Ustozni o'chirish"))
+    keyboard.add(KeyboardButton("❌ Kursni o'chirish"), KeyboardButton("👥 Guruhlarga xabar yuborish"))
+    keyboard.add(KeyboardButton("📋 Guruhlar ro'yxati"), KeyboardButton("📢 E'lon yuborish"))
+    keyboard.add(KeyboardButton("🎓 Students"))
+    keyboard.add(KeyboardButton("🔙 Asosiy menyu"))
+    return keyboard
 
+def yes_no_keyboard():
+    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
+    keyboard.add(KeyboardButton("✅ Ha"), KeyboardButton("❌ Yo'q"))
+    return keyboard
 
-def admin_main_menu():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    markup.add(
-        KeyboardButton("➕ Kurs qo‘shish"),
-        KeyboardButton("📝 Kursga ma’lumot qo‘shish"),
-        KeyboardButton("👨‍🏫 Ustoz qo‘shish"),
-        KeyboardButton("📢 Guruhlarga xabar yuborish"),
-        KeyboardButton("📋 Kurslar ro‘yxati"),
-        KeyboardButton("❌ Kursni o‘chirish"),
-        KeyboardButton("👥 Students"),
-        KeyboardButton("🔙 Orqaga")
-    )
-    return markup
-
-
-def make_buttons(names: list, row_width: int = 2, back: bool = False):
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, row_width=row_width)
-    buttons = [KeyboardButton(name) for name in names]
-    markup.add(*buttons)
-    if back:
-        markup.add(KeyboardButton("🔙 Orqaga"))
-    return markup
-
-
-def request_contact_markup():
-    markup = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True)
-    button = KeyboardButton("📱 Raqamni yuborish", request_contact=True)
-    markup.add(button)
-    return markup
+def phone_keyboard():
+    keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
+    keyboard.add(KeyboardButton("📞 Telefon raqamini yuborish", request_contact=True))
+    return keyboard

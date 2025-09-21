@@ -1,76 +1,142 @@
-from data.loader import bot
-from telebot.types import CallbackQuery
-from database.database import Database
-from keyboards.inline import teachers_inline_for_course
-from keyboards.default import main_menu, request_contact_markup
+import telebot
+from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardRemove
+from database.database import get_course_details, get_teacher, add_student, approve_student, delete_student
+from keyboards.inline import back_button
+from keyboards.default import phone_keyboard, yes_no_keyboard, main_menu_keyboard
+from config import ADMINS
 
-db = Database()
-user_states = {}
 
-@bot.callback_query_handler(func=lambda call: call.data.startswith("course_"))
-def course_detail(call: CallbackQuery):
-    course_id = int(call.data.split("_", 1)[1])
-    course = db.get_course_by_id(course_id)
-    if course:
-        _id, name, desc, price, teacher_id, schedule, image_url = course
-        caption = f"📚 <b>{name}</b>\n\n💰 Narxi: {price or '—'}\n🕒 Vaqti: {schedule or '—'}\n\n{desc or '—'}"
-        markup = None
-        from keyboards.inline import course_detail_inline
-        markup = course_detail_inline(_id)
-        try:
-            bot.edit_message_media  # just to check
-            # try to edit message if possible
-            if image_url:
-                bot.edit_message_caption(chat_id=call.message.chat.id, message_id=call.message.message_id, caption=caption, reply_markup=markup)
-            else:
-                bot.edit_message_text(caption, chat_id=call.message.chat.id, message_id=call.message.message_id, reply_markup=markup)
-        except Exception:
-            # send new message
-            if image_url:
-                bot.send_photo(call.message.chat.id, photo=image_url, caption=caption, reply_markup=markup)
-            else:
-                bot.send_message(call.message.chat.id, caption, reply_markup=markup)
+def setup_user_callbacks(bot) :
+    @bot.callback_query_handler(func=lambda call : call.data.startswith("info_"))
+    def course_info_callback(call) :
+        course_id = call.data.split("_")[1]
+        show_course_info(bot, call.message, course_id)
+        bot.answer_callback_query(call.id)
 
-    bot.answer_callback_query(call.id)
+    @bot.callback_query_handler(func=lambda call : call.data.startswith("register_"))
+    def course_register_callback(call) :
+        course_id = call.data.split("_")[1]
+        start_registration(bot, call.message, course_id)
+        bot.answer_callback_query(call.id)
 
-@bot.callback_query_handler(func=lambda call: call.data.startswith("teacher_"))
-def teacher_list_for_course(call: CallbackQuery):
-    course_id = int(call.data.split("_", 1)[1])
-    # show list of teachers inline
-    markup = teachers_inline_for_course(course_id)
-    bot.edit_message_text("Ustozlardan birini tanlang:", call.message.chat.id, call.message.message_id, reply_markup=markup)
-    bot.answer_callback_query(call.id)
+    @bot.callback_query_handler(func=lambda call : call.data.startswith("teacher_"))
+    def teacher_info_callback(call) :
+        course_id = call.data.split("_")[1]
+        show_teacher_info(bot, call.message, course_id)
+        bot.answer_callback_query(call.id)
 
-@bot.callback_query_handler(func=lambda call: call.data.startswith("teacherid_"))
-def teacher_detail(call: CallbackQuery):
-    teacher_id = int(call.data.split("_", 1)[1])
-    t = db.get_teacher_by_id(teacher_id)
-    if t:
-        _id, full_name, bio, achievements, image_url, course_id = t
-        text = f"👨‍🏫 <b>{full_name}</b>\n\n{bio or ''}\n\n🏆 Yutuqlar:\n{achievements or ''}"
-        try:
-            if image_url:
-                bot.send_photo(call.message.chat.id, photo=image_url, caption=text)
-            else:
-                bot.send_message(call.message.chat.id, text)
-        except Exception:
-            bot.send_message(call.message.chat.id, text)
-    bot.answer_callback_query(call.id)
+    @bot.callback_query_handler(func=lambda call : call.data == "back")
+    def back_callback(call) :
+        bot.delete_message(call.message.chat.id, call.message.message_id)
+        bot.answer_callback_query(call.id)
 
-@bot.callback_query_handler(func=lambda call: call.data.startswith("enroll_"))
-def enroll_callback(call: CallbackQuery):
-    course_id = int(call.data.split("_",1)[1])
-    user_id = call.from_user.id
-    # set user state to awaiting name
-    user_states[user_id] = {"step": "awaiting_name", "course_id": course_id}
-    bot.send_message(call.message.chat.id, "Iltimos ismingiz va familiyangizni kiriting:")
-    bot.answer_callback_query(call.id)
 
-@bot.callback_query_handler(func=lambda call: call.data == "back_courses")
-def back_courses(call: CallbackQuery):
-    from keyboards.inline import courses_inline
-    try:
-        bot.edit_message_text("Kurslardan birini tanlang:", call.message.chat.id, call.message.message_id, reply_markup=courses_inline())
-    except Exception:
-        bot.send_message(call.message.chat.id, "Kurslardan birini tanlang:", reply_markup=courses_inline())
-    bot.answer_callback_query(call.id)
+def show_course_info(bot, message, course_id) :
+    course_info = get_course_details(course_id)
+    teacher_info = get_teacher(course_id)
+
+    if course_info :
+        price, schedule, description, image_path, course_name = course_info
+
+        response = f"""
+📚 {course_name}
+
+💰 Narxi: {price}
+🕒 Vaqti: {schedule}
+📝 Tavsifi: {description}
+"""
+        keyboard = InlineKeyboardMarkup()
+        if teacher_info :
+            keyboard.add(InlineKeyboardButton("👨‍🏫 Ustoz haqida", callback_data=f"teacher_{course_id}"))
+        keyboard.add(InlineKeyboardButton("🔙 Orqaga", callback_data="back"))
+
+        if image_path :
+            try :
+                with open(image_path, 'rb') as photo :
+                    bot.send_photo(message.chat.id, photo, caption=response, reply_markup=keyboard)
+            except :
+                bot.send_message(message.chat.id, response, reply_markup=keyboard)
+        else :
+            bot.send_message(message.chat.id, response, reply_markup=keyboard)
+    else :
+        bot.send_message(message.chat.id, "❌ Bu kurs haqida ma'lumot topilmadi.")
+
+
+def show_teacher_info(bot, message, course_id) :
+    teacher_info = get_teacher(course_id)
+
+    if teacher_info :
+        teacher_id, full_name, achievements, image_path = teacher_info
+
+        response = f"""
+👨‍🏫 {full_name}
+
+🏆 Erishgan yutuqlari: {achievements}
+"""
+        keyboard = back_button()
+
+        if image_path :
+            try :
+                with open(image_path, 'rb') as photo :
+                    bot.send_photo(message.chat.id, photo, caption=response, reply_markup=keyboard)
+            except :
+                bot.send_message(message.chat.id, response, reply_markup=keyboard)
+        else :
+            bot.send_message(message.chat.id, response, reply_markup=keyboard)
+    else :
+        bot.send_message(message.chat.id, "❌ Bu kurs uchun o'qituvchi ma'lumotlari topilmadi.")
+
+
+def start_registration(bot, message, course_id) :
+    msg = bot.send_message(message.chat.id, "✍️ Ism va familiyangizni kiriting (masalan: Azizov Aziz):",
+                           reply_markup=ReplyKeyboardRemove())
+    bot.register_next_step_handler(msg, process_name_step, bot, course_id)
+
+
+def process_name_step(message, bot, course_id) :
+    full_name = message.text
+    msg = bot.send_message(message.chat.id, "📞 Telefon raqamingizni yuboring:", reply_markup=phone_keyboard())
+    bot.register_next_step_handler(msg, process_phone_step, bot, course_id, full_name)
+
+
+def process_phone_step(message, bot, course_id, full_name) :
+    if message.contact :
+        phone_number = message.contact.phone_number
+    else :
+        phone_number = message.text
+
+    # Ma'lumotlarni saqlash
+    add_student(full_name, phone_number, message.from_user.username, course_id)
+
+    # Tasdiqlash so'rovi
+    response = f"""
+✅ Sizning ma'lumotlaringiz qabul qilindi!
+
+👤 Ism: {full_name}
+📞 Telefon: {phone_number}
+
+⚠️ Diqqat! Agar «Ha» tugmasini bosangiz, adminlarimiz sizga telefon qilib bog'lanishadi va kurs haqida ma'lumot berishadi.
+"""
+    bot.send_message(message.chat.id, response, reply_markup=yes_no_keyboard())
+    bot.register_next_step_handler(message, process_confirmation, bot, full_name, phone_number, course_id)
+
+
+def process_confirmation(message, bot, full_name, phone_number, course_id) :
+    if message.text == "✅ Ha" :
+        # Ma'lumotlarni tasdiqlash
+        approve_student(full_name, phone_number, course_id)
+
+        # Adminlarga xabar berish
+        for admin_id in ADMINS :
+            try :
+                bot.send_message(admin_id,
+                                 f"🎓 Yangi talaba ro'yxatdan o'tdi:\n\nIsm: {full_name}\nTel: {phone_number}\nKurs ID: {course_id}")
+            except :
+                pass
+
+        bot.send_message(message.chat.id, "✅ Rahmat! Tez orada adminlarimiz siz bilan bog'lanishadi.",
+                         reply_markup=main_menu_keyboard())
+    else :
+        # Ma'lumotlarni o'chirish
+        delete_student(full_name, phone_number, course_id)
+        bot.send_message(message.chat.id, "❌ Ro'yxatdan o'tish bekor qilindi.", reply_markup=main_menu_keyboard())
