@@ -4,13 +4,12 @@ DATABASE_PATH = "data.db"
 CONTACT_INFO = """
 📞 Biz bilan bog'lanish:
 
-📍 Manzil: Toshkent shahar, Yunusobod tumani
-📞 Telefon: +998 71 123 45 67
-📧 Email: info@educationcenter.uz
-🌐 Vebsayt: www.educationcenter.uz
+📍 Manzil: Farg'ona : Yozyovon 
+📞 Telefon: +998 99 998 64 21
+📧 Telegram : @optimum_LA
 
 🕒 Ish vaqtimiz: 
-Dushanba - Juma: 9:00 - 18:00
-Shanba: 9:00 - 14:00
-Yakshanba: Dam olish kuni
+Dushanba - Yakshanba : 6:00 - 20:00
+
+Made by @Fellixboi 
 """

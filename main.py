@@ -8,6 +8,7 @@ from handlers.users.callbacks import setup_user_callbacks
 from handlers.admins.commands import setup_admin_commands
 from handlers.admins.text_handlers import setup_admin_text_handlers
 from handlers.admins.callbacks import setup_admin_callbacks
+from handlers.translate.handler import setup_translate_handlers  # YANGI IMPORT
 from database.database import add_admin_group
 
 # Botni yaratish
@@ -23,6 +24,7 @@ setup_user_callbacks(bot)
 setup_admin_commands(bot)
 setup_admin_text_handlers(bot)
 setup_admin_callbacks(bot)
+setup_translate_handlers(bot)
 
 # Ma'lumotlar bazasini ishga tushirish
 init_database()
