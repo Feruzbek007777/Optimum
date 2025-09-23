@@ -1,15 +1,11 @@
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
-from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-
 def main_menu_keyboard():
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
     keyboard.add(KeyboardButton("📚 Kurslar haqida ma'lumot"), KeyboardButton("📝 Kursga yozilish"))
     keyboard.add(KeyboardButton("📞 Biz bilan bog'lanish"), KeyboardButton("📢 E'lonlar"))
-    keyboard.add(KeyboardButton("🌐 Translate"))  # YANGI: Translate tugmasi
+    keyboard.add(KeyboardButton("🌐 Translate"))
     return keyboard
-
-
 
 def admin_menu_keyboard():
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
@@ -17,7 +13,7 @@ def admin_menu_keyboard():
     keyboard.add(KeyboardButton("👨‍🏫 Ustoz qo'shish"), KeyboardButton("🗑️ Ustozni o'chirish"))
     keyboard.add(KeyboardButton("❌ Kursni o'chirish"), KeyboardButton("👥 Guruhlarga xabar yuborish"))
     keyboard.add(KeyboardButton("📋 Guruhlar ro'yxati"), KeyboardButton("📢 E'lon yuborish"))
-    keyboard.add(KeyboardButton("🎓 Students"))
+    keyboard.add(KeyboardButton("💾 Backup"), KeyboardButton("🎓 Students"))  # YANGI: Backup tugmasi
     keyboard.add(KeyboardButton("🔙 Asosiy menyu"))
     return keyboard
 
