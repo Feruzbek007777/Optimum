@@ -1,6 +1,6 @@
 import telebot
 import os
-from config import BOT_TOKEN
+from config import BOT_TOKEN  # config dan import
 from database.database import init_database
 from handlers.users.commands import setup_user_commands
 from handlers.users.text_handlers import setup_user_text_handlers
@@ -39,72 +39,32 @@ setup_translate_handlers(bot)
 # Agar kerak bo‘lsa, bazani birinchi marta yaratish
 init_database()
 
-# Log sozlamalari
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
-)
-
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def check_token() :
-    """Tokenni tekshirish"""
-    TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
-
-    if not TOKEN :
-        logger.error("❌ TELEGRAM_BOT_TOKEN topilmadi!")
-        logger.error("App Platform → Settings → Environment Variables ga token qo'shing")
-        return None
-
-    logger.info(f"✅ Token topildi. Uzunligi: {len(TOKEN)}")
-
-    # Token formatini tekshirish
-    if ":" not in TOKEN :
-        logger.error("❌ Token formatida ':' yo'q!")
-        return None
-
-    parts = TOKEN.split(":")
-    if len(parts) != 2 or not parts[0].isdigit() :
-        logger.error("❌ Token formati noto'g'ri!")
-        return None
-
-    logger.info("✅ Token formati to'g'ri")
-    return TOKEN
-
-
 def main() :
-    """Asosiy dastur"""
     logger.info("=== Bot ishga tushmoqda ===")
 
-    TOKEN = check_token()
-    if not TOKEN :
+    if not BOT_TOKEN :
+        logger.error("❌ BOT_TOKEN topilmadi!")
         return
 
+    logger.info(f"✅ Token topildi: {BOT_TOKEN[:10]}...")
+
     try :
-        bot = telebot.TeleBot(TOKEN)
+        import telebot
+        bot = telebot.TeleBot(BOT_TOKEN)
 
         @bot.message_handler(commands=['start'])
-        def send_welcome(message) :
-            bot.reply_to(message, "🎉 Bot ishlayapti! Versiya: 4.14.1")
+        def start(message) :
+            bot.reply_to(message, "✅ Bot ishlayapti!")
 
-        @bot.message_handler(func=lambda message : True)
-        def echo_all(message) :
-            bot.reply_to(message, f"Siz: {message.text}")
-
-        logger.info("🚀 Bot polling boshlandi...")
-
-        # Eski versiyada polling boshqacha
+        logger.info("🚀 Bot ishga tushdi...")
         bot.polling(none_stop=True)
 
     except Exception as e :
         logger.error(f"❌ Xato: {e}")
-        time.sleep(10)
-        main()  # Qayta urinish
-
-
-if __name__ == "__main__" :
-    main()
 
 # 📌 Guruhlarni avto-qo'shish uchun handler
 @bot.message_handler(content_types=['new_chat_members'])
@@ -160,3 +120,5 @@ def manual_backup(message):
 
 print("🚀 Bot ishga tushdi...")
 
+if __name__ == "__main__" :
+    main()
