@@ -90,4 +90,4 @@ def manual_backup(message):
 
 
 print("🚀 Bot ishga tushdi...")
-bot.polling(none_stop=True)
+
