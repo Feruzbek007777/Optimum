@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 # .env fayldan o‘qish
 load_dotenv()
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN="8487703746:AAH8W7WtnCPGrVG3UZ4eQrRFmuFda0gkMS4"
 
 ADMINS = [6587587517]  # Admin ID lari
 DATABASE_PATH = "data.db"

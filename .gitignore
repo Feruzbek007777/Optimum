@@ -1,7 +1,6 @@
 # Virtual environment
 venv/
 ENV/
-env/
 
 # Python cache
 __pycache__/
@@ -16,7 +15,6 @@ dist/
 .eggs/
 
 # Environment variables / secrets
-.env
 config.py
 secrets.py
 *.key
