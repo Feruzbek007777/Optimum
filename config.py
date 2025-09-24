@@ -1,12 +1,10 @@
 import os
 from dotenv import load_dotenv
 
-# .env fayldan o‘qish
-load_dotenv()
 
 BOT_TOKEN="8487703746:AAH8W7WtnCPGrVG3UZ4eQrRFmuFda0gkMS4"
 
-ADMINS = [6587587517]  # Admin ID lari
+ADMINS = [6587587517]
 DATABASE_PATH = "data.db"
 
 CONTACT_INFO = """

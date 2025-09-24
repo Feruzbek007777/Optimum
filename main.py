@@ -11,6 +11,9 @@ from handlers.admins.callbacks import setup_admin_callbacks
 from handlers.translate.handler import setup_translate_handlers
 from database.database import add_admin_group, delete_admin_group, get_all_admin_groups
 from utils.backup import initialize_database_safely, safe_backup_database
+import logging
+import time
+
 
 
 # Botni yaratish
@@ -36,6 +39,72 @@ setup_translate_handlers(bot)
 # Agar kerak bo‘lsa, bazani birinchi marta yaratish
 init_database()
 
+# Log sozlamalari
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+logger = logging.getLogger(__name__)
+
+
+def check_token() :
+    """Tokenni tekshirish"""
+    TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+
+    if not TOKEN :
+        logger.error("❌ TELEGRAM_BOT_TOKEN topilmadi!")
+        logger.error("App Platform → Settings → Environment Variables ga token qo'shing")
+        return None
+
+    logger.info(f"✅ Token topildi. Uzunligi: {len(TOKEN)}")
+
+    # Token formatini tekshirish
+    if ":" not in TOKEN :
+        logger.error("❌ Token formatida ':' yo'q!")
+        return None
+
+    parts = TOKEN.split(":")
+    if len(parts) != 2 or not parts[0].isdigit() :
+        logger.error("❌ Token formati noto'g'ri!")
+        return None
+
+    logger.info("✅ Token formati to'g'ri")
+    return TOKEN
+
+
+def main() :
+    """Asosiy dastur"""
+    logger.info("=== Bot ishga tushmoqda ===")
+
+    TOKEN = check_token()
+    if not TOKEN :
+        return
+
+    try :
+        bot = telebot.TeleBot(TOKEN)
+
+        @bot.message_handler(commands=['start'])
+        def send_welcome(message) :
+            bot.reply_to(message, "🎉 Bot ishlayapti! Versiya: 4.14.1")
+
+        @bot.message_handler(func=lambda message : True)
+        def echo_all(message) :
+            bot.reply_to(message, f"Siz: {message.text}")
+
+        logger.info("🚀 Bot polling boshlandi...")
+
+        # Eski versiyada polling boshqacha
+        bot.polling(none_stop=True)
+
+    except Exception as e :
+        logger.error(f"❌ Xato: {e}")
+        time.sleep(10)
+        main()  # Qayta urinish
+
+
+if __name__ == "__main__" :
+    main()
 
 # 📌 Guruhlarni avto-qo'shish uchun handler
 @bot.message_handler(content_types=['new_chat_members'])
