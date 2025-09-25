@@ -1,7 +1,6 @@
 import telebot
 import os
 from config import BOT_TOKEN  # config dan import
-from database.database import init_database
 from handlers.users.commands import setup_user_commands
 from handlers.users.text_handlers import setup_user_text_handlers
 from handlers.users.callbacks import setup_user_callbacks
@@ -11,8 +10,6 @@ from handlers.admins.callbacks import setup_admin_callbacks
 from handlers.translate.handler import setup_translate_handlers
 from database.database import add_admin_group, delete_admin_group, get_all_admin_groups
 from utils.backup import initialize_database_safely, safe_backup_database
-import logging
-import time
 
 
 
@@ -35,36 +32,6 @@ setup_admin_text_handlers(bot)
 setup_admin_callbacks(bot)
 setup_translate_handlers(bot)
 
-
-# Agar kerak bo‘lsa, bazani birinchi marta yaratish
-init_database()
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-
-def main() :
-    logger.info("=== Bot ishga tushmoqda ===")
-
-    if not BOT_TOKEN :
-        logger.error("❌ BOT_TOKEN topilmadi!")
-        return
-
-    logger.info(f"✅ Token topildi: {BOT_TOKEN[:10]}...")
-
-    try :
-        import telebot
-        bot = telebot.TeleBot(BOT_TOKEN)
-
-        @bot.message_handler(commands=['start'])
-        def start(message) :
-            bot.reply_to(message, "✅ Bot ishlayapti!")
-
-        logger.info("🚀 Bot ishga tushdi...")
-        bot.polling(none_stop=True)
-
-    except Exception as e :
-        logger.error(f"❌ Xato: {e}")
 
 # 📌 Guruhlarni avto-qo'shish uchun handler
 @bot.message_handler(content_types=['new_chat_members'])
@@ -120,5 +87,9 @@ def manual_backup(message):
 
 print("🚀 Bot ishga tushdi...")
 
-if __name__ == "__main__" :
-    main()
+if __name__ == "__main__":
+    print("🤖 Bot ishga tushdi...")
+    safe_backup_database()
+    bot.polling(none_stop=True)
+
+
