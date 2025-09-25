@@ -8,8 +8,11 @@ CONTACT_INFO = """
 
 📍 Manzil: Farg'ona : Yozyovon 
 📞 Telefon: +998 99 998 64 21
-📧 Telegram : @optimum_LA
+📲 Telegram: @olloyor_9
 
+🌐 Biz haqimizda :
+📧 Telegram : @optimum_LA
+🏆 Natijalar : @optimum_natijalari
 🕒 Ish vaqtimiz: 
 Dushanba - Yakshanba : 6:00 - 20:00
 

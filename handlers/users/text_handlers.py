@@ -14,7 +14,7 @@ def setup_user_text_handlers(bot):
     def courses_info(message):
         keyboard = generate_courses_keyboard("info")
         if keyboard.keyboard:
-            bot.send_message(message.chat.id, "Kursni tanlang:", reply_markup=keyboard)
+            bot.send_message(message.chat.id, "Kursni tanlang jigar 😉:", reply_markup=keyboard)
         else:
             bot.send_message(message.chat.id, "❌ Hozircha hech qanday kurs mavjud emas.")
 

@@ -80,21 +80,21 @@ def process_course_price(message, bot, course_id, image_path) :
 
 def process_course_schedule(message, bot, course_id, image_path, price) :
     schedule = message.text
-    msg = bot.send_message(message.chat.id, "📝 Kurs haqida qisqacha tavsif kiriting (150 ta belgidan oshmasin):")
+    msg = bot.send_message(message.chat.id, "📝 Kurs haqida qisqacha tavsif kiriting (1500 ta harpdan oshmasin):")
     bot.register_next_step_handler(msg, process_course_description, bot, course_id, image_path, price, schedule)
 
 
 def process_course_description(message, bot, course_id, image_path, price, schedule) :
     description = message.text
-    if len(description) > 150 :
-        bot.send_message(message.chat.id, "❌ Tavsif 150 ta belgidan oshmasligi kerak!")
+    if len(description) > 1500 :
+        bot.send_message(message.chat.id, "❌ Tavsif 1500 ta harpdan oshmasligi kerak!")
         bot.register_next_step_handler(message, process_course_description, bot, course_id, image_path, price, schedule)
         return
 
     # Ma'lumotlarni saqlash
     add_course_details(course_id, price, schedule, description, image_path)
 
-    bot.send_message(message.chat.id, "✅ Kurs ma'lumotlari muvaffaqiyatli saqlandi!",
+    bot.send_message(message.chat.id, "✅ Kurs ma'lumotlari muvaffaqiyatli saqlandi jigar!",
                      reply_markup=admin_menu_keyboard())
 
 
@@ -128,7 +128,7 @@ def process_teacher_achievements(message, bot, course_id, image_path, full_name)
     # Ma'lumotlarni saqlash
     add_teacher(course_id, full_name, achievements, image_path)
 
-    bot.send_message(message.chat.id, "✅ Ustoz ma'lumotlari muvaffaqiyatli saqlandi!",
+    bot.send_message(message.chat.id, "✅ Ustoz ma'lumotlari muvaffaqiyatli saqlandi oshna 😉!",
                      reply_markup=admin_menu_keyboard())
 
 
