@@ -1,6 +1,6 @@
 import telebot
 import os
-from config import BOT_TOKEN  # config dan import
+from config import BOT_TOKEN
 from handlers.users.commands import setup_user_commands
 from handlers.users.text_handlers import setup_user_text_handlers
 from handlers.users.callbacks import setup_user_callbacks
@@ -9,19 +9,15 @@ from handlers.admins.text_handlers import setup_admin_text_handlers
 from handlers.admins.callbacks import setup_admin_callbacks
 from handlers.translate.handler import setup_translate_handlers
 from database.database import add_admin_group, delete_admin_group, get_all_admin_groups
-from utils.backup import initialize_database_safely, safe_backup_database
+from utils.backup import safe_backup_database, manual_restore_database
+from telebot import types
 
-
-
-# Botni yaratish
+# Bot yaratish
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Papkalarni yaratish
 os.makedirs("images", exist_ok=True)
 os.makedirs("backups", exist_ok=True)
-
-# 🔐 Xavfsiz ma'lumotlar bazasini ishga tushirish
-initialize_database_safely()
 
 # Handlerlarni sozlash
 setup_user_commands(bot)
@@ -31,6 +27,13 @@ setup_admin_commands(bot)
 setup_admin_text_handlers(bot)
 setup_admin_callbacks(bot)
 setup_translate_handlers(bot)
+
+
+# 📌 Admin tugmalar
+def admin_keyboard():
+    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.row("💾 Backup", "♻️ Restore")
+    return markup
 
 
 # 📌 Guruhlarni avto-qo'shish uchun handler
@@ -57,10 +60,10 @@ def handle_left_chat_member(message):
             print(f"✅ Bot {group_id} guruhidan chiqarildi, ma'lumotlar o‘chirildi")
 
 
-# 📌 Start bosilganda mavjud guruhlarni tekshirish
+# 📌 Start bosilganda admin menyu
 @bot.message_handler(commands=['start'])
 def check_existing_groups(message):
-    if message.from_user.id in [6587587517]:  # Admin ID yoz
+    if message.from_user.id in [6587587517]:  # Admin ID
         try:
             groups = get_all_admin_groups()
             if groups:
@@ -71,8 +74,14 @@ def check_existing_groups(message):
             else:
                 bot.send_message(message.chat.id,
                                  "❌ Hozircha hech qanday guruh mavjud emas. Botni guruhga qo‘shing va admin qiling.")
+
+            # 🔑 Admin menyuni chiqarish
+            bot.send_message(message.chat.id, "🔐 Admin panel:", reply_markup=admin_keyboard())
+
         except Exception as e:
             bot.send_message(message.chat.id, f"❌ Xatolik: {e}")
+    else:
+        bot.send_message(message.chat.id, "🤖 Salom! Bot ishga tushdi.")
 
 
 # 📌 Admin uchun backup tugmasi
@@ -80,16 +89,23 @@ def check_existing_groups(message):
 def manual_backup(message):
     backup_file = safe_backup_database()
     if backup_file:
-        bot.send_message(message.chat.id, f"✅ Backup yaratildi: `{backup_file}`", parse_mode='Markdown')
+        with open(backup_file, "rb") as f:
+            bot.send_document(message.chat.id, f, caption="✅ Backup fayli yaratildi!")
     else:
         bot.send_message(message.chat.id, "❌ Backup yaratishda xatolik!")
+
+
+# 📌 Admin uchun restore tugmasi
+@bot.message_handler(func=lambda m: m.text == "♻️ Restore" and m.from_user.id in [6587587517])
+def manual_restore(message):
+    success = manual_restore_database()
+    if success:
+        bot.send_message(message.chat.id, "✅ Ma’lumotlar so‘nggi backupdan tiklandi!")
+    else:
+        bot.send_message(message.chat.id, "❌ Restore qilishda muammo bo‘ldi!")
 
 
 print("🚀 Bot ishga tushdi...")
 
 if __name__ == "__main__":
-    print("🤖 Bot ishga tushdi...")
-    safe_backup_database()
     bot.polling(none_stop=True)
-
-
