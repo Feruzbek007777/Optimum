@@ -1,4 +1,3 @@
-import sqlite3
 import os
 import shutil
 from datetime import datetime
@@ -6,12 +5,10 @@ from config import DATABASE_PATH
 
 
 def safe_backup_database():
-    """Asl DB ni o‘chirmasdan backup yaratadi"""
+    """Bazani xavfsiz backup qilish"""
     try:
         if not os.path.exists(DATABASE_PATH):
-            print("⚠️ Asl DB topilmadi. Yangi yaratilmoqda...")
-            from database.database import init_database
-            init_database()
+            print("⚠️ Ma'lumotlar bazasi topilmadi.")
             return None
 
         os.makedirs("backups", exist_ok=True)
@@ -20,41 +17,37 @@ def safe_backup_database():
         backup_file = os.path.join("backups", f"backup_{timestamp}.db")
 
         shutil.copy2(DATABASE_PATH, backup_file)
-
         print(f"✅ Backup yaratildi: {backup_file}")
         return backup_file
-
     except Exception as e:
         print(f"❌ Backupda xatolik: {e}")
         return None
 
 
 def get_latest_backup():
-    """Eng oxirgi backup faylini topish"""
-    backup_dir = "backups"
-    if not os.path.exists(backup_dir):
+    """Eng so‘nggi backupni topish"""
+    if not os.path.exists("backups"):
         return None
 
-    files = [f for f in os.listdir(backup_dir) if f.startswith("backup_") and f.endswith(".db")]
+    files = [f for f in os.listdir("backups") if f.endswith(".db")]
     if not files:
         return None
 
-    latest = max(files)
-    return os.path.join(backup_dir, latest)
+    latest = max(files)  # eng oxirgisi
+    return os.path.join("backups", latest)
 
 
-def manual_restore_database():
-    """Eng so‘nggi backup dan DB ni qayta tiklash"""
+def safe_restore_database():
+    """Oxirgi backupdan qayta tiklash"""
     try:
         latest_backup = get_latest_backup()
         if not latest_backup:
-            print("❌ Backup topilmadi.")
-            return False
+            print("⚠️ Backup topilmadi.")
+            return None
 
         shutil.copy2(latest_backup, DATABASE_PATH)
         print(f"✅ Restore qilindi: {latest_backup}")
-        return True
-
+        return latest_backup
     except Exception as e:
-        print(f"❌ Restore xatosi: {e}")
-        return False
+        print(f"❌ Restoreni tiklashda xatolik: {e}")
+        return None
