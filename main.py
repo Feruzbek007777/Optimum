@@ -66,10 +66,9 @@ def show_database_panel(message):
 # 📌 Backup
 @bot.message_handler(func=lambda m: m.text == "💾 Backup" and m.from_user.id in [6587587517])
 def manual_backup(message):
-    backup_file = safe_backup_database()
-    if backup_file:
-        bot.send_document(message.chat.id, open(backup_file, "rb"))
-        bot.send_message(message.chat.id, "✅ Backup yaratildi va yuborildi.")
+    backup_folder = safe_backup_database()
+    if backup_folder:
+        bot.send_message(message.chat.id, f"✅ Backup yaratildi:\n`{backup_folder}`", parse_mode="Markdown")
     else:
         bot.send_message(message.chat.id, "❌ Backup yaratishda xatolik!")
 
@@ -77,11 +76,11 @@ def manual_backup(message):
 # 📌 Restore
 @bot.message_handler(func=lambda m: m.text == "♻️ Restore" and m.from_user.id in [6587587517])
 def manual_restore(message):
-    restored_file = safe_restore_database()
-    if restored_file:
-        bot.send_message(message.chat.id, f"✅ Restore qilindi: `{restored_file}`", parse_mode="Markdown")
+    restored_folder = safe_restore_database()
+    if restored_folder:
+        bot.send_message(message.chat.id, f"✅ Backupdan tiklandi:\n`{restored_folder}`", parse_mode="Markdown")
     else:
-        bot.send_message(message.chat.id, "❌ Restore uchun backup topilmadi.")
+        bot.send_message(message.chat.id, "❌ Restore uchun backup topilmadi yoki xatolik yuz berdi!")
 
 
 print("🚀 Bot ishga tushdi...")
