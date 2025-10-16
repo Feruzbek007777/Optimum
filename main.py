@@ -1,7 +1,7 @@
 import telebot
 import os
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-from config import BOT_TOKEN
+from config import BOT_TOKEN, ADMINS
 from handlers.users.commands import setup_user_commands
 from handlers.users.text_handlers import setup_user_text_handlers
 from handlers.users.callbacks import setup_user_callbacks
@@ -11,6 +11,7 @@ from handlers.admins.callbacks import setup_admin_callbacks
 from handlers.translate.handler import setup_translate_handlers
 from database.database import add_admin_group, delete_admin_group, get_all_admin_groups
 from utils.backup import safe_backup_database, safe_restore_database
+from keyboards.default import main_menu_keyboard  # 💡 Asosiy menyuni import qilamiz
 
 
 # Bot yaratish
@@ -30,7 +31,7 @@ setup_admin_callbacks(bot)
 setup_translate_handlers(bot)
 
 
-# 📌 Guruh qo‘shilganda
+# 📌 Guruhlarni qo‘shish
 @bot.message_handler(content_types=['new_chat_members'])
 def handle_new_chat_members(message):
     for member in message.new_chat_members:
@@ -39,7 +40,7 @@ def handle_new_chat_members(message):
             group_title = message.chat.title
             success = add_admin_group(group_id, group_title)
             if success:
-                bot.send_message(group_id, "✅ Bot guruhga qo‘shildi va ma'lumotlar saqlandi.")
+                bot.send_message(group_id, "✅ Bot qo‘shildi! Guruh ma'lumotlari saqlandi.")
             else:
                 bot.send_message(group_id, "❌ Guruh ma'lumotlarini saqlashda xatolik!")
 
@@ -54,20 +55,20 @@ def handle_left_chat_member(message):
             print(f"✅ Guruhdan chiqarildi: {group_id}")
 
 
-# 📂 DATABASE PANEL
+# 📌 Admin uchun database paneli
 @bot.message_handler(commands=['database'])
 def show_database_panel(message):
-    if message.from_user.id in [6587587517]:  # Admin ID
+    if message.from_user.id in ADMINS:
         markup = ReplyKeyboardMarkup(resize_keyboard=True)
-        row1 = [KeyboardButton("💾 Backup"), KeyboardButton("♻️ Restore")]
-        row2 = [KeyboardButton("⬅️ Ortga")]
-        markup.row(*row1)
-        markup.row(*row2)
+        markup.row(KeyboardButton("💾 Backup"), KeyboardButton("♻️ Restore"))
+        markup.add(KeyboardButton("⬅️ Ortga"))
         bot.send_message(message.chat.id, "📂 Ma'lumotlar bazasi paneli:", reply_markup=markup)
+    else:
+        bot.send_message(message.chat.id, "❌ Siz admin emassiz.")
 
 
-# 💾 Backup
-@bot.message_handler(func=lambda m: m.text == "💾 Backup" and m.from_user.id in [6587587517])
+# 📌 Backup tugmasi
+@bot.message_handler(func=lambda m: m.text == "💾 Backup" and m.from_user.id in ADMINS)
 def manual_backup(message):
     backup_file = safe_backup_database()
     if backup_file:
@@ -77,8 +78,8 @@ def manual_backup(message):
         bot.send_message(message.chat.id, "❌ Backup yaratishda xatolik!")
 
 
-# ♻️ Restore
-@bot.message_handler(func=lambda m: m.text == "♻️ Restore" and m.from_user.id in [6587587517])
+# 📌 Restore tugmasi
+@bot.message_handler(func=lambda m: m.text == "♻️ Restore" and m.from_user.id in ADMINS)
 def manual_restore(message):
     restored_file = safe_restore_database()
     if restored_file:
@@ -87,12 +88,10 @@ def manual_restore(message):
         bot.send_message(message.chat.id, "❌ Restore uchun backup topilmadi.")
 
 
-# ⬅️ Ortga — foydalanuvchini asosiy menyuga qaytarish
-@bot.message_handler(func=lambda m: m.text == "⬅️ Ortga" and m.from_user.id in [6587587517])
+# 📌 ⬅️ Ortga tugmasi — asosiy user menyusiga qaytaradi
+@bot.message_handler(func=lambda m: m.text == "⬅️ Ortga")
 def back_to_main_menu(message):
-    markup = ReplyKeyboardMarkup(resize_keyboard=True)
-    markup.add(KeyboardButton("📚 Kurslar"), KeyboardButton("🧑‍🎓 O‘quvchilar"))
-    markup.add(KeyboardButton("👨‍🏫 Ustozlar"), KeyboardButton("⚙️ Sozlamalar"))
+    markup = main_menu_keyboard()  # 💡 Shu joyda import qilingan user menyu ishlatiladi
     bot.send_message(message.chat.id, "🏠 Asosiy menyuga qaytdingiz:", reply_markup=markup)
 
 
