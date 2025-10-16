@@ -30,7 +30,7 @@ setup_admin_callbacks(bot)
 setup_translate_handlers(bot)
 
 
-# 📌 Guruhlarni qo‘shish
+# 📌 Guruh qo‘shilganda
 @bot.message_handler(content_types=['new_chat_members'])
 def handle_new_chat_members(message):
     for member in message.new_chat_members:
@@ -39,7 +39,7 @@ def handle_new_chat_members(message):
             group_title = message.chat.title
             success = add_admin_group(group_id, group_title)
             if success:
-                bot.send_message(group_id, "✅ Bot qo‘shildi! Guruh ma'lumotlari saqlandi.")
+                bot.send_message(group_id, "✅ Bot guruhga qo‘shildi va ma'lumotlar saqlandi.")
             else:
                 bot.send_message(group_id, "❌ Guruh ma'lumotlarini saqlashda xatolik!")
 
@@ -54,33 +54,46 @@ def handle_left_chat_member(message):
             print(f"✅ Guruhdan chiqarildi: {group_id}")
 
 
-# 📌 Admin panel tugmalari
+# 📂 DATABASE PANEL
 @bot.message_handler(commands=['database'])
 def show_database_panel(message):
     if message.from_user.id in [6587587517]:  # Admin ID
         markup = ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add(KeyboardButton("💾 Backup"), KeyboardButton("♻️ Restore"))
+        row1 = [KeyboardButton("💾 Backup"), KeyboardButton("♻️ Restore")]
+        row2 = [KeyboardButton("⬅️ Ortga")]
+        markup.row(*row1)
+        markup.row(*row2)
         bot.send_message(message.chat.id, "📂 Ma'lumotlar bazasi paneli:", reply_markup=markup)
 
 
-# 📌 Backup
+# 💾 Backup
 @bot.message_handler(func=lambda m: m.text == "💾 Backup" and m.from_user.id in [6587587517])
 def manual_backup(message):
-    backup_folder = safe_backup_database()
-    if backup_folder:
-        bot.send_message(message.chat.id, f"✅ Backup yaratildi:\n`{backup_folder}`", parse_mode="Markdown")
+    backup_file = safe_backup_database()
+    if backup_file:
+        bot.send_document(message.chat.id, open(backup_file, "rb"))
+        bot.send_message(message.chat.id, "✅ Backup yaratildi va yuborildi.")
     else:
         bot.send_message(message.chat.id, "❌ Backup yaratishda xatolik!")
 
 
-# 📌 Restore
+# ♻️ Restore
 @bot.message_handler(func=lambda m: m.text == "♻️ Restore" and m.from_user.id in [6587587517])
 def manual_restore(message):
-    restored_folder = safe_restore_database()
-    if restored_folder:
-        bot.send_message(message.chat.id, f"✅ Backupdan tiklandi:\n`{restored_folder}`", parse_mode="Markdown")
+    restored_file = safe_restore_database()
+    if restored_file:
+        bot.send_message(message.chat.id, f"✅ Restore qilindi: `{restored_file}`", parse_mode="Markdown")
     else:
-        bot.send_message(message.chat.id, "❌ Restore uchun backup topilmadi yoki xatolik yuz berdi!")
+        bot.send_message(message.chat.id, "❌ Restore uchun backup topilmadi.")
+
+
+# ⬅️ Ortga — foydalanuvchini asosiy menyuga qaytarish
+@bot.message_handler(func=lambda m: m.text == "⬅️ Ortga" and m.from_user.id in [6587587517])
+def back_to_main_menu(message):
+    markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.add(KeyboardButton("📚 Kurslar"), KeyboardButton("🧑‍🎓 O‘quvchilar"))
+    markup.add(KeyboardButton("👨‍🏫 Ustozlar"), KeyboardButton("⚙️ Sozlamalar"))
+    bot.send_message(message.chat.id, "🏠 Asosiy menyuga qaytdingiz:", reply_markup=markup)
 
 
 print("🚀 Bot ishga tushdi...")
