@@ -5,7 +5,7 @@ from config import DATABASE_PATH
 
 
 def safe_backup_database():
-    """To‘liq (bazani va rasmlarni) xavfsiz backup qilish"""
+    """✅ To‘liq (bazani, rasmlarni va yordamchi fayllarni) xavfsiz backup qilish"""
     try:
         if not os.path.exists(DATABASE_PATH):
             print("⚠️ Ma'lumotlar bazasi topilmadi.")
@@ -21,12 +21,22 @@ def safe_backup_database():
         # 1️⃣ Database ni nusxalash
         db_backup_path = os.path.join(backup_dir, os.path.basename(DATABASE_PATH))
         shutil.copy2(DATABASE_PATH, db_backup_path)
+        print("📦 Ma'lumotlar bazasi nusxalandi.")
 
         # 2️⃣ Rasmlar papkasini nusxalash (agar mavjud bo‘lsa)
         images_src = "images"
-        images_dest = os.path.join(backup_dir, "images")
         if os.path.exists(images_src):
-            shutil.copytree(images_src, images_dest)
+            shutil.copytree(images_src, os.path.join(backup_dir, "images"))
+            print("🖼️ Rasmlar nusxalandi.")
+        else:
+            print("⚠️ 'images' papkasi topilmadi.")
+
+        # 3️⃣ Qo‘shimcha fayllarni nusxalash (agar mavjud bo‘lsa)
+        extra_files = ["users.xlsx", "courses.csv", "teachers.csv"]
+        for file_name in extra_files:
+            if os.path.exists(file_name):
+                shutil.copy2(file_name, os.path.join(backup_dir, file_name))
+                print(f"📁 {file_name} fayli backupga qo‘shildi.")
 
         print(f"✅ To‘liq backup yaratildi: {backup_dir}")
         return db_backup_path
@@ -50,7 +60,7 @@ def get_latest_backup_folder():
 
 
 def safe_restore_database():
-    """Oxirgi backupdan (bazani va rasmlarni) qayta tiklash"""
+    """♻️ Oxirgi backupdan (bazani, rasmlarni va qo‘shimcha fayllarni) tiklash"""
     try:
         latest_backup_folder = get_latest_backup_folder()
         if not latest_backup_folder or not os.path.exists(latest_backup_folder):
@@ -65,15 +75,26 @@ def safe_restore_database():
         else:
             print("⚠️ Database fayli backupda topilmadi!")
 
-        # 2️⃣ Rasmlarni tiklash
+        # 2️⃣ Rasmlarni tiklash (mavjudlarini saqlab)
         images_backup_path = os.path.join(latest_backup_folder, "images")
         if os.path.exists(images_backup_path):
-            if os.path.exists("images"):
-                shutil.rmtree("images")
-            shutil.copytree(images_backup_path, "images")
-            print("🖼️ Rasmlar tiklandi.")
+            os.makedirs("images", exist_ok=True)
+            for file_name in os.listdir(images_backup_path):
+                src = os.path.join(images_backup_path, file_name)
+                dst = os.path.join("images", file_name)
+                if os.path.isfile(src):
+                    shutil.copy2(src, dst)
+            print("🖼️ Rasmlar tiklandi (mavjudlarini o‘chirilmadi).")
         else:
-            print("⚠️ Backupda rasm papkasi topilmadi.")
+            print("⚠️ Backupda rasm papkasi topilmadi, mavjud rasmlar o‘zgartirilmadi.")
+
+        # 3️⃣ Qo‘shimcha fayllarni qayta tiklash (agar mavjud bo‘lsa)
+        extra_files = ["users.xlsx", "courses.csv", "teachers.csv"]
+        for file_name in extra_files:
+            backup_path = os.path.join(latest_backup_folder, file_name)
+            if os.path.exists(backup_path):
+                shutil.copy2(backup_path, file_name)
+                print(f"📁 {file_name} qayta tiklandi.")
 
         print("♻️ To‘liq tiklash yakunlandi!")
         return latest_backup_folder
