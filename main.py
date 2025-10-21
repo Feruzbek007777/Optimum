@@ -64,7 +64,7 @@ def show_database_panel(message):
         markup.add(KeyboardButton("⬅️ Ortga"))
         bot.send_message(message.chat.id, "📂 Ma'lumotlar bazasi paneli:", reply_markup=markup)
     else:
-        bot.send_message(message.chat.id, "❌ Siz admin emassiz.")
+        bot.send_message(message.chat.id, "❌ Siz admin emassiz.!")
 
 
 # 📌 Backup tugmasi
