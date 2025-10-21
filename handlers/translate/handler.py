@@ -13,7 +13,7 @@ user_stats = {}
 REACTIONS = ["👍", "🔥", "🤩", "👌", "❤️", "🥳"]
 
 
-def get_translate_keyboard() :
+def get_translate_keyboard():
     """Translate uchun inline keyboard"""
     keyboard = InlineKeyboardMarkup(row_width=2)
 
@@ -21,19 +21,21 @@ def get_translate_keyboard() :
         InlineKeyboardButton("🇺🇿 UZ → 🇬🇧 EN", callback_data="translate_uz-en"),
         InlineKeyboardButton("🇬🇧 EN → 🇺🇿 UZ", callback_data="translate_en-uz"),
         InlineKeyboardButton("🇺🇿 UZ → 🇷🇺 RU", callback_data="translate_uz-ru"),
-        InlineKeyboardButton("🇷🇺 RU → 🇺🇿 UZ", callback_data="translate_ru-uz")
+        InlineKeyboardButton("🇷🇺 RU → 🇺🇿 UZ", callback_data="translate_ru-uz"),
+        InlineKeyboardButton("🇺🇿 UZ → 🇸🇦 AR", callback_data="translate_uz-ar"),
+        InlineKeyboardButton("🇸🇦 AR → 🇺🇿 UZ", callback_data="translate_ar-uz"),
     ]
 
-    for i in range(0, len(buttons), 2) :
-        if i + 1 < len(buttons) :
+    for i in range(0, len(buttons), 2):
+        if i + 1 < len(buttons):
             keyboard.add(buttons[i], buttons[i + 1])
-        else :
+        else:
             keyboard.add(buttons[i])
 
     return keyboard
 
 
-def get_translate_menu() :
+def get_translate_menu():
     """Translate menyusi"""
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
     keyboard.add(KeyboardButton("🔄 Tilni o'zgartirish"), ("📊 Statistikam"))
@@ -41,24 +43,26 @@ def get_translate_menu() :
     return keyboard
 
 
-def setup_translate_handlers(bot) :
+def setup_translate_handlers(bot):
     """Translate handlerlarini sozlash"""
 
-    @bot.message_handler(func=lambda message : message.text == "🌐 Translate")
-    def translate_menu(message) :
+    @bot.message_handler(func=lambda message: message.text == "🌐 Translate")
+    def translate_menu(message):
         keyboard = get_translate_keyboard()
         bot.send_message(message.chat.id, "🌐 Tarjima qilish uchun tilni tanlang:", reply_markup=keyboard)
 
-    @bot.callback_query_handler(func=lambda call : call.data.startswith("translate_"))
-    def handle_translate_callback(call) :
+    @bot.callback_query_handler(func=lambda call: call.data.startswith("translate_"))
+    def handle_translate_callback(call):
         lang_pair = call.data.replace("translate_", "")
         user_languages[call.from_user.id] = lang_pair
 
         lang_names = {
-            "uz-en" : "🇺🇿 O'zbekcha → 🇬🇧 Inglizcha",
-            "en-uz" : "🇬🇧 Inglizcha → 🇺🇿 O'zbekcha",
-            "uz-ru" : "🇺🇿 O'zbekcha → 🇷🇺 Ruscha",
-            "ru-uz" : "🇷🇺 Ruscha → 🇺🇿 O'zbekcha"
+            "uz-en": "🇺🇿 O'zbekcha → 🇬🇧 Inglizcha",
+            "en-uz": "🇬🇧 Inglizcha → 🇺🇿 O'zbekcha",
+            "uz-ru": "🇺🇿 O'zbekcha → 🇷🇺 Ruscha",
+            "ru-uz": "🇷🇺 Ruscha → 🇺🇿 O'zbekcha",
+            "uz-ar": "🇺🇿 O'zbekcha → 🇸🇦 Arabcha",
+            "ar-uz": "🇸🇦 Arabcha → 🇺🇿 O'zbekcha",
         }
 
         bot.answer_callback_query(call.id, f"✅ {lang_names[lang_pair]} tanlandi!")
@@ -68,31 +72,41 @@ def setup_translate_handlers(bot) :
             reply_markup=get_translate_menu()
         )
 
-    @bot.message_handler(func=lambda message : message.text == "🔄 Tilni o'zgartirish")
-    def change_language(message) :
+    @bot.message_handler(func=lambda message: message.text == "🔄 Tilni o'zgartirish")
+    def change_language(message):
         keyboard = get_translate_keyboard()
         bot.send_message(message.chat.id, "🌐 Yangi tilni tanlang:", reply_markup=keyboard)
 
-    @bot.message_handler(func=lambda message : message.text == "📊 Statistikam")
-    def show_stats(message) :
+    @bot.message_handler(func=lambda message: message.text == "📊 Statistikam")
+    def show_stats(message):
         count = user_stats.get(message.from_user.id, 0)
         bot.send_message(message.chat.id, f"📊 Siz hozirgacha {count} marta tarjima qildingiz!")
 
-    @bot.message_handler(func=lambda message : message.text == "🔙 Asosiy menyu")
-    def back_to_main(message) :
+    @bot.message_handler(func=lambda message: message.text == "🔙 Asosiy menyu")
+    def back_to_main(message):
         from keyboards.default import main_menu_keyboard
         bot.send_message(message.chat.id, "🏠 Asosiy menyu:", reply_markup=main_menu_keyboard())
 
     # Matn tarjima qilish
-    @bot.message_handler(func=lambda message :
-    message.from_user.id in user_languages and
-    message.text not in ["🌐 Translate", "🔄 Tilni o'zgartirish", "📊 Statistikam", "🔙 Asosiy menyu"])
-    def translate_text(message) :
+    @bot.message_handler(func=lambda message:
+        bool(getattr(message, "text", None))
+        and not message.text.startswith("/")  # komandalarni chetlab o‘tish (/database, /start va h.k.)
+        and message.from_user.id in user_languages
+        and message.text not in [
+            "🌐 Translate",
+            "🔄 Tilni o'zgartirish",
+            "📊 Statistikam",
+            "🔙 Asosiy menyu",
+            "💾 Backup",
+            "♻️ Restore",
+            "⬅️ Ortga",
+        ])
+    def translate_text(message):
         user_id = message.from_user.id
         lang_pair = user_languages[user_id]
         src, dest = lang_pair.split("-")
 
-        try :
+        try:
             # Tarjima qilish
             translated = GoogleTranslator(source=src, target=dest).translate(message.text)
 
@@ -109,24 +123,24 @@ def setup_translate_handlers(bot) :
             bot.send_message(message.chat.id, response, parse_mode='Markdown')
 
             # Ovozli xabar
-            try :
+            try:
                 tts = gTTS(translated, lang=dest)
                 file_path = f"voice_{user_id}.mp3"
                 tts.save(file_path)
 
-                with open(file_path, "rb") as audio :
+                with open(file_path, "rb") as audio:
                     bot.send_voice(message.chat.id, audio)
 
                 os.remove(file_path)
-            except Exception as e :
+            except Exception as e:
                 print(f"Ovozli xabar xatosi: {e}")
 
             # Reaksiya
-            try :
+            try:
                 reaction = random.choice(REACTIONS)
                 bot.set_message_reaction(message.chat.id, message.id, reaction=[reaction])
-            except :
+            except:
                 pass
 
-        except Exception as e :
+        except Exception as e:
             bot.send_message(message.chat.id, f"❌ Xatolik: {str(e)}")
