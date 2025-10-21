@@ -84,7 +84,7 @@ def safe_restore_database():
                 dst = os.path.join("images", file_name)
                 if os.path.isfile(src):
                     shutil.copy2(src, dst)
-            print("🖼️ Rasmlar tiklandi (mavjudlarini o‘chirilmadi).")
+            print("🖼️ Rasmlar tiklandi !!! (mavjudlarini o‘chirilmadi).")
         else:
             print("⚠️ Backupda rasm papkasi topilmadi, mavjud rasmlar o‘zgartirilmadi.")
 
