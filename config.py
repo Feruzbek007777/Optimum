@@ -1,7 +1,7 @@
 BOT_TOKEN = "8487703746:AAEP1gLzPCOy0paUZ3fFPhtDgyhghLhta_k"
 
 ADMINS = [6587587517, 5860311888, 805466040]  # Admin ID lari
-DATABASE_PATH = "data.db"
+DATABASE_PATH = "optimum.db"
 
 CONTACT_INFO = """
 📞 Biz bilan bog'lanish:

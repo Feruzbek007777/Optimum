@@ -1,0 +1,487 @@
+[
+  {
+    "question": "Uchburchak ichki burchaklari yig'indisi nechaga teng?",
+    "options": ["180°", "90°", "270°", "360°"],
+    "correct_index": 0
+  },
+  {
+    "question": "To'g'ri burchak necha gradus?",
+    "options": ["30°", "45°", "60°", "90°"],
+    "correct_index": 3
+  },
+  {
+    "question": "Kvadratning barcha tomonlari...",
+    "options": ["Turli", "Bir xil", "Faqat ikki", "Nol"],
+    "correct_index": 1
+  },
+  {
+    "question": "Paralel to'g'ri chiziqlar...",
+    "options": ["Uchrovchi", "Bir nuqtada", "Kesishmaydi", "Faqat tik"],
+    "correct_index": 2
+  },
+  {
+    "question": "Doira uzunligini topish formulasi?",
+    "options": ["2πr", "πr²", "a·b", "a²"],
+    "correct_index": 0
+  },
+  {
+    "question": "To'g'ri to'rtburchak yuzi formulasi?",
+    "options": ["2a+2b", "a·b", "a²", "πr²"],
+    "correct_index": 1
+  },
+  {
+    "question": "Kvadrat yuzi formulasi?",
+    "options": ["a²", "2a", "a·b", "4a"],
+    "correct_index": 0
+  },
+  {
+    "question": "Sonning modulini bildiruvchi yozuv?",
+    "options": ["x²", "|x|", "1/x", "x!"],
+    "correct_index": 1
+  },
+  {
+    "question": "Natural sonlar qaysi to'plam?",
+    "options": ["0,1,2,3...", "-1,-2,...", "Kasrlar", "Irratsionallar"],
+    "correct_index": 0
+  },
+  {
+    "question": "O'rta arifmetik qanday topiladi?",
+    "options": ["Ayirish", "Ko'paytirish", "Yig'indini songa bo'lish", "Darajaga ko'tarish"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: 2x + 3 = 13",
+    "options": ["3", "5", "4", "0"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tenglamani yeching: 3x + -2 = 10",
+    "options": ["8", "5", "4", "2"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: 4x + 1 = 13",
+    "options": ["7", "2", "3", "4"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: 5x + 0 = 10",
+    "options": ["2", "4", "7", "9"],
+    "correct_index": 0
+  },
+  {
+    "question": "Tenglamani yeching: 7x + 2 = 23",
+    "options": ["1", "4", "3", "8"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: 2x + 4 = -2",
+    "options": ["-3", "-5", "1", "3"],
+    "correct_index": 0
+  },
+  {
+    "question": "Tenglamani yeching: 3x + 1 = -5",
+    "options": ["-1", "-2", "3", "5"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tenglamani yeching: 4x + 5 = 1",
+    "options": ["-4", "-6", "-1", "9"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: 5x + -5 = -15",
+    "options": ["1", "-1", "-2", "-4"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: 6x + 3 = 9",
+    "options": ["-1", "0", "1", "2"],
+    "correct_index": 3
+  },
+  {
+    "question": "Tenglamani yeching: x/2 + 1 = 6",
+    "options": ["10", "5", "7", "8"],
+    "correct_index": 0
+  },
+  {
+    "question": "Tenglamani yeching: x/3 + 2 = 7",
+    "options": ["10", "15", "3", "9"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tenglamani yeching: x/4 + 1 = 6",
+    "options": ["20", "8", "16", "10"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: x/5 + 3 = 8",
+    "options": ["30", "40", "25", "10"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: x/6 + 2 = 7",
+    "options": ["12", "45", "30", "50"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: x/2 + 3 = 7",
+    "options": ["4", "8", "6", "12"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tenglamani yeching: x/3 + 1 = 5",
+    "options": ["24", "15", "12", "6"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tenglamani yeching: x/4 + 2 = 6",
+    "options": ["8", "10", "24", "16"],
+    "correct_index": 3
+  },
+  {
+    "question": "Tenglamani yeching: x/5 + 1 = 8",
+    "options": ["30", "40", "25", "50"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tenglamani yeching: x/6 + 4 = 8",
+    "options": ["12", "20", "24", "30"],
+    "correct_index": 2
+  },
+  {
+    "question": "200 sonining 10% ini toping.",
+    "options": ["30", "40", "20", "50"],
+    "correct_index": 2
+  },
+  {
+    "question": "150 sonining 20% ini toping.",
+    "options": ["30", "37.5", "52.5", "7.5"],
+    "correct_index": 0
+  },
+  {
+    "question": "80 sonining 15% ini toping.",
+    "options": ["8", "4", "12", "16"],
+    "correct_index": 2
+  },
+  {
+    "question": "90 sonining 30% ini toping.",
+    "options": ["27", "18", "30", "36"],
+    "correct_index": 0
+  },
+  {
+    "question": "250 sonining 40% ini toping.",
+    "options": ["80", "100", "40", "120"],
+    "correct_index": 1
+  },
+  {
+    "question": "60 sonining 25% ini toping.",
+    "options": ["15", "12", "20", "30"],
+    "correct_index": 0
+  },
+  {
+    "question": "120 sonining 5% ini toping.",
+    "options": ["10", "6", "12", "2"],
+    "correct_index": 1
+  },
+  {
+    "question": "300 sonining 50% ini toping.",
+    "options": ["100", "200", "150", "350"],
+    "correct_index": 2
+  },
+  {
+    "question": "400 sonining 10% ini toping.",
+    "options": ["20", "40", "10", "80"],
+    "correct_index": 1
+  },
+  {
+    "question": "180 sonining 15% ini toping.",
+    "options": ["18", "27", "36", "45"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tomonlari 5 va 7 bo'lgan to'g'ri to'rtburchak yuzini toping.",
+    "options": ["35", "30", "25", "40"],
+    "correct_index": 0
+  },
+  {
+    "question": "Tomonlari 6 va 9 bo'lgan to'g'ri to'rtburchak yuzini toping.",
+    "options": ["54", "45", "60", "48"],
+    "correct_index": 0
+  },
+  {
+    "question": "Tomonlari 4 va 10 bo'lgan to'g'ri to'rtburchak yuzini toping.",
+    "options": ["30", "35", "40", "24"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tomonlari 8 va 3 bo'lgan to'g'ri to'rtburchak yuzini toping.",
+    "options": ["16", "30", "24", "26"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tomonlari 9 va 2 bo'lgan to'g'ri to'rtburchak yuzini toping.",
+    "options": ["11", "13", "18", "22"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tomonlari 5 va 7 bo'lgan to'g'ri to'rtburchak perimetrini toping.",
+    "options": ["22", "24", "26", "18"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tomonlari 6 va 9 bo'lgan to'g'ri to'rtburchak perimetrini toping.",
+    "options": ["22", "28", "30", "36"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tomonlari 4 va 10 bo'lgan to'g'ri to'rtburchak perimetrini toping.",
+    "options": ["24", "28", "20", "30"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tomonlari 8 va 3 bo'lgan to'g'ri to'rtburchak perimetrini toping.",
+    "options": ["18", "26", "22", "30"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tomonlari 9 va 2 bo'lgan to'g'ri to'rtburchak perimetrini toping.",
+    "options": ["20", "18", "26", "22"],
+    "correct_index": 3
+  },
+  {
+    "question": "Qatarlari 3 va 4 bo'lgan to'g'ri burchakli uchburchak gipotenuzasini toping.",
+    "options": ["7", "4", "2", "5"],
+    "correct_index": 3
+  },
+  {
+    "question": "Qatarlari 5 va 12 bo'lgan to'g'ri burchakli uchburchak gipotenuzasini toping.",
+    "options": ["10", "12", "17", "11"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qatarlari 8 va 15 bo'lgan to'g'ri burchakli uchburchak gipotenuzasini toping.",
+    "options": ["17", "20", "23", "25"],
+    "correct_index": 0
+  },
+  {
+    "question": "Asosi 10, balandligi 6 bo'lgan uchburchak yuzini toping.",
+    "options": ["30", "26", "34", "38"],
+    "correct_index": 0
+  },
+  {
+    "question": "Asosi 8, balandligi 5 bo'lgan uchburchak yuzini toping.",
+    "options": ["18", "20", "24", "28"],
+    "correct_index": 1
+  },
+  {
+    "question": "Asosi 12, balandligi 7 bo'lgan uchburchak yuzini toping.",
+    "options": ["42", "39", "36", "30"],
+    "correct_index": 0
+  },
+  {
+    "question": "Asosi 14, balandligi 4 bo'lgan uchburchak yuzini toping.",
+    "options": ["24", "26", "28", "30"],
+    "correct_index": 2
+  },
+  {
+    "question": "4, 7, 9 sonlarining o'rta arifmetigini toping.",
+    "options": ["6", "7", "5", "8"],
+    "correct_index": 0
+  },
+  {
+    "question": "10, 15, 5 sonlarining o'rta arifmetigini toping.",
+    "options": ["10", "12", "8", "15"],
+    "correct_index": 0
+  },
+  {
+    "question": "6, 8, 10, 6 sonlarining o'rta arifmetigini toping.",
+    "options": ["7.5", "9.5", "8", "6.5"],
+    "correct_index": 2
+  },
+  {
+    "question": "12, 18, 24 sonlarining o'rta arifmetigini toping.",
+    "options": ["18", "20", "16", "14"],
+    "correct_index": 0
+  },
+  {
+    "question": "5, 5, 5, 5 sonlarining o'rta arifmetigini toping.",
+    "options": ["5", "4", "6", "3"],
+    "correct_index": 0
+  },
+  {
+    "question": "Piyoda 3 soatda 12 km yo'l yursa, tezligi nechaga teng? (km/soat)",
+    "options": ["6", "4", "5", "3"],
+    "correct_index": 1
+  },
+  {
+    "question": "Mashina 5 soatda 40 km yursa, tezligi nechaga teng? (km/soat)",
+    "options": ["10", "7", "9", "8"],
+    "correct_index": 3
+  },
+  {
+    "question": "Piyoda 3 soatda 18 km yursa, tezligi nechaga teng? (km/soat)",
+    "options": ["6", "4", "8", "3"],
+    "correct_index": 0
+  },
+  {
+    "question": "Poyezd 2 soatda 30 km yursa, tezligi nechaga teng? (km/soat)",
+    "options": ["10", "15", "12", "18"],
+    "correct_index": 1
+  },
+  {
+    "question": "O'quvchi 3 soatda 15 km yursa, tezligi nechaga teng? (km/soat)",
+    "options": ["5", "4", "3", "6"],
+    "correct_index": 0
+  },
+  {
+    "question": "Nisbat: 3:5 = 12:x. x ni toping.",
+    "options": ["15", "18", "20", "25"],
+    "correct_index": 2
+  },
+  {
+    "question": "Nisbat: 4:7 = 16:x. x ni toping.",
+    "options": ["21", "28", "25", "30"],
+    "correct_index": 1
+  },
+  {
+    "question": "Nisbat: 2:3 = 10:x. x ni toping.",
+    "options": ["13", "14", "15", "12"],
+    "correct_index": 2
+  },
+  {
+    "question": "Nisbat: 5:8 = 15:x. x ni toping.",
+    "options": ["21", "24", "18", "25"],
+    "correct_index": 1
+  },
+  {
+    "question": "Nisbat: 6:11 = 18:x. x ni toping.",
+    "options": ["30", "33", "36", "27"],
+    "correct_index": 1
+  },
+  {
+    "question": "5 ning kvadrati nechaga teng?",
+    "options": ["20", "30", "25", "15"],
+    "correct_index": 2
+  },
+  {
+    "question": "6 ning kvadrati nechaga teng?",
+    "options": ["30", "42", "36", "40"],
+    "correct_index": 2
+  },
+  {
+    "question": "7 ning kvadrati nechaga teng?",
+    "options": ["40", "45", "49", "56"],
+    "correct_index": 2
+  },
+  {
+    "question": "8 ning kvadrati nechaga teng?",
+    "options": ["69", "68", "64", "60"],
+    "correct_index": 2
+  },
+  {
+    "question": "9 ning kvadrati nechaga teng?",
+    "options": ["72", "90", "85", "81"],
+    "correct_index": 3
+  },
+  {
+    "question": "√25 qiymatini toping.",
+    "options": ["4", "5", "6", "3"],
+    "correct_index": 1
+  },
+  {
+    "question": "√36 qiymatini toping.",
+    "options": ["8", "5", "6", "9"],
+    "correct_index": 2
+  },
+  {
+    "question": "√49 qiymatini toping.",
+    "options": ["5", "6", "7", "9"],
+    "correct_index": 2
+  },
+  {
+    "question": "√64 qiymatini toping.",
+    "options": ["7", "8", "6", "9"],
+    "correct_index": 1
+  },
+  {
+    "question": "√81 qiymatini toping.",
+    "options": ["7", "8", "9", "6"],
+    "correct_index": 2
+  },
+  {
+    "question": "-1 < x < 4 tengsizlikni qanoatlantiradi?",
+    "options": ["3", "1", "4", "-1"],
+    "correct_index": 0
+  },
+  {
+    "question": "-1 < x < 5 tengsizlikni qanoatlantiradi?",
+    "options": ["8", "2", "4", "-3"],
+    "correct_index": 1
+  },
+  {
+    "question": "-5 < x < 3 tengsizlikni qanoatlantiradi?",
+    "options": ["-1", "-7", "-4", "-5"],
+    "correct_index": 0
+  },
+  {
+    "question": "0 < x < 6 tengsizlikni qanoatlantiradi?",
+    "options": ["6", "-1", "3", "0"],
+    "correct_index": 2
+  },
+  {
+    "question": "1 < x < 7 tengsizlikni qanoatlantiradi?",
+    "options": ["0", "2", "8", "1"],
+    "correct_index": 1
+  },
+  {
+    "question": "|x| = 0 tenglamaning nechta butun yechimi bor?",
+    "options": ["0", "1", "2", "3"],
+    "correct_index": 1
+  },
+  {
+    "question": "|x| = 3 tenglamaning nechta butun yechimi bor?",
+    "options": ["0", "1", "2", "3"],
+    "correct_index": 2
+  },
+  {
+    "question": "|x| = 5 tenglamaning nechta butun yechimi bor?",
+    "options": ["0", "1", "2", "3"],
+    "correct_index": 2
+  },
+  {
+    "question": "|x| = 7 tenglamaning nechta butun yechimi bor?",
+    "options": ["0", "1", "2", "3"],
+    "correct_index": 2
+  },
+  {
+    "question": "Narsa narxi 100 ming so'm, 20% chegirma qilindi. Yangi narxni toping.",
+    "options": ["70", "80", "75", "85"],
+    "correct_index": 1
+  },
+  {
+    "question": "Narsa narxi 80 ming so'm, 25% chegirma qilindi. Yangi narxni toping.",
+    "options": ["64", "60", "56", "68"],
+    "correct_index": 1
+  },
+  {
+    "question": "Narsa narxi 200 ming so'm, 10% chegirma qilindi. Yangi narxni toping.",
+    "options": ["170", "160", "190", "180"],
+    "correct_index": 3
+  },
+  {
+    "question": "Ikki son yig'indisi 20, ayirmasi 4. Kattaroq sonni toping.",
+    "options": ["12", "10", "8", "14"],
+    "correct_index": 0
+  },
+  {
+    "question": "Ikki son yig'indisi 30, ayirmasi 10. Kattaroq sonni toping.",
+    "options": ["20", "15", "25", "10"],
+    "correct_index": 0
+  },
+  {
+    "question": "Ikki son yig'indisi 18, ayirmasi 2. Kattaroq sonni toping.",
+    "options": ["11", "10", "6", "12"],
+    "correct_index": 1
+  }
+]

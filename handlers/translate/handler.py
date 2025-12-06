@@ -1,20 +1,80 @@
-import telebot
-from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
+import os
+import random
+
+from telebot.types import (
+    InlineKeyboardMarkup,
+    InlineKeyboardButton,
+    ReplyKeyboardMarkup,
+    KeyboardButton,
+    ReactionTypeEmoji,
+)
 from deep_translator import GoogleTranslator
 from gtts import gTTS
-import random
-import os
+
+# Menyu tugmalarini translate'dan himoya qilish uchun ro'yxat
+BUTTON_TEXTS_EXCLUDE = [
+    "🌐 Translate",
+    "🔄 Tilni o'zgartirish",
+    "📊 Statistikam",
+    "🔙 Asosiy menyu",
+    "💾 Backup",
+    "♻️ Restore",
+    "⬅️ Ortga",
+
+    # Asosiy menyu / sovg'a menyusi tugmalari
+    "📚 Kurslar haqida ma'lumot",
+    "📝 Kursga yozilish",
+    "📞 Biz bilan bog'lanish",
+    "📢 E'lonlar",
+    "🎁 Sovg'a yutish",
+    "🧪 Quiz",
+    "⚡️ Tezkor mashq",
+    "🤝 Takliflarim",
+    "📊 Mening ballarim",
+    "🏆 Top foydalanuvchilar",
+]
 
 # Foydalanuvchi tanlagan tillarni saqlash
+# Bu yerda user bor ekan, u translate "rejimida"
 user_languages = {}
 user_stats = {}
+
+# Tarjima natijalari uchun kontekst:
+# key: (chat_id, message_id) -> {"text": translated_text, "lang": dest_lang}
+translation_context = {}
 
 # Random reaksiyalar
 REACTIONS = ["👍", "🔥", "🤩", "👌", "❤️", "🥳"]
 
+# gTTS til kodlari:
+# ⚠️ uz qo‘llanmaydi → uz bo‘lsa ham tts_lang = "en" qilamiz
+TTS_LANG_MAP = {
+    "en": "en",
+    "ru": "ru",
+    "ar": "ar",
+    # "uz" yo‘q, "en"ga fallback bo‘ladi
+}
+
+
+def send_positive_reaction(bot, message):
+    """
+    Foydalanuvchi yuborgan xabarga random pozitiv reaction qo'yish.
+    """
+    try:
+        emoji = random.choice(REACTIONS)
+        reaction_obj = ReactionTypeEmoji(emoji=emoji)
+        bot.set_message_reaction(
+            chat_id=message.chat.id,
+            message_id=message.id,
+            reaction=[reaction_obj],
+            is_big=False,
+        )
+    except Exception as e:
+        print(f"Reaction qo'yishda xatolik: {e}")
+
 
 def get_translate_keyboard():
-    """Translate uchun inline keyboard"""
+    """Translate uchun inline keyboard (til juftliklari)"""
     keyboard = InlineKeyboardMarkup(row_width=2)
 
     buttons = [
@@ -36,11 +96,34 @@ def get_translate_keyboard():
 
 
 def get_translate_menu():
-    """Translate menyusi"""
+    """Translate menyusi (reply keyboard)"""
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-    keyboard.add(KeyboardButton("🔄 Tilni o'zgartirish"), ("📊 Statistikam"))
+    keyboard.add(
+        KeyboardButton("🔄 Tilni o'zgartirish"),
+        KeyboardButton("📊 Statistikam")
+    )
     keyboard.add(KeyboardButton("🔙 Asosiy menyu"))
     return keyboard
+
+
+def get_voice_button_keyboard():
+    """
+    Tarjima matni ostiga chiqadigan inline keyboard:
+    faqat 🔊 Ovoz tugmasi
+    """
+    kb = InlineKeyboardMarkup(row_width=1)
+    kb.add(InlineKeyboardButton("🔊 Ovoz", callback_data="tr_voice"))
+    return kb
+
+
+def get_back_button_keyboard():
+    """
+    Ovoz xabari ostiga chiqadigan inline keyboard:
+    faqat ⬅️ Ortga tugmasi
+    """
+    kb = InlineKeyboardMarkup(row_width=1)
+    kb.add(InlineKeyboardButton("⬅️ Ortga", callback_data="tr_back"))
+    return kb
 
 
 def setup_translate_handlers(bot):
@@ -49,11 +132,17 @@ def setup_translate_handlers(bot):
     @bot.message_handler(func=lambda message: message.text == "🌐 Translate")
     def translate_menu(message):
         keyboard = get_translate_keyboard()
-        bot.send_message(message.chat.id, "🌐 Tarjima qilish uchun tilni tanlang:", reply_markup=keyboard)
+        bot.send_message(
+            message.chat.id,
+            "🌐 Tarjima qilish uchun tilni tanlang:",
+            reply_markup=keyboard
+        )
 
     @bot.callback_query_handler(func=lambda call: call.data.startswith("translate_"))
     def handle_translate_callback(call):
         lang_pair = call.data.replace("translate_", "")
+
+        # Rejim: shu user endi translate holatida
         user_languages[call.from_user.id] = lang_pair
 
         lang_names = {
@@ -68,7 +157,9 @@ def setup_translate_handlers(bot):
         bot.answer_callback_query(call.id, f"✅ {lang_names[lang_pair]} tanlandi!")
         bot.send_message(
             call.message.chat.id,
-            f"✅ {lang_names[lang_pair]}\n\n✍️ Endi tarjima qilmoqchi bo'lgan matnni yuboring:",
+            f"✅ {lang_names[lang_pair]}\n\n"
+            "✍️ Endi yuboradigan matnlaringiz tarjima qilinadi.\n"
+            "Boshqa bo‘lim tugmasini bossangiz — translate rejimi o‘chadi.",
             reply_markup=get_translate_menu()
         )
 
@@ -85,62 +176,105 @@ def setup_translate_handlers(bot):
     @bot.message_handler(func=lambda message: message.text == "🔙 Asosiy menyu")
     def back_to_main(message):
         from keyboards.default import main_menu_keyboard
-        bot.send_message(message.chat.id, "🏠 Asosiy menyu:", reply_markup=main_menu_keyboard())
 
-    # Matn tarjima qilish
-    @bot.message_handler(func=lambda message:
-        bool(getattr(message, "text", None))
-        and not message.text.startswith("/")  # komandalarni chetlab o‘tish (/database, /start va h.k.)
-        and message.from_user.id in user_languages
-        and message.text not in [
-            "🌐 Translate",
-            "🔄 Tilni o'zgartirish",
-            "📊 Statistikam",
-            "🔙 Asosiy menyu",
-            "💾 Backup",
-            "♻️ Restore",
-            "⬅️ Ortga",
-        ])
-    def translate_text(message):
-        user_id = message.from_user.id
-        lang_pair = user_languages[user_id]
-        src, dest = lang_pair.split("-")
+        # Translate rejimini o'chiramiz — boshqa joyda avto tarjima bo'lmasin
+        user_languages.pop(message.from_user.id, None)
 
-        try:
-            # Tarjima qilish
-            translated = GoogleTranslator(source=src, target=dest).translate(message.text)
+        bot.send_message(
+            message.chat.id,
+            "🏠 Asosiy menyu:",
+            reply_markup=main_menu_keyboard()
+        )
 
-            # Statistika
-            user_stats[user_id] = user_stats.get(user_id, 0) + 1
+    # 🔊 Ovoz va ⬅️ Ortga inline tugmalari uchun callbacklar
+    @bot.callback_query_handler(func=lambda call: call.data in ("tr_voice", "tr_back"))
+    def handle_result_callbacks(call):
+        if call.data == "tr_voice":
+            key = (call.message.chat.id, call.message.message_id)
+            ctx = translation_context.get(key)
 
-            # Javob
-            response = f"""
-🔤 **Tarjima:**
+            if not ctx:
+                bot.answer_callback_query(call.id, "❌ Tarjima matni topilmadi.")
+                return
 
-📝 Asl matn: `{message.text}`
-🌐 Tarjima: `{translated}`
-"""
-            bot.send_message(message.chat.id, response, parse_mode='Markdown')
+            translated = ctx["text"]
+            dest = ctx["lang"]
 
-            # Ovozli xabar
+            tts_lang = TTS_LANG_MAP.get(dest, "en")
+
             try:
-                tts = gTTS(translated, lang=dest)
-                file_path = f"voice_{user_id}.mp3"
+                tts = gTTS(translated, lang=tts_lang)
+                file_path = f"voice_tr_{call.from_user.id}.mp3"
                 tts.save(file_path)
 
                 with open(file_path, "rb") as audio:
-                    bot.send_voice(message.chat.id, audio)
+                    sent_voice = bot.send_voice(
+                        call.message.chat.id,
+                        audio,
+                        caption=translated,
+                        reply_markup=get_back_button_keyboard()
+                    )
 
                 os.remove(file_path)
+
+                ctx["last_voice_id"] = sent_voice.message_id if sent_voice else None
+                translation_context[key] = ctx
+
+                bot.answer_callback_query(call.id, "🔊 Ovoz yuborildi.")
             except Exception as e:
                 print(f"Ovozli xabar xatosi: {e}")
-
-            # Reaksiya
+                bot.answer_callback_query(call.id, "❌ Ovoz yaratishda xatolik.")
+        else:
             try:
-                reaction = random.choice(REACTIONS)
-                bot.set_message_reaction(message.chat.id, message.id, reaction=[reaction])
-            except:
-                pass
+                bot.delete_message(call.message.chat.id, call.message.message_id)
+            except Exception as e:
+                print(f"Ovoz xabarini o'chirishda xatolik: {e}")
+
+            bot.answer_callback_query(call.id, "⬅️ Ovoz o'chirildi. Tarjima matni qoladi.")
+
+    # 🔤 Matn tarjima qilish (faqat PRIVATE chat, translate rejimidagi textlar)
+    @bot.message_handler(
+        func=lambda message:
+        message.chat.type == "private"
+        and bool(getattr(message, "text", None))
+        and message.from_user.id in user_languages
+        and message.text not in BUTTON_TEXTS_EXCLUDE   # ❗ tugmalarni ushlamaymiz
+        and not message.text.startswith("/")           # komandalarni ham ushlamaymiz
+    )
+    def translate_text(message):
+        user_id = message.from_user.id
+        text = (message.text or "").strip()
+
+        lang_pair = user_languages.get(user_id)
+        if not lang_pair:
+            return
+
+        src, dest = lang_pair.split("-")
+
+        send_positive_reaction(bot, message)
+
+        try:
+            translated = GoogleTranslator(source=src, target=dest).translate(text)
+
+            user_stats[user_id] = user_stats.get(user_id, 0) + 1
+
+            response = (
+                "🔤 Tarjima:\n\n"
+                f"📝 Asl matn: {text}\n"
+                f"🌐 Tarjima: {translated}\n\n"
+                "🔊 Ovozini eshitish uchun pastdagi tugmani bosing 👇"
+            )
+
+            sent = bot.send_message(
+                message.chat.id,
+                response,
+                reply_markup=get_voice_button_keyboard()
+            )
+
+            translation_context[(sent.chat.id, sent.message_id)] = {
+                "text": translated,
+                "lang": dest,
+            }
 
         except Exception as e:
             bot.send_message(message.chat.id, f"❌ Xatolik: {str(e)}")

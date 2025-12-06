@@ -1,0 +1,437 @@
+[
+  {
+    "question": "Tenglama: x² - 5x + 6 = 0. Ildizlar yig'indisi?",
+    "options": ["5", "6", "11", "3"],
+    "correct_index": 0
+  },
+  {
+    "question": "x² - 9 = 0 tenglama ildizlar ko'paytmasi?",
+    "options": ["0", "18", "9", "-9"],
+    "correct_index": 1
+  },
+  {
+    "question": "x² - 7x + 10 = 0. Ildizlar ko'paytmasi?",
+    "options": ["3", "17", "10", "70"],
+    "correct_index": 2
+  },
+  {
+    "question": "x² - 8x + 16 = 0 tenglama nechta ildizga ega?",
+    "options": ["0", "3", "2", "1"],
+    "correct_index": 3
+  },
+  {
+    "question": "x² - 3x - 10 = 0. Musbat ildizni toping.",
+    "options": ["5", "2", "10", "3"],
+    "correct_index": 0
+  },
+  {
+    "question": "x² + x - 12 = 0. Katta ildizni toping.",
+    "options": ["-4", "3", "4", "2"],
+    "correct_index": 1
+  },
+  {
+    "question": "x² - 4x - 5 = 0. Kichik ildizni toping.",
+    "options": ["1", "-1", "5", "9"],
+    "correct_index": 2
+  },
+  {
+    "question": "x² - 6x + 5 = 0. Ildizlar farqi?",
+    "options": ["0", "1", "5", "4"],
+    "correct_index": 3
+  },
+  {
+    "question": "x² - 2x - 8 = 0. Ildizlar yig'indisi?",
+    "options": ["2", "-2", "8", "-8"],
+    "correct_index": 0
+  },
+  {
+    "question": "x² - 10x + 16 = 0. Discriminant D?",
+    "options": ["84", "36", "64", "100"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tizim: x + y = 7; x - y = 1. x ni toping.",
+    "options": ["4", "3", "2", "6"],
+    "correct_index": 0
+  },
+  {
+    "question": "Tizim: x + y = 10; x - y = 2. y ni toping.",
+    "options": ["8", "4", "6", "2"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tizim: 2x + y = 11; x + y = 8. x ni toping.",
+    "options": ["2", "5", "6", "3"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tizim: 3x - y = 7; x + y = 5. y ni toping.",
+    "options": ["1", "2", "4", "6"],
+    "correct_index": 3
+  },
+  {
+    "question": "Tizim: x + 2y = 10; x - 2y = 2. x ni toping.",
+    "options": ["6", "4", "8", "2"],
+    "correct_index": 0
+  },
+  {
+    "question": "Tizim: x + y = 9; 2x - y = 3. x ni toping.",
+    "options": ["4", "6", "8", "3"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tizim: 2x + 3y = 12; x - y = 1. y ni toping.",
+    "options": ["1", "2", "3", "4"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tizim: x - 2y = 0; x + y = 9. x ni toping.",
+    "options": ["6", "5", "3", "9"],
+    "correct_index": 3
+  },
+  {
+    "question": "Tizim: 3x + y = 10; x + y = 6. x ni toping.",
+    "options": ["2", "4", "5", "7"],
+    "correct_index": 0
+  },
+  {
+    "question": "Tizim: x + y = 4; x² + y² = 10. xy ni toping.",
+    "options": ["8", "6", "3", "2"],
+    "correct_index": 1
+  },
+  {
+    "question": "Ifoda: (x - 3)(x + 3) = ?",
+    "options": ["x² + 9", "x² - 9", "x² - 6", "x² + 6"],
+    "correct_index": 1
+  },
+  {
+    "question": "(a + b)² formulasi?",
+    "options": ["a² + b²", "a² + 2ab + b²", "a² - 2ab + b²", "2a² + b²"],
+    "correct_index": 1
+  },
+  {
+    "question": "(a - b)² formulasi?",
+    "options": ["a² + 2ab + b²", "a² - b²", "a² - 2ab + b²", "2a² - b²"],
+    "correct_index": 2
+  },
+  {
+    "question": "a² - b² ni faktorlash?",
+    "options": ["(a-b)²", "(a+b)(a-b)", "(a+b)²", "(a-b)(a-b)"],
+    "correct_index": 1
+  },
+  {
+    "question": "(2x + 3)² ni oching.",
+    "options": ["4x² + 9", "4x² + 12x + 9", "2x² + 6x + 9", "4x² + 6x + 9"],
+    "correct_index": 1
+  },
+  {
+    "question": "(x - 5)² ni oching.",
+    "options": ["x² - 10x + 25", "x² + 10x + 25", "x² - 25", "x² + 5x + 25"],
+    "correct_index": 0
+  },
+  {
+    "question": "Ifoda: (x + 1)(x + 4) = ?",
+    "options": ["x² + 5x + 4", "x² + 3x + 1", "x² + 4x + 5", "x² + 5x + 1"],
+    "correct_index": 0
+  },
+  {
+    "question": "Ifoda: (x - 2)(x - 7) = ?",
+    "options": ["x² - 9x + 14", "x² + 9x - 14", "x² - 5x - 14", "x² - 14x + 9"],
+    "correct_index": 0
+  },
+  {
+    "question": "Ifoda: (3x - 1)(x + 2) = ?",
+    "options": ["3x² + 5x - 2", "3x² - 5x - 2", "3x² + x - 2", "3x² + 6x + 2"],
+    "correct_index": 0
+  },
+  {
+    "question": "10% ga oshirish – bu sonni nechaga ko'paytirish?",
+    "options": ["1.5", "1.2", "1.1", "0.9"],
+    "correct_index": 2
+  },
+  {
+    "question": "20% ga kamaytirish – bu sonni nechaga ko'paytirish?",
+    "options": ["0.8", "0.2", "1.2", "1.8"],
+    "correct_index": 0
+  },
+  {
+    "question": "Narx 100 mingdan 120 minga chiqdi. Oshish foizi?",
+    "options": ["10%", "15%", "20%", "25%"],
+    "correct_index": 2
+  },
+  {
+    "question": "Narx 200 mingdan 150 mingga tushdi. Kamayish foizi?",
+    "options": ["20%", "25%", "30%", "40%"],
+    "correct_index": 1
+  },
+  {
+    "question": "300 mingning 15% i nechaga teng?",
+    "options": ["30", "40.5", "45", "60"],
+    "correct_index": 2
+  },
+  {
+    "question": "400 mingning 12.5% i nechaga teng?",
+    "options": ["40", "50", "60", "80"],
+    "correct_index": 1
+  },
+  {
+    "question": "Sonning 30% i 90 ga teng. Sonni toping.",
+    "options": ["270", "300", "240", "150"],
+    "correct_index": 1
+  },
+  {
+    "question": "Sonning 25% i 50 ga teng. Sonni toping.",
+    "options": ["150", "100", "200", "250"],
+    "correct_index": 2
+  },
+  {
+    "question": "Sonning 40% i 80 ga teng. Sonni toping.",
+    "options": ["180", "150", "160", "200"],
+    "correct_index": 2
+  },
+  {
+    "question": "Sonning 10% i 17 ga teng. Sonni toping.",
+    "options": ["100", "170", "1700", "17"],
+    "correct_index": 1
+  },
+  {
+    "question": "To'g'ri burchakli uchburchak qatarlari 6 va 8. Gipotenuza?",
+    "options": ["10", "12", "14", "8"],
+    "correct_index": 0
+  },
+  {
+    "question": "To'g'ri uchburchak qatarlari 5 va 12. Gipotenuza?",
+    "options": ["11", "13", "15", "17"],
+    "correct_index": 1
+  },
+  {
+    "question": "To'g'ri uchburchak: gipotenuza 13, bir katar 5. Ikkinchisi?",
+    "options": ["12", "8", "10", "9"],
+    "correct_index": 1
+  },
+  {
+    "question": "Pifagor teoremasi formulasi?",
+    "options": ["a² + b² = c", "a² + b² = c²", "a + b = c²", "ab = c²"],
+    "correct_index": 1
+  },
+  {
+    "question": "Radiusi 7 bo'lgan doira uzunligi (π≈3.14)?",
+    "options": ["≈44", "≈22", "≈14", "≈28"],
+    "correct_index": 0
+  },
+  {
+    "question": "Radiusi 5 bo'lgan doira yuzi (π≈3.14)?",
+    "options": ["≈75", "≈65", "≈78.5", "≈50"],
+    "correct_index": 2
+  },
+  {
+    "question": "Diametri 10 bo'lgan doira radiusi?",
+    "options": ["2", "4", "5", "10"],
+    "correct_index": 2
+  },
+  {
+    "question": "Parallelogramm qarama-qarshi tomonlari qanday?",
+    "options": ["Perp.", "Kesishuvchi", "Paralel va teng", "Faqat teng"],
+    "correct_index": 2
+  },
+  {
+    "question": "Trapesiya nechta parallel tomonga ega?",
+    "options": ["1", "2", "3", "4"],
+    "correct_index": 1
+  },
+  {
+    "question": "Sinus ta'rifi (to'g'ri uchburchakda)?",
+    "options": ["Yaqin/gip.", "Qarshi/gip.", "Yaqin/qarshi", "Gip./qarshi"],
+    "correct_index": 1
+  },
+  {
+    "question": "Kosinus ta'rifi (to'g'ri uchburchakda)?",
+    "options": ["Qarshi/gip.", "Yaqin/gip.", "Gip./yaqin", "Qarshi/yaqin"],
+    "correct_index": 1
+  },
+  {
+    "question": "To'g'ri uchburchakda bir burchak 30°. Ikkinchi o'tkir burchak?",
+    "options": ["30°", "45°", "60°", "90°"],
+    "correct_index": 2
+  },
+  {
+    "question": "sin 30° qiymati?",
+    "options": ["1", "√3/2", "1/2", "√2/2"],
+    "correct_index": 2
+  },
+  {
+    "question": "cos 60° qiymati?",
+    "options": ["1/2", "√3/2", "0", "1"],
+    "correct_index": 0
+  },
+  {
+    "question": "sin 90° qiymati?",
+    "options": ["0", "1", "1/2", "√2/2"],
+    "correct_index": 1
+  },
+  {
+    "question": "cos 0° qiymati?",
+    "options": ["0", "1", "1/2", "√3/2"],
+    "correct_index": 1
+  },
+  {
+    "question": "Funksiya: y = 2x + 3. Bu qanday funksiya?",
+    "options": ["Kvadrat", "Chiziqli", "Eksponent", "Logarifmik"],
+    "correct_index": 1
+  },
+  {
+    "question": "y = kx + b dagi k nima?",
+    "options": ["Kesishma", "Parabola", "Qiyalik (tangens)", "Radius"],
+    "correct_index": 2
+  },
+  {
+    "question": "Nuqtalar (1;3) va (3;7) orasidagi to'g'ri chiziq qiyaligi?",
+    "options": ["2", "3", "4", "1"],
+    "correct_index": 0
+  },
+  {
+    "question": "Nuqtalar (0;2) va (4;10) orasidagi qiyalik?",
+    "options": ["4", "3", "2", "1"],
+    "correct_index": 1
+  },
+  {
+    "question": "y = -x + 5 grafigi qayerdan kesib o'tadi?",
+    "options": ["(0;5)", "(5;0)", "(1;4)", "(0;-5)"],
+    "correct_index": 0
+  },
+  {
+    "question": "y = 3x - 6 grafigining y-o'q bilan kesish nuqtasi?",
+    "options": ["(0;6)", "(0;-6)", "(3;0)", "(-2;0)"],
+    "correct_index": 1
+  },
+  {
+    "question": "A(2;3) va B(6;3) orasidagi masofa?",
+    "options": ["3", "4", "5", "6"],
+    "correct_index": 1
+  },
+  {
+    "question": "A(1;2) va B(4;6) orasidagi masofa?",
+    "options": ["5", "4", "3", "6"],
+    "correct_index": 0
+  },
+  {
+    "question": "Sanoq qatori: 2, 5, 8, 11, ... bu qanday progressiya?",
+    "options": ["Geom.", "Aritmetik", "Chiziqli emas", "Tasodifiy"],
+    "correct_index": 1
+  },
+  {
+    "question": "2, 5, 8, 11 ... progressiyaning ayirmasi?",
+    "options": ["1", "2", "3", "4"],
+    "correct_index": 2
+  },
+  {
+    "question": "Aritmetik progressiya: a1 = 4, d = 3. a5 ni toping.",
+    "options": ["13", "15", "16", "19"],
+    "correct_index": 3
+  },
+  {
+    "question": "Aritmetik progressiya a1=1, d=2. a10?",
+    "options": ["17", "18", "19", "20"],
+    "correct_index": 2
+  },
+  {
+    "question": "Geom. progressiya: 2, 6, 18,... qaysi q?",
+    "options": ["2", "3", "4", "6"],
+    "correct_index": 1
+  },
+  {
+    "question": "Geom. progressiya 3, 9, 27,... q?",
+    "options": ["2", "3", "9", "6"],
+    "correct_index": 1
+  },
+  {
+    "question": "Ifoda: 2³ · 2² = ?",
+    "options": ["2⁵", "2⁶", "2⁴", "2³"],
+    "correct_index": 0
+  },
+  {
+    "question": "Ifoda: 10³ · 10² = ?",
+    "options": ["10⁵", "10⁶", "10⁴", "10²"],
+    "correct_index": 0
+  },
+  {
+    "question": "Ifoda: 3⁴ : 3² = ?",
+    "options": ["3⁶", "3²", "3", "9"],
+    "correct_index": 1
+  },
+  {
+    "question": "Ifoda: 5² · 5³ = ?",
+    "options": ["5⁵", "5¹⁰", "5⁶", "5⁴"],
+    "correct_index": 0
+  },
+  {
+    "question": "log₁₀(100) qiymati?",
+    "options": ["1", "2", "3", "10"],
+    "correct_index": 1
+  },
+  {
+    "question": "log₁₀(1000) qiymati?",
+    "options": ["2", "3", "4", "1"],
+    "correct_index": 1
+  },
+  {
+    "question": "log₂(8) qiymati?",
+    "options": ["4", "2", "3", "1"],
+    "correct_index": 2
+  },
+  {
+    "question": "log₃(9) qiymati?",
+    "options": ["1", "3", "4", "2"],
+    "correct_index": 3
+  },
+  {
+    "question": "Ikki teng bo'lmagan tomoni teng uchburchak?",
+    "options": ["Teng tomonli", "Teng yonli", "To'g'ri burchakli", "O'tkir burchakli"],
+    "correct_index": 1
+  },
+  {
+    "question": "Uchburchakda qarama-qarshi katta burchakka qanday tomon to'g'ri keladi?",
+    "options": ["Kichik", "O'rta", "Eng katta", "Baravar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tashqi burchak teoremasi: tashqi burchak kattaligi...",
+    "options": ["Ichkidan kichik", "Ichki yig'indisiga teng", "Ikki ichki yig'indisi", "90° ga teng"],
+    "correct_index": 1
+  },
+  {
+    "question": "Parallel to'g'ri chiziqlarda kesuvchi bilan hosil bo'lgan mos burchaklar...",
+    "options": ["Har doim 90°", "O'zaro teng", "O'zaro qo'shni", "Har xil"],
+    "correct_index": 1
+  },
+  {
+    "question": "Kelishadigan teorema: \"To'g'ri uchburchak gipotenuzasi kvadrati...\"",
+    "options": ["Katarlar yig'indisi", "Katarlar kvadratlari yig'indisi", "Katarlar ko'paytmasi", "Perimetr"],
+    "correct_index": 1
+  },
+  {
+    "question": "Kvadrat diag. uzunligi a√2 bo'lsa, tomoni?",
+    "options": ["a", "a/2", "a/√2", "2a"],
+    "correct_index": 2
+  },
+  {
+    "question": "x² - 4x + 4 = 0 ildizlarini toping.",
+    "options": ["2;2", "1;4", "0;4", "-2;2"],
+    "correct_index": 0
+  },
+  {
+    "question": "x² - x - 6 = 0 ildizlari?",
+    "options": ["-3;2", "-2;3", "1;6", "-1;6"],
+    "correct_index": 1
+  },
+  {
+    "question": "|x - 3| = 5 tenglamaning yechimlari soni?",
+    "options": ["0", "1", "2", "3"],
+    "correct_index": 2
+  },
+  {
+    "question": "|x + 2| = 0 tenglama yechimi?",
+    "options": ["x = -2", "x = 2", "x = 0", "Yeim yo'q"],
+    "correct_index": 0
+  }
+]

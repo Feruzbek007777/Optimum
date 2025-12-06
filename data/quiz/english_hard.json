@@ -1,0 +1,502 @@
+[
+  {
+    "question": "I ___ to Japan three times.",
+    "options": ["went", "have been", "was going", "had been"],
+    "correct_index": 1
+  },
+  {
+    "question": "She ___ her keys again.",
+    "options": ["has lost", "lost", "is losing", "had lost"],
+    "correct_index": 0
+  },
+  {
+    "question": "They ___ in this city since 2012.",
+    "options": ["lived", "have lived", "are living", "had lived"],
+    "correct_index": 1
+  },
+  {
+    "question": "We ___ the report yet.",
+    "options": ["didn't finish", "haven't finished", "don't finish", "hadn't finished"],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ his homework already.",
+    "options": ["has done", "did", "was doing", "had done"],
+    "correct_index": 0
+  },
+  {
+    "question": "I ___ for you for over an hour.",
+    "options": ["am waiting", "have been waiting", "waited", "had waited"],
+    "correct_index": 1
+  },
+  {
+    "question": "She ___ here since the morning.",
+    "options": ["works", "has been working", "worked", "had worked"],
+    "correct_index": 1
+  },
+  {
+    "question": "They ___ about moving abroad.",
+    "options": ["have been talking", "talked", "were talking", "had talked"],
+    "correct_index": 0
+  },
+  {
+    "question": "We ___ for this exam all week.",
+    "options": ["studied", "have been studying", "were studying", "had been studying"],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ too much coffee lately.",
+    "options": ["drank", "has been drinking", "has drunk", "had drunk"],
+    "correct_index": 1
+  },
+  {
+    "question": "By the time we arrived, the film ___ .",
+    "options": ["has started", "had started", "started", "was starting"],
+    "correct_index": 1
+  },
+  {
+    "question": "She ___ the email before I could call her.",
+    "options": ["sent", "had sent", "has sent", "was sending"],
+    "correct_index": 1
+  },
+  {
+    "question": "They ___ anything about the change before the meeting.",
+    "options": ["hadn't heard", "didn't hear", "haven't heard", "weren't hearing"],
+    "correct_index": 0
+  },
+  {
+    "question": "He was nervous because he ___ never flown before.",
+    "options": ["has", "had", "was", "would"],
+    "correct_index": 1
+  },
+  {
+    "question": "After we ___ dinner, we went for a walk.",
+    "options": ["have finished", "had finished", "finished", "were finishing"],
+    "correct_index": 1
+  },
+  {
+    "question": "By next year, I ___ my degree.",
+    "options": ["finish", "will have finished", "will finish", "am finishing"],
+    "correct_index": 1
+  },
+  {
+    "question": "They ___ the bridge by the end of the month.",
+    "options": ["will have built", "have built", "will build", "are building"],
+    "correct_index": 0
+  },
+  {
+    "question": "By 10 p.m., we ___ the project.",
+    "options": ["will complete", "will have completed", "complete", "completed"],
+    "correct_index": 1
+  },
+  {
+    "question": "In two years' time, she ___ here for a decade.",
+    "options": ["will work", "will have worked", "has worked", "had worked"],
+    "correct_index": 1
+  },
+  {
+    "question": "By Friday, you ___ all the necessary documents.",
+    "options": ["will send", "will have sent", "have sent", "had sent"],
+    "correct_index": 1
+  },
+  {
+    "question": "If I ___ earlier, I wouldn't have missed the train.",
+    "options": ["left", "had left", "would leave", "have left"],
+    "correct_index": 1
+  },
+  {
+    "question": "If she had studied harder, she ___ the exam.",
+    "options": ["would pass", "would have passed", "passed", "had passed"],
+    "correct_index": 1
+  },
+  {
+    "question": "They wouldn't be so tired if they ___ up so late last night.",
+    "options": ["hadn't stayed", "didn't stay", "don't stay", "wouldn't stay"],
+    "correct_index": 0
+  },
+  {
+    "question": "If you ___ the instructions, you wouldn't be confused now.",
+    "options": ["followed", "had followed", "would follow", "were following"],
+    "correct_index": 1
+  },
+  {
+    "question": "If we hadn't taken a taxi, we ___ on time.",
+    "options": ["wouldn't arrive", "wouldn't have arrived", "hadn't arrived", "didn't arrive"],
+    "correct_index": 1
+  },
+  {
+    "question": "If he ___ more organized, he wouldn't lose things all the time.",
+    "options": ["was", "were", "had been", "would be"],
+    "correct_index": 1
+  },
+  {
+    "question": "If they ___ earlier, they could still catch the plane.",
+    "options": ["left", "had left", "leave", "would leave"],
+    "correct_index": 0
+  },
+  {
+    "question": "You wouldn't have felt so bad if you ___ anything.",
+    "options": ["hadn't eaten", "haven't eaten", "didn't eat", "don't eat"],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ you, I would apologize.",
+    "options": ["am", "were", "had been", "be"],
+    "correct_index": 1
+  },
+  {
+    "question": "If she ___ the bus, she will be late.",
+    "options": ["misses", "missed", "had missed", "has missed"],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": ["might", "should", "must", "could"],
+    "correct_index": 1
+  },
+  {
+    "question": "He looks tired. He ___ have been working all night.",
+    "options": ["must", "should", "could", "would"],
+    "correct_index": 0
+  },
+  {
+    "question": "They ___ have left by now; it's almost midnight.",
+    "options": ["should", "must", "can't", "could"],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ be joking. This can't be true.",
+    "options": ["must", "should", "have to", "would"],
+    "correct_index": 0
+  },
+  {
+    "question": "She ___ have forgotten about the meeting; she always writes things down.",
+    "options": ["can't", "must", "should", "might"],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ smoke in here. It's forbidden.",
+    "options": ["mustn't", "don't have to", "can't have", "shouldn't have"],
+    "correct_index": 0
+  },
+  {
+    "question": "We ___ have taken a taxi. Walking was a bad idea.",
+    "options": ["must", "should", "would", "might"],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ speak four languages fluently.",
+    "options": ["can", "could", "might", "must"],
+    "correct_index": 0
+  },
+  {
+    "question": "They ___ be at home; all the lights are off.",
+    "options": ["must", "can't", "should", "might"],
+    "correct_index": 1
+  },
+  {
+    "question": "You ___ worry so much; everything will be fine.",
+    "options": ["must", "needn't", "can't", "should"],
+    "correct_index": 1
+  },
+  {
+    "question": "The report ___ by the time the boss arrives.",
+    "options": ["will have been finished", "has finished", "was finishing", "is finished"],
+    "correct_index": 0
+  },
+  {
+    "question": "A new bridge ___ in this area next year.",
+    "options": ["is built", "will be built", "was built", "has been built"],
+    "correct_index": 1
+  },
+  {
+    "question": "The problem ___ yet, but we're working on it.",
+    "options": ["isn't solved", "hasn't been solved", "wasn't solved", "won't be solved"],
+    "correct_index": 1
+  },
+  {
+    "question": "Several paintings ___ from the gallery last night.",
+    "options": ["have been stolen", "were stolen", "are stolen", "had stolen"],
+    "correct_index": 1
+  },
+  {
+    "question": "This song ___ by millions of people around the world.",
+    "options": ["is listened", "is listened to", "listens", "is listening"],
+    "correct_index": 1
+  },
+  {
+    "question": "The woman ___ car was stolen went to the police.",
+    "options": ["who", "whose", "which", "that"],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the most interesting book ___ I've ever read.",
+    "options": ["who", "which", "what", "that"],
+    "correct_index": 3
+  },
+  {
+    "question": "The reason ___ he left was never explained.",
+    "options": ["which", "why", "that", "when"],
+    "correct_index": 1
+  },
+  {
+    "question": "My brother, ___ lives abroad, is visiting us next week.",
+    "options": ["who", "which", "that", "where"],
+    "correct_index": 0
+  },
+  {
+    "question": "He didn't study; ___, he failed the exam.",
+    "options": ["although", "however", "because", "so"],
+    "correct_index": 1
+  },
+  {
+    "question": "Could you tell me where ___ ?",
+    "options": ["is the station", "the station is", "is it the station", "station is"],
+    "correct_index": 1
+  },
+  {
+    "question": "I wonder what time ___ .",
+    "options": ["does the concert start", "the concert starts", "starts the concert", "is starting the concert"],
+    "correct_index": 1
+  },
+  {
+    "question": "Do you know who ___ this mess?",
+    "options": ["did", "has done", "did do", "does"],
+    "correct_index": 1
+  },
+  {
+    "question": "I'd like to know why ___ late.",
+    "options": ["is he", "he is", "is he being", "being he"],
+    "correct_index": 1
+  },
+  {
+    "question": "He asked me whether ___ the meeting.",
+    "options": ["I could attend", "could I attend", "attend I could", "I attend could"],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the meeting ___ how serious the situation was.",
+    "options": ["we realized", "did we realize", "we did realize", "realized we"],
+    "correct_index": 1
+  },
+  {
+    "question": "Hardly had I sat down ___ the phone rang.",
+    "options": ["when", "than", "then", "as"],
+    "correct_index": 0
+  },
+  {
+    "question": "Not until he apologized ___ to speak to him again.",
+    "options": ["I agreed", "did I agree", "I did agree", "agreed I"],
+    "correct_index": 1
+  },
+  {
+    "question": "What I dislike most ___ people who are rude.",
+    "options": ["are", "is", "be", "being"],
+    "correct_index": 1
+  },
+  {
+    "question": "Never ___ such a confusing explanation.",
+    "options": ["I have heard", "have I heard", "had I hear", "I heard"],
+    "correct_index": 1
+  },
+  {
+    "question": "I ___ my keys. I can't find them anywhere.",
+    "options": ["have lost", "lost", "had lost", "am losing"],
+    "correct_index": 0
+  },
+  {
+    "question": "We ___ to that restaurant last week.",
+    "options": ["have gone", "were going", "went", "had gone"],
+    "correct_index": 2
+  },
+  {
+    "question": "She ___ him since they were at university together.",
+    "options": ["has known", "knew", "had known", "knows"],
+    "correct_index": 0
+  },
+  {
+    "question": "They ___ in Paris for six months before moving to Rome.",
+    "options": ["have lived", "lived", "had lived", "were living"],
+    "correct_index": 2
+  },
+  {
+    "question": "I can't believe you ___ all the cake!",
+    "options": ["have eaten", "ate", "had eaten", "were eating"],
+    "correct_index": 0
+  },
+  {
+    "question": "He said he ___ help us the next day.",
+    "options": ["will", "would", "can", "could"],
+    "correct_index": 1
+  },
+  {
+    "question": "She promised she ___ back before midnight.",
+    "options": ["is", "would be", "was going", "will be"],
+    "correct_index": 1
+  },
+  {
+    "question": "I knew it ___ rain, so I took an umbrella.",
+    "options": ["will", "would", "was going", "is going to"],
+    "correct_index": 1
+  },
+  {
+    "question": "They thought the journey ___ longer than it actually did.",
+    "options": ["will take", "would take", "took", "had taken"],
+    "correct_index": 1
+  },
+  {
+    "question": "He told me he ___ already finished the book.",
+    "options": ["has", "had", "was", "would"],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ more time to finish this.",
+    "options": ["have", "had", "would have", "will have"],
+    "correct_index": 1
+  },
+  {
+    "question": "If only she ___ what to do now.",
+    "options": ["knows", "knew", "had known", "would know"],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish you ___ making so much noise.",
+    "options": ["stop", "would stop", "stopped", "had stopped"],
+    "correct_index": 1
+  },
+  {
+    "question": "If only we ___ earlier, we wouldn't be late.",
+    "options": ["left", "had left", "would leave", "have left"],
+    "correct_index": 0
+  },
+  {
+    "question": "I wish I ___ so much coffee last night.",
+    "options": ["didn't drink", "hadn't drunk", "haven't drunk", "wouldn't drink"],
+    "correct_index": 1
+  },
+  {
+    "question": "He admitted ___ the money.",
+    "options": ["to take", "taking", "to taking", "take"],
+    "correct_index": 1
+  },
+  {
+    "question": "She suggested ___ a break.",
+    "options": ["to take", "taking", "take", "to taking"],
+    "correct_index": 1
+  },
+  {
+    "question": "We can't afford ___ another mistake.",
+    "options": ["making", "to make", "to making", "make"],
+    "correct_index": 1
+  },
+  {
+    "question": "I look forward to ___ from you soon.",
+    "options": ["hear", "hearing", "to hear", "to hearing"],
+    "correct_index": 1
+  },
+  {
+    "question": "They agreed ___ the terms of the contract.",
+    "options": ["accept", "to accept", "accepting", "to accepting"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ being very tired, he continued working.",
+    "options": ["Although", "Despite", "In spite", "However"],
+    "correct_index": 1
+  },
+  {
+    "question": "He went jogging ___ the heavy rain.",
+    "options": ["although", "in spite of", "despite of", "even"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ she was ill, she went to work.",
+    "options": ["Despite", "Although", "In spite", "However"],
+    "correct_index": 1
+  },
+  {
+    "question": "They enjoyed the trip ___ the bad weather.",
+    "options": ["although", "despite", "because", "however"],
+    "correct_index": 1
+  },
+  {
+    "question": "In spite of ___ late, she waited for him.",
+    "options": ["to be", "being", "be", "been"],
+    "correct_index": 1
+  },
+  {
+    "question": "You can borrow my car ___ you drive carefully.",
+    "options": ["unless", "as long as", "despite", "even though"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you pay in advance, we will reserve the tickets.",
+    "options": ["Provided", "Unless", "Despite", "Although"],
+    "correct_index": 0
+  },
+  {
+    "question": "I won't go unless he ___ too.",
+    "options": ["comes", "will come", "came", "has come"],
+    "correct_index": 0
+  },
+  {
+    "question": "You can stay here ___ you don't make too much noise.",
+    "options": ["unless", "provided that", "even though", "despite"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you apologize, she won't forgive you.",
+    "options": ["If", "Unless", "Despite", "In case"],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ an interesting film that I watched it twice.",
+    "options": ["so", "such", "too", "enough"],
+    "correct_index": 1
+  },
+  {
+    "question": "She speaks ___ quickly that I can hardly understand her.",
+    "options": ["so", "such", "too", "enough"],
+    "correct_index": 0
+  },
+  {
+    "question": "They had ___ little money that they couldn't buy a ticket.",
+    "options": ["so", "such", "too", "enough"],
+    "correct_index": 0
+  },
+  {
+    "question": "He is ___ a talented musician that everyone admires him.",
+    "options": ["so", "such", "too", "enough"],
+    "correct_index": 1
+  },
+  {
+    "question": "The box was ___ heavy that I couldn't lift it.",
+    "options": ["so", "such", "too", "enough"],
+    "correct_index": 0
+  },
+  {
+    "question": "The water is ___ hot to drink.",
+    "options": ["so", "such", "too", "enough"],
+    "correct_index": 2
+  },
+  {
+    "question": "She isn't old ___ to drive a car.",
+    "options": ["so", "such", "too", "enough"],
+    "correct_index": 3
+  },
+  {
+    "question": "There aren't ___ chairs for everyone.",
+    "options": ["too", "such", "enough", "so"],
+    "correct_index": 2
+  },
+  {
+    "question": "He was ___ tired to continue working.",
+    "options": ["too", "enough", "such", "so"],
+    "correct_index": 0
+  },
+  {
+    "question": "We didn't leave early ___ to avoid the traffic.",
+    "options": ["such", "too", "enough", "so"],
+    "correct_index": 2
+  }
+]

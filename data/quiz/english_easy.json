@@ -1,0 +1,502 @@
+[
+  {
+    "question": "I ___ a student.",
+    "options": ["am", "is", "are", "be"],
+    "correct_index": 0
+  },
+  {
+    "question": "She ___ to the park every day.",
+    "options": ["go", "goes", "going", "gone"],
+    "correct_index": 1
+  },
+  {
+    "question": "They ___ from Uzbekistan.",
+    "options": ["is", "are", "am", "be"],
+    "correct_index": 1
+  },
+  {
+    "question": "My brother ___ football on Sundays.",
+    "options": ["play", "plays", "playing", "played"],
+    "correct_index": 1
+  },
+  {
+    "question": "We ___ English on Mondays.",
+    "options": ["study", "studies", "are studying", "studied"],
+    "correct_index": 0
+  },
+  {
+    "question": "The shop ___ at 9 o'clock every morning.",
+    "options": ["open", "opens", "is opening", "opened"],
+    "correct_index": 1
+  },
+  {
+    "question": "He usually ___ coffee in the morning.",
+    "options": ["drinks", "drink", "is drinking", "drank"],
+    "correct_index": 0
+  },
+  {
+    "question": "I ___ TV every evening.",
+    "options": ["watch", "watches", "am watching", "watched"],
+    "correct_index": 0
+  },
+  {
+    "question": "It often ___ here in winter.",
+    "options": ["rains", "rain", "is raining", "rained"],
+    "correct_index": 0
+  },
+  {
+    "question": "Your parents ___ very kind.",
+    "options": ["is", "are", "am", "be"],
+    "correct_index": 1
+  },
+  {
+    "question": "I ___ a book right now.",
+    "options": ["read", "am reading", "is reading", "reading"],
+    "correct_index": 1
+  },
+  {
+    "question": "She ___ dinner at the moment.",
+    "options": ["cooks", "is cooking", "cook", "cooking"],
+    "correct_index": 1
+  },
+  {
+    "question": "They ___ for the bus now.",
+    "options": ["wait", "are waiting", "is waiting", "were waiting"],
+    "correct_index": 1
+  },
+  {
+    "question": "We ___ to music at the moment.",
+    "options": ["listen", "are listening", "listens", "listened"],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ his homework right now.",
+    "options": ["does", "is doing", "do", "doing"],
+    "correct_index": 1
+  },
+  {
+    "question": "Look! The children ___ in the garden.",
+    "options": ["play", "are playing", "is playing", "played"],
+    "correct_index": 1
+  },
+  {
+    "question": "I can't talk. I ___ a shower.",
+    "options": ["am having", "have", "having", "am have"],
+    "correct_index": 0
+  },
+  {
+    "question": "They ___ for their exam these days.",
+    "options": ["are studying", "study", "studied", "are study"],
+    "correct_index": 0
+  },
+  {
+    "question": "I ___ my homework yesterday.",
+    "options": ["do", "did", "done", "doing"],
+    "correct_index": 1
+  },
+  {
+    "question": "She ___ a new dress last week.",
+    "options": ["buys", "bought", "buy", "buyed"],
+    "correct_index": 1
+  },
+  {
+    "question": "They ___ football after school yesterday.",
+    "options": ["play", "played", "playing", "plays"],
+    "correct_index": 1
+  },
+  {
+    "question": "We ___ to Tashkent last month.",
+    "options": ["go", "went", "gone", "going"],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ TV all evening.",
+    "options": ["watched", "watch", "watches", "was watch"],
+    "correct_index": 0
+  },
+  {
+    "question": "The lesson ___ at 8 a.m. yesterday.",
+    "options": ["start", "starts", "started", "was starting"],
+    "correct_index": 2
+  },
+  {
+    "question": "I ___ sick last Monday.",
+    "options": ["am", "is", "was", "were"],
+    "correct_index": 2
+  },
+  {
+    "question": "They ___ at home last night.",
+    "options": ["was", "were", "are", "be"],
+    "correct_index": 1
+  },
+  {
+    "question": "We ___ any questions at the end of the lesson.",
+    "options": ["didn't have", "don't have", "haven't", "hadn't"],
+    "correct_index": 0
+  },
+  {
+    "question": "She ___ her keys yesterday.",
+    "options": ["lose", "lost", "loses", "was losing"],
+    "correct_index": 1
+  },
+  {
+    "question": "I think it ___ rain tomorrow.",
+    "options": ["is going to", "will", "would", "was"],
+    "correct_index": 1
+  },
+  {
+    "question": "Look at those clouds. It ___ rain soon.",
+    "options": ["will", "is going to", "would", "was"],
+    "correct_index": 1
+  },
+  {
+    "question": "We ___ visit our grandparents next weekend.",
+    "options": ["are going to", "were going to", "would", "are"],
+    "correct_index": 0
+  },
+  {
+    "question": "She ___ probably call you later.",
+    "options": ["is going to", "will", "would", "was going to"],
+    "correct_index": 1
+  },
+  {
+    "question": "I ___ start a new course next month.",
+    "options": ["am going to", "will be", "would", "was going to"],
+    "correct_index": 0
+  },
+  {
+    "question": "If I had more money, I ___ travel around the world.",
+    "options": ["will", "would", "am going to", "was"],
+    "correct_index": 1
+  },
+  {
+    "question": "When we were children, we ___ play outside for hours.",
+    "options": ["would", "will", "are going to", "did to"],
+    "correct_index": 0
+  },
+  {
+    "question": "___ you like some tea?",
+    "options": ["Do", "Would", "Will", "Are"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ a book on the table.",
+    "options": ["There is", "There are", "It is", "They are"],
+    "correct_index": 0
+  },
+  {
+    "question": "___ three chairs in the kitchen.",
+    "options": ["There is", "There are", "They is", "It are"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ any milk in the fridge?",
+    "options": ["Is there", "Are there", "There is", "There are"],
+    "correct_index": 0
+  },
+  {
+    "question": "There ___ a lot of people in the park today.",
+    "options": ["is", "are", "be", "am"],
+    "correct_index": 1
+  },
+  {
+    "question": "There isn't ___ sugar left.",
+    "options": ["some", "any", "many", "a few"],
+    "correct_index": 1
+  },
+  {
+    "question": "We have ___ apples in the kitchen.",
+    "options": ["much", "many", "a little", "little"],
+    "correct_index": 1
+  },
+  {
+    "question": "I drink ___ water every day.",
+    "options": ["much", "many", "few", "a few"],
+    "correct_index": 0
+  },
+  {
+    "question": "There aren't ___ buses after 10 p.m.",
+    "options": ["many", "much", "a little", "some"],
+    "correct_index": 0
+  },
+  {
+    "question": "She has ___ friends in London.",
+    "options": ["a little", "a few", "much", "many"],
+    "correct_index": 1
+  },
+  {
+    "question": "Do you have ___ questions?",
+    "options": ["some", "any", "much", "a little"],
+    "correct_index": 1
+  },
+  {
+    "question": "We need ___ bread for breakfast.",
+    "options": ["some", "any", "many", "a few"],
+    "correct_index": 0
+  },
+  {
+    "question": "He put ___ salt in the soup.",
+    "options": ["a few", "a little", "many", "any"],
+    "correct_index": 1
+  },
+  {
+    "question": "I don't have ___ time today.",
+    "options": ["many", "much", "a few", "several"],
+    "correct_index": 1
+  },
+  {
+    "question": "There is ___ coffee in the cup.",
+    "options": ["a few", "a little", "many", "any"],
+    "correct_index": 1
+  },
+  {
+    "question": "I ___ go to bed before midnight.",
+    "options": ["always", "never", "sometimes", "rarely"],
+    "correct_index": 2
+  },
+  {
+    "question": "She is ___ late for work.",
+    "options": ["often", "always", "never", "hardly ever"],
+    "correct_index": 2
+  },
+  {
+    "question": "They ___ eat meat. They are vegetarians.",
+    "options": ["often", "usually", "sometimes", "never"],
+    "correct_index": 3
+  },
+  {
+    "question": "We ___ visit our grandparents at the weekend.",
+    "options": ["never", "rarely", "often", "hardly ever"],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ drinks coffee in the morning.",
+    "options": ["seldom", "always", "never", "sometimes"],
+    "correct_index": 1
+  },
+  {
+    "question": "Do you ___ eat breakfast?",
+    "options": ["usually", "ever", "always", "never"],
+    "correct_index": 0
+  },
+  {
+    "question": "I ___ TV when you called.",
+    "options": ["watched", "was watching", "am watching", "have watched"],
+    "correct_index": 1
+  },
+  {
+    "question": "They ___ football at 5 p.m. yesterday.",
+    "options": ["were playing", "played", "are playing", "have played"],
+    "correct_index": 0
+  },
+  {
+    "question": "She ___ when I saw her.",
+    "options": ["cried", "was crying", "is crying", "has cried"],
+    "correct_index": 1
+  },
+  {
+    "question": "We ___ dinner while he was talking.",
+    "options": ["had", "were having", "have", "are having"],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ to music all evening.",
+    "options": ["listened", "was listening", "is listening", "has listened"],
+    "correct_index": 1
+  },
+  {
+    "question": "My birthday is ___ June.",
+    "options": ["in", "on", "at", "by"],
+    "correct_index": 0
+  },
+  {
+    "question": "We have English classes ___ Monday.",
+    "options": ["in", "on", "at", "by"],
+    "correct_index": 1
+  },
+  {
+    "question": "The meeting starts ___ 9 o'clock.",
+    "options": ["in", "on", "at", "by"],
+    "correct_index": 2
+  },
+  {
+    "question": "He usually wakes up ___ 7 a.m.",
+    "options": ["in", "at", "on", "by"],
+    "correct_index": 1
+  },
+  {
+    "question": "They arrived ___ the airport early.",
+    "options": ["in", "at", "on", "to"],
+    "correct_index": 1
+  },
+  {
+    "question": "The cat is ___ the table.",
+    "options": ["under", "on", "between", "behind"],
+    "correct_index": 1
+  },
+  {
+    "question": "Your keys are ___ your bag.",
+    "options": ["in", "on", "under", "between"],
+    "correct_index": 0
+  },
+  {
+    "question": "We sat ___ a big tree and had a picnic.",
+    "options": ["on", "in", "under", "between"],
+    "correct_index": 2
+  },
+  {
+    "question": "I ___ wear a uniform at school. It's the rule.",
+    "options": ["have to", "don't have to", "mustn't", "can't"],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ come if you are busy. It's optional.",
+    "options": ["have to", "must", "should", "don't have to"],
+    "correct_index": 3
+  },
+  {
+    "question": "She ___ finish the report today. The boss is waiting.",
+    "options": ["has to", "doesn't have to", "had to", "have to"],
+    "correct_index": 0
+  },
+  {
+    "question": "They ___ be quiet in the library.",
+    "options": ["have to", "don't have to", "can", "shouldn't"],
+    "correct_index": 0
+  },
+  {
+    "question": "We ___ get up early tomorrow. It's a holiday.",
+    "options": ["have to", "must", "don't have to", "should"],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ take medicine every day or he will feel bad.",
+    "options": ["doesn't have to", "has to", "don't have to", "had to"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ are you from?",
+    "options": ["Where", "What", "Who", "When"],
+    "correct_index": 0
+  },
+  {
+    "question": "___ old are you?",
+    "options": ["How", "What", "Who", "Where"],
+    "correct_index": 0
+  },
+  {
+    "question": "___ is your birthday?",
+    "options": ["Where", "When", "What", "Who"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ is your favourite color?",
+    "options": ["What", "When", "Where", "Who"],
+    "correct_index": 0
+  },
+  {
+    "question": "___ is that man near the door?",
+    "options": ["Who", "What", "Where", "How"],
+    "correct_index": 0
+  },
+  {
+    "question": "___ do you go to school? By bus or on foot?",
+    "options": ["When", "How", "Where", "Who"],
+    "correct_index": 1
+  },
+  {
+    "question": "___ time does the lesson start?",
+    "options": ["What", "How", "When", "Which"],
+    "correct_index": 0
+  },
+  {
+    "question": "___ are you late?",
+    "options": ["Why", "When", "Where", "Who"],
+    "correct_index": 0
+  },
+  {
+    "question": "I ___ my homework already.",
+    "options": ["have finished", "finished", "has finished", "am finishing"],
+    "correct_index": 0
+  },
+  {
+    "question": "She ___ to London three times.",
+    "options": ["has been", "have been", "was", "is being"],
+    "correct_index": 0
+  },
+  {
+    "question": "They ___ this movie before.",
+    "options": ["have seen", "seen", "has seen", "saw"],
+    "correct_index": 0
+  },
+  {
+    "question": "We ___ in this city for five years.",
+    "options": ["have lived", "lived", "has lived", "are living"],
+    "correct_index": 0
+  },
+  {
+    "question": "He ___ just left the office.",
+    "options": ["has", "have", "is", "was"],
+    "correct_index": 0
+  },
+  {
+    "question": "Have you ever ___ sushi?",
+    "options": ["eat", "eaten", "ate", "eats"],
+    "correct_index": 1
+  },
+  {
+    "question": "I ___ my keys! I can't find them.",
+    "options": ["have lost", "lost", "has lost", "am losing"],
+    "correct_index": 0
+  },
+  {
+    "question": "I ___ like cold weather.",
+    "options": ["don't", "doesn't", "am not", "not"],
+    "correct_index": 0
+  },
+  {
+    "question": "She ___ speak Chinese.",
+    "options": ["don't", "doesn't", "isn't", "not"],
+    "correct_index": 1
+  },
+  {
+    "question": "Right now he ___ to music.",
+    "options": ["listens", "is listening", "listened", "listening"],
+    "correct_index": 1
+  },
+  {
+    "question": "They ___ a new car next month.",
+    "options": ["are going to buy", "will buying", "are buy", "going to buying"],
+    "correct_index": 0
+  },
+  {
+    "question": "There aren't ___ buses after midnight.",
+    "options": ["some", "any", "much", "a little"],
+    "correct_index": 1
+  },
+  {
+    "question": "How ___ sugar do you want?",
+    "options": ["many", "much", "few", "little"],
+    "correct_index": 1
+  },
+  {
+    "question": "She ___ goes to the gym on Fridays.",
+    "options": ["never", "never is", "is never", "does never"],
+    "correct_index": 0
+  },
+  {
+    "question": "I ___ when someone knocked on the door.",
+    "options": ["slept", "was sleeping", "sleep", "am sleeping"],
+    "correct_index": 1
+  },
+  {
+    "question": "I usually have lunch ___ noon.",
+    "options": ["in", "on", "at", "by"],
+    "correct_index": 2
+  },
+  {
+    "question": "___ have you lived here?",
+    "options": ["How long", "How many", "When", "Where"],
+    "correct_index": 0
+  }
+]

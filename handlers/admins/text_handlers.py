@@ -6,11 +6,13 @@ from io import StringIO
 from telebot.types import ReplyKeyboardRemove
 from config import DATABASE_PATH, ADMINS
 from database.database import (
-    get_approved_students, add_announcement, get_courses,
+    get_approved_students,  # hozir ishlatmaymiz, lekin qolsin xalaqit bermaydi
+    add_announcement, get_courses,
     get_all_teachers, delete_teacher, delete_course,
-    get_all_admin_groups, get_all_users
+    get_all_admin_groups, get_all_users,
+    get_all_users_with_stats,  # 🔥 YANGI: users + ball + referrals
 )
-from keyboards.default import admin_menu_keyboard, yes_no_keyboard
+from keyboards.default import admin_menu_keyboard, yes_no_keyboard, main_menu_keyboard
 from keyboards.inline import (
     generate_courses_keyboard, generate_teachers_keyboard,
     generate_courses_delete_keyboard, generate_teachers_delete_keyboard,
@@ -20,8 +22,15 @@ from keyboards.inline import (
 
 def setup_admin_text_handlers(bot):
     @bot.message_handler(func=lambda message: message.text == "🔙 Asosiy menyu" and message.from_user.id in ADMINS)
-    def back_to_admin_main(message):
-        bot.send_message(message.chat.id, "Admin menyu:", reply_markup=admin_menu_keyboard())
+    def back_to_user_main(message):
+        """
+        Admin bo'lsa ham, bu tugmani bossagina ODDIY foydalanuvchi menyusini ko'rsatamiz.
+        """
+        bot.send_message(
+            message.chat.id,
+            "🏠 Oddiy foydalanuvchi menyusiga qaytdingiz.",
+            reply_markup=main_menu_keyboard()
+        )
 
     @bot.message_handler(func=lambda message: message.text == "➕ Kurs qo'shish" and message.from_user.id in ADMINS)
     def add_course(message):
@@ -79,22 +88,35 @@ def setup_admin_text_handlers(bot):
 
     @bot.message_handler(func=lambda message: message.text == "🎓 Students" and message.from_user.id in ADMINS)
     def export_students(message):
-        students = get_approved_students()
+        """
+        Endi bu yerda 'tasdiqlangan students' emas,
+        start bosgan BARCHA foydalanuvchilarni CSV qilib beramiz.
+        """
+        users = get_all_users_with_stats()  # (user_id, username, full_name, joined_at, points, referrals)
 
-        if students:
-            # CSV ma'lumotlarini yaratish
+        if users:
             output = StringIO()
             writer = csv.writer(output)
-            writer.writerow(['ID', 'Ism Familiya', 'Telefon', 'Username', "Ro'yxatdan o'tgan vaqt", 'Kurs'])
+            writer.writerow(['User ID', 'Ism Familiya', 'Username', "Ro'yxatdan o'tgan vaqt", 'Ball', 'Takliflar soni'])
 
-            for student in students:
-                writer.writerow(student)
+            for user_id, username, full_name, joined_at, points, refs in users:
+                writer.writerow([
+                    user_id,
+                    full_name or "",
+                    username or "",
+                    joined_at or "",
+                    points or 0,
+                    refs or 0
+                ])
 
-            # CSV ni fayl sifatida yuborish
             output.seek(0)
-            bot.send_document(message.chat.id, ('students.csv', output.getvalue()), caption="✅ Talabalar ro'yxati")
+            bot.send_document(
+                message.chat.id,
+                ('users.csv', output.getvalue()),
+                caption="✅ Foydalanuvchilar ro'yxati (start bosganlar)"
+            )
         else:
-            bot.send_message(message.chat.id, "❌ Hozircha tasdiqlangan talabalar mavjud emas.")
+            bot.send_message(message.chat.id, "❌ Hozircha birorta ham foydalanuvchi yo'q.")
 
     # Guruhlar ro'yxatini ko'rish
     @bot.message_handler(func=lambda message: message.text == "📋 Guruhlar ro'yxati" and message.from_user.id in ADMINS)

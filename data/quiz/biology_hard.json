@@ -1,0 +1,462 @@
+[
+  {
+    "question": "DNKning asosiy vazifasi nima?",
+    "options": ["Irsi ma'lumot", "Energiyani saqlash", "Himoya qilish", "Suyuqlik tashish"],
+    "correct_index": 0
+  },
+  {
+    "question": "IRNKning asosiy roli?",
+    "options": ["Gen saqlash", "Oqsil sintezi", "Suv tashish", "Bo'linishni to'xtatish"],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasida nima hosil bo'ladi?",
+    "options": ["4 hujayra", "1 hujayra", "2 bir xil hujayra", "Gameta"],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasida nima hosil bo'ladi?",
+    "options": ["Diploid to'qima", "Somatik hujayra", "2 qiz hujayra", "4 haploid hujayra"],
+    "correct_index": 3
+  },
+  {
+    "question": "Avtotrof oziqlanishga misol?",
+    "options": ["Fotosintez", "Parazitlik", "Saprofitlik", "Yirtqichlik"],
+    "correct_index": 0
+  },
+  {
+    "question": "Geterotrof organizm qanday oziqlanadi?",
+    "options": ["Nur bilan", "Tayyor modda", "Gaz bilan", "Faqat suv bilan"],
+    "correct_index": 1
+  },
+  {
+    "question": "Prokaryotlarga xos belgi?",
+    "options": ["Yadro bor", "Mitoz bor", "Mem. organoid", "Yadro yo'q"],
+    "correct_index": 3
+  },
+  {
+    "question": "Eukaryotlarga xos belgi?",
+    "options": ["Halqa DNK", "Yadro yo'q", "Yadro bor", "Ribosoma yo'q"],
+    "correct_index": 2
+  },
+  {
+    "question": "Oqsil monomeri nima?",
+    "options": ["Nukleotid", "Lipid", "Aminokislota", "Glyukoza"],
+    "correct_index": 2
+  },
+  {
+    "question": "Uglevod monomeri?",
+    "options": ["Monosaxarid", "Aspirin", "Aminokislota", "Nuklein kislota"],
+    "correct_index": 0
+  },
+  {
+    "question": "Fermentlar asosan nimadan tuzilgan?",
+    "options": ["Lipid", "Suv", "Oqsil", "Glikogen"],
+    "correct_index": 2
+  },
+  {
+    "question": "Fermentlar nimalarga ta'sir qiladi?",
+    "options": ["Faqat DNKga", "Reaksiya tezligi", "Faqat membrana", "Faqat suyak"],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra membranasi tuzilishi?",
+    "options": ["DNK qatlam", "Oqsil halqa", "Lipid ikki qatlam", "Fibrillar karkas"],
+    "correct_index": 2
+  },
+  {
+    "question": "Osmos bu…",
+    "options": ["Aktiv tashish", "Diffuziya", "Suvning o'tishi", "Mitotik bo'linish"],
+    "correct_index": 2
+  },
+  {
+    "question": "Aktiv transport uchun nima kerak?",
+    "options": ["Oson dif.", "Faqat suv", "ATP energiya", "Faqat gravitatsiya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoxondriyada qaysi jarayon kuchli?",
+    "options": ["Fotosintez", "Glikoliz", "Oksid. fosfor.", "Transkripsiya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Xloroplastda nimasi sodir bo'ladi?",
+    "options": ["Nafas olish", "Bo'linish", "Fotosintez", "Translyatsiya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Ribosoma vazifasi nima?",
+    "options": ["Energiya zaxira", "Oqsil sintezi", "Suv saqlash", "Lipid sintezi"],
+    "correct_index": 1
+  },
+  {
+    "question": "Goldji apparati nimani bajaradi?",
+    "options": ["DNK nusxa", "Ferment sintezi", "Paketlash va chiqarish", "Suv parchalanishi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Lizosoma ichida nima bo'ladi?",
+    "options": ["Fotosintez", "Hazm fermentlari", "DNK sintezi", "Gaz almashuv"],
+    "correct_index": 1
+  },
+  {
+    "question": "Gomeostaz nima?",
+    "options": ["O'sish", "Ichki muvozanat", "Bo'linish", "Ko'payish"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi tizim gomeostazda asosiy?",
+    "options": ["Teri tizimi", "Endokrin tizim", "Skelet tizimi", "Mushak tizimi"],
+    "correct_index": 1
+  },
+  {
+    "question": "Insulin qaysi organdan?",
+    "options": ["Jigar", "Buyrak", "Oshqozon osti bezi", "Qizilo'ngach"],
+    "correct_index": 2
+  },
+  {
+    "question": "Glyukagon vazifasi?",
+    "options": ["Suv ushlash", "Harorat tushirish", "Qandni oshirish", "Qonni kislorodlash"],
+    "correct_index": 2
+  },
+  {
+    "question": "Alveola nimaning qismi?",
+    "options": ["Ichak", "O'pka", "Buyrak", "Yurak"],
+    "correct_index": 1
+  },
+  {
+    "question": "Alveola asosiy vazifasi?",
+    "options": ["Ovqat hazm", "Qon hosil", "Gaz almashuv", "Gormon sintezi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Arteriya qanday qon olib ketadi?",
+    "options": ["Har doim vena", "Doim CO2", "Yurakdan chiqadi", "Faqat qizil"],
+    "correct_index": 2
+  },
+  {
+    "question": "Katta qon aylanishi qayerdan boshlanadi?",
+    "options": ["O'ng bo'lmacha", "Chap qorincha", "O'ng qorincha", "O'pka arteriyasi"],
+    "correct_index": 1
+  },
+  {
+    "question": "Sistolya bu…",
+    "options": ["Yurak bo'shashi", "Nafas chiqarish", "Yurak qisqarishi", "Qon ivishi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Eritrotsitda nima yo'q?",
+    "options": ["Gemoglobin", "Suv", "Yadro", "Membrana"],
+    "correct_index": 2
+  },
+  {
+    "question": "Leykotsit asosiy vazifasi?",
+    "options": ["Gaz tashish", "Skelet qurish", "Himoya", "Energiya zaxira"],
+    "correct_index": 2
+  },
+  {
+    "question": "Trombotsit nimada muhim?",
+    "options": ["Nafas olish", "Hazm qilish", "Qon ivishi", "Ko'rish"],
+    "correct_index": 2
+  },
+  {
+    "question": "Nefron qaysi organning birligi?",
+    "options": ["Jigar", "Buyrak", "O'pka", "Yurak"],
+    "correct_index": 1
+  },
+  {
+    "question": "Nefron asosiy vazifasi?",
+    "options": ["Qon haydash", "Filtratsiya", "Fotosintez", "Impuls o'tkazish"],
+    "correct_index": 1
+  },
+  {
+    "question": "Miya qaysi bo'limi muvozanatga javobgar?",
+    "options": ["Uzunchoq miya", "Orqa miya", "Miyacha", "Old miya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Simpatik nerv tizimi ta'siri?",
+    "options": ["Uyquni oshiradi", "Yurakni sekin", "Tormozlaydi", "Yurak tez, stress"],
+    "correct_index": 3
+  },
+  {
+    "question": "Skelet mushaklari qanday boshqariladi?",
+    "options": ["Avtomatik", "Vegetativ", "Somatik", "Endokrin"],
+    "correct_index": 2
+  },
+  {
+    "question": "Aktin va miozin qayerda muhim?",
+    "options": ["DNKda", "Jigarda", "Mushak tolasi", "Suyak po'sti"],
+    "correct_index": 2
+  },
+  {
+    "question": "Dominant allel qanday yoziladi?",
+    "options": ["aa", "aA", "AA yoki A", "ab"],
+    "correct_index": 2
+  },
+  {
+    "question": "Rezessiv belgini ifodalovchi genotip?",
+    "options": ["AA", "Aa", "aa", "AB"],
+    "correct_index": 2
+  },
+  {
+    "question": "Genotip nima?",
+    "options": ["Tashqi ko'rinish", "Irsi omillar to'plami", "Qon tarkibi", "Immun javob"],
+    "correct_index": 1
+  },
+  {
+    "question": "Fenotip nima?",
+    "options": ["Faqat genlar", "Faqat DNK", "Tashqi ko'rinish", "Faqat suyak"],
+    "correct_index": 2
+  },
+  {
+    "question": "Mendelning 1-qonuni?",
+    "options": ["Segregatsiya", "Mustaqil ajralish", "Mutatsiya", "Drift"],
+    "correct_index": 0
+  },
+  {
+    "question": "Mendelning 2-qonuni?",
+    "options": ["Segregatsiya", "Mustaqil ajralish", "Dominantlik", "Replikatsiya"],
+    "correct_index": 1
+  },
+  {
+    "question": "Monogibrid chatishtirishda F2 nisbat?",
+    "options": ["1:1", "9:3:3:1", "3:1", "2:1"],
+    "correct_index": 2
+  },
+  {
+    "question": "Dihibrid chatishtirishda F2 nisbat?",
+    "options": ["3:1", "1:1", "9:3:3:1", "2:2"],
+    "correct_index": 2
+  },
+  {
+    "question": "X-bilan bog'liq gen misoli?",
+    "options": ["Ko'z rangi", "Qon guruhi", "Gemofiliya", "Baland bo'y"],
+    "correct_index": 2
+  },
+  {
+    "question": "Kariotip nima?",
+    "options": ["Genlar to'plami", "Xromosomalar to'plami", "Fermentlar majmui", "Oqsillar bo'linishi"],
+    "correct_index": 1
+  },
+  {
+    "question": "Somatik hujayralardagi xromosoma to'plami?",
+    "options": ["n", "2n", "3n", "4n"],
+    "correct_index": 1
+  },
+  {
+    "question": "Gameta xromosoma soni?",
+    "options": ["2n", "n", "3n", "4n"],
+    "correct_index": 1
+  },
+  {
+    "question": "Mutatsiya darajasi bo'yicha bu…",
+    "options": ["Yo'l", "Sabab", "Gen o'zgarishi", "Ferment turi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Genom mutatsiyasi misoli?",
+    "options": ["Deletsiya", "Triploidiya", "Inversiya", "Duplikatsiya"],
+    "correct_index": 1
+  },
+  {
+    "question": "Xromosoma mutatsiyasi misoli?",
+    "options": ["Triploidiya", "Aneuploidiya", "Inversiya", "Poliploidiya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Ekologiyada trofik zanjir nimani bildiradi?",
+    "options": ["Ko'chish yo'nalish", "Oziq zanjiri", "Gen oqimi", "Mutatsiya tezligi"],
+    "correct_index": 1
+  },
+  {
+    "question": "Prodyuserlar kimlar?",
+    "options": ["Yirtqichlar", "Zamburug'lar", "Avtotroflar", "Parazitlar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Konsument I tartib?",
+    "options": ["O'txo'rlar", "Yirtqichlar", "Parchalovchi", "Prodyuser"],
+    "correct_index": 0
+  },
+  {
+    "question": "Redutsentlar kimlar?",
+    "options": ["Bo'ri", "Ko'kalam", "Bakteriya va zamburug'", "Qushlar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Biomassa piramidasi nimani ko'rsatadi?",
+    "options": ["Gen soni", "Biomassa taqsimoti", "Suv zaxirasi", "Harorat"],
+    "correct_index": 1
+  },
+  {
+    "question": "Biotsenoz bu…",
+    "options": ["Noyob hudud", "Iqlim turi", "Organizmlar majmui", "Faqat daraxtlar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Suksessiya nima?",
+    "options": ["Jinsiy tanlash", "Ekotizim almashuvi", "Mutatsiya turi", "Migratsiya"],
+    "correct_index": 1
+  },
+  {
+    "question": "Darvin nazariyasida asosiy omil?",
+    "options": ["Tasodif", "Sun'iy tanlash", "Tabiiy tanlanish", "Mutlaq barqarorlik"],
+    "correct_index": 2
+  },
+  {
+    "question": "Mikroevolyutsiya nimalarga taalluqli?",
+    "options": ["Butun sinf", "Butun sinf", "Populyatsiya ichida", "Barcha biosfera"],
+    "correct_index": 2
+  },
+  {
+    "question": "Gen drifti qanday populyatsiyada kuchli?",
+    "options": ["Katta", "Cheksiz", "Juda kichik", "Mutlaq yopiq"],
+    "correct_index": 2
+  },
+  {
+    "question": "Simbioz misoli?",
+    "options": ["Bo'ri-qo'y", "Parazit-xo'jayin", "Lishaynik", "Yirtqich-o'lja"],
+    "correct_index": 2
+  },
+  {
+    "question": "Komensalizmda kim yutqazadi?",
+    "options": ["Ikkalasi", "Hech kim", "Faqat xo'jayin", "Faqat mehmon"],
+    "correct_index": 1
+  },
+  {
+    "question": "Parazitizm misoli?",
+    "options": ["Arslon-g'azal", "Chumoli-o'simlik", "Lenta qurti", "Ikki daraxt"],
+    "correct_index": 2
+  },
+  {
+    "question": "Biologik xilma-xillik deganda nimani tushunasiz?",
+    "options": ["Faqat turlar soni", "Faqat genlar soni", "Tur, gen va ekotizimlar", "Faqat hayvonlar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Energiya piramidasida yuqoriga chiqganda nima bo'ladi?",
+    "options": ["Energiya ortadi", "O'zgarmaydi", "Energiya kamayadi", "Cheksiz bo'ladi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Suv aylanishi qaysi turga kiradi?",
+    "options": ["Biogen", "Sirkulyar", "Biogeokimyoviy", "Chap aylanish"],
+    "correct_index": 2
+  },
+  {
+    "question": "Azot fiksatsiyasida muhim organizmlar?",
+    "options": ["Viruslar", "Azot bakteriyalar", "Qushlar", "Sut emizuvchilar"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qonda CO2 asosan qanday tashiladi?",
+    "options": ["Sof gaz", "Karbogemoglobin", "Plazma oqsillari", "Trombotsit ichida"],
+    "correct_index": 1
+  },
+  {
+    "question": "Hemoglobin tarkibida qaysi element bor?",
+    "options": ["Kaltsiy", "Fosfor", "Temir", "Kaliy"],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK replikatsiyasi qaysi fazada?",
+    "options": ["G1", "S faza", "G2", "M faza"],
+    "correct_index": 1
+  },
+  {
+    "question": "Transkripsiya qayerda sodir bo'ladi?",
+    "options": ["Sitoplazma", "Ribosoma", "Yadro", "Mitoxondriya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Translyatsiya qayerda sodir bo'ladi?",
+    "options": ["Yadro", "Ribosoma", "Goldji", "Lizosoma"],
+    "correct_index": 1
+  },
+  {
+    "question": "Kodonga nechta nukleotid kiradi?",
+    "options": ["1", "2", "3", "4"],
+    "correct_index": 2
+  },
+  {
+    "question": "Antikodon qayerda joylashgan?",
+    "options": ["DNK", "IRNK", "TRNK", "Ribosoma"],
+    "correct_index": 2
+  },
+  {
+    "question": "Enzim faolligi nimaga bog'liq?",
+    "options": ["Harorat", "Og'irlik", "Bosim", "Magnit maydon"],
+    "correct_index": 0
+  },
+  {
+    "question": "Ferment uchun optimal sharoit qanday?",
+    "options": ["Har doim 0°C", "Har doim 100°C", "Ma'lum pH va T", "Faqat quruq muhit"],
+    "correct_index": 2
+  },
+  {
+    "question": "Oqsil denaturatsiyasi nimani anglatadi?",
+    "options": ["Sintez", "Tuzilish buzilishi", "Bo'linish", "Ko'payish"],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra siklida mitozdan keyingi faza?",
+    "options": ["G2", "G1", "S", "Telofaza"],
+    "correct_index": 1
+  },
+  {
+    "question": "Apoptoz bu…",
+    "options": ["Faol o'sish", "Tasodifiy o'lim", "Nazoratli o'lim", "Bo'linish"],
+    "correct_index": 2
+  },
+  {
+    "question": "Onkogenga ta'sir qiluvchi omil?",
+    "options": ["Antibiotik", "Radiatsiya", "Suv", "NaCl"],
+    "correct_index": 1
+  },
+  {
+    "question": "Immun tizimning hujayraviy bo'g'ini?",
+    "options": ["Gemoglobin", "T-limfotsit", "Alveola", "Nefron"],
+    "correct_index": 1
+  },
+  {
+    "question": "Gumoral immunitet asosiy molekulasi?",
+    "options": ["Antitela", "Gemoglobin", "ATP", "Glyukoza"],
+    "correct_index": 0
+  },
+  {
+    "question": "Vaktsina qaysi immunitetni hosil qiladi?",
+    "options": ["Tug'ma", "Passiv", "Sun'iy aktiv", "Sun'iy passiv"],
+    "correct_index": 2
+  },
+  {
+    "question": "Platsenta vazifalaridan biri?",
+    "options": ["Hazm qilish", "Nafas olish", "Modda almashinuvi", "Qon ivishi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Gormonlar qaysi to'qima tomonidan chiqariladi?",
+    "options": ["Nerv", "Epiteliy", "Endokrin", "Mushak"],
+    "correct_index": 2
+  },
+  {
+    "question": "Endemik tur deganda…",
+    "options": ["Hamma joyda", "Faqat bitta hudud", "Faqat dengizda", "Faqat shaharda"],
+    "correct_index": 1
+  },
+  {
+    "question": "Bioindikator sifatida ko'p ishlatiladigan organizm?",
+    "options": ["Lishaynik", "Bo'ri", "Sigir", "Kapalak"],
+    "correct_index": 0
+  },
+  {
+    "question": "Trofik daraja ortganda…",
+    "options": ["Energiya ko'payadi", "Energiya yo'q", "Energiya kamayadi", "Bir xil qoladi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Ekologik nisha bu…",
+    "options": ["Fazor", "Rollar majmui", "Faqat uyasi", "Faqat yashash joyi"],
+    "correct_index": 1
+  }
+]

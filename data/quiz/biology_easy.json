@@ -1,0 +1,487 @@
+[
+  {
+    "question": "Biologiya nima haqida fan?",
+    "options": ["Tirik tabiat", "Yulduzlar", "Qurilish", "Kompyuterlar"],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra bu…",
+    "options": ["Kichik shahar", "Organizmning eng kichik birligi", "Faqat o'simlik qismi", "Faqat suyak"],
+    "correct_index": 1
+  },
+  {
+    "question": "Quyidagilardan qaysi biri tirik organizm?",
+    "options": ["Tosh", "Daraxt", "Temir", "Suv"],
+    "correct_index": 1
+  },
+  {
+    "question": "Odam tanasidagi asosiy energiya manbai molekula?",
+    "options": ["DNK", "Suv", "ATP", "Kislorod"],
+    "correct_index": 2
+  },
+  {
+    "question": "Odam tanasida taxminan nechta suyak bor?",
+    "options": ["106", "206", "250", "56"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi organ qon haydaydi?",
+    "options": ["Jigar", "O'pka", "Yurak", "Miya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez qayerda sodir bo'ladi?",
+    "options": ["Lizosoma", "Vakuola", "Mitoxondriya", "Xloroplast"],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK qanday makromolekula?",
+    "options": ["Lipid", "Uglevod", "Nuklein kislota", "Oqsil"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organizm prokaryot?",
+    "options": ["Zamburug'", "Bakteriya", "Qo'y", "Chumoli"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi organ nafas olishda ishtirok etadi?",
+    "options": ["Buyrak", "O'pka", "Jigar", "Oshqozon"],
+    "correct_index": 1
+  },
+  {
+    "question": "Odam yuragi nechta bo'lmadan iborat?",
+    "options": ["2", "3", "4", "5"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi qon tomirida qon yurakdan chiqadi?",
+    "options": ["Vena", "Kapillyar", "Arteriya", "Limfa tomiri"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi gaz o'simliklar uchun fotosintezda kerak?",
+    "options": ["Azot", "Vodorod", "Metan", "Kislorod"],
+    "correct_index": 3
+  },
+  {
+    "question": "Odam tanasida eng katta organ?",
+    "options": ["Miya", "Teri", "Jigar", "Yurak"],
+    "correct_index": 1
+  },
+  {
+    "question": "Odam skeletining asosiy vazifasi?",
+    "options": ["Nafas olish", "Ovqat hazm qilish", "Organlarni himoya qilish", "Qonni tozalash"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organ qon ishlab chiqarishda qatnashadi?",
+    "options": ["Miya", "O'pka", "Suyak iligi", "Yurak"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organizm avtotrof?",
+    "options": ["Daraxt", "Qo'y", "Zamburug'", "Bo'ri"],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi organizm geterotrof?",
+    "options": ["Archa", "Suv o'ti", "Qo'y", "Bug'doy"],
+    "correct_index": 2
+  },
+  {
+    "question": "Tirik organizmlarning asosiy belgisi?",
+    "options": ["Yaltirashi", "Harakatlanmasligi", "O'sishi va ko'payishi", "Metall bo'lishi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Bitta hujayradan iborat organizm?",
+    "options": ["Barg", "Inson", "Sut emizuvchilar", "Amoba"],
+    "correct_index": 3
+  },
+  {
+    "question": "Mitoxondriya vazifasi?",
+    "options": ["Energiya ishlab chiqarish", "Suv saqlash", "Bo'linish", "Yozishni boshqarish"],
+    "correct_index": 0
+  },
+  {
+    "question": "Xloroplast faqat qayerda bo'ladi?",
+    "options": ["Hayvon hujayrasida", "O'simlik hujayrasida", "Barcha hujayrada", "Qonda"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi hujayra yadrosi yo'q?",
+    "options": ["O'simlik hujayrasi", "Hayvon hujayrasi", "Bakteriya hujayrasi", "Zamburug' hujayrasi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Nerv impulslarini o'tkazadigan hujayra?",
+    "options": ["Eritrotsit", "Neuron", "Leykotsit", "Xondrotsit"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qonda kislorod tashuvchi hujayra?",
+    "options": ["Leykotsit", "Trombotsit", "Eritrotsit", "Plazma"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi qon hujayrasi himoya vazifasini bajaradi?",
+    "options": ["Trombotsit", "Eritrotsit", "Leykotsit", "Zoti yo'q"],
+    "correct_index": 2
+  },
+  {
+    "question": "Odamda nafas olish organlari tizimi?",
+    "options": ["Yurak va qon tomir", "O'pka va nafas yo'llari", "Mushak va suyak", "Teri va soch"],
+    "correct_index": 1
+  },
+  {
+    "question": "Ovqat hazm qilish qayerdan boshlanadi?",
+    "options": ["Ichak", "Oshqozon", "Og'iz bo'shlig'i", "Jigar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organ insulin ishlab chiqaradi?",
+    "options": ["Buyrak", "Jigar", "Oshqozon osti bezi", "Talqon"],
+    "correct_index": 2
+  },
+  {
+    "question": "Genlar qaerda joylashgan?",
+    "options": ["Sitoplazma", "Membrana", "Xromosomalar", "Vakuola"],
+    "correct_index": 2
+  },
+  {
+    "question": "Odamda normal tana harorati?",
+    "options": ["34°C", "35°C", "36.6°C", "40°C"],
+    "correct_index": 2
+  },
+  {
+    "question": "Viruslar ko'payishi uchun nima kerak?",
+    "options": ["Tuz", "Tirik hujayra", "Suv", "Metall"],
+    "correct_index": 1
+  },
+  {
+    "question": "Ekologiya nimani o'rganadi?",
+    "options": ["Organlarning tuzilishi", "Organizmlar va muhit", "Faqat odamni", "Faqat hayvonlarni"],
+    "correct_index": 1
+  },
+  {
+    "question": "Zanjirda birinchi bo'g'in odatda kim?",
+    "options": ["Iste'molchi", "Prodyuser", "Parazit", "Yirtqich"],
+    "correct_index": 1
+  },
+  {
+    "question": "Quyidagilardan qaysi biri prodyuser?",
+    "options": ["Bo'ri", "Qo'y", "Archa", "Mushuk"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi guruh sut emizuvchi?",
+    "options": ["Qushlar", "Baliqlar", "Suv o'tlari", "Bo'ri"],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi hayvon sovuq qonli?",
+    "options": ["Sigir", "Ilon", "It", "Odam"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qushlarga xos belgi?",
+    "options": ["Pat", "Tanaqop", "Tarozicha", "Shox"],
+    "correct_index": 0
+  },
+  {
+    "question": "Baliqlarning nafas olish organi?",
+    "options": ["O'pka", "Jabralar", "Teri", "Qorin bo'shlig'i"],
+    "correct_index": 1
+  },
+  {
+    "question": "Yirtqich hayvon misoli?",
+    "options": ["Qo'y", "Sigir", "Bo'ri", "Qo'chqor"],
+    "correct_index": 2
+  },
+  {
+    "question": "Odam tanasidagi eng katta bo'g'im?",
+    "options": ["Bilak", "Tizza", "Barmoq", "Bo'yin"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tana suyuqligi bo'lmagan javob?",
+    "options": ["Qon", "Limfa", "Plazma", "Suyak"],
+    "correct_index": 3
+  },
+  {
+    "question": "Odam skeletining bosh qismi?",
+    "options": ["Ko'krak qafasi", "Umurtqa", "Bosh suyagi", "Panja"],
+    "correct_index": 2
+  },
+  {
+    "question": "Vegetativ ko'payish qaysi organizmda ko'p?",
+    "options": ["Sut emizuvchi", "Qushlar", "O'simliklar", "Baliqlar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organ ko'rish uchun xizmat qiladi?",
+    "options": ["Quloq", "Burun", "Ko'z", "Teri"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organ eshitish uchun?",
+    "options": ["Ko'z", "Til", "Quloq", "Teri"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organ hid bilishda ishtirok etadi?",
+    "options": ["Quloq", "Burun", "Ko'z", "Til"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi vitamin ko'rish bilan bog'liq?",
+    "options": ["A vitamini", "B1 vitamini", "C vitamini", "K vitamini"],
+    "correct_index": 0
+  },
+  {
+    "question": "Suyak mustahkamligi uchun muhim element?",
+    "options": ["Natriy", "Kalsiy", "Xlor", "Temir"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi kasallik virusli?",
+    "options": ["Suvchechak", "Tish og'rig'i", "Sinish", "Kesilish"],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi kasallik bakterial bo'lishi mumkin?",
+    "options": ["Gripp", "Angina", "Suvchechak", "Qizamiq"],
+    "correct_index": 1
+  },
+  {
+    "question": "Parazit organizm misoli?",
+    "options": ["Yer qurti", "Bo'ri", "Sigir", "Archa"],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi struktura faqat o'simlikda bor?",
+    "options": ["Yadro", "Ribosoma", "Hujayra devori", "Mitoxondriya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra membranasining asosiy funksiyasi?",
+    "options": ["Energiyani saqlash", "Kasallik keltirish", "Moddalar almashinuvi nazorati", "Qonni haydash"],
+    "correct_index": 2
+  },
+  {
+    "question": "Ribosomalar vazifasi?",
+    "options": ["Oqsil sintezi", "DNK saqlash", "Suv saqlash", "Energiya ishlab chiqarish"],
+    "correct_index": 0
+  },
+  {
+    "question": "Lizosoma nima qiladi?",
+    "options": ["Hazm qiladi", "Fotosintez", "Nafas oladi", "Qon haydaydi"],
+    "correct_index": 0
+  },
+  {
+    "question": "Qanday hujayralar jinsiy ko'payishda ishtirok etadi?",
+    "options": ["Somatik", "Gameta", "Nerv", "Mushak"],
+    "correct_index": 1
+  },
+  {
+    "question": "Organlar birgalikda nima hosil qiladi?",
+    "options": ["Hujayra", "To'qima", "Organ tizimi", "Atom"],
+    "correct_index": 2
+  },
+  {
+    "question": "Bir xil hujayralar yig'indisi?",
+    "options": ["Organ", "To'qima", "Organ tizimi", "Organizm"],
+    "correct_index": 1
+  },
+  {
+    "question": "Havo almashinuvini qaysi tuzilma ta'minlaydi?",
+    "options": ["Alveolalar", "Kapillyarlar", "Bo'g'imlar", "Mushaklar"],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi tizim gormonlar ishlab chiqaradi?",
+    "options": ["Nerv tizimi", "Endokrin tizim", "Mushak tizimi", "Skelet tizimi"],
+    "correct_index": 1
+  },
+  {
+    "question": "Jigar asosiy vazifalaridan biri?",
+    "options": ["Suyak qurish", "Qonni tozalash", "Nafas olish", "Signallar yuborish"],
+    "correct_index": 1
+  },
+  {
+    "question": "Buyraklar nima qiladi?",
+    "options": ["Nafas oladi", "Qonni filtrlash", "Oqsil sintezi", "Fotosintez"],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra yadrosida nima bo'ladi?",
+    "options": ["DNK", "Jabralar", "Patlar", "Tanaqop"],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi xromosoma jufti jinsni belgilaydi?",
+    "options": ["11-juft", "22-juft", "X va Y", "3-juft"],
+    "correct_index": 2
+  },
+  {
+    "question": "Moslashish (adaptatsiya) nima?",
+    "options": ["Tasodifiy harakat", "Muhitga moslashish", "Ovqat hazm qilish", "Qon almashinuvi"],
+    "correct_index": 1
+  },
+  {
+    "question": "Populyatsiya bu…",
+    "options": ["Bir organizm", "Tur ichidagi guruh", "Bitta hujayra", "Faqat hayvonlar"],
+    "correct_index": 1
+  },
+  {
+    "question": "Ekotizimga nimalar kiradi?",
+    "options": ["Faqat hayvonlar", "Faqat o'simliklar", "Tirik va noorganik muhit", "Faqat odamlar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Biotsenoz bu…",
+    "options": ["Tog' tizmasi", "Ob-havo", "Organizmlar majmui", "Suv havzasi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organizm parchalovchi (reducent)?",
+    "options": ["Bo'ri", "Sigir", "Bakteriya va zamburug'", "Daraxt"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi jarayon nafas olishga teskari?",
+    "options": ["Fotosintez", "Hazm qilish", "Bo'linish", "Darajalanish"],
+    "correct_index": 0
+  },
+  {
+    "question": "Oqsil tarkibidagi asosiy element?",
+    "options": ["Uglerod", "Azot", "Natriy", "Xlor"],
+    "correct_index": 1
+  },
+  {
+    "question": "Suv organizm uchun nima?",
+    "options": ["Faqat erituvchi", "Faqat chiqindi", "Muhim komponent", "Faqat energiya"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi hayvon sut beruvchi?",
+    "options": ["Qaplumbaqa", "Baliq", "Tuya", "To'tiqush"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi organizm lichinka bosqichidan o'tadi?",
+    "options": ["Sigir", "Odam", "Kapalak", "Daraxt"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi tuzilma o'simlikni tuproqqa bog'laydi?",
+    "options": ["Barg", "Ildiz", "Poya", "Gul"],
+    "correct_index": 1
+  },
+  {
+    "question": "O'simlikda suv ko'tarilishini asosan nima ta'minlaydi?",
+    "options": ["Barg", "Gul", "Yog'lar", "Tomirlar"],
+    "correct_index": 3
+  },
+  {
+    "question": "Gulning asosiy vazifasi?",
+    "options": ["Nafas olish", "Ko'payish", "Suv saqlash", "Soya berish"],
+    "correct_index": 1
+  },
+  {
+    "question": "Urug' qaysi organ hosilasi?",
+    "options": ["Barg", "Gul", "Poya", "Ildiz"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi organ issiqlikni sezadi?",
+    "options": ["Ko'z", "Til", "Teri", "Quloq"],
+    "correct_index": 2
+  },
+  {
+    "question": "Mushaklarning asosiy vazifasi?",
+    "options": ["Himoya", "Harakat", "Hazm qilish", "Qonni tozalash"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi tizim signallarni uzatadi?",
+    "options": ["Mushak", "Nerv", "Hazm", "Skelet"],
+    "correct_index": 1
+  },
+  {
+    "question": "Refleks nima?",
+    "options": ["Tasodifiy harakat", "O'ylab qilish", "Avtomatik javob", "Oddiy ko'rinish"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi bir immun tizimga tegishli?",
+    "options": ["Antitela", "Eritrotsit", "Alveola", "Neuron"],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi hujayra bo'linmaydi?",
+    "options": ["Teri", "Mushak", "Nerv hujayrasi", "Ichak hujayrasi"],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitotik bo'linish natijasida…",
+    "options": ["Gameta hosil bo'ladi", "Ikki bir xil hujayra", "To'rt farqli hujayra", "Umuman hujayra yo'q"],
+    "correct_index": 1
+  },
+  {
+    "question": "Jinsiy ko'payish afzalligi?",
+    "options": ["Sekin bo'ladi", "Energiyani tejaydi", "Turli xil avlod", "Faqat klonlar"],
+    "correct_index": 2
+  },
+  {
+    "question": "Sterillik nimani anglatadi?",
+    "options": ["Ko'payish", "Kasallik", "Mikrobsiz holat", "Issiqlik"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi omil tirik organizmlar uchun muhit emas?",
+    "options": ["Suv", "Havo", "Yer", "Plastmassa"],
+    "correct_index": 3
+  },
+  {
+    "question": "Mutatsiya bu…",
+    "options": ["Oziqlanish", "Gen o'zgarishi", "Ko'payish", "Bo'linish"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi organ toksinlarni parchalaydi?",
+    "options": ["Ko'z", "Jigar", "Buyrak", "O'pka"],
+    "correct_index": 1
+  },
+  {
+    "question": "Tana massaning asosiy qismini nima tashkil etadi?",
+    "options": ["Suv", "Yog'", "Kaltsiy", "Temir"],
+    "correct_index": 0
+  },
+  {
+    "question": "Odamda nechta asosiy qon guruhi bor?",
+    "options": ["2", "3", "4", "5"],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri yuqumli kasallik emas?",
+    "options": ["Gripp", "Qizamiq", "Suvchechak", "Sinish"],
+    "correct_index": 3
+  },
+  {
+    "question": "Antibiotiklar qaysi organizmlarga ta'sir qiladi?",
+    "options": ["Virus", "Bakteriya", "Metall", "Plastik"],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi jarayon organizmni kislorod bilan ta'minlaydi?",
+    "options": ["Hazm", "Nafas olish", "Bo'linish", "Sekretsiya"],
+    "correct_index": 1
+  },
+  {
+    "question": "Sog'lom turmush tarzi uchun muhim emas?",
+    "options": ["Uyqu", "Harakat", "Chekish", "To'g'ri ovqat"],
+    "correct_index": 2
+  }
+]

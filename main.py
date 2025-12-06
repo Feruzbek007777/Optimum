@@ -1,101 +1,61 @@
 import telebot
 import os
-from telebot.types import ReplyKeyboardMarkup, KeyboardButton
-from config import BOT_TOKEN, ADMINS
+
+from config import BOT_TOKEN
+
 from handlers.users.commands import setup_user_commands
 from handlers.users.text_handlers import setup_user_text_handlers
 from handlers.users.callbacks import setup_user_callbacks
+
 from handlers.admins.commands import setup_admin_commands
 from handlers.admins.text_handlers import setup_admin_text_handlers
 from handlers.admins.callbacks import setup_admin_callbacks
+
 from handlers.translate.handler import setup_translate_handlers
-from database.database import add_admin_group, delete_admin_group, get_all_admin_groups
-from utils.backup import safe_backup_database, safe_restore_database
-from keyboards.default import main_menu_keyboard  # 💡 Asosiy menyuni import qilamiz
+
+from database.database import init_database
+
+from utils.backup import start_auto_backup   # faqat avto-backup shu yerdan
+from keyboards.default import main_menu_keyboard
+from handlers.users.quiz import setup_quiz_handlers
+from handlers.users.fastwords import setup_fastwords_handlers
+from handlers.users.referrals import setup_referral_handlers
+from handlers.backup_handler import setup_backup_handlers   # 🔥 YANGI: backup + /database handlerlari
 
 
-# Bot yaratish
+# ---------- BOT ----------
+
 bot = telebot.TeleBot(BOT_TOKEN)
 
-# Papkalarni yaratish
+# Kerakli papkalar
 os.makedirs("images", exist_ok=True)
 os.makedirs("backups", exist_ok=True)
+
 
 # Handlerlarni sozlash
 setup_user_commands(bot)
 setup_user_text_handlers(bot)
 setup_user_callbacks(bot)
+
 setup_admin_commands(bot)
 setup_admin_text_handlers(bot)
 setup_admin_callbacks(bot)
+
 setup_translate_handlers(bot)
+setup_quiz_handlers(bot)
+setup_fastwords_handlers(bot)
+setup_referral_handlers(bot)
 
+# 🔥 Backup, restore va guruh handlerlari
+setup_backup_handlers(bot)
 
-# 📌 Guruhlarni qo‘shish
-@bot.message_handler(content_types=['new_chat_members'])
-def handle_new_chat_members(message):
-    for member in message.new_chat_members:
-        if member.id == bot.get_me().id:
-            group_id = message.chat.id
-            group_title = message.chat.title
-            success = add_admin_group(group_id, group_title)
-            if success:
-                bot.send_message(group_id, "✅ Bot qo‘shildi! Guruh ma'lumotlari saqlandi.")
-            else:
-                bot.send_message(group_id, "❌ Guruh ma'lumotlarini saqlashda xatolik!")
-
-
-# 📌 Guruhdan chiqarilganda
-@bot.message_handler(content_types=['left_chat_member'])
-def handle_left_chat_member(message):
-    if message.left_chat_member.id == bot.get_me().id:
-        group_id = message.chat.id
-        success = delete_admin_group(group_id)
-        if success:
-            print(f"✅ Guruhdan chiqarildi: {group_id}")
-
-
-# 📌 Admin uchun database paneli
-@bot.message_handler(commands=['database'])
-def show_database_panel(message):
-    if message.from_user.id in ADMINS:
-        markup = ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.row(KeyboardButton("💾 Backup"), KeyboardButton("♻️ Restore"))
-        markup.add(KeyboardButton("⬅️ Ortga"))
-        bot.send_message(message.chat.id, "📂 Ma'lumotlar bazasi paneli:", reply_markup=markup)
-    else:
-        bot.send_message(message.chat.id, "❌ Siz admin emassiz.!")
-
-
-# 📌 Backup tugmasi
-@bot.message_handler(func=lambda m: m.text == "💾 Backup" and m.from_user.id in ADMINS)
-def manual_backup(message):
-    backup_file = safe_backup_database()
-    if backup_file:
-        bot.send_document(message.chat.id, open(backup_file, "rb"))
-        bot.send_message(message.chat.id, "✅ Backup yaratildi va yuborildi.")
-    else:
-        bot.send_message(message.chat.id, "❌ Backup yaratishda xatolik!")
-
-
-# 📌 Restore tugmasi
-@bot.message_handler(func=lambda m: m.text == "♻️ Restore" and m.from_user.id in ADMINS)
-def manual_restore(message):
-    restored_file = safe_restore_database()
-    if restored_file:
-        bot.send_message(message.chat.id, f"✅ Restore qilindi: `{restored_file}`", parse_mode="Markdown")
-    else:
-        bot.send_message(message.chat.id, "❌ Restore uchun backup topilmadi.")
-
-
-# 📌 ⬅️ Ortga tugmasi — asosiy user menyusiga qaytaradi
-@bot.message_handler(func=lambda m: m.text == "⬅️ Ortga")
-def back_to_main_menu(message):
-    markup = main_menu_keyboard()  # 💡 Shu joyda import qilingan user menyu ishlatiladi
-    bot.send_message(message.chat.id, "🏠 Asosiy menyuga qaytdingiz:", reply_markup=markup)
-
-
-print("🚀 Bot ishga tushdi...")
 
 if __name__ == "__main__":
+    # 🔥 Bazani ishga tushiramiz
+    init_database()
+
+    # 🔥 Har 6 soatda avto-backupni ishga tushiramiz
+    start_auto_backup(interval_hours=6)
+
+    print("🚀 Bot ishga tushdi...")
     bot.polling(none_stop=True)
