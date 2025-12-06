@@ -150,8 +150,7 @@ def setup_user_text_handlers(bot):
         bot.send_message(
             message.chat.id,
             intro_text,
-            reply_markup=inline_kb,
-            message_effect_id="5104841245755180586",
+            reply_markup=inline_kb
         )
 
         # 2-xabar: odatdagi menyu tugmalari
