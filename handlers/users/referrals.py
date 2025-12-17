@@ -58,7 +58,7 @@ def build_referrals_text(bot, user_id, username, full_name):
     lines.append(display_link)  # Telegram buni avtomatik link qiladi
     lines.append("")
     lines.append("ℹ️ Har bir yangi foydalanuvchi sizning havolangiz orqali kelib, botdan foydalansa:")
-    lines.append("• Sizga +50 ball qo'shiladi ✅")
+    lines.append("• Sizga +300 ball qo'shiladi ✅")
     lines.append("• Takliflar soningiz ortib boradi 📈")
     lines.append("")
     if refs:

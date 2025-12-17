@@ -55,7 +55,7 @@ def setup_user_commands(bot):
                         "🎉 Yangi taklif!\n\n"
                         "Sizning taklif havolangiz orqali yangi foydalanuvchi qo'shildi:\n"
                         f"• {ref_user_name}\n\n"
-                        f"💰 Sizga +50 ball qo'shildi!\n"
+                        f"💰 Sizga +300 ball qo'shildi!\n"
                         f"📊 Umumiy ballaringiz: {total_points}\n"
                         f"👥 Umumiy takliflaringiz: {total_refs}"
                     )
