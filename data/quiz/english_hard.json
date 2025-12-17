@@ -1,502 +1,7002 @@
 [
   {
-    "question": "I ___ to Japan three times.",
-    "options": ["went", "have been", "was going", "had been"],
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "has",
+      "have",
+      "will have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Permission is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "something",
+      "nothing",
+      "anything"
+    ],
     "correct_index": 1
   },
   {
-    "question": "She ___ her keys again.",
-    "options": ["has lost", "lost", "is losing", "had lost"],
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So do",
+      "So can",
+      "Neither do",
+      "Neither can"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must be",
+      "might be",
+      "should've",
+      "must've"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Data is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "everything",
+      "nothing",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill out",
+      "fill up",
+      "fill in",
+      "fill on"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Have",
+      "Had",
+      "Having",
+      "Has"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill in",
+      "fill out",
+      "fill up",
+      "fill on"
+    ],
     "correct_index": 0
   },
   {
-    "question": "They ___ in this city since 2012.",
-    "options": ["lived", "have lived", "are living", "had lived"],
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "did",
+      "had",
+      "was",
+      "have"
+    ],
     "correct_index": 1
   },
   {
-    "question": "We ___ the report yet.",
-    "options": ["didn't finish", "haven't finished", "don't finish", "hadn't finished"],
-    "correct_index": 1
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "were",
+      "was",
+      "had been",
+      "have been"
+    ],
+    "correct_index": 2
   },
   {
-    "question": "He ___ his homework already.",
-    "options": ["has done", "did", "was doing", "had done"],
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "being",
+      "is",
+      "be",
+      "was"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "is",
+      "be",
+      "were",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "was",
+      "were",
+      "be",
+      "is"
+    ],
     "correct_index": 0
   },
   {
-    "question": "I ___ for you for over an hour.",
-    "options": ["am waiting", "have been waiting", "waited", "had waited"],
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Had",
+      "Having",
+      "Has",
+      "Have"
+    ],
     "correct_index": 1
   },
   {
-    "question": "She ___ here since the morning.",
-    "options": ["works", "has been working", "worked", "had worked"],
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "might be",
+      "must've",
+      "should've",
+      "must be"
+    ],
     "correct_index": 1
   },
   {
-    "question": "They ___ about moving abroad.",
-    "options": ["have been talking", "talked", "were talking", "had talked"],
+    "question": "Advice is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "nothing",
+      "anything",
+      "everything"
+    ],
     "correct_index": 0
   },
   {
-    "question": "We ___ for this exam all week.",
-    "options": ["studied", "have been studying", "were studying", "had been studying"],
-    "correct_index": 1
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "will have",
+      "have",
+      "had",
+      "has"
+    ],
+    "correct_index": 2
   },
   {
-    "question": "He ___ too much coffee lately.",
-    "options": ["drank", "has been drinking", "has drunk", "had drunk"],
-    "correct_index": 1
-  },
-  {
-    "question": "By the time we arrived, the film ___ .",
-    "options": ["has started", "had started", "started", "was starting"],
-    "correct_index": 1
-  },
-  {
-    "question": "She ___ the email before I could call her.",
-    "options": ["sent", "had sent", "has sent", "was sending"],
-    "correct_index": 1
-  },
-  {
-    "question": "They ___ anything about the change before the meeting.",
-    "options": ["hadn't heard", "didn't hear", "haven't heard", "weren't hearing"],
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "be",
+      "being",
+      "was",
+      "is"
+    ],
     "correct_index": 0
   },
   {
-    "question": "He was nervous because he ___ never flown before.",
-    "options": ["has", "had", "was", "would"],
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill up",
+      "fill on",
+      "fill out",
+      "fill in"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "is",
+      "be",
+      "was",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "says",
+      "is said",
+      "was say",
+      "said"
+    ],
     "correct_index": 1
   },
   {
-    "question": "After we ___ dinner, we went for a walk.",
-    "options": ["have finished", "had finished", "finished", "were finishing"],
-    "correct_index": 1
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So can",
+      "So do",
+      "Neither can",
+      "Neither do"
+    ],
+    "correct_index": 2
   },
   {
-    "question": "By next year, I ___ my degree.",
-    "options": ["finish", "will have finished", "will finish", "am finishing"],
-    "correct_index": 1
-  },
-  {
-    "question": "They ___ the bridge by the end of the month.",
-    "options": ["will have built", "have built", "will build", "are building"],
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must've",
+      "should've",
+      "must be",
+      "might be"
+    ],
     "correct_index": 0
   },
   {
-    "question": "By 10 p.m., we ___ the project.",
-    "options": ["will complete", "will have completed", "complete", "completed"],
-    "correct_index": 1
-  },
-  {
-    "question": "In two years' time, she ___ here for a decade.",
-    "options": ["will work", "will have worked", "has worked", "had worked"],
-    "correct_index": 1
-  },
-  {
-    "question": "By Friday, you ___ all the necessary documents.",
-    "options": ["will send", "will have sent", "have sent", "had sent"],
-    "correct_index": 1
-  },
-  {
-    "question": "If I ___ earlier, I wouldn't have missed the train.",
-    "options": ["left", "had left", "would leave", "have left"],
-    "correct_index": 1
-  },
-  {
-    "question": "If she had studied harder, she ___ the exam.",
-    "options": ["would pass", "would have passed", "passed", "had passed"],
-    "correct_index": 1
-  },
-  {
-    "question": "They wouldn't be so tired if they ___ up so late last night.",
-    "options": ["hadn't stayed", "didn't stay", "don't stay", "wouldn't stay"],
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "had been",
+      "have been",
+      "were",
+      "was"
+    ],
     "correct_index": 0
   },
   {
-    "question": "If you ___ the instructions, you wouldn't be confused now.",
-    "options": ["followed", "had followed", "would follow", "were following"],
-    "correct_index": 1
-  },
-  {
-    "question": "If we hadn't taken a taxi, we ___ on time.",
-    "options": ["wouldn't arrive", "wouldn't have arrived", "hadn't arrived", "didn't arrive"],
-    "correct_index": 1
-  },
-  {
-    "question": "If he ___ more organized, he wouldn't lose things all the time.",
-    "options": ["was", "were", "had been", "would be"],
-    "correct_index": 1
-  },
-  {
-    "question": "If they ___ earlier, they could still catch the plane.",
-    "options": ["left", "had left", "leave", "would leave"],
+    "question": "This is the the schedule ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "who",
+      "where",
+      "when"
+    ],
     "correct_index": 0
   },
   {
-    "question": "You wouldn't have felt so bad if you ___ anything.",
-    "options": ["hadn't eaten", "haven't eaten", "didn't eat", "don't eat"],
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "have",
+      "was",
+      "had",
+      "did"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "did I realise",
+      "I realised",
+      "realised I",
+      "I did realise"
+    ],
     "correct_index": 0
   },
   {
-    "question": "If I ___ you, I would apologize.",
-    "options": ["am", "were", "had been", "be"],
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Has",
+      "Having",
+      "Have",
+      "Had"
+    ],
     "correct_index": 1
   },
   {
-    "question": "If she ___ the bus, she will be late.",
-    "options": ["misses", "missed", "had missed", "has missed"],
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "have",
+      "did",
+      "had",
+      "was"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "was",
+      "had",
+      "did",
+      "has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So can",
+      "Neither can",
+      "Neither do",
+      "So do"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "is said",
+      "says",
+      "said",
+      "was say"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "if",
+      "unless",
+      "so",
+      "because"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Unless",
+      "Although",
+      "Since",
+      "Because"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I realised",
+      "did I realise",
+      "realised I",
+      "I did realise"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "so",
+      "if",
+      "because",
+      "unless"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "has",
+      "will have",
+      "had",
+      "have"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "a team",
+      "team work",
+      "the team",
+      "teamwork"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "many",
+      "few",
+      "several",
+      "little"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "for",
+      "at",
+      "on",
+      "in"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Has",
+      "Have",
+      "Had",
+      "Having"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "were",
+      "have been",
+      "had been",
+      "was"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "was",
+      "is",
+      "be",
+      "were"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "when",
+      "where",
+      "who"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "is said",
+      "was say",
+      "says",
+      "said"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "was",
+      "did",
+      "had",
+      "has"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "called",
+      "calling",
+      "call",
+      "to call"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "had traveling",
+      "has been traveling",
+      "was traveling",
+      "had been traveling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "had been",
+      "were",
+      "have been",
+      "was"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Feedback is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "nothing",
+      "something",
+      "everything"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "had",
+      "did",
+      "has",
+      "was"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Because",
+      "Although",
+      "Unless",
+      "Since"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither do",
+      "So can",
+      "So do",
+      "Neither can"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I realised",
+      "realised I",
+      "did I realise",
+      "I did realise"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the device ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "who",
+      "that",
+      "when"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "a team",
+      "teamwork",
+      "team work",
+      "the team"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "was",
+      "had been",
+      "were",
+      "have been"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "teamwork",
+      "the team",
+      "team work",
+      "a team"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the experiment ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "who",
+      "when",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Daniel was exhausted because she ___ for hours.",
+    "options": [
+      "had been arguing",
+      "was arguing",
+      "has been arguing",
+      "had arguing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "should've",
+      "must be",
+      "might be",
+      "must've"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "so",
+      "because",
+      "unless",
+      "if"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "team work",
+      "a team",
+      "the team",
+      "teamwork"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither do",
+      "Neither can",
+      "So do",
+      "So can"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "may",
+      "can",
+      "must",
+      "should"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "however",
+      "meanwhile",
+      "besides",
+      "therefore"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "anything",
+      "something",
+      "everything"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "used",
+      "will",
+      "would",
+      "use to"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "used",
+      "use to",
+      "will",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "so",
+      "if",
+      "unless",
+      "because"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "teamwork",
+      "team work",
+      "the team",
+      "a team"
+    ],
     "correct_index": 0
   },
   {
     "question": "You ___ have told me earlier; now it's too late.",
-    "options": ["might", "should", "must", "could"],
-    "correct_index": 1
-  },
-  {
-    "question": "He looks tired. He ___ have been working all night.",
-    "options": ["must", "should", "could", "would"],
-    "correct_index": 0
-  },
-  {
-    "question": "They ___ have left by now; it's almost midnight.",
-    "options": ["should", "must", "can't", "could"],
-    "correct_index": 0
-  },
-  {
-    "question": "You ___ be joking. This can't be true.",
-    "options": ["must", "should", "have to", "would"],
-    "correct_index": 0
-  },
-  {
-    "question": "She ___ have forgotten about the meeting; she always writes things down.",
-    "options": ["can't", "must", "should", "might"],
-    "correct_index": 0
-  },
-  {
-    "question": "You ___ smoke in here. It's forbidden.",
-    "options": ["mustn't", "don't have to", "can't have", "shouldn't have"],
-    "correct_index": 0
-  },
-  {
-    "question": "We ___ have taken a taxi. Walking was a bad idea.",
-    "options": ["must", "should", "would", "might"],
-    "correct_index": 1
-  },
-  {
-    "question": "He ___ speak four languages fluently.",
-    "options": ["can", "could", "might", "must"],
-    "correct_index": 0
-  },
-  {
-    "question": "They ___ be at home; all the lights are off.",
-    "options": ["must", "can't", "should", "might"],
-    "correct_index": 1
-  },
-  {
-    "question": "You ___ worry so much; everything will be fine.",
-    "options": ["must", "needn't", "can't", "should"],
-    "correct_index": 1
-  },
-  {
-    "question": "The report ___ by the time the boss arrives.",
-    "options": ["will have been finished", "has finished", "was finishing", "is finished"],
-    "correct_index": 0
-  },
-  {
-    "question": "A new bridge ___ in this area next year.",
-    "options": ["is built", "will be built", "was built", "has been built"],
-    "correct_index": 1
-  },
-  {
-    "question": "The problem ___ yet, but we're working on it.",
-    "options": ["isn't solved", "hasn't been solved", "wasn't solved", "won't be solved"],
-    "correct_index": 1
-  },
-  {
-    "question": "Several paintings ___ from the gallery last night.",
-    "options": ["have been stolen", "were stolen", "are stolen", "had stolen"],
-    "correct_index": 1
-  },
-  {
-    "question": "This song ___ by millions of people around the world.",
-    "options": ["is listened", "is listened to", "listens", "is listening"],
-    "correct_index": 1
-  },
-  {
-    "question": "The woman ___ car was stolen went to the police.",
-    "options": ["who", "whose", "which", "that"],
-    "correct_index": 1
-  },
-  {
-    "question": "This is the most interesting book ___ I've ever read.",
-    "options": ["who", "which", "what", "that"],
+    "options": [
+      "may",
+      "must",
+      "can",
+      "should"
+    ],
     "correct_index": 3
   },
   {
-    "question": "The reason ___ he left was never explained.",
-    "options": ["which", "why", "that", "when"],
-    "correct_index": 1
-  },
-  {
-    "question": "My brother, ___ lives abroad, is visiting us next week.",
-    "options": ["who", "which", "that", "where"],
-    "correct_index": 0
-  },
-  {
-    "question": "He didn't study; ___, he failed the exam.",
-    "options": ["although", "however", "because", "so"],
-    "correct_index": 1
-  },
-  {
-    "question": "Could you tell me where ___ ?",
-    "options": ["is the station", "the station is", "is it the station", "station is"],
-    "correct_index": 1
-  },
-  {
-    "question": "I wonder what time ___ .",
-    "options": ["does the concert start", "the concert starts", "starts the concert", "is starting the concert"],
-    "correct_index": 1
-  },
-  {
-    "question": "Do you know who ___ this mess?",
-    "options": ["did", "has done", "did do", "does"],
-    "correct_index": 1
-  },
-  {
-    "question": "I'd like to know why ___ late.",
-    "options": ["is he", "he is", "is he being", "being he"],
-    "correct_index": 1
-  },
-  {
-    "question": "He asked me whether ___ the meeting.",
-    "options": ["I could attend", "could I attend", "attend I could", "I attend could"],
-    "correct_index": 0
-  },
-  {
-    "question": "Only after the meeting ___ how serious the situation was.",
-    "options": ["we realized", "did we realize", "we did realize", "realized we"],
-    "correct_index": 1
-  },
-  {
-    "question": "Hardly had I sat down ___ the phone rang.",
-    "options": ["when", "than", "then", "as"],
-    "correct_index": 0
-  },
-  {
-    "question": "Not until he apologized ___ to speak to him again.",
-    "options": ["I agreed", "did I agree", "I did agree", "agreed I"],
-    "correct_index": 1
-  },
-  {
-    "question": "What I dislike most ___ people who are rude.",
-    "options": ["are", "is", "be", "being"],
-    "correct_index": 1
-  },
-  {
-    "question": "Never ___ such a confusing explanation.",
-    "options": ["I have heard", "have I heard", "had I hear", "I heard"],
-    "correct_index": 1
-  },
-  {
-    "question": "I ___ my keys. I can't find them anywhere.",
-    "options": ["have lost", "lost", "had lost", "am losing"],
-    "correct_index": 0
-  },
-  {
-    "question": "We ___ to that restaurant last week.",
-    "options": ["have gone", "were going", "went", "had gone"],
-    "correct_index": 2
-  },
-  {
-    "question": "She ___ him since they were at university together.",
-    "options": ["has known", "knew", "had known", "knows"],
-    "correct_index": 0
-  },
-  {
-    "question": "They ___ in Paris for six months before moving to Rome.",
-    "options": ["have lived", "lived", "had lived", "were living"],
-    "correct_index": 2
-  },
-  {
-    "question": "I can't believe you ___ all the cake!",
-    "options": ["have eaten", "ate", "had eaten", "were eating"],
-    "correct_index": 0
-  },
-  {
-    "question": "He said he ___ help us the next day.",
-    "options": ["will", "would", "can", "could"],
-    "correct_index": 1
-  },
-  {
-    "question": "She promised she ___ back before midnight.",
-    "options": ["is", "would be", "was going", "will be"],
-    "correct_index": 1
-  },
-  {
-    "question": "I knew it ___ rain, so I took an umbrella.",
-    "options": ["will", "would", "was going", "is going to"],
-    "correct_index": 1
-  },
-  {
-    "question": "They thought the journey ___ longer than it actually did.",
-    "options": ["will take", "would take", "took", "had taken"],
-    "correct_index": 1
-  },
-  {
-    "question": "He told me he ___ already finished the book.",
-    "options": ["has", "had", "was", "would"],
-    "correct_index": 1
-  },
-  {
-    "question": "I wish I ___ more time to finish this.",
-    "options": ["have", "had", "would have", "will have"],
-    "correct_index": 1
-  },
-  {
-    "question": "If only she ___ what to do now.",
-    "options": ["knows", "knew", "had known", "would know"],
-    "correct_index": 1
-  },
-  {
-    "question": "I wish you ___ making so much noise.",
-    "options": ["stop", "would stop", "stopped", "had stopped"],
-    "correct_index": 1
-  },
-  {
-    "question": "If only we ___ earlier, we wouldn't be late.",
-    "options": ["left", "had left", "would leave", "have left"],
-    "correct_index": 0
-  },
-  {
-    "question": "I wish I ___ so much coffee last night.",
-    "options": ["didn't drink", "hadn't drunk", "haven't drunk", "wouldn't drink"],
-    "correct_index": 1
-  },
-  {
-    "question": "He admitted ___ the money.",
-    "options": ["to take", "taking", "to taking", "take"],
-    "correct_index": 1
-  },
-  {
-    "question": "She suggested ___ a break.",
-    "options": ["to take", "taking", "take", "to taking"],
-    "correct_index": 1
-  },
-  {
-    "question": "We can't afford ___ another mistake.",
-    "options": ["making", "to make", "to making", "make"],
-    "correct_index": 1
-  },
-  {
-    "question": "I look forward to ___ from you soon.",
-    "options": ["hear", "hearing", "to hear", "to hearing"],
-    "correct_index": 1
-  },
-  {
-    "question": "They agreed ___ the terms of the contract.",
-    "options": ["accept", "to accept", "accepting", "to accepting"],
-    "correct_index": 1
-  },
-  {
-    "question": "___ being very tired, he continued working.",
-    "options": ["Although", "Despite", "In spite", "However"],
-    "correct_index": 1
-  },
-  {
-    "question": "He went jogging ___ the heavy rain.",
-    "options": ["although", "in spite of", "despite of", "even"],
-    "correct_index": 1
-  },
-  {
-    "question": "___ she was ill, she went to work.",
-    "options": ["Despite", "Although", "In spite", "However"],
-    "correct_index": 1
-  },
-  {
-    "question": "They enjoyed the trip ___ the bad weather.",
-    "options": ["although", "despite", "because", "however"],
-    "correct_index": 1
-  },
-  {
-    "question": "In spite of ___ late, she waited for him.",
-    "options": ["to be", "being", "be", "been"],
-    "correct_index": 1
-  },
-  {
-    "question": "You can borrow my car ___ you drive carefully.",
-    "options": ["unless", "as long as", "despite", "even though"],
-    "correct_index": 1
-  },
-  {
-    "question": "___ you pay in advance, we will reserve the tickets.",
-    "options": ["Provided", "Unless", "Despite", "Although"],
-    "correct_index": 0
-  },
-  {
-    "question": "I won't go unless he ___ too.",
-    "options": ["comes", "will come", "came", "has come"],
-    "correct_index": 0
-  },
-  {
-    "question": "You can stay here ___ you don't make too much noise.",
-    "options": ["unless", "provided that", "even though", "despite"],
-    "correct_index": 1
-  },
-  {
-    "question": "___ you apologize, she won't forgive you.",
-    "options": ["If", "Unless", "Despite", "In case"],
-    "correct_index": 1
-  },
-  {
-    "question": "It was ___ an interesting film that I watched it twice.",
-    "options": ["so", "such", "too", "enough"],
-    "correct_index": 1
-  },
-  {
-    "question": "She speaks ___ quickly that I can hardly understand her.",
-    "options": ["so", "such", "too", "enough"],
-    "correct_index": 0
-  },
-  {
-    "question": "They had ___ little money that they couldn't buy a ticket.",
-    "options": ["so", "such", "too", "enough"],
-    "correct_index": 0
-  },
-  {
-    "question": "He is ___ a talented musician that everyone admires him.",
-    "options": ["so", "such", "too", "enough"],
-    "correct_index": 1
-  },
-  {
-    "question": "The box was ___ heavy that I couldn't lift it.",
-    "options": ["so", "such", "too", "enough"],
-    "correct_index": 0
-  },
-  {
-    "question": "The water is ___ hot to drink.",
-    "options": ["so", "such", "too", "enough"],
-    "correct_index": 2
-  },
-  {
-    "question": "She isn't old ___ to drive a car.",
-    "options": ["so", "such", "too", "enough"],
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "has",
+      "was",
+      "did",
+      "had"
+    ],
     "correct_index": 3
   },
   {
-    "question": "There aren't ___ chairs for everyone.",
-    "options": ["too", "such", "enough", "so"],
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "therefore",
+      "however",
+      "meanwhile",
+      "besides"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill on",
+      "fill up",
+      "fill in",
+      "fill out"
+    ],
     "correct_index": 2
   },
   {
-    "question": "He was ___ tired to continue working.",
-    "options": ["too", "enough", "such", "so"],
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "because",
+      "unless",
+      "if",
+      "so"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "were",
+      "had been",
+      "was",
+      "have been"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Sofia was exhausted because she ___ for hours.",
+    "options": [
+      "had been negotiating",
+      "was negotiating",
+      "had negotiating",
+      "has been negotiating"
+    ],
     "correct_index": 0
   },
   {
-    "question": "We didn't leave early ___ to avoid the traffic.",
-    "options": ["such", "too", "enough", "so"],
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "were",
+      "was",
+      "is",
+      "be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Unless",
+      "Since",
+      "Although",
+      "Because"
+    ],
     "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "was",
+      "being",
+      "is",
+      "be"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So do",
+      "Neither can",
+      "Neither do",
+      "So can"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "is",
+      "be",
+      "was",
+      "being"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "something",
+      "everything",
+      "anything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "meanwhile",
+      "however",
+      "besides",
+      "therefore"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "said",
+      "was say",
+      "says",
+      "is said"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the schedule ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "that",
+      "who",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Evidence is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "nothing",
+      "everything",
+      "anything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "meanwhile",
+      "besides",
+      "therefore",
+      "however"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "had",
+      "have",
+      "has",
+      "will have"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "has been waiting",
+      "was waiting",
+      "had been waiting",
+      "had waiting"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "should",
+      "can",
+      "must",
+      "may"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Unless",
+      "Since",
+      "Because",
+      "Although"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "meanwhile",
+      "therefore",
+      "besides",
+      "however"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Ivy was exhausted because she ___ for hours.",
+    "options": [
+      "was traveling",
+      "had been traveling",
+      "has been traveling",
+      "had traveling"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither can",
+      "So can",
+      "So do",
+      "Neither do"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "unless",
+      "if",
+      "so",
+      "because"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "to call",
+      "calling",
+      "called",
+      "call"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the experiment ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "that",
+      "where",
+      "when"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "may",
+      "should",
+      "must",
+      "can"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "for",
+      "in",
+      "on",
+      "at"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Having",
+      "Had",
+      "Have",
+      "Has"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "would",
+      "will",
+      "use to",
+      "used"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "realised I",
+      "did I realise",
+      "I did realise",
+      "I realised"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "in",
+      "for",
+      "on",
+      "at"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "have",
+      "did",
+      "was",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "several",
+      "many",
+      "few",
+      "little"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "had",
+      "will have",
+      "has",
+      "have"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "few",
+      "many",
+      "little",
+      "several"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "nothing",
+      "something",
+      "everything"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "did",
+      "has",
+      "had",
+      "was"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither can",
+      "So do",
+      "So can",
+      "Neither do"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "is",
+      "were",
+      "was",
+      "be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "will",
+      "used",
+      "would",
+      "use to"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "if",
+      "unless",
+      "because",
+      "so"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "besides",
+      "therefore",
+      "however",
+      "meanwhile"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "something",
+      "anything",
+      "nothing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "did",
+      "was",
+      "had",
+      "have"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill on",
+      "fill in",
+      "fill out",
+      "fill up"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "had been",
+      "were",
+      "was",
+      "have been"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "is",
+      "was",
+      "were",
+      "be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "be",
+      "being",
+      "is",
+      "was"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "is",
+      "was",
+      "be",
+      "were"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "besides",
+      "however",
+      "therefore",
+      "meanwhile"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "is said",
+      "says",
+      "was say",
+      "said"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I did realise",
+      "did I realise",
+      "realised I",
+      "I realised"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "can",
+      "may",
+      "must",
+      "should"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "a team",
+      "the team",
+      "team work",
+      "teamwork"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "calling",
+      "call",
+      "to call",
+      "called"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "was",
+      "were",
+      "had been",
+      "have been"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "being",
+      "be",
+      "was",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "have",
+      "has",
+      "will have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the report ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "where",
+      "that",
+      "who"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "few",
+      "several",
+      "many",
+      "little"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "will",
+      "would",
+      "used",
+      "use to"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "can",
+      "must",
+      "may",
+      "should"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "was",
+      "did",
+      "has",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "was say",
+      "said",
+      "is said",
+      "says"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "has",
+      "had",
+      "was",
+      "did"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Had",
+      "Has",
+      "Have",
+      "Having"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So do",
+      "So can",
+      "Neither can",
+      "Neither do"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Maks was exhausted because she ___ for hours.",
+    "options": [
+      "was arguing",
+      "had arguing",
+      "has been arguing",
+      "had been arguing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "have",
+      "had",
+      "has",
+      "will have"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Although",
+      "Since",
+      "Unless",
+      "Because"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "realised I",
+      "did I realise",
+      "I realised",
+      "I did realise"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "have been",
+      "had been",
+      "was",
+      "were"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "use to",
+      "would",
+      "used",
+      "will"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "several",
+      "few",
+      "little",
+      "many"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "when",
+      "who",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "must",
+      "should",
+      "may",
+      "can"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I did realise",
+      "did I realise",
+      "I realised",
+      "realised I"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill in",
+      "fill up",
+      "fill out",
+      "fill on"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "use to",
+      "used",
+      "will",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Equipment is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "nothing",
+      "everything",
+      "anything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "little",
+      "several",
+      "few",
+      "many"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "be",
+      "was",
+      "is",
+      "being"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "meanwhile",
+      "besides",
+      "however",
+      "therefore"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "called",
+      "call",
+      "calling",
+      "to call"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "did I realise",
+      "I did realise",
+      "I realised",
+      "realised I"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "did",
+      "had",
+      "was",
+      "has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "was",
+      "be",
+      "being",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill out",
+      "fill in",
+      "fill on",
+      "fill up"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must be",
+      "must've",
+      "should've",
+      "might be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "will have"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "therefore",
+      "besides",
+      "however",
+      "meanwhile"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "says",
+      "said",
+      "is said",
+      "was say"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "had",
+      "was",
+      "did",
+      "have"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "should",
+      "may",
+      "can",
+      "must"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "would",
+      "use to",
+      "used",
+      "will"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "in",
+      "for",
+      "at",
+      "on"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the device ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "that",
+      "when",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "a team",
+      "the team",
+      "teamwork",
+      "team work"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill out",
+      "fill in",
+      "fill up",
+      "fill on"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "everything",
+      "nothing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "were",
+      "had been",
+      "have been",
+      "was"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Because",
+      "Since",
+      "Unless",
+      "Although"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "has",
+      "had",
+      "will have",
+      "have"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "were",
+      "was",
+      "have been",
+      "had been"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "would",
+      "used",
+      "will",
+      "use to"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "must",
+      "may",
+      "should",
+      "can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Knowledge is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "anything",
+      "nothing",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Having",
+      "Have",
+      "Has",
+      "Had"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "call",
+      "to call",
+      "called",
+      "calling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Although",
+      "Unless",
+      "Because",
+      "Since"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "called",
+      "to call",
+      "calling",
+      "call"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Unless",
+      "Because",
+      "Since",
+      "Although"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "should",
+      "must",
+      "can",
+      "may"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "on",
+      "in",
+      "at",
+      "for"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "were",
+      "is",
+      "was",
+      "be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "has",
+      "did",
+      "had",
+      "was"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "little",
+      "few",
+      "several",
+      "many"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Unless",
+      "Although",
+      "Because",
+      "Since"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "use to",
+      "would",
+      "will",
+      "used"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "can",
+      "may",
+      "should",
+      "must"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Although",
+      "Because",
+      "Since",
+      "Unless"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mina was exhausted because she ___ for hours.",
+    "options": [
+      "had preparing",
+      "has been preparing",
+      "had been preparing",
+      "was preparing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "was",
+      "is",
+      "were",
+      "be"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must've",
+      "must be",
+      "should've",
+      "might be"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Ravi was exhausted because she ___ for hours.",
+    "options": [
+      "had researching",
+      "was researching",
+      "had been researching",
+      "has been researching"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "however",
+      "therefore",
+      "meanwhile",
+      "besides"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "will have",
+      "has",
+      "have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "to call",
+      "called",
+      "call",
+      "calling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "something",
+      "nothing",
+      "anything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Emma was exhausted because she ___ for hours.",
+    "options": [
+      "had been working",
+      "was working",
+      "has been working",
+      "had working"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Had",
+      "Has",
+      "Having",
+      "Have"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "many",
+      "several",
+      "little",
+      "few"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "had",
+      "will have",
+      "have",
+      "has"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So do",
+      "Neither do",
+      "So can",
+      "Neither can"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither do",
+      "So do",
+      "Neither can",
+      "So can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "be",
+      "is",
+      "being",
+      "was"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill in",
+      "fill on",
+      "fill up",
+      "fill out"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the experiment ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "where",
+      "that",
+      "when"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "therefore",
+      "meanwhile",
+      "besides",
+      "however"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "can",
+      "should",
+      "must",
+      "may"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "have",
+      "will have",
+      "has",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "for"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I did realise",
+      "realised I",
+      "did I realise",
+      "I realised"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "teamwork",
+      "a team",
+      "team work",
+      "the team"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "realised I",
+      "I realised",
+      "did I realise",
+      "I did realise"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "be",
+      "were",
+      "was",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mina was exhausted because she ___ for hours.",
+    "options": [
+      "had been studying",
+      "had studying",
+      "has been studying",
+      "was studying"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "will have",
+      "have",
+      "has",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill in",
+      "fill up",
+      "fill on",
+      "fill out"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "for"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Data is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "nothing",
+      "everything",
+      "anything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Since",
+      "Unless",
+      "Because",
+      "Although"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the schedule ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "who",
+      "that",
+      "when"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "did"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "might be",
+      "must've",
+      "must be",
+      "should've"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "nothing",
+      "something",
+      "anything"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Has",
+      "Had",
+      "Having",
+      "Have"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "did",
+      "was",
+      "have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So can",
+      "Neither do",
+      "So do",
+      "Neither can"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aisha was exhausted because she ___ for hours.",
+    "options": [
+      "had been working",
+      "was working",
+      "had working",
+      "has been working"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "if",
+      "so",
+      "because",
+      "unless"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "many",
+      "little",
+      "few",
+      "several"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "will",
+      "would",
+      "use to",
+      "used"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must've",
+      "might be",
+      "must be",
+      "should've"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "were",
+      "have been",
+      "was",
+      "had been"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Unless",
+      "Because",
+      "Although",
+      "Since"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "call",
+      "calling",
+      "to call",
+      "called"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "calling",
+      "to call",
+      "called",
+      "call"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "was",
+      "were",
+      "have been",
+      "had been"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Since",
+      "Because",
+      "Unless",
+      "Although"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "was",
+      "have",
+      "did",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "for",
+      "on",
+      "in",
+      "at"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Advice is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "everything",
+      "nothing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aisha was exhausted because she ___ for hours.",
+    "options": [
+      "was negotiating",
+      "had been negotiating",
+      "has been negotiating",
+      "had negotiating"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "teamwork",
+      "a team",
+      "the team",
+      "team work"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "have been",
+      "had been",
+      "were",
+      "was"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "in",
+      "on",
+      "for",
+      "at"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "should've",
+      "might be",
+      "must've",
+      "must be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither can",
+      "Neither do",
+      "So can",
+      "So do"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Because",
+      "Since",
+      "Although",
+      "Unless"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "was",
+      "is",
+      "be",
+      "being"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither can",
+      "So can",
+      "Neither do",
+      "So do"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Leo was exhausted because she ___ for hours.",
+    "options": [
+      "had been traveling",
+      "had traveling",
+      "was traveling",
+      "has been traveling"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "called",
+      "call",
+      "to call",
+      "calling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "the team",
+      "teamwork",
+      "a team",
+      "team work"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I did realise",
+      "realised I",
+      "I realised",
+      "did I realise"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "will",
+      "use to",
+      "used",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "at",
+      "for",
+      "in",
+      "on"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "calling",
+      "to call",
+      "call",
+      "called"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Research is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "nothing",
+      "something",
+      "anything"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "unless",
+      "because",
+      "so",
+      "if"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "realised I",
+      "I did realise",
+      "did I realise",
+      "I realised"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "may",
+      "should",
+      "can",
+      "must"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "did",
+      "have",
+      "had",
+      "was"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "being",
+      "was",
+      "is",
+      "be"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "would",
+      "use to",
+      "will",
+      "used"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "because",
+      "so",
+      "unless",
+      "if"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Because",
+      "Although",
+      "Since",
+      "Unless"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Having",
+      "Has",
+      "Had",
+      "Have"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "at",
+      "for",
+      "on",
+      "in"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "several",
+      "many",
+      "little",
+      "few"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "was",
+      "did",
+      "had",
+      "have"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I did realise",
+      "I realised",
+      "did I realise",
+      "realised I"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "be",
+      "was",
+      "being",
+      "is"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I realised",
+      "I did realise",
+      "did I realise",
+      "realised I"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "can",
+      "should",
+      "may",
+      "must"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "has",
+      "had",
+      "have",
+      "will have"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill out",
+      "fill on",
+      "fill up",
+      "fill in"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "was say",
+      "says",
+      "is said",
+      "said"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "was",
+      "have been",
+      "had been",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "to call",
+      "called",
+      "calling",
+      "call"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "should've",
+      "must've",
+      "must be",
+      "might be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "nothing",
+      "everything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Because",
+      "Unless",
+      "Although",
+      "Since"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill in",
+      "fill out",
+      "fill on",
+      "fill up"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hannah was exhausted because she ___ for hours.",
+    "options": [
+      "has been traveling",
+      "had traveling",
+      "had been traveling",
+      "was traveling"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "if",
+      "so",
+      "unless",
+      "because"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "said",
+      "says",
+      "is said",
+      "was say"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "is",
+      "be",
+      "being",
+      "was"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "realised I",
+      "I realised",
+      "I did realise",
+      "did I realise"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "was",
+      "did",
+      "have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill up",
+      "fill in",
+      "fill out",
+      "fill on"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must be",
+      "should've",
+      "must've",
+      "might be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the report ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "when",
+      "who",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "had",
+      "has",
+      "will have",
+      "have"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "besides",
+      "therefore",
+      "meanwhile",
+      "however"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "being",
+      "was",
+      "be",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "must",
+      "can",
+      "should",
+      "may"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "being",
+      "be",
+      "is",
+      "was"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Having",
+      "Had",
+      "Has",
+      "Have"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Advice is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "everything",
+      "nothing",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "few",
+      "little",
+      "many",
+      "several"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the results ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "who",
+      "when",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the proposal ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "when",
+      "that",
+      "who"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "the team",
+      "team work",
+      "teamwork",
+      "a team"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So can",
+      "Neither can",
+      "So do",
+      "Neither do"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "be",
+      "was",
+      "were",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "had been",
+      "have been",
+      "was",
+      "were"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "have",
+      "had",
+      "was",
+      "did"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "would",
+      "used",
+      "use to",
+      "will"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "if",
+      "because",
+      "so",
+      "unless"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "have been",
+      "was",
+      "had been",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "so",
+      "unless",
+      "because",
+      "if"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "team work",
+      "teamwork",
+      "a team",
+      "the team"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "has been preparing",
+      "had been preparing",
+      "was preparing",
+      "had preparing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Have",
+      "Having",
+      "Has",
+      "Had"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "little",
+      "several",
+      "many",
+      "few"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "called",
+      "calling",
+      "to call",
+      "call"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "anything",
+      "everything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "little",
+      "many",
+      "few",
+      "several"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "if",
+      "because",
+      "unless",
+      "so"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "at",
+      "in",
+      "for",
+      "on"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "had",
+      "have",
+      "was",
+      "did"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must've",
+      "might be",
+      "should've",
+      "must be"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "had been",
+      "was",
+      "were",
+      "have been"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "were",
+      "was",
+      "be",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "must",
+      "should",
+      "can",
+      "may"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "might be",
+      "must be",
+      "should've",
+      "must've"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "should",
+      "must",
+      "may",
+      "can"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "unless",
+      "if",
+      "because",
+      "so"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Has",
+      "Have",
+      "Having",
+      "Had"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the report ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "who",
+      "when"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "have",
+      "had",
+      "did",
+      "was"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the device ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "who",
+      "when",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "something",
+      "everything",
+      "nothing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Having",
+      "Has",
+      "Have",
+      "Had"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "was",
+      "have",
+      "had",
+      "did"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill on",
+      "fill out",
+      "fill up",
+      "fill in"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "had",
+      "have",
+      "will have",
+      "has"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "have",
+      "was",
+      "did",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Evidence is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "something",
+      "nothing",
+      "anything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "should've",
+      "might be",
+      "must be",
+      "must've"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill up",
+      "fill out",
+      "fill in",
+      "fill on"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Ivy was exhausted because she ___ for hours.",
+    "options": [
+      "had researching",
+      "had been researching",
+      "has been researching",
+      "was researching"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "team work",
+      "the team",
+      "teamwork",
+      "a team"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "might be",
+      "should've",
+      "must be",
+      "must've"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "did",
+      "had",
+      "have",
+      "was"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "was",
+      "has",
+      "had",
+      "did"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "have",
+      "had",
+      "will have",
+      "has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Ravi was exhausted because she ___ for hours.",
+    "options": [
+      "had negotiating",
+      "was negotiating",
+      "had been negotiating",
+      "has been negotiating"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Since",
+      "Because",
+      "Although",
+      "Unless"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "few",
+      "several",
+      "little",
+      "many"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "meanwhile",
+      "however",
+      "therefore",
+      "besides"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill on",
+      "fill up",
+      "fill out",
+      "fill in"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "little",
+      "many",
+      "several",
+      "few"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "should've",
+      "must've",
+      "might be",
+      "must be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "teamwork",
+      "team work",
+      "a team",
+      "the team"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "had",
+      "was",
+      "did",
+      "has"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "be"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "realised I",
+      "I did realise",
+      "I realised",
+      "did I realise"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Ravi was exhausted because she ___ for hours.",
+    "options": [
+      "had preparing",
+      "has been preparing",
+      "was preparing",
+      "had been preparing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "is",
+      "being",
+      "was",
+      "be"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "says",
+      "was say",
+      "said",
+      "is said"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "have",
+      "will have",
+      "had",
+      "has"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the proposal ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "who",
+      "where",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "must",
+      "can",
+      "may",
+      "should"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "was",
+      "have been",
+      "were",
+      "had been"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must've",
+      "should've",
+      "might be",
+      "must be"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Knowledge is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "everything",
+      "nothing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Since",
+      "Although",
+      "Because",
+      "Unless"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "was",
+      "be",
+      "is",
+      "were"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Permission is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "something",
+      "everything",
+      "nothing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "will",
+      "used",
+      "use to",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "besides",
+      "however",
+      "meanwhile",
+      "therefore"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Leo was exhausted because she ___ for hours.",
+    "options": [
+      "has been studying",
+      "had studying",
+      "had been studying",
+      "was studying"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "is said",
+      "was say",
+      "said",
+      "says"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "on",
+      "at",
+      "in",
+      "for"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "on",
+      "for",
+      "in",
+      "at"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "calling",
+      "called",
+      "to call",
+      "call"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mina was exhausted because she ___ for hours.",
+    "options": [
+      "had preparing",
+      "had been preparing",
+      "has been preparing",
+      "was preparing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "that",
+      "when",
+      "who"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Daniel was exhausted because she ___ for hours.",
+    "options": [
+      "has been traveling",
+      "was traveling",
+      "had traveling",
+      "had been traveling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Leo was exhausted because she ___ for hours.",
+    "options": [
+      "was arguing",
+      "has been arguing",
+      "had been arguing",
+      "had arguing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So can",
+      "Neither do",
+      "Neither can",
+      "So do"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Ivy was exhausted because she ___ for hours.",
+    "options": [
+      "has been waiting",
+      "had waiting",
+      "was waiting",
+      "had been waiting"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Permission is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "everything",
+      "anything",
+      "nothing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "was say",
+      "said",
+      "says",
+      "is said"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill out",
+      "fill on",
+      "fill in",
+      "fill up"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "was",
+      "had been",
+      "have been",
+      "were"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "team work",
+      "a team",
+      "teamwork",
+      "the team"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "was say",
+      "is said",
+      "said",
+      "says"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Research is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "something",
+      "anything",
+      "everything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither do",
+      "So can",
+      "Neither can",
+      "So do"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Advice is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "everything",
+      "anything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "to call",
+      "call",
+      "called",
+      "calling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Although",
+      "Because",
+      "Unless",
+      "Since"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "did",
+      "has",
+      "was",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "be",
+      "were",
+      "is",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "teamwork",
+      "the team",
+      "a team",
+      "team work"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "calling",
+      "call",
+      "called",
+      "to call"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "should",
+      "can",
+      "may",
+      "must"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I realised",
+      "did I realise",
+      "I did realise",
+      "realised I"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither can",
+      "So do",
+      "Neither do",
+      "So can"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "would",
+      "will",
+      "used",
+      "use to"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "who",
+      "when"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "had",
+      "has",
+      "did",
+      "was"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Maks was exhausted because she ___ for hours.",
+    "options": [
+      "was studying",
+      "had been studying",
+      "had studying",
+      "has been studying"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "said",
+      "was say",
+      "is said",
+      "says"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the schedule ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "where",
+      "who",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "anything",
+      "everything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill in",
+      "fill on",
+      "fill out",
+      "fill up"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "had",
+      "did",
+      "was",
+      "have"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "should've",
+      "must be",
+      "must've",
+      "might be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "were",
+      "be",
+      "is",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "for",
+      "at",
+      "in",
+      "on"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Permission is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "everything",
+      "nothing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "will have",
+      "had",
+      "has",
+      "have"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "anything",
+      "something",
+      "nothing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "had",
+      "has",
+      "have",
+      "will have"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "have been",
+      "were",
+      "was",
+      "had been"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "did I realise",
+      "I realised",
+      "I did realise",
+      "realised I"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the schedule ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "when",
+      "who",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "calling",
+      "called",
+      "call",
+      "to call"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "had arguing",
+      "has been arguing",
+      "had been arguing",
+      "was arguing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "who",
+      "that",
+      "where"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "was",
+      "being",
+      "be",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Leo was exhausted because she ___ for hours.",
+    "options": [
+      "was studying",
+      "had been studying",
+      "had studying",
+      "has been studying"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Equipment is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "everything",
+      "nothing",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "had",
+      "was",
+      "has",
+      "did"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "used",
+      "would",
+      "will",
+      "use to"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the proposal ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "where",
+      "when",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "call",
+      "calling",
+      "called",
+      "to call"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Data is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "something",
+      "everything",
+      "nothing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "few",
+      "many",
+      "several",
+      "little"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Mina was exhausted because she ___ for hours.",
+    "options": [
+      "was working",
+      "had working",
+      "has been working",
+      "had been working"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "was",
+      "had",
+      "have",
+      "did"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "for"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "might be",
+      "should've",
+      "must've",
+      "must be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "has",
+      "had",
+      "did",
+      "was"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "a team",
+      "team work",
+      "teamwork",
+      "the team"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I did realise",
+      "I realised",
+      "realised I",
+      "did I realise"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Has",
+      "Having",
+      "Had",
+      "Have"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Data is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "nothing",
+      "everything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Evidence is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "nothing",
+      "anything",
+      "everything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Research is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "nothing",
+      "everything",
+      "anything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "has",
+      "did",
+      "was",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "because",
+      "so",
+      "if",
+      "unless"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the lecture ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "that",
+      "when",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "where",
+      "that",
+      "who"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "has",
+      "will have",
+      "have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill up",
+      "fill on",
+      "fill in",
+      "fill out"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Data is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "nothing",
+      "everything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "used",
+      "will",
+      "use to",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "unless",
+      "so",
+      "because",
+      "if"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "everything",
+      "anything",
+      "nothing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill out",
+      "fill up",
+      "fill on",
+      "fill in"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So do",
+      "Neither can",
+      "So can",
+      "Neither do"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Daniel was exhausted because she ___ for hours.",
+    "options": [
+      "had practicing",
+      "was practicing",
+      "had been practicing",
+      "has been practicing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must be",
+      "might be",
+      "must've",
+      "should've"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "little",
+      "few",
+      "many",
+      "several"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "says",
+      "was say",
+      "is said",
+      "said"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "call",
+      "called",
+      "calling",
+      "to call"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must've",
+      "must be",
+      "might be",
+      "should've"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Knowledge is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "something",
+      "anything",
+      "everything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill up",
+      "fill in",
+      "fill on",
+      "fill out"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Ivy was exhausted because she ___ for hours.",
+    "options": [
+      "has been working",
+      "had been working",
+      "was working",
+      "had working"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Knowledge is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "nothing",
+      "everything",
+      "anything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "many",
+      "little",
+      "several",
+      "few"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Research is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "everything",
+      "something",
+      "nothing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill on",
+      "fill in",
+      "fill up",
+      "fill out"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "is",
+      "being",
+      "be",
+      "was"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "be",
+      "is",
+      "were",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "has",
+      "was",
+      "had",
+      "did"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Leo was exhausted because she ___ for hours.",
+    "options": [
+      "had negotiating",
+      "was negotiating",
+      "has been negotiating",
+      "had been negotiating"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "therefore",
+      "besides",
+      "meanwhile",
+      "however"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "had been",
+      "was",
+      "have been",
+      "were"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "was",
+      "be",
+      "were",
+      "is"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Zara was exhausted because she ___ for hours.",
+    "options": [
+      "had preparing",
+      "has been preparing",
+      "had been preparing",
+      "was preparing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "was",
+      "had",
+      "did",
+      "have"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Although",
+      "Since",
+      "Because",
+      "Unless"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Have",
+      "Has",
+      "Having",
+      "Had"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Sofia was exhausted because she ___ for hours.",
+    "options": [
+      "was negotiating",
+      "had been negotiating",
+      "has been negotiating",
+      "had negotiating"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "everything",
+      "nothing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "to call",
+      "calling",
+      "call",
+      "called"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the schedule ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "when",
+      "who"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the report ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "when",
+      "that",
+      "who"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "however",
+      "meanwhile",
+      "therefore",
+      "besides"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Research is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "nothing",
+      "everything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither can",
+      "Neither do",
+      "So do",
+      "So can"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "several",
+      "little",
+      "many",
+      "few"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "however",
+      "besides",
+      "meanwhile",
+      "therefore"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Ivy was exhausted because she ___ for hours.",
+    "options": [
+      "was practicing",
+      "had been practicing",
+      "has been practicing",
+      "had practicing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Research is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "everything",
+      "nothing",
+      "anything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Had",
+      "Having",
+      "Have",
+      "Has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Because",
+      "Unless",
+      "Since",
+      "Although"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "who",
+      "where",
+      "when"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "that",
+      "when",
+      "who"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "had",
+      "have",
+      "did",
+      "was"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "is said",
+      "said",
+      "says",
+      "was say"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Emma was exhausted because she ___ for hours.",
+    "options": [
+      "was traveling",
+      "has been traveling",
+      "had been traveling",
+      "had traveling"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "says",
+      "said",
+      "was say",
+      "is said"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So can",
+      "So do",
+      "Neither do",
+      "Neither can"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "was say",
+      "says",
+      "said",
+      "is said"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the results ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "that",
+      "when",
+      "who"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "was",
+      "be",
+      "is",
+      "being"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "might be",
+      "must be",
+      "must've",
+      "should've"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "said",
+      "is said",
+      "says",
+      "was say"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "many",
+      "few",
+      "little",
+      "several"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Although",
+      "Unless",
+      "Since",
+      "Because"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Lucas was exhausted because she ___ for hours.",
+    "options": [
+      "had practicing",
+      "had been practicing",
+      "has been practicing",
+      "was practicing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "did",
+      "had",
+      "has",
+      "was"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "is",
+      "were",
+      "be",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill up",
+      "fill out",
+      "fill on",
+      "fill in"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the proposal ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "who",
+      "that",
+      "when"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "when",
+      "who",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "however",
+      "besides",
+      "therefore",
+      "meanwhile"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "use to",
+      "will",
+      "would",
+      "used"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Can you ___ the form and send it back?",
+    "options": [
+      "fill on",
+      "fill out",
+      "fill in",
+      "fill up"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "be",
+      "is",
+      "was",
+      "being"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "because",
+      "if",
+      "so",
+      "unless"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the lecture ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "when",
+      "who"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "where",
+      "who",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the results ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "who",
+      "that",
+      "when"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "a team",
+      "teamwork",
+      "the team",
+      "team work"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "were",
+      "be",
+      "was",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Had",
+      "Have",
+      "Having",
+      "Has"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "will",
+      "use to",
+      "would",
+      "used"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "called",
+      "to call",
+      "call",
+      "calling"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "on",
+      "for",
+      "at",
+      "in"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Nora was exhausted because she ___ for hours.",
+    "options": [
+      "had training",
+      "had been training",
+      "has been training",
+      "was training"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "at",
+      "on",
+      "for",
+      "in"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Daniel was exhausted because she ___ for hours.",
+    "options": [
+      "has been practicing",
+      "was practicing",
+      "had practicing",
+      "had been practicing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I realised",
+      "realised I",
+      "I did realise",
+      "did I realise"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "says",
+      "is said",
+      "said",
+      "was say"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the experiment ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "where",
+      "that",
+      "who"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Knowledge is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "everything",
+      "something",
+      "nothing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "who",
+      "when"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "the team",
+      "a team",
+      "team work",
+      "teamwork"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Equipment is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "something",
+      "anything",
+      "nothing"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "were",
+      "is",
+      "be",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Maks was exhausted because she ___ for hours.",
+    "options": [
+      "has been working",
+      "had been working",
+      "had working",
+      "was working"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Knowledge is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "anything",
+      "something",
+      "nothing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "so",
+      "because",
+      "if",
+      "unless"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Feedback is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "everything",
+      "something",
+      "anything"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "unless",
+      "so",
+      "if",
+      "because"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "being",
+      "is",
+      "was",
+      "be"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "must",
+      "may",
+      "can",
+      "should"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Equipment is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "something",
+      "nothing",
+      "anything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "may",
+      "must",
+      "should",
+      "can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "where",
+      "that",
+      "when"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "team work",
+      "teamwork",
+      "the team",
+      "a team"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Feedback is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "something",
+      "anything",
+      "everything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Have",
+      "Had",
+      "Has",
+      "Having"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Having",
+      "Have",
+      "Had",
+      "Has"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "the team",
+      "teamwork",
+      "team work",
+      "a team"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "when",
+      "that",
+      "where"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither do",
+      "So do",
+      "So can",
+      "Neither can"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "did I realise",
+      "realised I",
+      "I realised",
+      "I did realise"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Has",
+      "Had",
+      "Have",
+      "Having"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "so",
+      "unless",
+      "if",
+      "because"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "besides",
+      "meanwhile",
+      "therefore",
+      "however"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "nothing",
+      "anything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Permission is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "everything",
+      "something",
+      "nothing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the device ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "when",
+      "that",
+      "where"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "was",
+      "has",
+      "did",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "several",
+      "little",
+      "few",
+      "many"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "several",
+      "few",
+      "many",
+      "little"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "said",
+      "is said",
+      "was say",
+      "says"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Lucas was exhausted because she ___ for hours.",
+    "options": [
+      "was researching",
+      "had researching",
+      "has been researching",
+      "had been researching"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "nothing",
+      "everything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the experiment ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "when",
+      "who",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Data is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "something",
+      "anything",
+      "everything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "therefore",
+      "however",
+      "besides",
+      "meanwhile"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Since",
+      "Unless",
+      "Although",
+      "Because"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "I realised",
+      "I did realise",
+      "realised I",
+      "did I realise"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Emma was exhausted because she ___ for hours.",
+    "options": [
+      "had been training",
+      "had training",
+      "has been training",
+      "was training"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the experiment ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "that",
+      "who",
+      "when"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "where",
+      "when",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "use to",
+      "will",
+      "used",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Evidence is ___ that cannot be bought.",
+    "options": [
+      "nothing",
+      "something",
+      "everything",
+      "anything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "however",
+      "therefore",
+      "besides",
+      "meanwhile"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "when",
+      "where",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "is",
+      "was",
+      "being",
+      "be"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Ravi was exhausted because she ___ for hours.",
+    "options": [
+      "had training",
+      "had been training",
+      "was training",
+      "has been training"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "team work",
+      "the team",
+      "a team",
+      "teamwork"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Knowledge is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "nothing",
+      "everything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "has",
+      "have",
+      "had",
+      "will have"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "in",
+      "at",
+      "for",
+      "on"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the device ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "that",
+      "where",
+      "who"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Ravi was exhausted because she ___ for hours.",
+    "options": [
+      "has been negotiating",
+      "was negotiating",
+      "had negotiating",
+      "had been negotiating"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "who",
+      "where",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Such ___ the demand that prices rose.",
+    "options": [
+      "be",
+      "is",
+      "was",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Information is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "anything",
+      "something",
+      "nothing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "at",
+      "on",
+      "in",
+      "for"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "besides",
+      "meanwhile",
+      "however",
+      "therefore"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the results ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "who",
+      "that",
+      "where"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Equipment is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "nothing",
+      "anything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Sofia was exhausted because she ___ for hours.",
+    "options": [
+      "was training",
+      "has been training",
+      "had been training",
+      "had training"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "because",
+      "unless",
+      "so",
+      "if"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "when",
+      "that",
+      "who"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Evidence is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "anything",
+      "something",
+      "nothing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "___ you may disagree, we must decide today.",
+    "options": [
+      "Since",
+      "Although",
+      "Unless",
+      "Because"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the proposal ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "when",
+      "who"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "used",
+      "use to",
+      "would",
+      "will"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "meanwhile",
+      "therefore",
+      "however",
+      "besides"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the report ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "who",
+      "when",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "on",
+      "in",
+      "for",
+      "at"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "has been training",
+      "had been training",
+      "had training",
+      "was training"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "Neither do",
+      "Neither can",
+      "So can",
+      "So do"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "When we were kids, we ___ play outside until dark.",
+    "options": [
+      "used",
+      "would",
+      "use to",
+      "will"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "was",
+      "is",
+      "being",
+      "be"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Sofia was exhausted because she ___ for hours.",
+    "options": [
+      "had been practicing",
+      "was practicing",
+      "had practicing",
+      "has been practicing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the proposal ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "that",
+      "where",
+      "when"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mina was exhausted because she ___ for hours.",
+    "options": [
+      "was preparing",
+      "had preparing",
+      "has been preparing",
+      "had been preparing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hannah was exhausted because she ___ for hours.",
+    "options": [
+      "has been traveling",
+      "was traveling",
+      "had been traveling",
+      "had traveling"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Omar was exhausted because she ___ for hours.",
+    "options": [
+      "has been studying",
+      "had studying",
+      "had been studying",
+      "was studying"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "should",
+      "may",
+      "must",
+      "can"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "when",
+      "who",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "everything",
+      "anything",
+      "nothing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I ___ more disciplined, I would be fluent by now.",
+    "options": [
+      "have been",
+      "was",
+      "were",
+      "had been"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the device ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "when",
+      "who",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "You ___ have told me earlier; now it's too late.",
+    "options": [
+      "can",
+      "must",
+      "should",
+      "may"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Ravi was exhausted because she ___ for hours.",
+    "options": [
+      "had training",
+      "was training",
+      "has been training",
+      "had been training"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Equipment is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "anything",
+      "nothing",
+      "everything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "‘I can't stand spam.’ ‘___ I.’",
+    "options": [
+      "So do",
+      "Neither do",
+      "Neither can",
+      "So can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "had",
+      "did",
+      "have",
+      "was"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "something",
+      "nothing",
+      "everything"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Feedback is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "anything",
+      "nothing",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must be",
+      "must've",
+      "might be",
+      "should've"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Had",
+      "Have",
+      "Has",
+      "Having"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I respect his opinion; ___, I disagree.",
+    "options": [
+      "therefore",
+      "meanwhile",
+      "however",
+      "besides"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "had",
+      "did",
+      "was",
+      "has"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the results ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "where",
+      "who",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "unless",
+      "because",
+      "if",
+      "so"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Daniel was exhausted because she ___ for hours.",
+    "options": [
+      "had been studying",
+      "was studying",
+      "has been studying",
+      "had studying"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "is said",
+      "said",
+      "was say",
+      "says"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "was",
+      "had",
+      "has",
+      "did"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Only after the lecture ___ how complex it was.",
+    "options": [
+      "did I realise",
+      "I did realise",
+      "realised I",
+      "I realised"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Emma was exhausted because she ___ for hours.",
+    "options": [
+      "has been working",
+      "had been working",
+      "was working",
+      "had working"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "said",
+      "says",
+      "was say",
+      "is said"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "many",
+      "several",
+      "few",
+      "little"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Progress is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "nothing",
+      "everything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "___ finished the task, he went home.",
+    "options": [
+      "Have",
+      "Has",
+      "Had",
+      "Having"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Emma was exhausted because she ___ for hours.",
+    "options": [
+      "had been studying",
+      "was studying",
+      "has been studying",
+      "had studying"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The manager demanded that he ___ on time.",
+    "options": [
+      "is",
+      "was",
+      "be",
+      "being"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "It was ___ that solved the problem, not luck.",
+    "options": [
+      "the team",
+      "team work",
+      "a team",
+      "teamwork"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "on",
+      "at",
+      "for",
+      "in"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I regret ___ you so late.",
+    "options": [
+      "to call",
+      "call",
+      "calling",
+      "called"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the experiment ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "when",
+      "that",
+      "who"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "You won't pass ___ you revise properly.",
+    "options": [
+      "because",
+      "if",
+      "unless",
+      "so"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "that",
+      "who",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He ___ to be one of the best candidates.",
+    "options": [
+      "was say",
+      "is said",
+      "says",
+      "said"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Data is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "anything",
+      "nothing",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "did",
+      "was",
+      "has",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "who",
+      "where",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Ravi was exhausted because she ___ for hours.",
+    "options": [
+      "had been practicing",
+      "has been practicing",
+      "was practicing",
+      "had practicing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "There is ___ evidence to support that claim.",
+    "options": [
+      "few",
+      "little",
+      "several",
+      "many"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "was arguing",
+      "has been arguing",
+      "had arguing",
+      "had been arguing"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the schedule ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "that",
+      "when",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the schedule ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "who",
+      "when"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "who",
+      "when"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aisha was exhausted because she ___ for hours.",
+    "options": [
+      "had negotiating",
+      "has been negotiating",
+      "had been negotiating",
+      "was negotiating"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "will have",
+      "has",
+      "had",
+      "have"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "No sooner ___ I sat down than the phone rang.",
+    "options": [
+      "did",
+      "have",
+      "was",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Ravi was exhausted because she ___ for hours.",
+    "options": [
+      "was traveling",
+      "had been traveling",
+      "had traveling",
+      "has been traveling"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "when",
+      "who",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "She insisted ___ paying for the meal.",
+    "options": [
+      "for",
+      "on",
+      "at",
+      "in"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the policy ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "that",
+      "when",
+      "who"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Data is ___ that cannot be bought.",
+    "options": [
+      "something",
+      "nothing",
+      "anything",
+      "everything"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the proposal ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "who",
+      "where",
+      "when"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the interview ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "when",
+      "where",
+      "who"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "has been studying",
+      "had been studying",
+      "had studying",
+      "was studying"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The lights are off. They ___ gone home already.",
+    "options": [
+      "must be",
+      "should've",
+      "might be",
+      "must've"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ more time yesterday.",
+    "options": [
+      "will have",
+      "had",
+      "have",
+      "has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "This is the the report ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "where",
+      "when",
+      "who"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "when",
+      "that",
+      "where"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Emma was exhausted because she ___ for hours.",
+    "options": [
+      "was training",
+      "has been training",
+      "had been training",
+      "had training"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Advice is ___ that cannot be bought.",
+    "options": [
+      "everything",
+      "anything",
+      "nothing",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nora was exhausted because she ___ for hours.",
+    "options": [
+      "has been negotiating",
+      "was negotiating",
+      "had been negotiating",
+      "had negotiating"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Emma was exhausted because she ___ for hours.",
+    "options": [
+      "had preparing",
+      "was preparing",
+      "had been preparing",
+      "has been preparing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the lecture ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "when",
+      "that",
+      "who"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Research is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "nothing",
+      "something",
+      "everything"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hardly ___ the meeting started when the fire alarm went off.",
+    "options": [
+      "did",
+      "was",
+      "had",
+      "has"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "had been arguing",
+      "has been arguing",
+      "had arguing",
+      "was arguing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the report ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "that",
+      "who",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Equipment is ___ that cannot be bought.",
+    "options": [
+      "anything",
+      "nothing",
+      "everything",
+      "something"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "when",
+      "who",
+      "where",
+      "that"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Daniel was exhausted because she ___ for hours.",
+    "options": [
+      "had been working",
+      "was working",
+      "had working",
+      "has been working"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Leo was exhausted because she ___ for hours.",
+    "options": [
+      "was working",
+      "had working",
+      "had been working",
+      "has been working"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "had been waiting",
+      "had waiting",
+      "has been waiting",
+      "was waiting"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Maks was exhausted because she ___ for hours.",
+    "options": [
+      "had preparing",
+      "was preparing",
+      "had been preparing",
+      "has been preparing"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "had been researching",
+      "has been researching",
+      "had researching",
+      "was researching"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "This is the the contract ___ we discussed yesterday.",
+    "options": [
+      "where",
+      "who",
+      "that",
+      "when"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "This is the the proposal ___ we discussed yesterday.",
+    "options": [
+      "that",
+      "who",
+      "when",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Noah was exhausted because she ___ for hours.",
+    "options": [
+      "had training",
+      "has been training",
+      "was training",
+      "had been training"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "This is the the results ___ we discussed yesterday.",
+    "options": [
+      "who",
+      "when",
+      "where",
+      "that"
+    ],
+    "correct_index": 3
   }
 ]

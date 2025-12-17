@@ -513,7 +513,7 @@ def get_referrals_count(user_id: int) -> int:
     return row[0] if row else 0
 
 
-def add_referral(referrer_id: int, referred_id: int, bonus_points: int = 50) -> bool:
+def add_referral(referrer_id: int, referred_id: int, bonus_points: int = 300) -> bool:
     """
     Taklif yozuvi qo'shish.
     - referrer_id: kim taklif qildi

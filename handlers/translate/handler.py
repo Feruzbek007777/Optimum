@@ -26,7 +26,7 @@ BUTTON_TEXTS_EXCLUDE = [
     "📞 Biz bilan bog'lanish",
     "📢 E'lonlar",
     "🎁 Sovg'a yutish",
-    "🧪 Quiz",
+    "📝 Quiz",
     "⚡️ Tezkor mashq",
     "🤝 Takliflarim",
     "📊 Mening ballarim",
