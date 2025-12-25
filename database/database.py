@@ -78,6 +78,15 @@ def init_database():
                 )
             ''')
 
+            # 🎬 Kurs videosi ko‘rganlar (unique userlar)
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS course_video_views (
+                    user_id INTEGER PRIMARY KEY,
+                    viewed_at DATETIME DEFAULT CURRENT_TIMESTAMP
+                )
+            ''')
+
+
             # Admin guruhlari jadvali
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS admin_groups (
@@ -513,7 +522,7 @@ def get_referrals_count(user_id: int) -> int:
     return row[0] if row else 0
 
 
-def add_referral(referrer_id: int, referred_id: int, bonus_points: int = 300) -> bool:
+def add_referral(referrer_id: int, referred_id: int, bonus_points: int = 200) -> bool:
     """
     Taklif yozuvi qo'shish.
     - referrer_id: kim taklif qildi
@@ -667,6 +676,44 @@ def get_user_by_username(username: str):
     row = cursor.fetchone()
     conn.close()
     return row
+
+def add_course_video_view(user_id: int) -> bool:
+    """
+    /video bosgan userni 1 marta hisoblash (unique).
+    return: True bo‘lsa yangi qo‘shildi, False bo‘lsa oldin ham ko‘rgan.
+    """
+    conn = create_connection()
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT 1 FROM course_video_views WHERE user_id = ?", (user_id,))
+        already = cursor.fetchone() is not None
+
+        if not already:
+            cursor.execute("INSERT INTO course_video_views (user_id) VALUES (?)", (user_id,))
+            conn.commit()
+            return True
+        return False
+    except sqlite3.Error as e:
+        print(f"course_video_views xatosi: {e}")
+        return False
+    finally:
+        conn.close()
+
+
+def get_course_video_views_count() -> int:
+    """/video ko‘rgan unique userlar soni"""
+    conn = create_connection()
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT COUNT(*) FROM course_video_views")
+        row = cursor.fetchone()
+        return row[0] if row else 0
+    except sqlite3.Error as e:
+        print(f"course_video_views count xatosi: {e}")
+        return 0
+    finally:
+        conn.close()
+
 
 
 

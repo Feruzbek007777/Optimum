@@ -14,6 +14,8 @@ from handlers.admins.callbacks import setup_admin_callbacks
 from handlers.translate.handler import setup_translate_handlers
 
 from database.database import init_database
+from handlers.users.course_video import setup_course_video_handlers
+
 
 from utils.backup import start_auto_backup   # faqat avto-backup shu yerdan
 from keyboards.default import main_menu_keyboard
@@ -45,6 +47,9 @@ setup_translate_handlers(bot)
 setup_quiz_handlers(bot)
 setup_fastwords_handlers(bot)
 setup_referral_handlers(bot)
+setup_course_video_handlers(bot)
+
+
 
 # 🔥 Backup, restore va guruh handlerlari
 setup_backup_handlers(bot)

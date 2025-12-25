@@ -11,10 +11,11 @@ from utils.points import add_points
 #       "subject": "eng"/"rus"/"arab"/"bio"/"math",
 #       "level": "easy"/"hard",
 #       "correct_index": int,
-#       "points": int,
+#       "points": int/float,
 #       "options_count": int,
 #       "questions_answered": int,
-#       "last_message_id": int
+#       "last_message_id": int,
+#       "answered": bool
 #   }
 # }
 quiz_sessions = {}
@@ -69,6 +70,24 @@ ANTI_SPAM_WARNING = (
     "Tasodifiy bosilgan javoblar sizni yetakchi qatoriga olib chiqmaydi. "
     "Yaxshisi, sekinroq, lekin to‘g‘ri yeching ✅"
 )
+
+# 🔥 Ball qoidalari (siz aytgandek)
+EASY_CORRECT = 1.0
+EASY_WRONG = -0.2
+
+HARD_CORRECT = 3.0
+HARD_WRONG = -0.5
+
+
+def _fmt_points(x: float) -> str:
+    """
+    0.2, 0.5, 0.8 ko'rinishda chiqarish uchun.
+    """
+    try:
+        s = f"{float(x):.2f}".rstrip("0").rstrip(".")
+        return s
+    except Exception:
+        return str(x)
 
 
 def load_questions(subject_key: str, level: str):
@@ -151,8 +170,8 @@ def send_quiz_level_menu(bot, chat_id, subject_key: str):
     bot.send_message(
         chat_id,
         f"🔢 {subject} bo'yicha qaysi daraja?\n\n"
-        "🟢 Oson — +1 ball\n"
-        "🔴 Qiyin — +3 ball",
+        "🟢 Oson — to‘g‘ri: +1 ball | xato: -0.2 ball\n"
+        "🔴 Qiyin — to‘g‘ri: +3 ball | xato: -0.5 ball",
         reply_markup=kb
     )
 
@@ -200,7 +219,8 @@ def send_quiz_question(bot, chat_id, user_id, subject_key: str, level: str):
         bot.send_message(chat_id, "Savol formatida xato bor.")
         return
 
-    points = 1 if level == "easy" else 3
+    # ball (to'g'ri javob uchun) - penalti pastda
+    points = EASY_CORRECT if level == "easy" else HARD_CORRECT
 
     kb = build_options_keyboard(options, subject_key, level)
     msg = bot.send_message(
@@ -216,10 +236,11 @@ def send_quiz_question(bot, chat_id, user_id, subject_key: str, level: str):
         "subject": subject_key,
         "level": level,
         "correct_index": int(correct_index),
-        "points": points,
+        "points": float(points),
         "options_count": len(options),
         "questions_answered": questions_answered,
         "last_message_id": msg.message_id,
+        "answered": False,   # 🔥 Bitta savolga bitta javob uchun flag
     }
 
 
@@ -257,10 +278,11 @@ def setup_quiz_handlers(bot):
                     "subject": subj_key,
                     "level": level,
                     "correct_index": 0,
-                    "points": 1 if level == "easy" else 3,
+                    "points": float(EASY_CORRECT if level == "easy" else HARD_CORRECT),
                     "options_count": 0,
                     "questions_answered": 0,
                     "last_message_id": None,
+                    "answered": False,
                 }
                 send_quiz_question(bot, call.message.chat.id, user_id, subj_key, level)
             bot.answer_callback_query(call.id)
@@ -297,24 +319,65 @@ def setup_quiz_handlers(bot):
                 return
 
             correct_index = session.get("correct_index", 0)
-            points = session.get("points", 1)
+            points = session.get("points", 1.0)
             level = session.get("level", "easy")
             subject_key = session.get("subject", "eng")
             last_msg_id = session.get("last_message_id")
             questions_answered = session.get("questions_answered", 0)
 
+            # 🔥 1) ESKI SAVOLNI BOSSA ham ishlamasin
+            # call.message.message_id — user bosayotgan savol xabari id
+            if last_msg_id and call.message.message_id != last_msg_id:
+                bot.answer_callback_query(call.id, "Bu savol eskirib qolgan 🙂", show_alert=False)
+                return
+
+            # 🔥 2) BIR SAVOLGA BIR MARTA JAVOB (multi-click farm fix)
+            if session.get("answered", False):
+                bot.answer_callback_query(call.id, "Bitta savolga bitta javob, jigar 😄", show_alert=False)
+                return
+
+            # birinchi bo'lib lock qilamiz (tez bosishni to'xtatish uchun)
+            session["answered"] = True
+            quiz_sessions[user_id] = session
+
+            # Keyboardni ham o‘chirib qo'yamiz (yana bosib bo'lmasin)
+            if last_msg_id:
+                try:
+                    bot.edit_message_reply_markup(
+                        chat_id=call.message.chat.id,
+                        message_id=last_msg_id,
+                        reply_markup=None
+                    )
+                except Exception:
+                    pass
+
             is_correct = (chosen_idx == correct_index)
+
+            # 🔥 penalti / reward
+            if level == "easy":
+                delta = EASY_CORRECT if is_correct else EASY_WRONG
+            else:
+                delta = HARD_CORRECT if is_correct else HARD_WRONG
 
             # To'g'ri / noto'g'ri xabari (oddiy message bilan)
             if is_correct:
                 try:
-                    add_points(user_id, points)
+                    add_points(user_id, float(delta))
                 except Exception as e:
                     print(f"Ball qo'shishda xato: {e}")
 
-                feedback_text = f"✅ To'g'ri javob! Sizga +{points} ball berildi."
+                feedback_text = f"✅ To'g'ri javob! Sizga +{_fmt_points(delta)} ball berildi."
             else:
-                feedback_text = "❌ Xato javob. Keyingi savolda yaxshiroq urinib ko'ring!"
+                # xato bo'lsa ham ball ayriladi
+                try:
+                    add_points(user_id, float(delta))  # delta manfiy
+                except Exception as e:
+                    print(f"Ball ayirishda xato: {e}")
+
+                feedback_text = (
+                    f"❌ Xato javob! Sizdan {_fmt_points(abs(delta))} ball olindi.\n\n"
+                    "Iltimos, sekinroq va to‘g‘ri bajarishga harakat qiling ✅"
+                )
 
             feedback_msg = bot.send_message(call.message.chat.id, feedback_text)
 
