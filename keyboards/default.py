@@ -38,7 +38,10 @@ def gift_menu_keyboard():
         KeyboardButton("🤝 Takliflarim"),
         KeyboardButton("📊 Mening ballarim")
     )
-    markup.add(KeyboardButton("⬅️ Ortga"))
+    markup.row(
+        KeyboardButton("🎲 Bonus"),
+        KeyboardButton("⬅️ Ortga")
+    )
     return markup
 
 

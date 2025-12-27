@@ -28,6 +28,14 @@ def init_database():
                     name TEXT NOT NULL UNIQUE
                 )
             ''')
+            # ✅ BONUS CLAIMS (12 soatlik bonus)
+            cursor.execute('''
+                CREATE TABLE IF NOT EXISTS bonus_claims (
+                    user_id INTEGER PRIMARY KEY,
+                    last_claim_ts INTEGER NOT NULL
+                )
+            ''')
+
 
             # Kurs ma'lumotlari jadvali
             cursor.execute('''
@@ -713,6 +721,89 @@ def get_course_video_views_count() -> int:
         return 0
     finally:
         conn.close()
+
+# ===================== BONUS (12 soat) =====================
+
+import time
+import random
+
+
+BONUS_CHOICES = [30, 40, 50, 60, 70, 80, 90, 100]
+BONUS_COOLDOWN_SECONDS = 12 * 60 * 60  # 12 soat
+
+
+def _format_hms(seconds: int) -> str:
+    if seconds < 0:
+        seconds = 0
+    h = seconds // 3600
+    m = (seconds % 3600) // 60
+    s = seconds % 60
+    return f"{h:02d}:{m:02d}:{s:02d}"
+
+
+def claim_bonus_atomic(user_id: int, cooldown_seconds: int = BONUS_COOLDOWN_SECONDS):
+    """
+    ✅ Atomik bonus claim:
+    - 12 soat tekshiradi
+    - Ruxsat bo'lsa: random bonus tanlaydi, users.points ga qo'shadi, last_claim_ts ni yangilaydi
+    - Barchasi bitta transactionda (double bosishni ham ushlab qoladi)
+
+    return:
+      (ok: bool, amount: int, wait_seconds: int, wait_hms: str)
+    """
+    now = int(time.time())
+
+    conn = create_connection()
+    cursor = conn.cursor()
+    try:
+        # lock (sqlite): bir vaqtda ikki marta claim bo'lib ketmasin
+        cursor.execute("BEGIN IMMEDIATE")
+
+        # user bazada yo'q bo'lib qolsa ham (kamdan-kam), stub yaratib ketamiz
+        cursor.execute("INSERT OR IGNORE INTO users (user_id) VALUES (?)", (user_id,))
+
+        cursor.execute("SELECT last_claim_ts FROM bonus_claims WHERE user_id = ?", (user_id,))
+        row = cursor.fetchone()
+
+        if row:
+            last_ts = int(row[0])
+            passed = now - last_ts
+            if passed < cooldown_seconds:
+                wait = cooldown_seconds - passed
+                conn.commit()
+                return False, 0, wait, _format_hms(wait)
+
+        # ✅ ruxsat bo'lsa bonus beramiz
+        amount = random.choice(BONUS_CHOICES)
+
+        # points qo'shamiz
+        cursor.execute('''
+            UPDATE users
+            SET points = COALESCE(points, 0) + ?
+            WHERE user_id = ?
+        ''', (amount, user_id))
+
+        # last_claim_ts ni upsert
+        cursor.execute('''
+            INSERT INTO bonus_claims (user_id, last_claim_ts)
+            VALUES (?, ?)
+            ON CONFLICT(user_id) DO UPDATE SET
+                last_claim_ts = excluded.last_claim_ts
+        ''', (user_id, now))
+
+        conn.commit()
+        return True, amount, 0, "00:00:00"
+
+    except sqlite3.Error as e:
+        try:
+            conn.rollback()
+        except Exception:
+            pass
+        print(f"claim_bonus_atomic xatosi: {e}")
+        return False, 0, 60, _format_hms(60)
+    finally:
+        conn.close()
+
 
 
 
