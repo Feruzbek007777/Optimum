@@ -1,4 +1,4 @@
-BOT_TOKEN = "8487703746:AAFkB7MD_qI69KP_ML6kg4oXuEGuxLotBXg"
+BOT_TOKEN = "8487703746:AAGQtU4E2F9zly9Sqko8E94uPoir4AYU3WY"
 
 ADMINS = [6587587517, 5860311888, 805466040]  # Admin ID lari
 DATABASE_PATH = "optimum.db"
@@ -7,8 +7,8 @@ CONTACT_INFO = """
 📞 Biz bilan bog'lanish:
 
 📍 Manzil: Farg'ona : Yozyovon 
-📞 Telefon: +998 99 998 64 21
-📲 Telegram: @olloyor_9
+📞 Telefon: +998999986421
+📲 Telegram: @olloyor_mardonaliyev
 
 🌐 Biz haqimizda :
 📧 Telegram : @optimum_LA
@@ -16,7 +16,7 @@ CONTACT_INFO = """
 🕒 Ish vaqtimiz: 
 Dushanba - Yakshanba : 6:00 - 20:00
 
-Made by @Fellixboi 
+Bot yasash uchun :  @Fellixboi 
 """
 
 # YANGI: Kanal ma'lumotlari

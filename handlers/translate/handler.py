@@ -31,6 +31,7 @@ BUTTON_TEXTS_EXCLUDE = [
     "🤝 Takliflarim",
     "📊 Mening ballarim",
     "🏆 Top foydalanuvchilar",
+    "🎰 Bonus",
 ]
 
 # Foydalanuvchi tanlagan tillarni saqlash

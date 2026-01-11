@@ -1,6 +1,27 @@
 import sqlite3
 import os
+import time
 from config import DATABASE_PATH
+
+
+# ===================== POINTS FORMAT / ROUND =====================
+
+POINTS_DECIMALS = 1  # nuqtadan keyin 1 ta raqam
+
+def fmt_points(x) -> str:
+    """
+    UI uchun chiroyli format:
+    9.80000000001 -> 9.8
+    10.0 -> 10
+    """
+    try:
+        v = round(float(x), POINTS_DECIMALS)
+    except Exception:
+        v = 0.0
+    s = f"{v:.{POINTS_DECIMALS}f}"
+    if s.endswith(".0"):
+        s = s[:-2]
+    return s
 
 
 def create_connection():
@@ -28,14 +49,14 @@ def init_database():
                     name TEXT NOT NULL UNIQUE
                 )
             ''')
-            # ✅ BONUS CLAIMS (12 soatlik bonus)
+
+            # ✅ BONUS CLAIMS
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS bonus_claims (
                     user_id INTEGER PRIMARY KEY,
                     last_claim_ts INTEGER NOT NULL
                 )
             ''')
-
 
             # Kurs ma'lumotlari jadvali
             cursor.execute('''
@@ -86,14 +107,13 @@ def init_database():
                 )
             ''')
 
-            # 🎬 Kurs videosi ko‘rganlar (unique userlar)
+            # 🎬 Kurs videosi ko‘rganlar
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS course_video_views (
                     user_id INTEGER PRIMARY KEY,
                     viewed_at DATETIME DEFAULT CURRENT_TIMESTAMP
                 )
             ''')
-
 
             # Admin guruhlari jadvali
             cursor.execute('''
@@ -104,7 +124,7 @@ def init_database():
                 )
             ''')
 
-            # Foydalanuvchilar jadvali (asosiy)
+            # Foydalanuvchilar jadvali
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS users (
                     user_id INTEGER PRIMARY KEY,
@@ -115,10 +135,10 @@ def init_database():
             ''')
 
             # 🔥 Yangi ustunlar: points, referrals_count
+            # IMPORTANT: points REAL bo'lsin (0.2 / 0.5 uchun)
             try:
-                cursor.execute("ALTER TABLE users ADD COLUMN points INTEGER DEFAULT 0")
+                cursor.execute("ALTER TABLE users ADD COLUMN points REAL DEFAULT 0.0")
             except sqlite3.OperationalError:
-                # allaqachon mavjud bo'lsa xato beradi — e'tibor bermaymiz
                 pass
 
             try:
@@ -126,7 +146,7 @@ def init_database():
             except sqlite3.OperationalError:
                 pass
 
-            # 🔥 Yangi jadval: referrals (takliflar logi)
+            # 🔥 Yangi jadval: referrals
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS referrals (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -139,11 +159,11 @@ def init_database():
             ''')
 
             cursor.execute('''
-                           CREATE TABLE IF NOT EXISTS gift_likes (
-                               user_id INTEGER PRIMARY KEY,
-                               liked_at DATETIME DEFAULT CURRENT_TIMESTAMP
-                           )
-                       ''')
+                CREATE TABLE IF NOT EXISTS gift_likes (
+                    user_id INTEGER PRIMARY KEY,
+                    liked_at DATETIME DEFAULT CURRENT_TIMESTAMP
+                )
+            ''')
 
             conn.commit()
             print("✅ Ma'lumotlar bazasi muvaffaqiyatli yaratildi!")
@@ -168,7 +188,6 @@ def _delete_file_if_exists(path: str):
 # ----------- KURS OPERATSIYALARI -----------
 
 def get_courses():
-    """Barcha kurslarni olish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT id, name FROM courses ORDER BY name")
@@ -178,13 +197,12 @@ def get_courses():
 
 
 def get_course_details(course_id):
-    """Kurs ma'lumotlarini olish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('''
-        SELECT cd.price, cd.schedule, cd.description, cd.image_path, c.name 
-        FROM course_details cd 
-        JOIN courses c ON cd.course_id = c.id 
+        SELECT cd.price, cd.schedule, cd.description, cd.image_path, c.name
+        FROM course_details cd
+        JOIN courses c ON cd.course_id = c.id
         WHERE cd.course_id = ?
     ''', (course_id,))
     course_info = cursor.fetchone()
@@ -193,7 +211,6 @@ def get_course_details(course_id):
 
 
 def add_course(name):
-    """Yangi kurs qo'shish"""
     conn = create_connection()
     cursor = conn.cursor()
     try:
@@ -207,7 +224,6 @@ def add_course(name):
 
 
 def add_course_details(course_id, price, schedule, description, image_path):
-    """Kurs ma'lumotlarini qo'shish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute(
@@ -219,21 +235,17 @@ def add_course_details(course_id, price, schedule, description, image_path):
 
 
 def delete_course(course_id):
-    """Kursni o'chirish (rasmlar bilan birga)"""
     conn = create_connection()
     cursor = conn.cursor()
     try:
-        # Avval course_details rasmlarini o'chiramiz
         cursor.execute("SELECT image_path FROM course_details WHERE course_id = ?", (course_id,))
         for (img,) in cursor.fetchall():
             _delete_file_if_exists(img)
 
-        # Ustozlar rasmlarini o'chiramiz
         cursor.execute("SELECT image_path FROM teachers WHERE course_id = ?", (course_id,))
         for (img,) in cursor.fetchall():
             _delete_file_if_exists(img)
 
-        # Bog'liq ma'lumotlarni o'chiramiz
         cursor.execute("DELETE FROM course_details WHERE course_id = ?", (course_id,))
         cursor.execute("DELETE FROM teachers WHERE course_id = ?", (course_id,))
         cursor.execute("DELETE FROM students WHERE course_id = ?", (course_id,))
@@ -250,7 +262,6 @@ def delete_course(course_id):
 # ----------- O'QITUVCHI OPERATSIYALARI -----------
 
 def get_teacher(course_id):
-    """Kurs o'qituvchisini olish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT id, full_name, achievements, image_path FROM teachers WHERE course_id = ?", (course_id,))
@@ -260,7 +271,6 @@ def get_teacher(course_id):
 
 
 def get_all_teachers():
-    """Barcha o'qituvchilarni olish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT id, course_id, full_name FROM teachers ORDER BY full_name")
@@ -270,7 +280,6 @@ def get_all_teachers():
 
 
 def add_teacher(course_id, full_name, achievements, image_path):
-    """Yangi o'qituvchi qo'shish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute(
@@ -282,7 +291,6 @@ def add_teacher(course_id, full_name, achievements, image_path):
 
 
 def delete_teacher(teacher_id):
-    """O'qituvchini o'chirish (rasmi bilan)"""
     conn = create_connection()
     cursor = conn.cursor()
     try:
@@ -304,7 +312,6 @@ def delete_teacher(teacher_id):
 # ----------- TALABA OPERATSIYALARI -----------
 
 def add_student(full_name, phone_number, username, course_id):
-    """Talaba qo'shish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute(
@@ -316,7 +323,6 @@ def add_student(full_name, phone_number, username, course_id):
 
 
 def approve_student(full_name, phone_number, course_id):
-    """Talabani tasdiqlash"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute(
@@ -328,7 +334,6 @@ def approve_student(full_name, phone_number, course_id):
 
 
 def delete_student(full_name, phone_number, course_id):
-    """Talabani o'chirish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute(
@@ -340,13 +345,12 @@ def delete_student(full_name, phone_number, course_id):
 
 
 def get_approved_students():
-    """Tasdiqlangan talabalarni olish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('''
-        SELECT s.id, s.full_name, s.phone_number, s.username, s.registered_at, c.name 
-        FROM students s 
-        LEFT JOIN courses c ON s.course_id = c.id 
+        SELECT s.id, s.full_name, s.phone_number, s.username, s.registered_at, c.name
+        FROM students s
+        LEFT JOIN courses c ON s.course_id = c.id
         WHERE s.approved = TRUE
     ''')
     students = cursor.fetchall()
@@ -357,7 +361,6 @@ def get_approved_students():
 # ----------- E'LON OPERATSIYALARI -----------
 
 def get_announcements():
-    """E'lonlarni olish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT message, image_path FROM announcements ORDER BY created_at DESC LIMIT 5")
@@ -367,7 +370,6 @@ def get_announcements():
 
 
 def add_announcement(message, image_path=None):
-    """Yangi e'lon qo'shish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute(
@@ -381,7 +383,6 @@ def add_announcement(message, image_path=None):
 # ----------- GURUH OPERATSIYALARI -----------
 
 def add_admin_group(group_id, group_title):
-    """Yangi admin guruhini qo'shish"""
     conn = create_connection()
     cursor = conn.cursor()
     try:
@@ -399,7 +400,6 @@ def add_admin_group(group_id, group_title):
 
 
 def get_all_admin_groups():
-    """Barcha admin guruhlarini olish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT group_id, group_title FROM admin_groups ORDER BY group_title")
@@ -409,7 +409,6 @@ def get_all_admin_groups():
 
 
 def delete_admin_group(group_id):
-    """Admin guruhini o'chirish"""
     conn = create_connection()
     cursor = conn.cursor()
     try:
@@ -423,13 +422,12 @@ def delete_admin_group(group_id):
         conn.close()
 
 
-# ----------- USER OPERATSIYALARI (FOYDALANUVCHI) -----------
+# ----------- USER OPERATSIYALARI -----------
 
 def add_user(user_id, username, full_name):
     """
     Foydalanuvchini qo'shish yoki yangilash.
-    Muhim: points/referrals_count qayta nol bo'lib ketmasligi uchun
-    REPLACE emas, ON CONFLICT UPDATE ishlatamiz.
+    REPLACE emas, ON CONFLICT UPDATE (points yo'qolmasin)
     """
     conn = create_connection()
     cursor = conn.cursor()
@@ -445,7 +443,6 @@ def add_user(user_id, username, full_name):
 
 
 def get_all_users():
-    """Barcha foydalanuvchilarning faqat user_id ro'yxati"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT user_id FROM users")
@@ -455,52 +452,67 @@ def get_all_users():
 
 
 def get_user_stats(user_id):
-    """Bitta foydalanuvchi haqida to'liq statistika"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('''
-        SELECT user_id, username, full_name, joined_at, 
-               COALESCE(points, 0), COALESCE(referrals_count, 0)
+        SELECT user_id, username, full_name, joined_at,
+               ROUND(COALESCE(points, 0), 1), COALESCE(referrals_count, 0)
         FROM users
         WHERE user_id = ?
     ''', (user_id,))
     row = cursor.fetchone()
     conn.close()
-    return row  # (user_id, username, full_name, joined_at, points, referrals_count)
+    return row
 
 
 # ----------- BALLAR VA TAKLIFLAR (POINTS / REFERRALS) -----------
 
-def add_points(user_id: int, amount: int):
-    """Foydalanuvchiga ball qo'shish (+ yoki - bo'lishi mumkin)"""
+def add_points(user_id: int, amount):
+    """
+    Foydalanuvchiga ball qo'shish (+ yoki - bo'lishi mumkin).
+    DBda doim 1 xonagacha ROUND qilib saqlaydi.
+    """
+    try:
+        amount = float(amount)
+    except Exception:
+        amount = 0.0
+
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('''
         UPDATE users
-        SET points = COALESCE(points, 0) + ?
+        SET points = ROUND(COALESCE(points, 0) + ?, 1)
         WHERE user_id = ?
     ''', (amount, user_id))
     conn.commit()
     conn.close()
 
 
-def get_points(user_id: int) -> int:
-    """Foydalanuvchining ballarini olish"""
+def get_points(user_id: int) -> float:
+    """Foydalanuvchining ballarini olish (1 xonagacha)."""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT COALESCE(points, 0) FROM users WHERE user_id = ?", (user_id,))
     row = cursor.fetchone()
     conn.close()
-    return row[0] if row else 0
+    try:
+        return round(float(row[0] if row else 0.0), 1)
+    except Exception:
+        return 0.0
 
 
-def set_points(user_id: int, value: int):
-    """Foydalanuvchining ballini to'g'ridan-to'g'ri o'rnatish"""
+def set_points(user_id: int, value):
+    """Foydalanuvchining ballini to'g'ridan-to'g'ri o'rnatish (1 xonagacha)."""
+    try:
+        value = float(value)
+    except Exception:
+        value = 0.0
+
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('''
         UPDATE users
-        SET points = ?
+        SET points = ROUND(?, 1)
         WHERE user_id = ?
     ''', (value, user_id))
     conn.commit()
@@ -508,7 +520,6 @@ def set_points(user_id: int, value: int):
 
 
 def increment_referrals(user_id: int):
-    """Foydalanuvchining takliflar sonini +1 qilish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('''
@@ -521,7 +532,6 @@ def increment_referrals(user_id: int):
 
 
 def get_referrals_count(user_id: int) -> int:
-    """Foydalanuvchining takliflar sonini olish"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT COALESCE(referrals_count, 0) FROM users WHERE user_id = ?", (user_id,))
@@ -532,10 +542,8 @@ def get_referrals_count(user_id: int) -> int:
 
 def add_referral(referrer_id: int, referred_id: int, bonus_points: int = 200) -> bool:
     """
-    Taklif yozuvi qo'shish.
-    - referrer_id: kim taklif qildi
-    - referred_id: kim taklif bilan keldi
-    Bir userni faqat bir marta hisoblaymiz (referred_id UNIQUE).
+    Taklif yozuvi qo'shish (referred_id UNIQUE).
+    referrerga ball + referrals_count qo'shadi.
     """
     if referrer_id == referred_id:
         return False
@@ -547,25 +555,25 @@ def add_referral(referrer_id: int, referred_id: int, bonus_points: int = 200) ->
             INSERT INTO referrals (referrer_id, referred_id)
             VALUES (?, ?)
         ''', (referrer_id, referred_id))
-        # Agar muvaffaqiyatli bo'lsa — referrerga ball va takliflar sonini oshiramiz
+
+        # ✅ points ROUND bilan
         cursor.execute('''
             UPDATE users
-            SET 
-                points = COALESCE(points, 0) + ?,
+            SET
+                points = ROUND(COALESCE(points, 0) + ?, 1),
                 referrals_count = COALESCE(referrals_count, 0) + 1
             WHERE user_id = ?
-        ''', (bonus_points, referrer_id))
+        ''', (float(bonus_points), referrer_id))
+
         conn.commit()
         return True
     except sqlite3.IntegrityError:
-        # Bu referred_id allaqachon ro'yxatda bor (ikki marta sanamaymiz)
         return False
     finally:
         conn.close()
 
 
 def get_referrals_for_user(referrer_id: int):
-    """Berilgan foydalanuvchi taklif qilgan odamlar ro'yxati"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('''
@@ -581,12 +589,11 @@ def get_referrals_for_user(referrer_id: int):
 
 
 def get_top_users(limit: int = 10):
-    """Top foydalanuvchilar ro'yxati (ball bo'yicha)"""
     conn = create_connection()
     cursor = conn.cursor()
-    cursor.execute(f'''
+    cursor.execute('''
         SELECT user_id, username, full_name,
-               COALESCE(points, 0) AS pts,
+               ROUND(COALESCE(points, 0), 1) AS pts,
                COALESCE(referrals_count, 0) AS refs
         FROM users
         ORDER BY pts DESC, refs DESC, joined_at ASC
@@ -594,16 +601,15 @@ def get_top_users(limit: int = 10):
     ''', (limit,))
     rows = cursor.fetchall()
     conn.close()
-    return rows  # (user_id, username, full_name, points, referrals_count)
+    return rows
 
 
 def get_all_users_with_stats():
-    """Admin panel uchun: barcha userlar stats bilan, ball bo'yicha tartiblangan"""
     conn = create_connection()
     cursor = conn.cursor()
     cursor.execute('''
         SELECT user_id, username, full_name, joined_at,
-               COALESCE(points, 0) AS pts,
+               ROUND(COALESCE(points, 0), 1) AS pts,
                COALESCE(referrals_count, 0) AS refs
         FROM users
         ORDER BY pts DESC, joined_at ASC
@@ -612,17 +618,13 @@ def get_all_users_with_stats():
     conn.close()
     return rows
 
+
 # ----------- GIFT LIKE OPERATSIYALARI -----------
 
 def add_gift_like(user_id: int):
-    """
-    Sovg'a bo'limi uchun like qo'shish.
-    return: (new_like: bool, total_likes: int)
-    """
     conn = create_connection()
     cursor = conn.cursor()
     try:
-        # Avval user allaqachon like bosgan-bosmaganini tekshiramiz
         cursor.execute("SELECT 1 FROM gift_likes WHERE user_id = ?", (user_id,))
         already = cursor.fetchone() is not None
 
@@ -630,10 +632,8 @@ def add_gift_like(user_id: int):
             cursor.execute("INSERT INTO gift_likes (user_id) VALUES (?)", (user_id,))
             conn.commit()
 
-        # Jami likelar soni
         cursor.execute("SELECT COUNT(*) FROM gift_likes")
         total = cursor.fetchone()[0]
-
         return (not already), total
     except sqlite3.Error as e:
         print(f"gift_likes xatosi: {e}")
@@ -643,7 +643,6 @@ def add_gift_like(user_id: int):
 
 
 def get_gift_likes_count() -> int:
-    """Sovg'a bo'limi uchun jami likelar soni"""
     conn = create_connection()
     cursor = conn.cursor()
     try:
@@ -656,16 +655,11 @@ def get_gift_likes_count() -> int:
     finally:
         conn.close()
 
+
 def get_user_by_username(username: str):
-    """
-    Username bo'yicha foydalanuvchini topish.
-    return:
-      (user_id, username, full_name, joined_at, points, referrals_count) yoki None
-    """
     if not username:
         return None
 
-    # @ belgisini olib tashlaymiz, agar bo'lsa
     username = username.lstrip("@")
 
     conn = create_connection()
@@ -675,7 +669,7 @@ def get_user_by_username(username: str):
                username,
                full_name,
                joined_at,
-               COALESCE(points, 0) AS pts,
+               ROUND(COALESCE(points, 0), 1) AS pts,
                COALESCE(referrals_count, 0) AS refs
         FROM users
         WHERE LOWER(username) = LOWER(?)
@@ -685,51 +679,10 @@ def get_user_by_username(username: str):
     conn.close()
     return row
 
-def add_course_video_view(user_id: int) -> bool:
-    """
-    /video bosgan userni 1 marta hisoblash (unique).
-    return: True bo‘lsa yangi qo‘shildi, False bo‘lsa oldin ham ko‘rgan.
-    """
-    conn = create_connection()
-    cursor = conn.cursor()
-    try:
-        cursor.execute("SELECT 1 FROM course_video_views WHERE user_id = ?", (user_id,))
-        already = cursor.fetchone() is not None
 
-        if not already:
-            cursor.execute("INSERT INTO course_video_views (user_id) VALUES (?)", (user_id,))
-            conn.commit()
-            return True
-        return False
-    except sqlite3.Error as e:
-        print(f"course_video_views xatosi: {e}")
-        return False
-    finally:
-        conn.close()
+# ===================== BONUS (6 soat) =====================
 
-
-def get_course_video_views_count() -> int:
-    """/video ko‘rgan unique userlar soni"""
-    conn = create_connection()
-    cursor = conn.cursor()
-    try:
-        cursor.execute("SELECT COUNT(*) FROM course_video_views")
-        row = cursor.fetchone()
-        return row[0] if row else 0
-    except sqlite3.Error as e:
-        print(f"course_video_views count xatosi: {e}")
-        return 0
-    finally:
-        conn.close()
-
-# ===================== BONUS (12 soat) =====================
-
-import time
-import random
-
-
-BONUS_CHOICES = [30, 40, 50, 60, 70, 80, 90, 100]
-BONUS_COOLDOWN_SECONDS = 12 * 60 * 60  # 12 soat
+BONUS_COOLDOWN_SECONDS = 6 * 60 * 60  # 6 soat
 
 
 def _format_hms(seconds: int) -> str:
@@ -741,31 +694,34 @@ def _format_hms(seconds: int) -> str:
     return f"{h:02d}:{m:02d}:{s:02d}"
 
 
-def claim_bonus_atomic(user_id: int, cooldown_seconds: int = BONUS_COOLDOWN_SECONDS):
+def claim_bonus_atomic(user_id: int, amount: int, cooldown_seconds: int = BONUS_COOLDOWN_SECONDS):
     """
-    ✅ Atomik bonus claim:
-    - 12 soat tekshiradi
-    - Ruxsat bo'lsa: random bonus tanlaydi, users.points ga qo'shadi, last_claim_ts ni yangilaydi
-    - Barchasi bitta transactionda (double bosishni ham ushlab qoladi)
-
-    return:
-      (ok: bool, amount: int, wait_seconds: int, wait_hms: str)
+    Atomik bonus claim:
+    - cooldown tekshiradi
+    - ruxsat bo'lsa: amount ni users.points ga qo'shadi (ROUND 1),
+      last_claim_ts ni yangilaydi
     """
     now = int(time.time())
 
+    try:
+        amount = float(amount)
+    except Exception:
+        amount = 0.0
+    if amount < 0:
+        amount = 0.0
+
     conn = create_connection()
     cursor = conn.cursor()
+
     try:
-        # lock (sqlite): bir vaqtda ikki marta claim bo'lib ketmasin
         cursor.execute("BEGIN IMMEDIATE")
 
-        # user bazada yo'q bo'lib qolsa ham (kamdan-kam), stub yaratib ketamiz
         cursor.execute("INSERT OR IGNORE INTO users (user_id) VALUES (?)", (user_id,))
 
         cursor.execute("SELECT last_claim_ts FROM bonus_claims WHERE user_id = ?", (user_id,))
         row = cursor.fetchone()
 
-        if row:
+        if row and row[0] is not None:
             last_ts = int(row[0])
             passed = now - last_ts
             if passed < cooldown_seconds:
@@ -773,23 +729,19 @@ def claim_bonus_atomic(user_id: int, cooldown_seconds: int = BONUS_COOLDOWN_SECO
                 conn.commit()
                 return False, 0, wait, _format_hms(wait)
 
-        # ✅ ruxsat bo'lsa bonus beramiz
-        amount = random.choice(BONUS_CHOICES)
-
-        # points qo'shamiz
-        cursor.execute('''
+        # ✅ points ROUND bilan
+        cursor.execute("""
             UPDATE users
-            SET points = COALESCE(points, 0) + ?
+            SET points = ROUND(COALESCE(points, 0) + ?, 1)
             WHERE user_id = ?
-        ''', (amount, user_id))
+        """, (amount, user_id))
 
-        # last_claim_ts ni upsert
-        cursor.execute('''
+        cursor.execute("""
             INSERT INTO bonus_claims (user_id, last_claim_ts)
             VALUES (?, ?)
             ON CONFLICT(user_id) DO UPDATE SET
                 last_claim_ts = excluded.last_claim_ts
-        ''', (user_id, now))
+        """, (user_id, now))
 
         conn.commit()
         return True, amount, 0, "00:00:00"
@@ -801,11 +753,9 @@ def claim_bonus_atomic(user_id: int, cooldown_seconds: int = BONUS_COOLDOWN_SECO
             pass
         print(f"claim_bonus_atomic xatosi: {e}")
         return False, 0, 60, _format_hms(60)
+
     finally:
         conn.close()
-
-
-
 
 
 if __name__ == "__main__":

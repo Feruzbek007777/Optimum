@@ -433,5 +433,2507 @@
     "question": "|x + 2| = 0 tenglama yechimi?",
     "options": ["x = -2", "x = 2", "x = 0", "Yeim yo'q"],
     "correct_index": 0
+  },
+  [
+  {
+    "question": "x²+7x+78=0 D?",
+    "options": [
+      "-259",
+      "263",
+      "-263",
+      "-267"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+2x+27=0 D?",
+    "options": [
+      "-108",
+      "104",
+      "-100",
+      "-104"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+1x+26=0 D?",
+    "options": [
+      "-103",
+      "-107",
+      "-99",
+      "103"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+11x+50=0 D?",
+    "options": [
+      "-83",
+      "79",
+      "-79",
+      "-75"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+3x+8=0 D?",
+    "options": [
+      "23",
+      "-19",
+      "-23",
+      "-27"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+4x+23=0 D?",
+    "options": [
+      "-76",
+      "-80",
+      "-72",
+      "76"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+9x+80=0 D?",
+    "options": [
+      "-239",
+      "239",
+      "-243",
+      "-235"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-12x+67=0 D?",
+    "options": [
+      "-124",
+      "-128",
+      "124",
+      "-120"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+2x+39=0 D?",
+    "options": [
+      "-152",
+      "-148",
+      "152",
+      "-156"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+0x+6=0 D?",
+    "options": [
+      "-24",
+      "24",
+      "-28",
+      "-20"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-15x+77=0 D?",
+    "options": [
+      "83",
+      "-79",
+      "-83",
+      "-87"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+1x+52=0 D?",
+    "options": [
+      "207",
+      "-211",
+      "-207",
+      "-203"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+11x+74=0 D?",
+    "options": [
+      "-179",
+      "-175",
+      "-171",
+      "175"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-7x+76=0 D?",
+    "options": [
+      "-251",
+      "-255",
+      "-259",
+      "255"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+5x+49=0 D?",
+    "options": [
+      "-167",
+      "-175",
+      "171",
+      "-171"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+1x+80=0 D?",
+    "options": [
+      "-315",
+      "-323",
+      "-319",
+      "319"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+11x+64=0 D?",
+    "options": [
+      "-135",
+      "-131",
+      "135",
+      "-139"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+8x+48=0 D?",
+    "options": [
+      "-132",
+      "128",
+      "-124",
+      "-128"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-7x+13=0 D?",
+    "options": [
+      "3",
+      "-3",
+      "1",
+      "-7"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-10x+31=0 D?",
+    "options": [
+      "-20",
+      "24",
+      "-28",
+      "-24"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-1x+76=0 D?",
+    "options": [
+      "303",
+      "-307",
+      "-299",
+      "-303"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-2x+33=0 D?",
+    "options": [
+      "-124",
+      "128",
+      "-128",
+      "-132"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+11x+65=0 D?",
+    "options": [
+      "139",
+      "-135",
+      "-143",
+      "-139"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+1x+72=0 D?",
+    "options": [
+      "-287",
+      "-283",
+      "-291",
+      "287"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-10x+45=0 D?",
+    "options": [
+      "-80",
+      "-84",
+      "-76",
+      "80"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+2x+6=0 D?",
+    "options": [
+      "-24",
+      "20",
+      "-20",
+      "-16"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-1x+7=0 D?",
+    "options": [
+      "-31",
+      "27",
+      "-23",
+      "-27"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+0x+45=0 D?",
+    "options": [
+      "-180",
+      "180",
+      "-176",
+      "-184"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+1x+51=0 D?",
+    "options": [
+      "-207",
+      "-199",
+      "-203",
+      "203"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-5x+43=0 D?",
+    "options": [
+      "-143",
+      "-147",
+      "147",
+      "-151"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-11x+39=0 D?",
+    "options": [
+      "35",
+      "-39",
+      "-35",
+      "-31"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+6x+26=0 D?",
+    "options": [
+      "68",
+      "-64",
+      "-68",
+      "-72"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+14x+77=0 D?",
+    "options": [
+      "-112",
+      "-116",
+      "-108",
+      "112"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+3x+57=0 D?",
+    "options": [
+      "219",
+      "-223",
+      "-219",
+      "-215"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+3x+70=0 D?",
+    "options": [
+      "271",
+      "-267",
+      "-271",
+      "-275"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+8x+58=0 D?",
+    "options": [
+      "-164",
+      "-172",
+      "168",
+      "-168"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+14x+62=0 D?",
+    "options": [
+      "-48",
+      "52",
+      "-52",
+      "-56"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+3x+24=0 D?",
+    "options": [
+      "-83",
+      "-91",
+      "87",
+      "-87"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+13x+61=0 D?",
+    "options": [
+      "-75",
+      "75",
+      "-79",
+      "-71"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+7x+62=0 D?",
+    "options": [
+      "-199",
+      "-195",
+      "199",
+      "-203"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+4x+18=0 D?",
+    "options": [
+      "-56",
+      "56",
+      "-60",
+      "-52"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-4x+61=0 D?",
+    "options": [
+      "228",
+      "-232",
+      "-224",
+      "-228"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+0x+22=0 D?",
+    "options": [
+      "-88",
+      "-84",
+      "88",
+      "-92"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+2x+68=0 D?",
+    "options": [
+      "-264",
+      "-272",
+      "268",
+      "-268"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+15x+67=0 D?",
+    "options": [
+      "-43",
+      "-47",
+      "43",
+      "-39"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-2x+72=0 D?",
+    "options": [
+      "284",
+      "-280",
+      "-284",
+      "-288"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-2x+29=0 D?",
+    "options": [
+      "-112",
+      "112",
+      "-108",
+      "-116"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+6x+39=0 D?",
+    "options": [
+      "-120",
+      "120",
+      "-116",
+      "-124"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+17x+79=0 D?",
+    "options": [
+      "-31",
+      "-23",
+      "27",
+      "-27"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+1x+60=0 D?",
+    "options": [
+      "-239",
+      "239",
+      "-235",
+      "-243"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+8x+46=0 D?",
+    "options": [
+      "-116",
+      "-120",
+      "120",
+      "-124"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-12x+40=0 D?",
+    "options": [
+      "-12",
+      "16",
+      "-20",
+      "-16"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-12x+65=0 D?",
+    "options": [
+      "116",
+      "-120",
+      "-116",
+      "-112"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+5x+80=0 D?",
+    "options": [
+      "-295",
+      "-291",
+      "295",
+      "-299"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-6x+51=0 D?",
+    "options": [
+      "-172",
+      "168",
+      "-164",
+      "-168"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+0x+51=0 D?",
+    "options": [
+      "-200",
+      "-204",
+      "204",
+      "-208"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+1x+29=0 D?",
+    "options": [
+      "-115",
+      "115",
+      "-119",
+      "-111"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-6x+29=0 D?",
+    "options": [
+      "-76",
+      "80",
+      "-84",
+      "-80"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-7x+34=0 D?",
+    "options": [
+      "87",
+      "-83",
+      "-87",
+      "-91"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-14x+66=0 D?",
+    "options": [
+      "68",
+      "-72",
+      "-64",
+      "-68"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-2x+64=0 D?",
+    "options": [
+      "252",
+      "-256",
+      "-252",
+      "-248"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+2x+44=0 D?",
+    "options": [
+      "-172",
+      "172",
+      "-176",
+      "-168"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+7x+68=0 D?",
+    "options": [
+      "-227",
+      "223",
+      "-223",
+      "-219"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-5x+54=0 D?",
+    "options": [
+      "-195",
+      "191",
+      "-191",
+      "-187"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-11x+68=0 D?",
+    "options": [
+      "-147",
+      "-151",
+      "-155",
+      "151"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+1x+74=0 D?",
+    "options": [
+      "-291",
+      "-299",
+      "295",
+      "-295"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+3x+28=0 D?",
+    "options": [
+      "103",
+      "-103",
+      "-99",
+      "-107"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+6x+69=0 D?",
+    "options": [
+      "240",
+      "-240",
+      "-236",
+      "-244"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-1x+64=0 D?",
+    "options": [
+      "-255",
+      "-251",
+      "-259",
+      "255"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+1x+39=0 D?",
+    "options": [
+      "-155",
+      "-159",
+      "155",
+      "-151"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-4x+37=0 D?",
+    "options": [
+      "-128",
+      "-132",
+      "132",
+      "-136"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+3x+21=0 D?",
+    "options": [
+      "-71",
+      "-75",
+      "75",
+      "-79"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+10x+44=0 D?",
+    "options": [
+      "-72",
+      "-80",
+      "76",
+      "-76"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+1x+55=0 D?",
+    "options": [
+      "219",
+      "-219",
+      "-215",
+      "-223"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+7x+51=0 D?",
+    "options": [
+      "-159",
+      "-155",
+      "155",
+      "-151"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-2x+69=0 D?",
+    "options": [
+      "272",
+      "-276",
+      "-268",
+      "-272"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-1x+44=0 D?",
+    "options": [
+      "-171",
+      "175",
+      "-175",
+      "-179"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-6x+59=0 D?",
+    "options": [
+      "-196",
+      "-204",
+      "-200",
+      "200"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+6x+30=0 D?",
+    "options": [
+      "-84",
+      "-80",
+      "84",
+      "-88"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-1x+50=0 D?",
+    "options": [
+      "-195",
+      "199",
+      "-199",
+      "-203"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+0x+56=0 D?",
+    "options": [
+      "-224",
+      "224",
+      "-220",
+      "-228"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+2x+16=0 D?",
+    "options": [
+      "-56",
+      "-64",
+      "-60",
+      "60"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-13x+51=0 D?",
+    "options": [
+      "35",
+      "-31",
+      "-39",
+      "-35"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+8x+61=0 D?",
+    "options": [
+      "-180",
+      "-176",
+      "180",
+      "-184"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+11x+79=0 D?",
+    "options": [
+      "-191",
+      "-199",
+      "-195",
+      "195"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-7x+39=0 D?",
+    "options": [
+      "-103",
+      "107",
+      "-107",
+      "-111"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+9x+48=0 D?",
+    "options": [
+      "-115",
+      "-111",
+      "111",
+      "-107"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-16x+78=0 D?",
+    "options": [
+      "-60",
+      "-56",
+      "56",
+      "-52"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-16x+67=0 D?",
+    "options": [
+      "-16",
+      "12",
+      "-8",
+      "-12"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-7x+45=0 D?",
+    "options": [
+      "-127",
+      "-135",
+      "131",
+      "-131"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-14x+51=0 D?",
+    "options": [
+      "8",
+      "-4",
+      "-8",
+      "-12"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-2x+70=0 D?",
+    "options": [
+      "276",
+      "-280",
+      "-272",
+      "-276"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+8x+69=0 D?",
+    "options": [
+      "-208",
+      "212",
+      "-216",
+      "-212"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-3x+15=0 D?",
+    "options": [
+      "-51",
+      "-47",
+      "51",
+      "-55"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-14x+79=0 D?",
+    "options": [
+      "-120",
+      "-116",
+      "120",
+      "-124"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-5x+31=0 D?",
+    "options": [
+      "-99",
+      "99",
+      "-95",
+      "-103"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-14x+70=0 D?",
+    "options": [
+      "84",
+      "-80",
+      "-84",
+      "-88"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+12x+46=0 D?",
+    "options": [
+      "40",
+      "-44",
+      "-36",
+      "-40"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+4x+5=0 D?",
+    "options": [
+      "-8",
+      "4",
+      "0",
+      "-4"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-14x+56=0 D?",
+    "options": [
+      "-28",
+      "-32",
+      "-24",
+      "28"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+8x+77=0 D?",
+    "options": [
+      "244",
+      "-244",
+      "-240",
+      "-248"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+7x+41=0 D?",
+    "options": [
+      "115",
+      "-115",
+      "-119",
+      "-111"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-4x+58=0 D?",
+    "options": [
+      "216",
+      "-212",
+      "-216",
+      "-220"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+6x+48=0 D?",
+    "options": [
+      "-152",
+      "-160",
+      "156",
+      "-156"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-7x+47=0 D?",
+    "options": [
+      "139",
+      "-143",
+      "-139",
+      "-135"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-2x+49=0 D?",
+    "options": [
+      "-192",
+      "192",
+      "-188",
+      "-196"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-4x+5=0 D?",
+    "options": [
+      "-8",
+      "0",
+      "4",
+      "-4"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-11x+61=0 D?",
+    "options": [
+      "-123",
+      "-119",
+      "123",
+      "-127"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-13x+74=0 D?",
+    "options": [
+      "-131",
+      "-127",
+      "127",
+      "-123"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-1x+54=0 D?",
+    "options": [
+      "215",
+      "-215",
+      "-211",
+      "-219"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+2x+37=0 D?",
+    "options": [
+      "-140",
+      "-144",
+      "-148",
+      "144"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-9x+79=0 D?",
+    "options": [
+      "-239",
+      "235",
+      "-231",
+      "-235"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+7x+35=0 D?",
+    "options": [
+      "-91",
+      "91",
+      "-95",
+      "-87"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-3x+37=0 D?",
+    "options": [
+      "-143",
+      "-135",
+      "-139",
+      "139"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+3x+47=0 D?",
+    "options": [
+      "179",
+      "-175",
+      "-183",
+      "-179"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+0x+17=0 D?",
+    "options": [
+      "-68",
+      "-72",
+      "68",
+      "-64"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-6x+75=0 D?",
+    "options": [
+      "-260",
+      "264",
+      "-268",
+      "-264"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-1x+72=0 D?",
+    "options": [
+      "-291",
+      "287",
+      "-287",
+      "-283"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-7x+21=0 D?",
+    "options": [
+      "-31",
+      "-39",
+      "35",
+      "-35"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-9x+41=0 D?",
+    "options": [
+      "-87",
+      "83",
+      "-79",
+      "-83"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-7x+30=0 D?",
+    "options": [
+      "-71",
+      "-75",
+      "71",
+      "-67"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-8x+37=0 D?",
+    "options": [
+      "-84",
+      "-80",
+      "-88",
+      "84"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-11x+73=0 D?",
+    "options": [
+      "-175",
+      "-171",
+      "171",
+      "-167"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+2x+48=0 D?",
+    "options": [
+      "188",
+      "-188",
+      "-192",
+      "-184"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-2x+27=0 D?",
+    "options": [
+      "-104",
+      "-108",
+      "-100",
+      "104"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+1x+22=0 D?",
+    "options": [
+      "87",
+      "-87",
+      "-91",
+      "-83"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-9x+35=0 D?",
+    "options": [
+      "59",
+      "-55",
+      "-63",
+      "-59"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-3x+20=0 D?",
+    "options": [
+      "-71",
+      "71",
+      "-75",
+      "-67"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-6x+66=0 D?",
+    "options": [
+      "-224",
+      "-228",
+      "-232",
+      "228"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+8x+47=0 D?",
+    "options": [
+      "-128",
+      "-124",
+      "-120",
+      "124"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-8x+18=0 D?",
+    "options": [
+      "-8",
+      "-12",
+      "8",
+      "-4"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+1x+6=0 D?",
+    "options": [
+      "23",
+      "-23",
+      "-19",
+      "-27"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-15x+80=0 D?",
+    "options": [
+      "95",
+      "-99",
+      "-95",
+      "-91"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-1x+67=0 D?",
+    "options": [
+      "-267",
+      "-263",
+      "-271",
+      "267"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+8x+39=0 D?",
+    "options": [
+      "-88",
+      "-96",
+      "-92",
+      "92"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-17x+80=0 D?",
+    "options": [
+      "31",
+      "-35",
+      "-31",
+      "-27"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+11x+69=0 D?",
+    "options": [
+      "-159",
+      "155",
+      "-155",
+      "-151"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-11x+60=0 D?",
+    "options": [
+      "-123",
+      "-115",
+      "-119",
+      "119"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-9x+63=0 D?",
+    "options": [
+      "-171",
+      "-167",
+      "171",
+      "-175"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-13x+50=0 D?",
+    "options": [
+      "-35",
+      "-31",
+      "31",
+      "-27"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+6x+27=0 D?",
+    "options": [
+      "-76",
+      "-68",
+      "72",
+      "-72"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-4x+8=0 D?",
+    "options": [
+      "-16",
+      "-20",
+      "-12",
+      "16"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-10x+66=0 D?",
+    "options": [
+      "-164",
+      "164",
+      "-160",
+      "-168"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+4x+61=0 D?",
+    "options": [
+      "228",
+      "-228",
+      "-232",
+      "-224"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+14x+78=0 D?",
+    "options": [
+      "-120",
+      "116",
+      "-112",
+      "-116"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+5x+29=0 D?",
+    "options": [
+      "-87",
+      "-95",
+      "91",
+      "-91"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+13x+65=0 D?",
+    "options": [
+      "-91",
+      "91",
+      "-87",
+      "-95"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-7x+28=0 D?",
+    "options": [
+      "-59",
+      "-67",
+      "-63",
+      "63"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-7x+56=0 D?",
+    "options": [
+      "-179",
+      "175",
+      "-171",
+      "-175"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+15x+65=0 D?",
+    "options": [
+      "-39",
+      "35",
+      "-31",
+      "-35"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+7x+20=0 D?",
+    "options": [
+      "31",
+      "-27",
+      "-35",
+      "-31"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-2x+12=0 D?",
+    "options": [
+      "-44",
+      "-48",
+      "44",
+      "-40"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-11x+42=0 D?",
+    "options": [
+      "-51",
+      "-43",
+      "-47",
+      "47"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-4x+36=0 D?",
+    "options": [
+      "-124",
+      "-132",
+      "-128",
+      "128"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-6x+47=0 D?",
+    "options": [
+      "-148",
+      "-152",
+      "-156",
+      "152"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-14x+59=0 D?",
+    "options": [
+      "-44",
+      "-36",
+      "-40",
+      "40"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+7x+60=0 D?",
+    "options": [
+      "-195",
+      "-191",
+      "191",
+      "-187"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+2x+41=0 D?",
+    "options": [
+      "-156",
+      "160",
+      "-160",
+      "-164"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-15x+62=0 D?",
+    "options": [
+      "23",
+      "-23",
+      "-19",
+      "-27"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+0x+50=0 D?",
+    "options": [
+      "-200",
+      "-196",
+      "-204",
+      "200"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+2x+19=0 D?",
+    "options": [
+      "-76",
+      "-72",
+      "72",
+      "-68"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+4x+74=0 D?",
+    "options": [
+      "280",
+      "-276",
+      "-280",
+      "-284"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-15x+68=0 D?",
+    "options": [
+      "-51",
+      "-43",
+      "-47",
+      "47"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+14x+51=0 D?",
+    "options": [
+      "-4",
+      "-12",
+      "8",
+      "-8"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-7x+16=0 D?",
+    "options": [
+      "-15",
+      "-11",
+      "-19",
+      "15"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-13x+59=0 D?",
+    "options": [
+      "-63",
+      "-67",
+      "-71",
+      "67"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+0x+9=0 D?",
+    "options": [
+      "-40",
+      "-36",
+      "36",
+      "-32"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-8x+21=0 D?",
+    "options": [
+      "20",
+      "-24",
+      "-16",
+      "-20"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-6x+43=0 D?",
+    "options": [
+      "-136",
+      "-140",
+      "136",
+      "-132"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-1x+23=0 D?",
+    "options": [
+      "-87",
+      "-95",
+      "-91",
+      "91"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-8x+54=0 D?",
+    "options": [
+      "-152",
+      "152",
+      "-148",
+      "-156"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+8x+38=0 D?",
+    "options": [
+      "-92",
+      "-88",
+      "-84",
+      "88"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-2x+40=0 D?",
+    "options": [
+      "156",
+      "-152",
+      "-160",
+      "-156"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+9x+37=0 D?",
+    "options": [
+      "-63",
+      "67",
+      "-67",
+      "-71"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-9x+58=0 D?",
+    "options": [
+      "-147",
+      "-151",
+      "-155",
+      "151"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+2x+58=0 D?",
+    "options": [
+      "228",
+      "-224",
+      "-228",
+      "-232"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+2x+31=0 D?",
+    "options": [
+      "120",
+      "-120",
+      "-116",
+      "-124"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+6x+33=0 D?",
+    "options": [
+      "96",
+      "-92",
+      "-100",
+      "-96"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+8x+67=0 D?",
+    "options": [
+      "-208",
+      "-204",
+      "-200",
+      "204"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+16x+65=0 D?",
+    "options": [
+      "-8",
+      "4",
+      "-4",
+      "0"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-8x+68=0 D?",
+    "options": [
+      "-204",
+      "-212",
+      "208",
+      "-208"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-5x+76=0 D?",
+    "options": [
+      "-279",
+      "279",
+      "-283",
+      "-275"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+8x+50=0 D?",
+    "options": [
+      "-140",
+      "-136",
+      "136",
+      "-132"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-12x+42=0 D?",
+    "options": [
+      "24",
+      "-20",
+      "-24",
+      "-28"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+16x+78=0 D?",
+    "options": [
+      "56",
+      "-56",
+      "-60",
+      "-52"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-3x+44=0 D?",
+    "options": [
+      "-167",
+      "167",
+      "-171",
+      "-163"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+4x+15=0 D?",
+    "options": [
+      "-48",
+      "-40",
+      "44",
+      "-44"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+2x+33=0 D?",
+    "options": [
+      "128",
+      "-128",
+      "-132",
+      "-124"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+7x+77=0 D?",
+    "options": [
+      "259",
+      "-263",
+      "-255",
+      "-259"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-7x+25=0 D?",
+    "options": [
+      "-51",
+      "51",
+      "-47",
+      "-55"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-9x+54=0 D?",
+    "options": [
+      "135",
+      "-131",
+      "-139",
+      "-135"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+8x+26=0 D?",
+    "options": [
+      "40",
+      "-36",
+      "-40",
+      "-44"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+9x+22=0 D?",
+    "options": [
+      "-11",
+      "-3",
+      "7",
+      "-7"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-2x+73=0 D?",
+    "options": [
+      "-292",
+      "-288",
+      "-284",
+      "288"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+9x+38=0 D?",
+    "options": [
+      "-71",
+      "71",
+      "-67",
+      "-75"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+5x+63=0 D?",
+    "options": [
+      "-223",
+      "227",
+      "-231",
+      "-227"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+10x+27=0 D?",
+    "options": [
+      "8",
+      "-4",
+      "-8",
+      "-12"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+12x+56=0 D?",
+    "options": [
+      "80",
+      "-84",
+      "-76",
+      "-80"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-16x+75=0 D?",
+    "options": [
+      "-44",
+      "-40",
+      "44",
+      "-48"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+2x+18=0 D?",
+    "options": [
+      "-72",
+      "68",
+      "-68",
+      "-64"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+8x+31=0 D?",
+    "options": [
+      "-56",
+      "-64",
+      "-60",
+      "60"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+7x+58=0 D?",
+    "options": [
+      "-183",
+      "-187",
+      "183",
+      "-179"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-12x+45=0 D?",
+    "options": [
+      "36",
+      "-36",
+      "-40",
+      "-32"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+3x+10=0 D?",
+    "options": [
+      "-27",
+      "-31",
+      "31",
+      "-35"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-6x+15=0 D?",
+    "options": [
+      "-20",
+      "-28",
+      "24",
+      "-24"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-6x+79=0 D?",
+    "options": [
+      "-280",
+      "280",
+      "-276",
+      "-284"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+14x+59=0 D?",
+    "options": [
+      "-44",
+      "40",
+      "-36",
+      "-40"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-10x+80=0 D?",
+    "options": [
+      "-216",
+      "-224",
+      "-220",
+      "220"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-5x+26=0 D?",
+    "options": [
+      "-75",
+      "-83",
+      "79",
+      "-79"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+11x+38=0 D?",
+    "options": [
+      "31",
+      "-31",
+      "-27",
+      "-35"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+8x+44=0 D?",
+    "options": [
+      "-108",
+      "-112",
+      "112",
+      "-116"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-7x+72=0 D?",
+    "options": [
+      "239",
+      "-243",
+      "-235",
+      "-239"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+15x+71=0 D?",
+    "options": [
+      "-59",
+      "59",
+      "-55",
+      "-63"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-3x+64=0 D?",
+    "options": [
+      "247",
+      "-243",
+      "-247",
+      "-251"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+12x+66=0 D?",
+    "options": [
+      "-120",
+      "-124",
+      "120",
+      "-116"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+15x+69=0 D?",
+    "options": [
+      "-55",
+      "-51",
+      "-47",
+      "51"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-3x+46=0 D?",
+    "options": [
+      "-175",
+      "-179",
+      "175",
+      "-171"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+4x+30=0 D?",
+    "options": [
+      "104",
+      "-104",
+      "-108",
+      "-100"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+4x+32=0 D?",
+    "options": [
+      "-116",
+      "-108",
+      "-112",
+      "112"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-15x+58=0 D?",
+    "options": [
+      "-7",
+      "-3",
+      "-11",
+      "7"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+10x+38=0 D?",
+    "options": [
+      "-48",
+      "-52",
+      "52",
+      "-56"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+1x+5=0 D?",
+    "options": [
+      "-15",
+      "-23",
+      "19",
+      "-19"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-12x+73=0 D?",
+    "options": [
+      "148",
+      "-152",
+      "-144",
+      "-148"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+9x+69=0 D?",
+    "options": [
+      "-195",
+      "195",
+      "-191",
+      "-199"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-1x+78=0 D?",
+    "options": [
+      "-311",
+      "-307",
+      "311",
+      "-315"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-6x+71=0 D?",
+    "options": [
+      "-252",
+      "248",
+      "-248",
+      "-244"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+6x+59=0 D?",
+    "options": [
+      "-204",
+      "-196",
+      "200",
+      "-200"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+12x+71=0 D?",
+    "options": [
+      "-136",
+      "-140",
+      "-144",
+      "140"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-12x+76=0 D?",
+    "options": [
+      "-160",
+      "-156",
+      "160",
+      "-164"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-6x+10=0 D?",
+    "options": [
+      "-4",
+      "-8",
+      "0",
+      "4"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-13x+46=0 D?",
+    "options": [
+      "-19",
+      "15",
+      "-11",
+      "-15"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-5x+62=0 D?",
+    "options": [
+      "223",
+      "-227",
+      "-223",
+      "-219"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-4x+17=0 D?",
+    "options": [
+      "-52",
+      "-56",
+      "-48",
+      "52"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+13x+52=0 D?",
+    "options": [
+      "39",
+      "-43",
+      "-35",
+      "-39"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+-2x+28=0 D?",
+    "options": [
+      "-112",
+      "-104",
+      "-108",
+      "108"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+12x+60=0 D?",
+    "options": [
+      "-96",
+      "96",
+      "-100",
+      "-92"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+7x+70=0 D?",
+    "options": [
+      "-231",
+      "231",
+      "-235",
+      "-227"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+12x+80=0 D?",
+    "options": [
+      "-176",
+      "176",
+      "-172",
+      "-180"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-4x+42=0 D?",
+    "options": [
+      "-156",
+      "-152",
+      "152",
+      "-148"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+-3x+35=0 D?",
+    "options": [
+      "-127",
+      "131",
+      "-135",
+      "-131"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+5x+62=0 D?",
+    "options": [
+      "-227",
+      "-219",
+      "223",
+      "-223"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "x²+2x+52=0 D?",
+    "options": [
+      "-200",
+      "-208",
+      "-204",
+      "204"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-4x+71=0 D?",
+    "options": [
+      "-268",
+      "-264",
+      "268",
+      "-272"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+-8x+31=0 D?",
+    "options": [
+      "-64",
+      "-56",
+      "-60",
+      "60"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+-6x+37=0 D?",
+    "options": [
+      "-108",
+      "-112",
+      "112",
+      "-116"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+3x+25=0 D?",
+    "options": [
+      "-95",
+      "-91",
+      "-87",
+      "91"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "x²+9x+65=0 D?",
+    "options": [
+      "-179",
+      "179",
+      "-183",
+      "-175"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+3x+14=0 D?",
+    "options": [
+      "-47",
+      "-43",
+      "-51",
+      "47"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "x²+12x+55=0 D?",
+    "options": [
+      "-80",
+      "-72",
+      "-76",
+      "76"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "x²+5x+16=0 D?",
+    "options": [
+      "-35",
+      "-39",
+      "39",
+      "-43"
+    ],
+    "correct_index": 1
   }
+]
 ]

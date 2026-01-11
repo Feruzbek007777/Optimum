@@ -483,5 +483,2507 @@
     "question": "Sog'lom turmush tarzi uchun muhim emas?",
     "options": ["Uyqu", "Harakat", "Chekish", "To'g'ri ovqat"],
     "correct_index": 2
+  },
+  [
+  {
+    "question": "Hujayra markazi? #6614",
+    "options": [
+      "Ribosoma",
+      "Yadro",
+      "Membrana",
+      "Vakuola"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #1572",
+    "options": [
+      "Yadro",
+      "Ribosoma",
+      "Vakuola",
+      "Membrana"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #8c2d",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #3646",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #0e1a",
+    "options": [
+      "Glikogen",
+      "Nukleotid",
+      "Vitamin",
+      "Aminokisl"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #9bdd",
+    "options": [
+      "Temir",
+      "Tosh",
+      "Daraxt",
+      "Suv"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #435b",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #0c72",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #ecad",
+    "options": [
+      "Mitoxond",
+      "Yadro",
+      "Golji",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #e3ca",
+    "options": [
+      "Tosh",
+      "Daraxt",
+      "Temir",
+      "Suv"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #f3df",
+    "options": [
+      "Tosh",
+      "Suv",
+      "Daraxt",
+      "Temir"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #b0b2",
+    "options": [
+      "Temir",
+      "Suv",
+      "Daraxt",
+      "Tosh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #3dc5",
+    "options": [
+      "Temir",
+      "Tosh",
+      "Daraxt",
+      "Suv"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #d0fd",
+    "options": [
+      "Yadro",
+      "Membrana",
+      "Ribosoma",
+      "Vakuola"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #a795",
+    "options": [
+      "Yadro",
+      "Golji",
+      "Mitoxond",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #09c7",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #c0c0",
+    "options": [
+      "Jigar",
+      "Buyrak",
+      "O‘pka",
+      "Oshqozon"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #5cb4",
+    "options": [
+      "Tosh",
+      "Temir",
+      "Daraxt",
+      "Suv"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #dd2f",
+    "options": [
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #37df",
+    "options": [
+      "Yadro",
+      "Golji",
+      "Xloroplast",
+      "Mitoxond"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #8fbf",
+    "options": [
+      "Xloroplast",
+      "Golji",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #384d",
+    "options": [
+      "Daraxt",
+      "Tosh",
+      "Temir",
+      "Suv"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #8078",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Ribosoma",
+      "Yadro"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #4b00",
+    "options": [
+      "Temir",
+      "Daraxt",
+      "Suv",
+      "Tosh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #0ee5",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #65ee",
+    "options": [
+      "O‘pka",
+      "Jigar",
+      "Buyrak",
+      "Oshqozon"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #85e9",
+    "options": [
+      "Yadro",
+      "Xloroplast",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #5b1b",
+    "options": [
+      "Oshqozon",
+      "O‘pka",
+      "Buyrak",
+      "Jigar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #077a",
+    "options": [
+      "Suv",
+      "Tosh",
+      "Temir",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #02cf",
+    "options": [
+      "Vitamin",
+      "Aminokisl",
+      "Nukleotid",
+      "Glikogen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #9b3c",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #73aa",
+    "options": [
+      "Daraxt",
+      "Suv",
+      "Temir",
+      "Tosh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #349e",
+    "options": [
+      "Daraxt",
+      "Tosh",
+      "Temir",
+      "Suv"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #f076",
+    "options": [
+      "Daraxt",
+      "Suv",
+      "Temir",
+      "Tosh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #0034",
+    "options": [
+      "Vitamin",
+      "Nukleotid",
+      "Aminokisl",
+      "Glikogen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #5f45",
+    "options": [
+      "Membrana",
+      "Ribosoma",
+      "Yadro",
+      "Vakuola"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #c96b",
+    "options": [
+      "Vakuola",
+      "Ribosoma",
+      "Membrana",
+      "Yadro"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #0611",
+    "options": [
+      "Yadro",
+      "Membrana",
+      "Vakuola",
+      "Ribosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #032d",
+    "options": [
+      "Golji",
+      "Xloroplast",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #43f7",
+    "options": [
+      "O‘pka",
+      "Buyrak",
+      "Jigar",
+      "Oshqozon"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Nafas organi? #3d54",
+    "options": [
+      "Jigar",
+      "Buyrak",
+      "Oshqozon",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #2a83",
+    "options": [
+      "Daraxt",
+      "Temir",
+      "Tosh",
+      "Suv"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #0d11",
+    "options": [
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #5540",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #343d",
+    "options": [
+      "Temir",
+      "Tosh",
+      "Daraxt",
+      "Suv"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #5fec",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #08e1",
+    "options": [
+      "Daraxt",
+      "Tosh",
+      "Suv",
+      "Temir"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #4619",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Nukleotid",
+      "Aminokisl"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #159b",
+    "options": [
+      "Buyrak",
+      "O‘pka",
+      "Jigar",
+      "Oshqozon"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #9bd3",
+    "options": [
+      "Ribosoma",
+      "Vakuola",
+      "Yadro",
+      "Membrana"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #4197",
+    "options": [
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #bbcd",
+    "options": [
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid",
+      "Aminokisl"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #b943",
+    "options": [
+      "Buyrak",
+      "O‘pka",
+      "Oshqozon",
+      "Jigar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #c791",
+    "options": [
+      "Vakuola",
+      "Yadro",
+      "Ribosoma",
+      "Membrana"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #0439",
+    "options": [
+      "Tosh",
+      "Daraxt",
+      "Temir",
+      "Suv"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #c86d",
+    "options": [
+      "Jigar",
+      "O‘pka",
+      "Buyrak",
+      "Oshqozon"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "DNK birligi? #3c29",
+    "options": [
+      "Vitamin",
+      "Nukleotid",
+      "Aminokisl",
+      "Glikogen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #c347",
+    "options": [
+      "Daraxt",
+      "Suv",
+      "Temir",
+      "Tosh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #1887",
+    "options": [
+      "Mitoxond",
+      "Xloroplast",
+      "Golji",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "DNK birligi? #a142",
+    "options": [
+      "Glikogen",
+      "Nukleotid",
+      "Vitamin",
+      "Aminokisl"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #bc94",
+    "options": [
+      "O‘pka",
+      "Oshqozon",
+      "Buyrak",
+      "Jigar"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #3a9c",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Yadro",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #b145",
+    "options": [
+      "Tosh",
+      "Daraxt",
+      "Temir",
+      "Suv"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #c284",
+    "options": [
+      "Tosh",
+      "Suv",
+      "Daraxt",
+      "Temir"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #e88d",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #18cb",
+    "options": [
+      "Glikogen",
+      "Aminokisl",
+      "Vitamin",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #8463",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #b2d6",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #2799",
+    "options": [
+      "Nukleotid",
+      "Vitamin",
+      "Aminokisl",
+      "Glikogen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #ee04",
+    "options": [
+      "Tosh",
+      "Temir",
+      "Daraxt",
+      "Suv"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #3ca5",
+    "options": [
+      "Buyrak",
+      "Oshqozon",
+      "Jigar",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #a64c",
+    "options": [
+      "Yadro",
+      "Ribosoma",
+      "Membrana",
+      "Vakuola"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #426d",
+    "options": [
+      "Mitoxond",
+      "Yadro",
+      "Golji",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #f6dd",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #61da",
+    "options": [
+      "Buyrak",
+      "O‘pka",
+      "Jigar",
+      "Oshqozon"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "DNK birligi? #fa94",
+    "options": [
+      "Vitamin",
+      "Nukleotid",
+      "Aminokisl",
+      "Glikogen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #3ef5",
+    "options": [
+      "Daraxt",
+      "Tosh",
+      "Suv",
+      "Temir"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #ae3e",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #a0e7",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #dd10",
+    "options": [
+      "Suv",
+      "Temir",
+      "Tosh",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #18a9",
+    "options": [
+      "Buyrak",
+      "O‘pka",
+      "Jigar",
+      "Oshqozon"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #c37c",
+    "options": [
+      "Yadro",
+      "Xloroplast",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "DNK birligi? #e8e0",
+    "options": [
+      "Nukleotid",
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Nafas organi? #1106",
+    "options": [
+      "Oshqozon",
+      "Buyrak",
+      "O‘pka",
+      "Jigar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #a70f",
+    "options": [
+      "Vitamin",
+      "Aminokisl",
+      "Nukleotid",
+      "Glikogen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #c44a",
+    "options": [
+      "Vitamin",
+      "Aminokisl",
+      "Nukleotid",
+      "Glikogen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #00a3",
+    "options": [
+      "Aminokisl",
+      "Nukleotid",
+      "Glikogen",
+      "Vitamin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "DNK birligi? #dec2",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #e8e6",
+    "options": [
+      "Aminokisl",
+      "Nukleotid",
+      "Glikogen",
+      "Vitamin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #d9cf",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #962b",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #a5c1",
+    "options": [
+      "Suv",
+      "Tosh",
+      "Temir",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #ff71",
+    "options": [
+      "Yadro",
+      "Vakuola",
+      "Membrana",
+      "Ribosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #a577",
+    "options": [
+      "Aminokisl",
+      "Nukleotid",
+      "Vitamin",
+      "Glikogen"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #959e",
+    "options": [
+      "Yadro",
+      "Ribosoma",
+      "Membrana",
+      "Vakuola"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #b94f",
+    "options": [
+      "Vakuola",
+      "Yadro",
+      "Membrana",
+      "Ribosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #3620",
+    "options": [
+      "Ribosoma",
+      "Vakuola",
+      "Membrana",
+      "Yadro"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #b60b",
+    "options": [
+      "Yadro",
+      "Vakuola",
+      "Membrana",
+      "Ribosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #ceab",
+    "options": [
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #cac6",
+    "options": [
+      "Temir",
+      "Daraxt",
+      "Suv",
+      "Tosh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #b531",
+    "options": [
+      "Membrana",
+      "Yadro",
+      "Vakuola",
+      "Ribosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #a806",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Xloroplast",
+      "Mitoxond"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #5644",
+    "options": [
+      "Yadro",
+      "Golji",
+      "Mitoxond",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #e1ad",
+    "options": [
+      "Membrana",
+      "Ribosoma",
+      "Yadro",
+      "Vakuola"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #158f",
+    "options": [
+      "Aminokisl",
+      "Vitamin",
+      "Nukleotid",
+      "Glikogen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #3a41",
+    "options": [
+      "Membrana",
+      "Yadro",
+      "Vakuola",
+      "Ribosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #2d00",
+    "options": [
+      "Jigar",
+      "Oshqozon",
+      "Buyrak",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #a6bc",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Nukleotid",
+      "Aminokisl"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #de6e",
+    "options": [
+      "Ribosoma",
+      "Membrana",
+      "Yadro",
+      "Vakuola"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #a8f0",
+    "options": [
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #4704",
+    "options": [
+      "Jigar",
+      "Buyrak",
+      "Oshqozon",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #65b6",
+    "options": [
+      "Yadro",
+      "Golji",
+      "Xloroplast",
+      "Mitoxond"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #4d79",
+    "options": [
+      "Membrana",
+      "Ribosoma",
+      "Yadro",
+      "Vakuola"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #23f3",
+    "options": [
+      "Mitoxond",
+      "Xloroplast",
+      "Golji",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #7ba3",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #faeb",
+    "options": [
+      "Tosh",
+      "Temir",
+      "Daraxt",
+      "Suv"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #9575",
+    "options": [
+      "Membrana",
+      "Ribosoma",
+      "Yadro",
+      "Vakuola"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #f78b",
+    "options": [
+      "Xloroplast",
+      "Mitoxond",
+      "Yadro",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #e6c3",
+    "options": [
+      "Golji",
+      "Xloroplast",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #c428",
+    "options": [
+      "Temir",
+      "Tosh",
+      "Daraxt",
+      "Suv"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #c207",
+    "options": [
+      "Buyrak",
+      "O‘pka",
+      "Oshqozon",
+      "Jigar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #ca76",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Xloroplast",
+      "Mitoxond"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #cb68",
+    "options": [
+      "O‘pka",
+      "Oshqozon",
+      "Jigar",
+      "Buyrak"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Nafas organi? #a853",
+    "options": [
+      "Jigar",
+      "Buyrak",
+      "Oshqozon",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #b725",
+    "options": [
+      "Ribosoma",
+      "Membrana",
+      "Yadro",
+      "Vakuola"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #f63b",
+    "options": [
+      "Ribosoma",
+      "Yadro",
+      "Vakuola",
+      "Membrana"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "DNK birligi? #aa96",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #66e7",
+    "options": [
+      "Glikogen",
+      "Vitamin",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #17a8",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Xloroplast",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #7cbd",
+    "options": [
+      "Aminokisl",
+      "Vitamin",
+      "Nukleotid",
+      "Glikogen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #d3ee",
+    "options": [
+      "Vitamin",
+      "Nukleotid",
+      "Glikogen",
+      "Aminokisl"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #b912",
+    "options": [
+      "Temir",
+      "Suv",
+      "Tosh",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #46d6",
+    "options": [
+      "Nukleotid",
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #e53d",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Xloroplast",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #8fae",
+    "options": [
+      "Vakuola",
+      "Ribosoma",
+      "Yadro",
+      "Membrana"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #7c13",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Xloroplast",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #8d83",
+    "options": [
+      "Nukleotid",
+      "Glikogen",
+      "Vitamin",
+      "Aminokisl"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #d1d9",
+    "options": [
+      "Ribosoma",
+      "Yadro",
+      "Vakuola",
+      "Membrana"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #7692",
+    "options": [
+      "Yadro",
+      "Membrana",
+      "Vakuola",
+      "Ribosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #de06",
+    "options": [
+      "Vakuola",
+      "Ribosoma",
+      "Yadro",
+      "Membrana"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #2ff7",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #befe",
+    "options": [
+      "O‘pka",
+      "Jigar",
+      "Buyrak",
+      "Oshqozon"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #de81",
+    "options": [
+      "Daraxt",
+      "Temir",
+      "Tosh",
+      "Suv"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #d924",
+    "options": [
+      "Xloroplast",
+      "Yadro",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #107f",
+    "options": [
+      "Nukleotid",
+      "Vitamin",
+      "Aminokisl",
+      "Glikogen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #58e9",
+    "options": [
+      "Membrana",
+      "Yadro",
+      "Vakuola",
+      "Ribosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #b26b",
+    "options": [
+      "O‘pka",
+      "Oshqozon",
+      "Buyrak",
+      "Jigar"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #68bd",
+    "options": [
+      "Tosh",
+      "Temir",
+      "Suv",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #c3c2",
+    "options": [
+      "Oshqozon",
+      "O‘pka",
+      "Buyrak",
+      "Jigar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #2610",
+    "options": [
+      "Mitoxond",
+      "Xloroplast",
+      "Golji",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #3049",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Xloroplast",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #da91",
+    "options": [
+      "Tosh",
+      "Temir",
+      "Suv",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #79e0",
+    "options": [
+      "Xloroplast",
+      "Yadro",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #0848",
+    "options": [
+      "Daraxt",
+      "Temir",
+      "Suv",
+      "Tosh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #dbe8",
+    "options": [
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid",
+      "Aminokisl"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #8484",
+    "options": [
+      "Xloroplast",
+      "Yadro",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #36d1",
+    "options": [
+      "Yadro",
+      "Ribosoma",
+      "Vakuola",
+      "Membrana"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #9018",
+    "options": [
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #7773",
+    "options": [
+      "Daraxt",
+      "Temir",
+      "Suv",
+      "Tosh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #4142",
+    "options": [
+      "Membrana",
+      "Yadro",
+      "Ribosoma",
+      "Vakuola"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #487a",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Xloroplast",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #dcbb",
+    "options": [
+      "Tosh",
+      "Temir",
+      "Suv",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #4d59",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Ribosoma",
+      "Yadro"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #9319",
+    "options": [
+      "O‘pka",
+      "Oshqozon",
+      "Buyrak",
+      "Jigar"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #3fed",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Yadro",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #be53",
+    "options": [
+      "Aminokisl",
+      "Vitamin",
+      "Nukleotid",
+      "Glikogen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #e991",
+    "options": [
+      "Jigar",
+      "Oshqozon",
+      "O‘pka",
+      "Buyrak"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #b11e",
+    "options": [
+      "Ribosoma",
+      "Vakuola",
+      "Membrana",
+      "Yadro"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #b03c",
+    "options": [
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #03a6",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #a3ff",
+    "options": [
+      "Temir",
+      "Daraxt",
+      "Suv",
+      "Tosh"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Fotosintez joyi? #1b5b",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #1e2b",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #8140",
+    "options": [
+      "Jigar",
+      "Buyrak",
+      "O‘pka",
+      "Oshqozon"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #c6d6",
+    "options": [
+      "Membrana",
+      "Yadro",
+      "Ribosoma",
+      "Vakuola"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #5e7d",
+    "options": [
+      "Membrana",
+      "Vakuola",
+      "Ribosoma",
+      "Yadro"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #9464",
+    "options": [
+      "Ribosoma",
+      "Yadro",
+      "Membrana",
+      "Vakuola"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #0df1",
+    "options": [
+      "Jigar",
+      "O‘pka",
+      "Oshqozon",
+      "Buyrak"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #2129",
+    "options": [
+      "O‘pka",
+      "Oshqozon",
+      "Jigar",
+      "Buyrak"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #9682",
+    "options": [
+      "Yadro",
+      "Xloroplast",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "DNK birligi? #2489",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #0bf2",
+    "options": [
+      "Daraxt",
+      "Tosh",
+      "Temir",
+      "Suv"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #9a89",
+    "options": [
+      "Yadro",
+      "Ribosoma",
+      "Vakuola",
+      "Membrana"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #20d0",
+    "options": [
+      "Aminokisl",
+      "Glikogen",
+      "Nukleotid",
+      "Vitamin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #34d3",
+    "options": [
+      "Suv",
+      "Temir",
+      "Daraxt",
+      "Tosh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #9ca6",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Nafas organi? #6b46",
+    "options": [
+      "Jigar",
+      "Buyrak",
+      "O‘pka",
+      "Oshqozon"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #1197",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #045a",
+    "options": [
+      "Suv",
+      "Tosh",
+      "Temir",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #dee3",
+    "options": [
+      "Xloroplast",
+      "Yadro",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #20c7",
+    "options": [
+      "Temir",
+      "Suv",
+      "Daraxt",
+      "Tosh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #0452",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Nukleotid",
+      "Aminokisl"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #c1b6",
+    "options": [
+      "Membrana",
+      "Ribosoma",
+      "Yadro",
+      "Vakuola"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #06ee",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #e7cc",
+    "options": [
+      "Oshqozon",
+      "O‘pka",
+      "Jigar",
+      "Buyrak"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #678c",
+    "options": [
+      "Vakuola",
+      "Ribosoma",
+      "Membrana",
+      "Yadro"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #2642",
+    "options": [
+      "Mitoxond",
+      "Xloroplast",
+      "Yadro",
+      "Golji"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #f10f",
+    "options": [
+      "Buyrak",
+      "O‘pka",
+      "Oshqozon",
+      "Jigar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #d813",
+    "options": [
+      "Membrana",
+      "Vakuola",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #1114",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Ribosoma",
+      "Yadro"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #fd0a",
+    "options": [
+      "Tosh",
+      "Daraxt",
+      "Suv",
+      "Temir"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Hujayra markazi? #1084",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #6e48",
+    "options": [
+      "Buyrak",
+      "Jigar",
+      "Oshqozon",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #daff",
+    "options": [
+      "Membrana",
+      "Vakuola",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #5714",
+    "options": [
+      "Suv",
+      "Tosh",
+      "Temir",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #3281",
+    "options": [
+      "Temir",
+      "Suv",
+      "Tosh",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #15ca",
+    "options": [
+      "Xloroplast",
+      "Yadro",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Qaysi biri tirik? #08b7",
+    "options": [
+      "Tosh",
+      "Temir",
+      "Daraxt",
+      "Suv"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #5f93",
+    "options": [
+      "Xloroplast",
+      "Golji",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Nafas organi? #ed60",
+    "options": [
+      "O‘pka",
+      "Buyrak",
+      "Jigar",
+      "Oshqozon"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #4ec2",
+    "options": [
+      "Aminokisl",
+      "Vitamin",
+      "Nukleotid",
+      "Glikogen"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #9225",
+    "options": [
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Qaysi biri tirik? #0c5b",
+    "options": [
+      "Temir",
+      "Suv",
+      "Daraxt",
+      "Tosh"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Hujayra markazi? #f89b",
+    "options": [
+      "Membrana",
+      "Ribosoma",
+      "Yadro",
+      "Vakuola"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #f9a3",
+    "options": [
+      "Nukleotid",
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #fe76",
+    "options": [
+      "Yadro",
+      "Golji",
+      "Xloroplast",
+      "Mitoxond"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #7950",
+    "options": [
+      "Daraxt",
+      "Temir",
+      "Suv",
+      "Tosh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "DNK birligi? #e869",
+    "options": [
+      "Aminokisl",
+      "Glikogen",
+      "Vitamin",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #eb52",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #3146",
+    "options": [
+      "Oshqozon",
+      "Buyrak",
+      "O‘pka",
+      "Jigar"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #2b68",
+    "options": [
+      "Suv",
+      "Tosh",
+      "Temir",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #6ccd",
+    "options": [
+      "Oshqozon",
+      "O‘pka",
+      "Buyrak",
+      "Jigar"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #818d",
+    "options": [
+      "Daraxt",
+      "Tosh",
+      "Temir",
+      "Suv"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Hujayra markazi? #96f6",
+    "options": [
+      "Vakuola",
+      "Ribosoma",
+      "Yadro",
+      "Membrana"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #6f4b",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Yadro",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #8992",
+    "options": [
+      "Jigar",
+      "O‘pka",
+      "Oshqozon",
+      "Buyrak"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "DNK birligi? #bbc5",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "DNK birligi? #4bb7",
+    "options": [
+      "Aminokisl",
+      "Vitamin",
+      "Glikogen",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #2669",
+    "options": [
+      "Oshqozon",
+      "Jigar",
+      "Buyrak",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #59dc",
+    "options": [
+      "Yadro",
+      "Xloroplast",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Nafas organi? #5120",
+    "options": [
+      "O‘pka",
+      "Buyrak",
+      "Jigar",
+      "Oshqozon"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #03d2",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Xloroplast",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #34a6",
+    "options": [
+      "Oshqozon",
+      "Jigar",
+      "O‘pka",
+      "Buyrak"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #cbd2",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #ee8b",
+    "options": [
+      "Oshqozon",
+      "Buyrak",
+      "Jigar",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #4095",
+    "options": [
+      "Jigar",
+      "Oshqozon",
+      "O‘pka",
+      "Buyrak"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #ad01",
+    "options": [
+      "Glikogen",
+      "Vitamin",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #1e41",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Xloroplast",
+      "Mitoxond"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #faff",
+    "options": [
+      "Daraxt",
+      "Temir",
+      "Suv",
+      "Tosh"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Fotosintez joyi? #c237",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Xloroplast",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Nafas organi? #68d1",
+    "options": [
+      "Jigar",
+      "Oshqozon",
+      "Buyrak",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #e9ae",
+    "options": [
+      "Jigar",
+      "Buyrak",
+      "Oshqozon",
+      "O‘pka"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #c4de",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Yadro",
+      "Xloroplast"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Fotosintez joyi? #ec72",
+    "options": [
+      "Golji",
+      "Xloroplast",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Qaysi biri tirik? #e378",
+    "options": [
+      "Tosh",
+      "Temir",
+      "Suv",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Nafas organi? #c9b1",
+    "options": [
+      "Jigar",
+      "Buyrak",
+      "O‘pka",
+      "Oshqozon"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Qaysi biri tirik? #a540",
+    "options": [
+      "Temir",
+      "Suv",
+      "Tosh",
+      "Daraxt"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Hujayra markazi? #b9bd",
+    "options": [
+      "Vakuola",
+      "Membrana",
+      "Yadro",
+      "Ribosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Fotosintez joyi? #7640",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Xloroplast",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "DNK birligi? #f16d",
+    "options": [
+      "Vitamin",
+      "Glikogen",
+      "Aminokisl",
+      "Nukleotid"
+    ],
+    "correct_index": 3
   }
+]
 ]

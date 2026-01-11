@@ -458,5 +458,2507 @@
     "question": "Ekologik nisha bu…",
     "options": ["Fazor", "Rollar majmui", "Faqat uyasi", "Faqat yashash joyi"],
     "correct_index": 1
+  },
+  [
+  {
+    "question": "Aa×Aa, AA ulush? #9b0e",
+    "options": [
+      "25%",
+      "50%",
+      "0%",
+      "75%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #aff1",
+    "options": [
+      "25%",
+      "50%",
+      "0%",
+      "75%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #a0da",
+    "options": [
+      "4 haploid huj",
+      "Diploid",
+      "Somatik",
+      "2 qiz huj"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #ffb1",
+    "options": [
+      "Yadro",
+      "Lizosoma",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #43d5",
+    "options": [
+      "25%",
+      "0%",
+      "75%",
+      "50%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #6783",
+    "options": [
+      "2 qiz huj",
+      "Somatik",
+      "4 haploid huj",
+      "Diploid"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #8770",
+    "options": [
+      "0%",
+      "25%",
+      "50%",
+      "75%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #0b51",
+    "options": [
+      "Somatik",
+      "4 haploid huj",
+      "Diploid",
+      "2 qiz huj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #564d",
+    "options": [
+      "Somatik",
+      "2 qiz huj",
+      "4 haploid huj",
+      "Diploid"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #347c",
+    "options": [
+      "0%",
+      "50%",
+      "75%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #a989",
+    "options": [
+      "2 qiz huj",
+      "4 haploid huj",
+      "Diploid",
+      "Somatik"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #c31b",
+    "options": [
+      "4 haploid huj",
+      "Somatik",
+      "Diploid",
+      "2 qiz huj"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #7715",
+    "options": [
+      "Golji",
+      "Lizosoma",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "ATP asosan qayerda? #1542",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Lizosoma",
+      "Yadro"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #cd1d",
+    "options": [
+      "Mitoxond",
+      "Lizosoma",
+      "Yadro",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #5a68",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Lizosoma",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #be00",
+    "options": [
+      "4 haploid huj",
+      "Gameta",
+      "2 bir xil huj",
+      "DNK yo‘q"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #0afa",
+    "options": [
+      "Sitozin",
+      "Guanin",
+      "Timin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #80b1",
+    "options": [
+      "25%",
+      "0%",
+      "50%",
+      "75%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #c29f",
+    "options": [
+      "50%",
+      "75%",
+      "0%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #9397",
+    "options": [
+      "Urasil",
+      "Sitozin",
+      "Guanin",
+      "Timin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #34a5",
+    "options": [
+      "0%",
+      "25%",
+      "50%",
+      "75%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #60ce",
+    "options": [
+      "4 haploid huj",
+      "2 qiz huj",
+      "Somatik",
+      "Diploid"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #5afb",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Yadro",
+      "Lizosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #d340",
+    "options": [
+      "Lizosoma",
+      "Golji",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasi? #8ede",
+    "options": [
+      "Somatik",
+      "2 qiz huj",
+      "Diploid",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #1260",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Lizosoma",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #f083",
+    "options": [
+      "Urasil",
+      "Sitozin",
+      "Guanin",
+      "Timin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #72a7",
+    "options": [
+      "2 qiz huj",
+      "Somatik",
+      "Diploid",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #3000",
+    "options": [
+      "Sitozin",
+      "Guanin",
+      "Timin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Mitoz natijasi? #5341",
+    "options": [
+      "4 haploid huj",
+      "DNK yo‘q",
+      "Gameta",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #7c1b",
+    "options": [
+      "0%",
+      "25%",
+      "50%",
+      "75%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #10e1",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Yadro",
+      "Lizosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #3e9f",
+    "options": [
+      "4 haploid huj",
+      "2 qiz huj",
+      "Diploid",
+      "Somatik"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #9435",
+    "options": [
+      "0%",
+      "50%",
+      "25%",
+      "75%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #0d5b",
+    "options": [
+      "DNK yo‘q",
+      "4 haploid huj",
+      "Gameta",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #4072",
+    "options": [
+      "Guanin",
+      "Timin",
+      "Sitozin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #c25f",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #345e",
+    "options": [
+      "50%",
+      "25%",
+      "0%",
+      "75%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #1a43",
+    "options": [
+      "2 bir xil huj",
+      "DNK yo‘q",
+      "4 haploid huj",
+      "Gameta"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #645b",
+    "options": [
+      "Golji",
+      "Lizosoma",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #5bd3",
+    "options": [
+      "Lizosoma",
+      "Golji",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "ATP asosan qayerda? #a3dc",
+    "options": [
+      "Golji",
+      "Lizosoma",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #bdd5",
+    "options": [
+      "4 haploid huj",
+      "DNK yo‘q",
+      "Gameta",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #04ab",
+    "options": [
+      "Diploid",
+      "4 haploid huj",
+      "2 qiz huj",
+      "Somatik"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #01a2",
+    "options": [
+      "Guanin",
+      "Timin",
+      "Urasil",
+      "Sitozin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasi? #9aff",
+    "options": [
+      "Somatik",
+      "4 haploid huj",
+      "Diploid",
+      "2 qiz huj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #1d4d",
+    "options": [
+      "Urasil",
+      "Sitozin",
+      "Guanin",
+      "Timin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #007a",
+    "options": [
+      "Somatik",
+      "2 qiz huj",
+      "Diploid",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #08e7",
+    "options": [
+      "Lizosoma",
+      "Golji",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #399e",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Timin",
+      "Sitozin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #0812",
+    "options": [
+      "Mitoxond",
+      "Lizosoma",
+      "Yadro",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "RNKda baza? #9405",
+    "options": [
+      "Sitozin",
+      "Urasil",
+      "Timin",
+      "Guanin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #5418",
+    "options": [
+      "0%",
+      "75%",
+      "25%",
+      "50%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #0a75",
+    "options": [
+      "Urasil",
+      "Timin",
+      "Guanin",
+      "Sitozin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #05b7",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Lizosoma",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #608d",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #6aee",
+    "options": [
+      "Lizosoma",
+      "Yadro",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #618c",
+    "options": [
+      "2 qiz huj",
+      "Somatik",
+      "4 haploid huj",
+      "Diploid"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #7f4b",
+    "options": [
+      "DNK yo‘q",
+      "Gameta",
+      "2 bir xil huj",
+      "4 haploid huj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasi? #9d4e",
+    "options": [
+      "Somatik",
+      "4 haploid huj",
+      "2 qiz huj",
+      "Diploid"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #fd32",
+    "options": [
+      "4 haploid huj",
+      "DNK yo‘q",
+      "Gameta",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #6592",
+    "options": [
+      "2 qiz huj",
+      "4 haploid huj",
+      "Diploid",
+      "Somatik"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #96ad",
+    "options": [
+      "DNK yo‘q",
+      "2 bir xil huj",
+      "4 haploid huj",
+      "Gameta"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #3af4",
+    "options": [
+      "Urasil",
+      "Sitozin",
+      "Timin",
+      "Guanin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #4fc9",
+    "options": [
+      "2 qiz huj",
+      "Diploid",
+      "4 haploid huj",
+      "Somatik"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasi? #aee1",
+    "options": [
+      "4 haploid huj",
+      "Diploid",
+      "2 qiz huj",
+      "Somatik"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #a1f4",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Lizosoma",
+      "Yadro"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "RNKda baza? #3a74",
+    "options": [
+      "Sitozin",
+      "Timin",
+      "Urasil",
+      "Guanin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #298c",
+    "options": [
+      "50%",
+      "0%",
+      "75%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #10df",
+    "options": [
+      "0%",
+      "75%",
+      "50%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #6103",
+    "options": [
+      "Sitozin",
+      "Guanin",
+      "Urasil",
+      "Timin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #ac52",
+    "options": [
+      "Urasil",
+      "Guanin",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #3c49",
+    "options": [
+      "50%",
+      "0%",
+      "25%",
+      "75%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #ddb7",
+    "options": [
+      "75%",
+      "50%",
+      "0%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #cab6",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Mitoxond",
+      "Lizosoma"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #3d50",
+    "options": [
+      "DNK yo‘q",
+      "Gameta",
+      "2 bir xil huj",
+      "4 haploid huj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #75c0",
+    "options": [
+      "Timin",
+      "Guanin",
+      "Sitozin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #72cf",
+    "options": [
+      "Mitoxond",
+      "Yadro",
+      "Golji",
+      "Lizosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "RNKda baza? #7e75",
+    "options": [
+      "Timin",
+      "Sitozin",
+      "Guanin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #11cc",
+    "options": [
+      "75%",
+      "50%",
+      "0%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #cfb1",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #962e",
+    "options": [
+      "4 haploid huj",
+      "Diploid",
+      "2 qiz huj",
+      "Somatik"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #d2a4",
+    "options": [
+      "50%",
+      "75%",
+      "25%",
+      "0%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #2472",
+    "options": [
+      "Guanin",
+      "Sitozin",
+      "Urasil",
+      "Timin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "ATP asosan qayerda? #a5de",
+    "options": [
+      "Yadro",
+      "Lizosoma",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #b932",
+    "options": [
+      "Sitozin",
+      "Urasil",
+      "Timin",
+      "Guanin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #3fa4",
+    "options": [
+      "50%",
+      "75%",
+      "25%",
+      "0%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "ATP asosan qayerda? #cc36",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Lizosoma",
+      "Golji"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #d2ab",
+    "options": [
+      "4 haploid huj",
+      "2 qiz huj",
+      "Diploid",
+      "Somatik"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #81d9",
+    "options": [
+      "Somatik",
+      "2 qiz huj",
+      "Diploid",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #2823",
+    "options": [
+      "0%",
+      "50%",
+      "25%",
+      "75%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #41d5",
+    "options": [
+      "DNK yo‘q",
+      "4 haploid huj",
+      "2 bir xil huj",
+      "Gameta"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #5dcc",
+    "options": [
+      "2 bir xil huj",
+      "4 haploid huj",
+      "DNK yo‘q",
+      "Gameta"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #3dc7",
+    "options": [
+      "2 bir xil huj",
+      "Gameta",
+      "DNK yo‘q",
+      "4 haploid huj"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #6b8e",
+    "options": [
+      "2 bir xil huj",
+      "DNK yo‘q",
+      "4 haploid huj",
+      "Gameta"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #9ab3",
+    "options": [
+      "Golji",
+      "Lizosoma",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasi? #6195",
+    "options": [
+      "4 haploid huj",
+      "Somatik",
+      "Diploid",
+      "2 qiz huj"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #4d15",
+    "options": [
+      "DNK yo‘q",
+      "Gameta",
+      "4 haploid huj",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #fdf9",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Lizosoma",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #feb5",
+    "options": [
+      "2 qiz huj",
+      "Somatik",
+      "Diploid",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #9509",
+    "options": [
+      "50%",
+      "25%",
+      "0%",
+      "75%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #63f1",
+    "options": [
+      "Urasil",
+      "Sitozin",
+      "Guanin",
+      "Timin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #c700",
+    "options": [
+      "Golji",
+      "Lizosoma",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #d89e",
+    "options": [
+      "4 haploid huj",
+      "2 qiz huj",
+      "Somatik",
+      "Diploid"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #ed28",
+    "options": [
+      "4 haploid huj",
+      "2 bir xil huj",
+      "DNK yo‘q",
+      "Gameta"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #e111",
+    "options": [
+      "Urasil",
+      "Sitozin",
+      "Timin",
+      "Guanin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #bffe",
+    "options": [
+      "Yadro",
+      "Lizosoma",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #53a1",
+    "options": [
+      "Somatik",
+      "Diploid",
+      "4 haploid huj",
+      "2 qiz huj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #feda",
+    "options": [
+      "0%",
+      "50%",
+      "25%",
+      "75%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #8058",
+    "options": [
+      "50%",
+      "25%",
+      "0%",
+      "75%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #e9e0",
+    "options": [
+      "Guanin",
+      "Timin",
+      "Urasil",
+      "Sitozin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #721e",
+    "options": [
+      "50%",
+      "75%",
+      "0%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #3aad",
+    "options": [
+      "Somatik",
+      "4 haploid huj",
+      "Diploid",
+      "2 qiz huj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #fea2",
+    "options": [
+      "DNK yo‘q",
+      "Gameta",
+      "2 bir xil huj",
+      "4 haploid huj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #df47",
+    "options": [
+      "75%",
+      "0%",
+      "50%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #1f5a",
+    "options": [
+      "50%",
+      "25%",
+      "75%",
+      "0%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #2034",
+    "options": [
+      "50%",
+      "25%",
+      "75%",
+      "0%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #45da",
+    "options": [
+      "Mitoxond",
+      "Yadro",
+      "Golji",
+      "Lizosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "RNKda baza? #804e",
+    "options": [
+      "Sitozin",
+      "Guanin",
+      "Timin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #38cf",
+    "options": [
+      "Urasil",
+      "Timin",
+      "Guanin",
+      "Sitozin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #d73a",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Yadro",
+      "Lizosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #086b",
+    "options": [
+      "Diploid",
+      "4 haploid huj",
+      "Somatik",
+      "2 qiz huj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #d94e",
+    "options": [
+      "Golji",
+      "Yadro",
+      "Lizosoma",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #2750",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Lizosoma",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #2a74",
+    "options": [
+      "50%",
+      "25%",
+      "75%",
+      "0%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #369a",
+    "options": [
+      "Golji",
+      "Lizosoma",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #22a8",
+    "options": [
+      "2 bir xil huj",
+      "4 haploid huj",
+      "DNK yo‘q",
+      "Gameta"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #32fa",
+    "options": [
+      "Gameta",
+      "DNK yo‘q",
+      "4 haploid huj",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #1e2d",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Yadro",
+      "Lizosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #6176",
+    "options": [
+      "Mitoxond",
+      "Yadro",
+      "Lizosoma",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #7169",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Lizosoma",
+      "Golji"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #e70f",
+    "options": [
+      "DNK yo‘q",
+      "4 haploid huj",
+      "Gameta",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #5ada",
+    "options": [
+      "50%",
+      "75%",
+      "0%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #6852",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Timin",
+      "Sitozin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #5608",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Lizosoma",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #595b",
+    "options": [
+      "50%",
+      "25%",
+      "75%",
+      "0%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #9908",
+    "options": [
+      "Sitozin",
+      "Urasil",
+      "Guanin",
+      "Timin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #5c67",
+    "options": [
+      "0%",
+      "75%",
+      "50%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #49bd",
+    "options": [
+      "75%",
+      "0%",
+      "25%",
+      "50%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #54b0",
+    "options": [
+      "2 bir xil huj",
+      "4 haploid huj",
+      "Gameta",
+      "DNK yo‘q"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #5e5d",
+    "options": [
+      "75%",
+      "25%",
+      "0%",
+      "50%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #c7da",
+    "options": [
+      "Guanin",
+      "Timin",
+      "Sitozin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Mitoz natijasi? #34f7",
+    "options": [
+      "DNK yo‘q",
+      "4 haploid huj",
+      "Gameta",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #d3cc",
+    "options": [
+      "Somatik",
+      "2 qiz huj",
+      "Diploid",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #2d5b",
+    "options": [
+      "4 haploid huj",
+      "2 qiz huj",
+      "Somatik",
+      "Diploid"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #2cf9",
+    "options": [
+      "25%",
+      "0%",
+      "50%",
+      "75%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #a28d",
+    "options": [
+      "Golji",
+      "Lizosoma",
+      "Mitoxond",
+      "Yadro"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #b7d0",
+    "options": [
+      "DNK yo‘q",
+      "2 bir xil huj",
+      "4 haploid huj",
+      "Gameta"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #0c51",
+    "options": [
+      "0%",
+      "75%",
+      "25%",
+      "50%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #c150",
+    "options": [
+      "Gameta",
+      "DNK yo‘q",
+      "4 haploid huj",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #899a",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Lizosoma",
+      "Golji"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #1586",
+    "options": [
+      "25%",
+      "50%",
+      "0%",
+      "75%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #4d7e",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Golji",
+      "Lizosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #3e1b",
+    "options": [
+      "Yadro",
+      "Mitoxond",
+      "Golji",
+      "Lizosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #8a8c",
+    "options": [
+      "Somatik",
+      "Diploid",
+      "2 qiz huj",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #e77f",
+    "options": [
+      "Urasil",
+      "Sitozin",
+      "Guanin",
+      "Timin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "RNKda baza? #b6f5",
+    "options": [
+      "Sitozin",
+      "Timin",
+      "Guanin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #6bb3",
+    "options": [
+      "Guanin",
+      "Timin",
+      "Sitozin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #bf75",
+    "options": [
+      "Yadro",
+      "Lizosoma",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #54bc",
+    "options": [
+      "Gameta",
+      "2 bir xil huj",
+      "DNK yo‘q",
+      "4 haploid huj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #1ee8",
+    "options": [
+      "Mitoxond",
+      "Yadro",
+      "Lizosoma",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #e608",
+    "options": [
+      "75%",
+      "0%",
+      "50%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #8328",
+    "options": [
+      "Diploid",
+      "4 haploid huj",
+      "Somatik",
+      "2 qiz huj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #835c",
+    "options": [
+      "DNK yo‘q",
+      "Gameta",
+      "4 haploid huj",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #1639",
+    "options": [
+      "Lizosoma",
+      "Golji",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #69dd",
+    "options": [
+      "Timin",
+      "Guanin",
+      "Sitozin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #dd5e",
+    "options": [
+      "Somatik",
+      "Diploid",
+      "4 haploid huj",
+      "2 qiz huj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #13a2",
+    "options": [
+      "75%",
+      "0%",
+      "25%",
+      "50%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasi? #6fdc",
+    "options": [
+      "2 qiz huj",
+      "Diploid",
+      "Somatik",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #6605",
+    "options": [
+      "0%",
+      "50%",
+      "25%",
+      "75%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #af64",
+    "options": [
+      "4 haploid huj",
+      "Gameta",
+      "DNK yo‘q",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #db0d",
+    "options": [
+      "Timin",
+      "Urasil",
+      "Guanin",
+      "Sitozin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #eebe",
+    "options": [
+      "4 haploid huj",
+      "DNK yo‘q",
+      "Gameta",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #f919",
+    "options": [
+      "Mitoxond",
+      "Yadro",
+      "Golji",
+      "Lizosoma"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #7531",
+    "options": [
+      "Golji",
+      "Mitoxond",
+      "Yadro",
+      "Lizosoma"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #c833",
+    "options": [
+      "Lizosoma",
+      "Yadro",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #9c99",
+    "options": [
+      "25%",
+      "0%",
+      "75%",
+      "50%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #053e",
+    "options": [
+      "50%",
+      "75%",
+      "0%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #6fd4",
+    "options": [
+      "Mitoxond",
+      "Lizosoma",
+      "Yadro",
+      "Golji"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #2951",
+    "options": [
+      "2 bir xil huj",
+      "Gameta",
+      "DNK yo‘q",
+      "4 haploid huj"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #6334",
+    "options": [
+      "4 haploid huj",
+      "2 bir xil huj",
+      "DNK yo‘q",
+      "Gameta"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #5fae",
+    "options": [
+      "4 haploid huj",
+      "2 bir xil huj",
+      "DNK yo‘q",
+      "Gameta"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "ATP asosan qayerda? #e5ce",
+    "options": [
+      "Golji",
+      "Lizosoma",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #dead",
+    "options": [
+      "75%",
+      "50%",
+      "25%",
+      "0%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #3d26",
+    "options": [
+      "Gameta",
+      "4 haploid huj",
+      "2 bir xil huj",
+      "DNK yo‘q"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #0cc8",
+    "options": [
+      "Urasil",
+      "Sitozin",
+      "Timin",
+      "Guanin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #3735",
+    "options": [
+      "0%",
+      "75%",
+      "25%",
+      "50%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasi? #c8aa",
+    "options": [
+      "Somatik",
+      "Diploid",
+      "2 qiz huj",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #9a1f",
+    "options": [
+      "25%",
+      "75%",
+      "50%",
+      "0%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #af97",
+    "options": [
+      "Somatik",
+      "4 haploid huj",
+      "Diploid",
+      "2 qiz huj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #d42d",
+    "options": [
+      "0%",
+      "25%",
+      "75%",
+      "50%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #3079",
+    "options": [
+      "Gameta",
+      "DNK yo‘q",
+      "4 haploid huj",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #3dc1",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #bd5c",
+    "options": [
+      "0%",
+      "25%",
+      "50%",
+      "75%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #5fe7",
+    "options": [
+      "Gameta",
+      "4 haploid huj",
+      "2 bir xil huj",
+      "DNK yo‘q"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meioz natijasi? #6310",
+    "options": [
+      "2 qiz huj",
+      "Somatik",
+      "4 haploid huj",
+      "Diploid"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #ea25",
+    "options": [
+      "2 bir xil huj",
+      "Gameta",
+      "4 haploid huj",
+      "DNK yo‘q"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #395a",
+    "options": [
+      "Lizosoma",
+      "Yadro",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Mitoz natijasi? #1c44",
+    "options": [
+      "2 bir xil huj",
+      "Gameta",
+      "4 haploid huj",
+      "DNK yo‘q"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #7c37",
+    "options": [
+      "DNK yo‘q",
+      "4 haploid huj",
+      "Gameta",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #1c59",
+    "options": [
+      "0%",
+      "50%",
+      "25%",
+      "75%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #79d2",
+    "options": [
+      "0%",
+      "50%",
+      "25%",
+      "75%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #72e5",
+    "options": [
+      "Sitozin",
+      "Urasil",
+      "Timin",
+      "Guanin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #769e",
+    "options": [
+      "50%",
+      "0%",
+      "75%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #9b85",
+    "options": [
+      "Mitoxond",
+      "Lizosoma",
+      "Golji",
+      "Yadro"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #ab9a",
+    "options": [
+      "Diploid",
+      "Somatik",
+      "4 haploid huj",
+      "2 qiz huj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "ATP asosan qayerda? #9884",
+    "options": [
+      "Mitoxond",
+      "Golji",
+      "Lizosoma",
+      "Yadro"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meioz natijasi? #eb2a",
+    "options": [
+      "4 haploid huj",
+      "Diploid",
+      "Somatik",
+      "2 qiz huj"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "RNKda baza? #a868",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #c830",
+    "options": [
+      "Timin",
+      "Sitozin",
+      "Urasil",
+      "Guanin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #bc90",
+    "options": [
+      "Guanin",
+      "Sitozin",
+      "Urasil",
+      "Timin"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #8366",
+    "options": [
+      "Timin",
+      "Guanin",
+      "Sitozin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #782b",
+    "options": [
+      "Urasil",
+      "Guanin",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #3fcf",
+    "options": [
+      "Gameta",
+      "2 bir xil huj",
+      "DNK yo‘q",
+      "4 haploid huj"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #9ebc",
+    "options": [
+      "0%",
+      "75%",
+      "25%",
+      "50%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #ce3a",
+    "options": [
+      "4 haploid huj",
+      "Gameta",
+      "DNK yo‘q",
+      "2 bir xil huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #c285",
+    "options": [
+      "Urasil",
+      "Guanin",
+      "Timin",
+      "Sitozin"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #d440",
+    "options": [
+      "75%",
+      "50%",
+      "25%",
+      "0%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "ATP asosan qayerda? #08f8",
+    "options": [
+      "Yadro",
+      "Lizosoma",
+      "Mitoxond",
+      "Golji"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #1f31",
+    "options": [
+      "75%",
+      "50%",
+      "0%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #983b",
+    "options": [
+      "Sitozin",
+      "Timin",
+      "Guanin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #f9a4",
+    "options": [
+      "Somatik",
+      "4 haploid huj",
+      "2 qiz huj",
+      "Diploid"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #5cf2",
+    "options": [
+      "DNK yo‘q",
+      "2 bir xil huj",
+      "4 haploid huj",
+      "Gameta"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #ed29",
+    "options": [
+      "Diploid",
+      "4 haploid huj",
+      "2 qiz huj",
+      "Somatik"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #40e8",
+    "options": [
+      "Diploid",
+      "Somatik",
+      "4 haploid huj",
+      "2 qiz huj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "ATP asosan qayerda? #10e6",
+    "options": [
+      "Yadro",
+      "Lizosoma",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Mitoz natijasi? #ae8d",
+    "options": [
+      "Gameta",
+      "2 bir xil huj",
+      "4 haploid huj",
+      "DNK yo‘q"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #eabe",
+    "options": [
+      "Sitozin",
+      "Urasil",
+      "Timin",
+      "Guanin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #223c",
+    "options": [
+      "0%",
+      "75%",
+      "25%",
+      "50%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #b7fd",
+    "options": [
+      "75%",
+      "50%",
+      "0%",
+      "25%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meioz natijasi? #1911",
+    "options": [
+      "Diploid",
+      "4 haploid huj",
+      "2 qiz huj",
+      "Somatik"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Mitoz natijasi? #0c41",
+    "options": [
+      "DNK yo‘q",
+      "4 haploid huj",
+      "2 bir xil huj",
+      "Gameta"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #3061",
+    "options": [
+      "50%",
+      "25%",
+      "75%",
+      "0%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #207c",
+    "options": [
+      "75%",
+      "25%",
+      "50%",
+      "0%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #6bd6",
+    "options": [
+      "Timin",
+      "Urasil",
+      "Sitozin",
+      "Guanin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meioz natijasi? #aae6",
+    "options": [
+      "Somatik",
+      "2 qiz huj",
+      "Diploid",
+      "4 haploid huj"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #f45b",
+    "options": [
+      "Yadro",
+      "Lizosoma",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "RNKda baza? #f6f4",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #191e",
+    "options": [
+      "75%",
+      "0%",
+      "25%",
+      "50%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Mitoz natijasi? #2b9a",
+    "options": [
+      "2 bir xil huj",
+      "4 haploid huj",
+      "Gameta",
+      "DNK yo‘q"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Mitoz natijasi? #4cae",
+    "options": [
+      "DNK yo‘q",
+      "Gameta",
+      "2 bir xil huj",
+      "4 haploid huj"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "RNKda baza? #4916",
+    "options": [
+      "Guanin",
+      "Urasil",
+      "Sitozin",
+      "Timin"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "RNKda baza? #2d8a",
+    "options": [
+      "Sitozin",
+      "Timin",
+      "Guanin",
+      "Urasil"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #5dd3",
+    "options": [
+      "25%",
+      "0%",
+      "75%",
+      "50%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "ATP asosan qayerda? #3c28",
+    "options": [
+      "Lizosoma",
+      "Yadro",
+      "Golji",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #e773",
+    "options": [
+      "Yadro",
+      "Golji",
+      "Lizosoma",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #273d",
+    "options": [
+      "Lizosoma",
+      "Golji",
+      "Yadro",
+      "Mitoxond"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "ATP asosan qayerda? #389b",
+    "options": [
+      "Lizosoma",
+      "Mitoxond",
+      "Golji",
+      "Yadro"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Aa×Aa, AA ulush? #8fa8",
+    "options": [
+      "50%",
+      "75%",
+      "25%",
+      "0%"
+    ],
+    "correct_index": 2
   }
+]
 ]

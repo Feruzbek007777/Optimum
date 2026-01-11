@@ -39,7 +39,7 @@ def gift_menu_keyboard():
         KeyboardButton("📊 Mening ballarim")
     )
     markup.row(
-        KeyboardButton("🎲 Bonus"),
+        KeyboardButton("🎰 Bonus"),
         KeyboardButton("⬅️ Ortga")
     )
     return markup

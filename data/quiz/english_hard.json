@@ -6998,5 +6998,2507 @@
       "that"
     ],
     "correct_index": 3
+  },
+  [
+  {
+    "question": "I wish I ___ the email. #f0e7",
+    "options": [
+      "has",
+      "had",
+      "will",
+      "have"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I had time, I ___ buy. #578b",
+    "options": [
+      "can",
+      "must",
+      "will",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't swim.’ ‘___ I.’ #a3b2",
+    "options": [
+      "So can",
+      "Neither can",
+      "So do",
+      "So will"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ the lesson. #ca3c",
+    "options": [
+      "have",
+      "had",
+      "will",
+      "has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I'd rather you ___ now. #a073",
+    "options": [
+      "leave",
+      "leaves",
+      "leaving",
+      "left"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ work. #d4d9",
+    "options": [
+      "works",
+      "left",
+      "work",
+      "working"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: find out? #c36e",
+    "options": [
+      "enter",
+      "discover",
+      "keep",
+      "start"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He suggested she ___ work. #6a26",
+    "options": [
+      "work",
+      "works",
+      "working",
+      "left"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the report. #51e6",
+    "options": [
+      "who",
+      "what",
+      "which",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I had time, I ___ meet. #d243",
+    "options": [
+      "must",
+      "will",
+      "would",
+      "can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the meeting. #695d",
+    "options": [
+      "has",
+      "will",
+      "have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: look after? #2063",
+    "options": [
+      "care",
+      "enter",
+      "buy",
+      "build"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the meeting. #e58c",
+    "options": [
+      "who",
+      "where",
+      "which",
+      "what"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "John said 'I am ready'. He said he ___. #9381",
+    "options": [
+      "is",
+      "were",
+      "was",
+      "be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The idea ___ yesterday. #cbbd",
+    "options": [
+      "was send",
+      "sent",
+      "is sent",
+      "was sent"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I'd rather you ___ now. #6e31",
+    "options": [
+      "leaving",
+      "leaves",
+      "leave",
+      "left"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Ali said 'I am late'. He said he ___. #1947",
+    "options": [
+      "were",
+      "was",
+      "is",
+      "be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: give up? #115c",
+    "options": [
+      "build",
+      "bring",
+      "quit",
+      "lose"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the email. #2852",
+    "options": [
+      "have",
+      "will",
+      "has",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The person ___ wrote the task. #4cca",
+    "options": [
+      "where",
+      "who",
+      "which",
+      "what"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I'd rather you ___ now. #b724",
+    "options": [
+      "leaves",
+      "leaving",
+      "leave",
+      "left"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I'd rather you ___ now. #2ad7",
+    "options": [
+      "leaving",
+      "leave",
+      "left",
+      "leaves"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "John said 'I am late'. He said he ___. #4b46",
+    "options": [
+      "be",
+      "is",
+      "was",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the email. #29a2",
+    "options": [
+      "had",
+      "have",
+      "has",
+      "will"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I'd rather you ___ now. #6c1b",
+    "options": [
+      "leaving",
+      "left",
+      "leaves",
+      "leave"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: give up? #ad49",
+    "options": [
+      "quit",
+      "keep",
+      "lose",
+      "enter"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I'd rather you ___ now. #6b34",
+    "options": [
+      "leaving",
+      "left",
+      "leaves",
+      "leave"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I'd rather you ___ now. #9f98",
+    "options": [
+      "left",
+      "leaving",
+      "leaves",
+      "leave"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I'd rather you ___ now. #fde1",
+    "options": [
+      "leaving",
+      "leave",
+      "left",
+      "leaves"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: look after? #0297",
+    "options": [
+      "keep",
+      "build",
+      "care",
+      "start"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I'd rather you ___ now. #451a",
+    "options": [
+      "left",
+      "leaving",
+      "leave",
+      "leaves"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meaning: pick up? #1f07",
+    "options": [
+      "bring",
+      "lose",
+      "collect",
+      "buy"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ Omar call early. #1ab6",
+    "options": [
+      "is",
+      "do",
+      "does",
+      "did"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ Mary write early. #371a",
+    "options": [
+      "do",
+      "did",
+      "is",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I had time, I ___ eat. #db97",
+    "options": [
+      "would",
+      "will",
+      "must",
+      "can"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He suggested she ___ wait. #4a3d",
+    "options": [
+      "waits",
+      "waiting",
+      "wait",
+      "left"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He suggested she ___ work. #a90f",
+    "options": [
+      "left",
+      "working",
+      "work",
+      "works"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The person ___ wrote the plan. #cd1f",
+    "options": [
+      "where",
+      "what",
+      "who",
+      "which"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The person ___ wrote the lesson. #3d47",
+    "options": [
+      "where",
+      "what",
+      "who",
+      "which"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the idea. #29df",
+    "options": [
+      "have",
+      "will",
+      "had",
+      "has"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The meeting ___ yesterday. #683f",
+    "options": [
+      "is sent",
+      "was sent",
+      "sent",
+      "was send"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ the task. #ef7d",
+    "options": [
+      "had",
+      "have",
+      "has",
+      "will"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Kate said 'I am happy'. He said he ___. #7614",
+    "options": [
+      "is",
+      "were",
+      "was",
+      "be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Ali said 'I am happy'. He said he ___. #1ae7",
+    "options": [
+      "were",
+      "be",
+      "was",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "If I had time, I ___ write. #e7c1",
+    "options": [
+      "will",
+      "must",
+      "can",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ the meeting. #f97d",
+    "options": [
+      "have",
+      "will",
+      "had",
+      "has"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ Omar study early. #5b6b",
+    "options": [
+      "do",
+      "is",
+      "did",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Sara drive early. #7f7a",
+    "options": [
+      "is",
+      "do",
+      "did",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: run out? #efbb",
+    "options": [
+      "finish",
+      "lose",
+      "keep",
+      "start"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He suggested she ___ call. #f7b2",
+    "options": [
+      "calling",
+      "call",
+      "left",
+      "calls"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Rarely ___ Sara study early. #5c12",
+    "options": [
+      "does",
+      "is",
+      "do",
+      "did"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The ticket ___ yesterday. #3d04",
+    "options": [
+      "is sent",
+      "was send",
+      "sent",
+      "was sent"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The person ___ wrote the report. #13c1",
+    "options": [
+      "who",
+      "what",
+      "where",
+      "which"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "‘I don't agree.’ ‘___ I.’ #64fe",
+    "options": [
+      "So will",
+      "So can",
+      "So do",
+      "Neither do"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I had time, I ___ buy. #32f2",
+    "options": [
+      "can",
+      "would",
+      "must",
+      "will"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Rarely ___ Aziz study early. #f58c",
+    "options": [
+      "is",
+      "did",
+      "do",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Omar write early. #3827",
+    "options": [
+      "is",
+      "did",
+      "does",
+      "do"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I haven't seen it.’ ‘___ I.’ #9a9d",
+    "options": [
+      "So will",
+      "So do",
+      "So can",
+      "Neither have"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ John fix early. #69e2",
+    "options": [
+      "did",
+      "do",
+      "does",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "If I had time, I ___ buy. #ae32",
+    "options": [
+      "must",
+      "can",
+      "would",
+      "will"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ John help early. #097f",
+    "options": [
+      "is",
+      "did",
+      "do",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I can't swim.’ ‘___ I.’ #d7cf",
+    "options": [
+      "So can",
+      "So do",
+      "So will",
+      "Neither can"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Sara said 'I am busy'. He said he ___. #8e75",
+    "options": [
+      "is",
+      "were",
+      "was",
+      "be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "If I had time, I ___ work. #834e",
+    "options": [
+      "must",
+      "will",
+      "would",
+      "can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The lesson ___ yesterday. #be9e",
+    "options": [
+      "sent",
+      "was send",
+      "was sent",
+      "is sent"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He suggested she ___ wait. #3005",
+    "options": [
+      "wait",
+      "waits",
+      "left",
+      "waiting"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I'd rather you ___ now. #9e25",
+    "options": [
+      "leaves",
+      "leave",
+      "left",
+      "leaving"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "If I had time, I ___ help. #416a",
+    "options": [
+      "can",
+      "must",
+      "will",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I won't come.’ ‘___ I.’ #f04c",
+    "options": [
+      "So will",
+      "So do",
+      "Neither will",
+      "So can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: look after? #0a47",
+    "options": [
+      "start",
+      "enter",
+      "buy",
+      "care"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The plan ___ yesterday. #352b",
+    "options": [
+      "is sent",
+      "was sent",
+      "sent",
+      "was send"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Rarely ___ Tom work early. #d92e",
+    "options": [
+      "is",
+      "did",
+      "do",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ the meeting. #aa86",
+    "options": [
+      "have",
+      "has",
+      "will",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ go. #22da",
+    "options": [
+      "left",
+      "go",
+      "going",
+      "gos"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: run out? #f9f7",
+    "options": [
+      "lose",
+      "start",
+      "bring",
+      "finish"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Ali go early. #ab3f",
+    "options": [
+      "is",
+      "does",
+      "do",
+      "did"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Tom said 'I am sure'. He said he ___. #46b9",
+    "options": [
+      "be",
+      "is",
+      "were",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Sara said 'I am angry'. He said he ___. #be8a",
+    "options": [
+      "be",
+      "were",
+      "was",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ John work early. #0e59",
+    "options": [
+      "does",
+      "did",
+      "do",
+      "is"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I had time, I ___ fix. #c8a5",
+    "options": [
+      "must",
+      "would",
+      "will",
+      "can"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ the answer. #1963",
+    "options": [
+      "had",
+      "have",
+      "has",
+      "will"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "John said 'I am sure'. He said he ___. #0035",
+    "options": [
+      "is",
+      "were",
+      "be",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "John said 'I am late'. He said he ___. #c1af",
+    "options": [
+      "were",
+      "be",
+      "is",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aziz said 'I am ready'. He said he ___. #1d3e",
+    "options": [
+      "is",
+      "was",
+      "were",
+      "be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I don't agree.’ ‘___ I.’ #bedd",
+    "options": [
+      "Neither do",
+      "So will",
+      "So do",
+      "So can"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I'd rather you ___ now. #7fc0",
+    "options": [
+      "left",
+      "leave",
+      "leaves",
+      "leaving"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I wish I ___ the idea. #e680",
+    "options": [
+      "has",
+      "had",
+      "have",
+      "will"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the plan. #fbf0",
+    "options": [
+      "where",
+      "which",
+      "what",
+      "who"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Mary write early. #e74a",
+    "options": [
+      "did",
+      "is",
+      "does",
+      "do"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The person ___ wrote the lesson. #7aee",
+    "options": [
+      "who",
+      "where",
+      "which",
+      "what"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the answer. #4221",
+    "options": [
+      "who",
+      "what",
+      "which",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He suggested she ___ go. #7958",
+    "options": [
+      "left",
+      "gos",
+      "go",
+      "going"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I'd rather you ___ now. #83a2",
+    "options": [
+      "leaves",
+      "leaving",
+      "left",
+      "leave"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aziz said 'I am happy'. He said he ___. #6fa5",
+    "options": [
+      "were",
+      "was",
+      "be",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He suggested she ___ work. #adc7",
+    "options": [
+      "left",
+      "working",
+      "works",
+      "work"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ wait. #f3fa",
+    "options": [
+      "left",
+      "wait",
+      "waiting",
+      "waits"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He suggested she ___ wait. #5f37",
+    "options": [
+      "waits",
+      "waiting",
+      "left",
+      "wait"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "John said 'I am sure'. He said he ___. #f8f6",
+    "options": [
+      "be",
+      "is",
+      "were",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Tom said 'I am tired'. He said he ___. #1aeb",
+    "options": [
+      "is",
+      "was",
+      "were",
+      "be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: turn down? #a706",
+    "options": [
+      "enter",
+      "buy",
+      "lose",
+      "refuse"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Ali said 'I am sure'. He said he ___. #2b7d",
+    "options": [
+      "is",
+      "be",
+      "was",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The email ___ yesterday. #bfe3",
+    "options": [
+      "sent",
+      "was sent",
+      "was send",
+      "is sent"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I had time, I ___ leave. #ecb8",
+    "options": [
+      "would",
+      "must",
+      "can",
+      "will"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "‘I don't agree.’ ‘___ I.’ #80be",
+    "options": [
+      "So do",
+      "So can",
+      "So will",
+      "Neither do"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: find out? #fe92",
+    "options": [
+      "lose",
+      "bring",
+      "discover",
+      "keep"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: look after? #0e08",
+    "options": [
+      "build",
+      "care",
+      "keep",
+      "lose"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I wish I ___ the report. #4f78",
+    "options": [
+      "have",
+      "had",
+      "will",
+      "has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He suggested she ___ call. #e0c8",
+    "options": [
+      "call",
+      "calls",
+      "calling",
+      "left"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the ticket. #0cee",
+    "options": [
+      "which",
+      "who",
+      "what",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Sara said 'I am late'. He said he ___. #8432",
+    "options": [
+      "were",
+      "be",
+      "was",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The email ___ yesterday. #83f3",
+    "options": [
+      "was send",
+      "was sent",
+      "is sent",
+      "sent"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: set up? #62b3",
+    "options": [
+      "lose",
+      "start",
+      "buy",
+      "arrange"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ the ticket. #9113",
+    "options": [
+      "has",
+      "will",
+      "have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Aziz said 'I am sure'. He said he ___. #f9f6",
+    "options": [
+      "were",
+      "is",
+      "be",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The plan ___ yesterday. #ae90",
+    "options": [
+      "is sent",
+      "sent",
+      "was send",
+      "was sent"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Lola go early. #98e9",
+    "options": [
+      "do",
+      "did",
+      "is",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: run out? #5e72",
+    "options": [
+      "build",
+      "finish",
+      "lose",
+      "start"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Rarely ___ Omar sleep early. #b5ff",
+    "options": [
+      "did",
+      "is",
+      "does",
+      "do"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The person ___ wrote the idea. #672a",
+    "options": [
+      "where",
+      "which",
+      "what",
+      "who"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ leave. #4d05",
+    "options": [
+      "leaves",
+      "left",
+      "leaveing",
+      "leave"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I had time, I ___ fix. #f51d",
+    "options": [
+      "can",
+      "would",
+      "must",
+      "will"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: find out? #6dfb",
+    "options": [
+      "keep",
+      "discover",
+      "start",
+      "build"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the lesson. #9a14",
+    "options": [
+      "what",
+      "who",
+      "which",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the plan. #6405",
+    "options": [
+      "what",
+      "where",
+      "who",
+      "which"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "John said 'I am tired'. He said he ___. #1ecd",
+    "options": [
+      "be",
+      "was",
+      "were",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: run out? #5090",
+    "options": [
+      "finish",
+      "keep",
+      "start",
+      "bring"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I had time, I ___ fix. #f3a7",
+    "options": [
+      "will",
+      "can",
+      "would",
+      "must"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ Ali go early. #0af2",
+    "options": [
+      "does",
+      "do",
+      "did",
+      "is"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the plan. #b7b0",
+    "options": [
+      "who",
+      "where",
+      "which",
+      "what"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "‘I won't come.’ ‘___ I.’ #57d7",
+    "options": [
+      "Neither will",
+      "So do",
+      "So can",
+      "So will"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the project. #6088",
+    "options": [
+      "where",
+      "who",
+      "what",
+      "which"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He suggested she ___ work. #ed1a",
+    "options": [
+      "working",
+      "left",
+      "works",
+      "work"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Nina meet early. #3e22",
+    "options": [
+      "do",
+      "did",
+      "is",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The meeting ___ yesterday. #e8e0",
+    "options": [
+      "was send",
+      "was sent",
+      "sent",
+      "is sent"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the plan. #a68d",
+    "options": [
+      "which",
+      "what",
+      "who",
+      "where"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: pick up? #8f77",
+    "options": [
+      "enter",
+      "keep",
+      "lose",
+      "collect"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I'd rather you ___ now. #e483",
+    "options": [
+      "leaves",
+      "leave",
+      "leaving",
+      "left"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I won't come.’ ‘___ I.’ #44d4",
+    "options": [
+      "So can",
+      "So will",
+      "So do",
+      "Neither will"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Kate drive early. #e25e",
+    "options": [
+      "did",
+      "do",
+      "is",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ John help early. #baf5",
+    "options": [
+      "is",
+      "did",
+      "do",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ go. #0882",
+    "options": [
+      "going",
+      "go",
+      "left",
+      "gos"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: find out? #ca9f",
+    "options": [
+      "start",
+      "discover",
+      "bring",
+      "enter"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the ticket. #5a65",
+    "options": [
+      "what",
+      "where",
+      "who",
+      "which"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I'd rather you ___ now. #19f3",
+    "options": [
+      "left",
+      "leaves",
+      "leave",
+      "leaving"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I wish I ___ the idea. #f121",
+    "options": [
+      "have",
+      "will",
+      "had",
+      "has"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: look after? #cf48",
+    "options": [
+      "keep",
+      "bring",
+      "start",
+      "care"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ work. #4802",
+    "options": [
+      "working",
+      "works",
+      "work",
+      "left"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I don't agree.’ ‘___ I.’ #6408",
+    "options": [
+      "Neither do",
+      "So will",
+      "So can",
+      "So do"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Omar said 'I am happy'. He said he ___. #391c",
+    "options": [
+      "be",
+      "is",
+      "was",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: find out? #c533",
+    "options": [
+      "build",
+      "buy",
+      "discover",
+      "keep"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I'd rather you ___ now. #e827",
+    "options": [
+      "leave",
+      "leaves",
+      "left",
+      "leaving"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I'd rather you ___ now. #19fa",
+    "options": [
+      "left",
+      "leaving",
+      "leaves",
+      "leave"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Rarely ___ Lola call early. #b819",
+    "options": [
+      "does",
+      "do",
+      "is",
+      "did"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Meaning: pick up? #7622",
+    "options": [
+      "build",
+      "collect",
+      "lose",
+      "keep"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I'd rather you ___ now. #73ed",
+    "options": [
+      "left",
+      "leaves",
+      "leaving",
+      "leave"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Rarely ___ John wait early. #a197",
+    "options": [
+      "is",
+      "do",
+      "did",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Tom said 'I am tired'. He said he ___. #adc3",
+    "options": [
+      "were",
+      "was",
+      "be",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the email. #8314",
+    "options": [
+      "where",
+      "which",
+      "who",
+      "what"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I'd rather you ___ now. #4754",
+    "options": [
+      "leaves",
+      "left",
+      "leaving",
+      "leave"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: find out? #d6e5",
+    "options": [
+      "lose",
+      "start",
+      "build",
+      "discover"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The person ___ wrote the lesson. #f2c4",
+    "options": [
+      "what",
+      "who",
+      "which",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The report ___ yesterday. #2aec",
+    "options": [
+      "sent",
+      "was send",
+      "was sent",
+      "is sent"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aziz said 'I am ready'. He said he ___. #875e",
+    "options": [
+      "be",
+      "was",
+      "is",
+      "were"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the ticket. #c37f",
+    "options": [
+      "which",
+      "who",
+      "where",
+      "what"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I don't agree.’ ‘___ I.’ #338b",
+    "options": [
+      "So will",
+      "So do",
+      "So can",
+      "Neither do"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The report ___ yesterday. #ff7f",
+    "options": [
+      "was sent",
+      "sent",
+      "was send",
+      "is sent"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "‘I won't come.’ ‘___ I.’ #7ba7",
+    "options": [
+      "So do",
+      "So can",
+      "Neither will",
+      "So will"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Tom said 'I am tired'. He said he ___. #1654",
+    "options": [
+      "is",
+      "be",
+      "was",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I can't swim.’ ‘___ I.’ #81c5",
+    "options": [
+      "So will",
+      "So can",
+      "So do",
+      "Neither can"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: look after? #0420",
+    "options": [
+      "buy",
+      "start",
+      "lose",
+      "care"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: find out? #7ed4",
+    "options": [
+      "buy",
+      "discover",
+      "start",
+      "keep"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the email. #214a",
+    "options": [
+      "who",
+      "which",
+      "where",
+      "what"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I had time, I ___ write. #e664",
+    "options": [
+      "must",
+      "can",
+      "will",
+      "would"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I wish I ___ the task. #6120",
+    "options": [
+      "have",
+      "has",
+      "will",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: run out? #c7fa",
+    "options": [
+      "finish",
+      "lose",
+      "enter",
+      "bring"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the report. #a893",
+    "options": [
+      "what",
+      "where",
+      "who",
+      "which"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "If I had time, I ___ call. #22de",
+    "options": [
+      "must",
+      "would",
+      "can",
+      "will"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I'd rather you ___ now. #ce28",
+    "options": [
+      "left",
+      "leave",
+      "leaves",
+      "leaving"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The answer ___ yesterday. #7c69",
+    "options": [
+      "was sent",
+      "was send",
+      "sent",
+      "is sent"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the project. #fa0f",
+    "options": [
+      "what",
+      "where",
+      "who",
+      "which"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ Kate work early. #50c7",
+    "options": [
+      "is",
+      "did",
+      "does",
+      "do"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the email. #aa4a",
+    "options": [
+      "have",
+      "had",
+      "will",
+      "has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The task ___ yesterday. #74a0",
+    "options": [
+      "was sent",
+      "is sent",
+      "was send",
+      "sent"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "He suggested she ___ work. #3cdf",
+    "options": [
+      "work",
+      "works",
+      "left",
+      "working"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Rarely ___ Tom call early. #e4c4",
+    "options": [
+      "do",
+      "is",
+      "did",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Lola leave early. #773a",
+    "options": [
+      "do",
+      "did",
+      "does",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ Ali fix early. #adfd",
+    "options": [
+      "does",
+      "did",
+      "do",
+      "is"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Tom said 'I am tired'. He said he ___. #1ed3",
+    "options": [
+      "were",
+      "was",
+      "be",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The ticket ___ yesterday. #d2d9",
+    "options": [
+      "was sent",
+      "sent",
+      "was send",
+      "is sent"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "‘I can't swim.’ ‘___ I.’ #e98b",
+    "options": [
+      "So do",
+      "So can",
+      "Neither can",
+      "So will"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the answer. #dc7a",
+    "options": [
+      "has",
+      "will",
+      "have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I had time, I ___ eat. #0570",
+    "options": [
+      "must",
+      "will",
+      "would",
+      "can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Kate said 'I am happy'. He said he ___. #1404",
+    "options": [
+      "be",
+      "was",
+      "were",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the idea. #7013",
+    "options": [
+      "who",
+      "what",
+      "which",
+      "where"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I wish I ___ the report. #14b9",
+    "options": [
+      "has",
+      "have",
+      "will",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Sara said 'I am free'. He said he ___. #2cac",
+    "options": [
+      "is",
+      "be",
+      "were",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "If I had time, I ___ write. #b7c0",
+    "options": [
+      "can",
+      "must",
+      "would",
+      "will"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Aziz said 'I am late'. He said he ___. #e1b8",
+    "options": [
+      "be",
+      "were",
+      "was",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He suggested she ___ go. #2daa",
+    "options": [
+      "going",
+      "gos",
+      "go",
+      "left"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He suggested she ___ wait. #700d",
+    "options": [
+      "wait",
+      "left",
+      "waits",
+      "waiting"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I'd rather you ___ now. #1107",
+    "options": [
+      "leaving",
+      "leave",
+      "left",
+      "leaves"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The person ___ wrote the report. #ce19",
+    "options": [
+      "which",
+      "who",
+      "where",
+      "what"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: pick up? #f3d7",
+    "options": [
+      "lose",
+      "start",
+      "collect",
+      "bring"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "John said 'I am late'. He said he ___. #ff8c",
+    "options": [
+      "were",
+      "be",
+      "is",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The person ___ wrote the task. #9b5f",
+    "options": [
+      "who",
+      "which",
+      "where",
+      "what"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "The person ___ wrote the answer. #90f2",
+    "options": [
+      "where",
+      "what",
+      "who",
+      "which"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Tom said 'I am angry'. He said he ___. #3b48",
+    "options": [
+      "is",
+      "was",
+      "be",
+      "were"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "If I had time, I ___ fix. #bf78",
+    "options": [
+      "can",
+      "will",
+      "would",
+      "must"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the plan. #c40b",
+    "options": [
+      "will",
+      "had",
+      "have",
+      "has"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I'd rather you ___ now. #0524",
+    "options": [
+      "leave",
+      "leaving",
+      "left",
+      "leaves"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "‘I haven't seen it.’ ‘___ I.’ #1197",
+    "options": [
+      "So will",
+      "So do",
+      "So can",
+      "Neither have"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "The lesson ___ yesterday. #9f58",
+    "options": [
+      "was send",
+      "sent",
+      "is sent",
+      "was sent"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I won't come.’ ‘___ I.’ #8c13",
+    "options": [
+      "So do",
+      "Neither will",
+      "So can",
+      "So will"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I won't come.’ ‘___ I.’ #ddde",
+    "options": [
+      "So can",
+      "So will",
+      "So do",
+      "Neither will"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ work. #a3c9",
+    "options": [
+      "working",
+      "work",
+      "works",
+      "left"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Rarely ___ John write early. #1b67",
+    "options": [
+      "did",
+      "do",
+      "does",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "John said 'I am angry'. He said he ___. #ee41",
+    "options": [
+      "be",
+      "were",
+      "is",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Lola said 'I am happy'. He said he ___. #28b5",
+    "options": [
+      "be",
+      "is",
+      "was",
+      "were"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the answer. #ebc5",
+    "options": [
+      "had",
+      "have",
+      "will",
+      "has"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I had time, I ___ leave. #f042",
+    "options": [
+      "must",
+      "can",
+      "would",
+      "will"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Rarely ___ Omar study early. #eca2",
+    "options": [
+      "did",
+      "is",
+      "do",
+      "does"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Rarely ___ Tom go early. #d9d5",
+    "options": [
+      "do",
+      "does",
+      "did",
+      "is"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Lola said 'I am ready'. He said he ___. #ac59",
+    "options": [
+      "is",
+      "be",
+      "were",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "‘I won't come.’ ‘___ I.’ #000d",
+    "options": [
+      "So will",
+      "Neither will",
+      "So do",
+      "So can"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "I'd rather you ___ now. #a2b4",
+    "options": [
+      "leaves",
+      "leaving",
+      "leave",
+      "left"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: set up? #6791",
+    "options": [
+      "keep",
+      "bring",
+      "arrange",
+      "lose"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He suggested she ___ leave. #23e7",
+    "options": [
+      "leaves",
+      "leaveing",
+      "left",
+      "leave"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "I'd rather you ___ now. #699d",
+    "options": [
+      "left",
+      "leaving",
+      "leaves",
+      "leave"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "I'd rather you ___ now. #5e9a",
+    "options": [
+      "leaving",
+      "leave",
+      "leaves",
+      "left"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Tom said 'I am angry'. He said he ___. #d654",
+    "options": [
+      "were",
+      "is",
+      "was",
+      "be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "If I had time, I ___ drive. #07e5",
+    "options": [
+      "will",
+      "must",
+      "would",
+      "can"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "The person ___ wrote the report. #dcf9",
+    "options": [
+      "which",
+      "who",
+      "where",
+      "what"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the project. #1f2e",
+    "options": [
+      "what",
+      "where",
+      "which",
+      "who"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ go. #9b33",
+    "options": [
+      "left",
+      "going",
+      "go",
+      "gos"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "I wish I ___ the lesson. #bd8f",
+    "options": [
+      "has",
+      "will",
+      "have",
+      "had"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Meaning: run out? #e8f8",
+    "options": [
+      "finish",
+      "buy",
+      "build",
+      "bring"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Lola said 'I am angry'. He said he ___. #a00b",
+    "options": [
+      "is",
+      "was",
+      "were",
+      "be"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "The person ___ wrote the task. #807e",
+    "options": [
+      "which",
+      "who",
+      "what",
+      "where"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Meaning: give up? #fe8f",
+    "options": [
+      "keep",
+      "quit",
+      "lose",
+      "start"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "He suggested she ___ leave. #9705",
+    "options": [
+      "leave",
+      "left",
+      "leaveing",
+      "leaves"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "If I had time, I ___ wait. #fbcd",
+    "options": [
+      "would",
+      "will",
+      "can",
+      "must"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aziz said 'I am tired'. He said he ___. #e653",
+    "options": [
+      "were",
+      "is",
+      "was",
+      "be"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "He suggested she ___ go. #32dc",
+    "options": [
+      "going",
+      "gos",
+      "go",
+      "left"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: run out? #8e02",
+    "options": [
+      "keep",
+      "finish",
+      "lose",
+      "bring"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "‘I don't agree.’ ‘___ I.’ #4d73",
+    "options": [
+      "So do",
+      "Neither do",
+      "So will",
+      "So can"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "Kate said 'I am free'. He said he ___. #b13e",
+    "options": [
+      "was",
+      "were",
+      "is",
+      "be"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Aziz said 'I am happy'. He said he ___. #d934",
+    "options": [
+      "be",
+      "were",
+      "was",
+      "is"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "Meaning: turn down? #0500",
+    "options": [
+      "refuse",
+      "build",
+      "bring",
+      "lose"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "Tom said 'I am busy'. He said he ___. #a19f",
+    "options": [
+      "were",
+      "is",
+      "be",
+      "was"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "He suggested she ___ leave. #62c3",
+    "options": [
+      "left",
+      "leave",
+      "leaves",
+      "leaveing"
+    ],
+    "correct_index": 1
   }
+]
 ]
