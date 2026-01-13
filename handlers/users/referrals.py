@@ -1,10 +1,10 @@
 import sqlite3
-import urllib.parse
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from config import DATABASE_PATH, CHANNEL_USERNAME
 from database.database import add_referral, get_referrals_count, get_referrals_for_user
 from utils.points import get_points
+
 
 BOT_USERNAME_CACHE = None
 
@@ -136,18 +136,8 @@ def check_user_subscribed(bot, user_id: int) -> (bool, str):
 
 
 # =========================
-# Text builder + Inline KB
+# Text builder
 # =========================
-
-def _build_share_url(ref_link: str, share_text: str) -> str:
-    """
-    Telegram share oynasini ochadigan URL:
-    user bosadi -> chat tanlash oynasi chiqadi.
-    """
-    u = urllib.parse.quote_plus(ref_link)
-    t = urllib.parse.quote_plus(share_text)
-    return f"https://t.me/share/url?url={u}&text={t}"
-
 
 def build_referrals_text_and_kb(bot, user_id, username, full_name):
     bot_username = get_bot_username(bot)
@@ -156,7 +146,7 @@ def build_referrals_text_and_kb(bot, user_id, username, full_name):
     if bot_username:
         display_link = f"t.me/{bot_username}?start={user_id}"
     else:
-        display_link = None
+        display_link = "Bot username aniqlanmadi, iltimos admin bilan bog'laning."
 
     points = get_points(user_id)
     refs_count = get_referrals_count(user_id)
@@ -176,14 +166,8 @@ def build_referrals_text_and_kb(bot, user_id, username, full_name):
     lines.append(f"💰 Ballaringiz: {points}")
     lines.append(f"👥 Taklif qilgan odamlaringiz soni: {refs_count}")
     lines.append("")
-
-    if display_link:
-        lines.append("🔗 Sizning taklif havolangiz:")
-        lines.append(display_link)
-    else:
-        lines.append("🔗 Sizning taklif havolangiz:")
-        lines.append("Bot username aniqlanmadi, iltimos admin bilan bog'laning.")
-
+    lines.append("🔗 Sizning taklif havolangiz:")
+    lines.append(display_link)
     lines.append("")
     lines.append("ℹ️ Bonus sharti:")
     lines.append("• Do'stingiz havola bilan kiradi")
@@ -191,32 +175,16 @@ def build_referrals_text_and_kb(bot, user_id, username, full_name):
     lines.append("• Shundan keyin sizga +200 ball beriladi ✅")
     lines.append("")
 
+    kb = None
     pending_referrer = get_pending_referrer(user_id)
-
-    # Inline keyboard: har doim bo'ladi (share uchun)
-    kb = InlineKeyboardMarkup(row_width=1)
 
     # Agar user referral bilan kelgan bo'lsa va hali obuna tekshirib bonus bermagan bo'lsa
     if pending_referrer:
         lines.append("⚠️ Siz referral orqali kirgansiz, lekin bonus hali faollashmagan.")
         lines.append(f"1) Avval {CHANNEL_USERNAME} kanaliga obuna bo'ling.")
         lines.append("2) Keyin pastdagi tugmani bosing: ✅ Obunani tekshirish")
+        kb = InlineKeyboardMarkup(row_width=1)
         kb.add(InlineKeyboardButton("✅ Obunani tekshirish", callback_data="ref_check_sub"))
-
-    # Ulashish tugmasi (share UI ochiladi)
-    if display_link:
-        share_text = (
-            "🔥 Bonusli bot!\n"
-            "Kiring va ball yiging 👇"
-        )
-        share_url = _build_share_url(display_link, share_text)
-        kb.add(InlineKeyboardButton("Ulashish ✈️", url=share_url))
-
-        # Qo'shimcha: callback (nusxa olish)
-        kb.add(InlineKeyboardButton("📋 Havolani nusxa olish", callback_data="ref_copy_link"))
-    else:
-        # link yo'q bo'lsa ham, kamida callback orqali ko'rsatamiz
-        kb.add(InlineKeyboardButton("📋 Havolani ko'rsatish", callback_data="ref_copy_link"))
 
     if refs:
         lines.append("")
@@ -231,7 +199,7 @@ def build_referrals_text_and_kb(bot, user_id, username, full_name):
     else:
         lines.append("Hozircha takliflaringiz yo'q. Birinchi bo'lib do'stlaringizni taklif qiling 😊")
 
-    return "\n".join(lines), kb, display_link
+    return "\n".join(lines), kb
 
 
 # =========================
@@ -273,26 +241,13 @@ def setup_referral_handlers(bot):
     @bot.message_handler(func=lambda m: m.chat.type == "private" and m.text == "🤝 Takliflarim")
     def handle_referrals(message):
         user = message.from_user
-        text, kb, _link = build_referrals_text_and_kb(
+        text, kb = build_referrals_text_and_kb(
             bot,
             user_id=user.id,
             username=user.username,
             full_name=(f"{user.first_name or ''} {user.last_name or ''}".strip())
         )
         bot.send_message(message.chat.id, text, reply_markup=kb)
-
-    @bot.callback_query_handler(func=lambda c: c.data == "ref_copy_link")
-    def handle_ref_copy_link(call):
-        bot_username = get_bot_username(bot)
-        if bot_username:
-            link = f"t.me/{bot_username}?start={call.from_user.id}"
-            bot.answer_callback_query(call.id, "✅ Havola tayyor!", show_alert=False)
-            bot.send_message(
-                call.message.chat.id,
-                f"📋 Sizning referral havolangiz:\n{link}"
-            )
-        else:
-            bot.answer_callback_query(call.id, "Bot username aniqlanmadi.", show_alert=True)
 
     @bot.callback_query_handler(func=lambda c: c.data == "ref_check_sub")
     def handle_ref_check(call):
