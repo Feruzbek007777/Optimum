@@ -2,6 +2,7 @@ import os
 import json
 import random
 import difflib
+from typing import List
 
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from utils.points import add_points
@@ -29,20 +30,17 @@ data/fastwords/math_hard.json
 JSON strukturasi bir necha ko‘rinishni qo‘llab-quvvatlaydi:
 
 1) Oddiy word/translation:
-
 [
   { "word": "apple", "translation": "olma" },
   { "word": "sun", "translation": ["quyosh", "quyosh nuri"] }
 ]
 
 2) question/answers:
-
 [
   { "question": "apple", "answers": ["olma", "olma meva"] }
 ]
 
 3) English–Uzbek kalitlari bilan:
-
 [
   { "en": "apple", "uz": "olma" },
   { "en": "book", "uz": "kitob" }
@@ -122,6 +120,7 @@ MENU_BUTTON_TEXTS = {
 def _load_fastwords_data(subject_key: str, level_key: str):
     """
     JSONdan so'zlarni o‘qib keladi VA umumiy formatga o'tkazadi.
+    ✅ Fayl yo'q / JSON xato / format noto‘g‘ri bo‘lsa: JIM turadi va [] qaytaradi.
     """
     subject = SUBJECTS.get(subject_key)
     level = LEVELS.get(level_key)
@@ -131,22 +130,22 @@ def _load_fastwords_data(subject_key: str, level_key: str):
     file_name = f"{subject['file_prefix']}_{level_key}.json"
     file_path = os.path.join(FASTWORDS_DIR, file_name)
 
+    # ✅ Fayl bo'lmasa: jim
     if not os.path.exists(file_path):
-        print(f"[FASTWORDS] Fayl topilmadi: {file_path}")
         return []
 
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             raw = json.load(f)
-    except Exception as e:
-        print(f"[FASTWORDS] JSON o‘qishda xato ({file_path}): {e}")
+    except Exception:
+        # ✅ JSON o‘qishda xato bo‘lsa: jim
+        return []
+
+    # ✅ JSON ro'yxat bo'lmasa: jim
+    if not isinstance(raw, list):
         return []
 
     data = []
-    if not isinstance(raw, list):
-        print(f"[FASTWORDS] JSON ro'yxat emas: {file_path}")
-        return data
-
     for item in raw:
         if not isinstance(item, dict):
             continue
@@ -155,7 +154,7 @@ def _load_fastwords_data(subject_key: str, level_key: str):
         question = (
             item.get("question")
             or item.get("word")
-            or item.get("en")   # english_easy.json / english_hard.json
+            or item.get("en")
             or item.get("q")
         )
 
@@ -165,7 +164,7 @@ def _load_fastwords_data(subject_key: str, level_key: str):
             or item.get("answer")
             or item.get("translation")
             or item.get("translations")
-            or item.get("uz")   # english_easy / english_hard: uz tarjima
+            or item.get("uz")
         )
 
         if not question or not answers_raw:
@@ -187,7 +186,6 @@ def _load_fastwords_data(subject_key: str, level_key: str):
             "answers": answers,
         })
 
-    print(f"[FASTWORDS] Yuklandi: {file_path}, elementlar soni: {len(data)}")
     return data
 
 
@@ -272,7 +270,7 @@ def _choose_next_word(bot, user_id: int, chat_id: int):
     )
 
 
-def _is_correct_answer(user_answer: str, answers: list[str]) -> bool:
+def _is_correct_answer(user_answer: str, answers: List[str]) -> bool:
     """
     User javobi to'g'ri yoki yo‘qligini tekshiramiz.
     80% o‘xshashlik bo‘lsa ham to‘g'ri deb hisoblaymiz.
@@ -282,7 +280,7 @@ def _is_correct_answer(user_answer: str, answers: list[str]) -> bool:
         return False
 
     for ans in answers:
-        ans_norm = ans.strip().lower()
+        ans_norm = str(ans).strip().lower()
         if not ans_norm:
             continue
 
@@ -337,9 +335,8 @@ def setup_fastwords_handlers(bot):
                 message_id=call.message.message_id,
                 reply_markup=kb
             )
-        except Exception as e:
-            # Agar edit ishlamasa, yangi xabar jo'natamiz
-            print(f"[FASTWORDS] edit_message_text xatosi: {e}")
+        except Exception:
+            # ✅ edit ishlamasa ham jim, fallback yuboramiz
             bot.send_message(
                 call.message.chat.id,
                 f"⚡️ Tezkor mashq — {subject_title}\n\n"
@@ -361,8 +358,8 @@ def setup_fastwords_handlers(bot):
                 message_id=call.message.message_id,
                 reply_markup=kb
             )
-        except Exception as e:
-            print(f"[FASTWORDS] back_subjects edit xatosi: {e}")
+        except Exception:
+            # ✅ jim
             bot.send_message(
                 call.message.chat.id,
                 "⚡️ Tezkor mashq bo'limi.\n\n"
@@ -379,7 +376,11 @@ def setup_fastwords_handlers(bot):
         # Fastwords rejimini to'xtatamiz
         FASTWORDS_STATE.pop(user_id, None)
 
-        bot.delete_message(call.message.chat.id, call.message.message_id)
+        try:
+            bot.delete_message(call.message.chat.id, call.message.message_id)
+        except Exception:
+            pass
+
         bot.send_message(
             call.message.chat.id,
             "🎁 Sovg'a bo'limiga qaytdingiz.",
@@ -466,11 +467,11 @@ def setup_fastwords_handlers(bot):
         added_points = level_cfg["points"]
 
         if is_correct:
-            # ✅ To'g'ri javob — ball qo‘shamiz
+            # ✅ To'g'ri javob — ball qo‘shamiz (xato bo'lsa ham jim)
             try:
                 add_points(user_id, added_points)
-            except Exception as e:
-                print(f"[FASTWORDS] add_points xatosi: {e}")
+            except Exception:
+                pass
 
             correct_text = "✅ To'g'ri! "
             if level_key == "easy":
@@ -478,13 +479,10 @@ def setup_fastwords_handlers(bot):
             else:
                 correct_text += f"+{added_points} ball (qiyin daraja)."
 
-            bot.send_message(
-                message.chat.id,
-                correct_text
-            )
+            bot.send_message(message.chat.id, correct_text)
         else:
             # ❌ Noto'g'ri javob — faqat to'g'ri variant(lar)ni ko'rsatamiz
-            answers_str = ", ".join(answers)
+            answers_str = ", ".join([str(a) for a in answers])
             bot.send_message(
                 message.chat.id,
                 f"❌ To'g'ri emas.\n✅ To'g'ri javob(lar):  {answers_str}"

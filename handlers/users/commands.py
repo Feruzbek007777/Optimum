@@ -5,14 +5,12 @@ from config import ADMINS
 from keyboards.default import main_menu_keyboard, admin_menu_keyboard
 from handlers.users.callbacks import check_subscription, show_subscription_request
 
-from database.database import add_user, add_referral, get_referrals_count, create_connection
-from utils.points import get_points
+from database.database import add_user, create_connection
+from handlers.users.referrals import set_pending_referral, try_activate_pending_referral
 
 
-# Agar user /start <referrer_id> bilan kirdi-yu, kanalga obuna bo'lmagan bo'lsa,
-# referrer_id ni vaqtincha shu yerda saqlab turamiz.
-# Keyin user obuna bo'lib qayta /start qilsa ham bonus yo'qolmaydi.
-_PENDING_REFERRAL = {}  # {referred_user_id: referrer_id}
+# Referral: we store "pending" referrals in DB (pending_referrals table)
+# so it survives bot restarts and is consistent everywhere.
 
 
 def _is_user_exists_in_db(user_id: int) -> bool:
@@ -27,22 +25,6 @@ def _is_user_exists_in_db(user_id: int) -> bool:
         return cur.fetchone() is not None
     finally:
         conn.close()
-
-
-def _format_user_display(user) -> str:
-    """
-    Referrerga chiroyli ko'rinishdagi user nomini chiqarish.
-    """
-    uid = user.id
-    name = f"{user.first_name or ''} {user.last_name or ''}".strip()
-    if user.username:
-        if name:
-            name = f"{name} (@{user.username})"
-        else:
-            name = f"@{user.username}"
-    if not name:
-        name = f"ID: {uid}"
-    return name
 
 
 def setup_user_commands(bot):
@@ -67,11 +49,10 @@ def setup_user_commands(bot):
             f"{user.first_name or ''} {user.last_name or ''}".strip()
         )
 
-        # 4) Agar /start argument bor bo'lsa va bu user yangi bo'lsa va self-ref bo'lmasa,
-        # referrer_id ni pendingga yozib qo'yamiz.
-        # (Agar user obuna bo'lmasa, keyin qaytib kelganda ham bonus yo'qolmaydi)
+        # 4) Agar /start argument bor bo'lsa va bu user YANGI bo'lsa va self-ref bo'lmasa,
+        # referrerni DB pending_referrals ga yozib qo'yamiz.
         if (not was_exists) and referrer_id and referrer_id != user_id:
-            _PENDING_REFERRAL[user_id] = referrer_id
+            set_pending_referral(referrer_id, user_id)
 
         # 5) Avval kanalga obunani tekshiramiz
         # Obuna bo'lmagan bo'lsa: subscribe sahifasini chiqaramiz va shu joyda to'xtaymiz.
@@ -80,45 +61,12 @@ def setup_user_commands(bot):
             show_subscription_request(bot, message)
             return
 
-        # 6) Agar user obuna bo'lgan bo'lsa, endi referral bonusni berishga harakat qilamiz.
-        # Shartlar:
-        # - user yangi bo'lishi kerak (was_exists = False)
-        # - pending referrer bo'lishi kerak
-        # - self-ref bo'lmasin
-        # - DB add_referral() referred_id UNIQUE -> bir marta ishlaydi
+        # 6) Agar user obuna bo'lgan bo'lsa, pending referral bo'lsa bonusni faollashtiramiz.
+        # (Bonus berish logikasi bitta joyda: handlers/users/referrals.py)
+        # Eslatma: bonus faqat 1 marta (referred_id UNIQUE).
         if not was_exists:
-            pending_ref = _PENDING_REFERRAL.get(user_id)
-            if pending_ref and pending_ref != user_id:
-                added = add_referral(referrer_id=pending_ref, referred_id=user_id, bonus_points=300)
-
-                # Har holda pendingni o'chiramiz (qo'shilgan bo'lsa ham, bo'lmasa ham)
-                _PENDING_REFERRAL.pop(user_id, None)
-
-                # Agar referral DBga yozilgan bo'lsa (birinchi marta), referrerga xabar
-                if added:
-                    try:
-                        total_points = get_points(pending_ref)
-                        total_refs = get_referrals_count(pending_ref)
-                        new_user_display = _format_user_display(user)
-
-                        text = (
-                            "🎉 Yangi taklif!\n\n"
-                            "Sizning taklif havolangiz orqali yangi foydalanuvchi qo‘shildi:\n"
-                            f"• {new_user_display}\n\n"
-                            "✅ Shart bajarildi: foydalanuvchi kanalga obuna bo‘lgan.\n\n"
-                            "💰 Sizga +300 ball qo‘shildi!\n"
-                            f"📊 Umumiy ballaringiz: {total_points}\n"
-                            f"👥 Umumiy takliflaringiz: {total_refs}"
-                        )
-                        bot.send_message(pending_ref, text)
-                    except Exception:
-                        pass
-            else:
-                # user yangi, lekin referral yo'q yoki self-ref bo'lgan
-                _PENDING_REFERRAL.pop(user_id, None)
-        else:
-            # user eski bo'lsa, pending bo'lsa ham bekor qilamiz
-            _PENDING_REFERRAL.pop(user_id, None)
+            # Agar pending bo'lsa va user obuna bo'lsa, shu yerning o'zida ham faollashadi.
+            _ = try_activate_pending_referral(bot, user_id, bonus_points=200)
 
         # 7) Endi menyu (admin yoki oddiy)
         if user_id in ADMINS:

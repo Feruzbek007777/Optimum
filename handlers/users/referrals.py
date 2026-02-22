@@ -5,6 +5,9 @@ from config import DATABASE_PATH, CHANNEL_USERNAME
 from database.database import add_referral, get_referrals_count, get_referrals_for_user
 from utils.points import get_points
 
+# We reuse the single subscription checker used across the project.
+from handlers.users.callbacks import check_subscription
+
 
 BOT_USERNAME_CACHE = None
 
@@ -107,32 +110,63 @@ def get_bot_username(bot):
         return None
 
 
-# =========================
-# Channel subscription check
-# =========================
+def try_activate_pending_referral(bot, referred_id: int, bonus_points: int = 200) -> bool:
+    """Activate a pending referral if conditions are met.
 
-def _is_subscribed_status(status: str) -> bool:
-    # member/administrator/creator => obuna bor
-    return status in ("member", "administrator", "creator")
-
-
-def check_user_subscribed(bot, user_id: int) -> (bool, str):
+    Rules:
+    - Bonus is given only once (referred_id UNIQUE inside add_referral).
+    - Referred user must be subscribed to the channel.
+    - Pending record is cleared after attempt.
     """
-    config.CHANNEL_USERNAME bo'yicha obuna tekshiradi.
-    Eslatma: bot o'sha kanalda admin bo'lishi tavsiya (aks holda tekshiruv xato berishi mumkin).
-    """
-    ch = (CHANNEL_USERNAME or "").strip()
-    if not ch:
-        return False, "Majburiy kanal sozlanmagan. Admin bilan bog'laning."
 
-    try:
-        member = bot.get_chat_member(ch, user_id)
-        status = getattr(member, "status", None)
-        if status and _is_subscribed_status(status):
-            return True, "OK"
-        return False, "Siz kanalga obuna bo'lmagansiz."
-    except Exception:
-        return False, "Obunani tekshirib bo'lmadi. Bot kanalda admin ekanini tekshiring."
+    # 1) Must be subscribed
+    if not check_subscription(bot, referred_id):
+        return False
+
+    # 2) Must have pending
+    referrer_id = get_pending_referrer(referred_id)
+    if not referrer_id:
+        return False
+
+    # 3) Give bonus (referred_id UNIQUE inside add_referral)
+    success = add_referral(referrer_id, referred_id, bonus_points=bonus_points)
+
+    # 4) Clear pending regardless (prevents repeated prompts)
+    clear_pending_referral(referred_id)
+
+    if success:
+        try:
+            # Referred user haqida info (username/full_name) ni olib, referrerga ko'rsatamiz
+            display_name = f"ID: {referred_id}"
+            try:
+                ch = bot.get_chat(referred_id)
+                name = (getattr(ch, "first_name", "") or "").strip()
+                last = (getattr(ch, "last_name", "") or "").strip()
+                uname = (getattr(ch, "username", None) or None)
+                full = (f"{name} {last}".strip() or None)
+                if full and uname:
+                    display_name = f"{full} (@{uname})"
+                elif uname:
+                    display_name = f"@{uname}"
+                elif full:
+                    display_name = full
+            except Exception:
+                pass
+
+            mention = f'<a href="tg://user?id={referred_id}">{display_name}</a>'
+
+            bot.send_message(
+                referrer_id,
+                "✅ Sizning havolangiz bilan kelgan foydalanuvchi kanalga obuna bo'ldi.\n"
+                f"👤 Foydalanuvchi: {mention}\n"
+                f"🎁 Sizga +{bonus_points} ball berildi.",
+                parse_mode="HTML",
+                disable_web_page_preview=True,
+            )
+        except Exception:
+            pass
+
+    return success
 
 
 # =========================
@@ -182,9 +216,9 @@ def build_referrals_text_and_kb(bot, user_id, username, full_name):
     if pending_referrer:
         lines.append("⚠️ Siz referral orqali kirgansiz, lekin bonus hali faollashmagan.")
         lines.append(f"1) Avval {CHANNEL_USERNAME} kanaliga obuna bo'ling.")
-        lines.append("2) Keyin pastdagi tugmani bosing: ✅ Obunani tekshirish")
+        lines.append("2) Keyin pastdagi tugmani bosing: ✅ Bonusni faollashtirish")
         kb = InlineKeyboardMarkup(row_width=1)
-        kb.add(InlineKeyboardButton("✅ Obunani tekshirish", callback_data="ref_check_sub"))
+        kb.add(InlineKeyboardButton("✅ Bonusni faollashtirish", callback_data="ref_check_sub"))
 
     if refs:
         lines.append("")
@@ -253,35 +287,23 @@ def setup_referral_handlers(bot):
     def handle_ref_check(call):
         user_id = call.from_user.id
 
-        # 1) obunani tekshiramiz
-        ok, msg = check_user_subscribed(bot, user_id)
-        if not ok:
-            bot.answer_callback_query(call.id, msg, show_alert=True)
-            return
-
-        # 2) pending bormi?
-        referrer_id = get_pending_referrer(user_id)
-        if not referrer_id:
+        # 1) Pending bormi? (subscribed bo'lmasa ham, aniqroq xabar beramiz)
+        if not get_pending_referrer(user_id):
             bot.answer_callback_query(call.id, "Pending bonus topilmadi.", show_alert=True)
             return
 
-        # 3) Endi bonus beramiz (DB ichida referred_id UNIQUE -> ikki marta ketmaydi)
-        success = add_referral(referrer_id, user_id, bonus_points=200)
+        # 2) Obuna bo'lmagan bo'lsa
+        if not check_subscription(bot, user_id):
+            bot.answer_callback_query(
+                call.id,
+                f"❌ Avval {CHANNEL_USERNAME} kanaliga obuna bo'ling.",
+                show_alert=True,
+            )
+            return
 
-        # pendingni tozalaymiz (har holda)
-        clear_pending_referral(user_id)
-
+        # 3) Bonusni faollashtiramiz
+        success = try_activate_pending_referral(bot, user_id, bonus_points=200)
         if success:
             bot.answer_callback_query(call.id, "✅ Bonus faollashdi. Rahmat!", show_alert=True)
-
-            # referrerga xabar (xohlasangiz)
-            try:
-                bot.send_message(
-                    referrer_id,
-                    "✅ Sizning havolangiz bilan kelgan foydalanuvchi kanalga obuna bo'ldi.\n"
-                    "Sizga +200 ball berildi."
-                )
-            except Exception:
-                pass
         else:
             bot.answer_callback_query(call.id, "Bonus allaqachon berilgan yoki xatolik.", show_alert=True)

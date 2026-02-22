@@ -71,7 +71,7 @@ ANTI_SPAM_WARNING = (
     "Yaxshisi, sekinroq, lekin to‘g‘ri yeching ✅"
 )
 
-# 🔥 Ball qoidalari (siz aytgandek)
+# 🔥 Ball qoidalari
 EASY_CORRECT = 1.0
 EASY_WRONG = -0.2
 
@@ -93,6 +93,7 @@ def _fmt_points(x: float) -> str:
 def load_questions(subject_key: str, level: str):
     """
     JSON'dan savollarni o'qish.
+    ✅ Fayl yo'q / JSON xato / format xato bo'lsa: jim, [] qaytaradi.
     """
     subject = QUIZ_SUBJECTS.get(subject_key)
     if not subject:
@@ -110,8 +111,8 @@ def load_questions(subject_key: str, level: str):
         if not isinstance(data, list):
             return []
         return data
-    except Exception as e:
-        print(f"Quiz faylini o'qishda xatolik ({path}): {e}")
+    except Exception:
+        # ✅ silent
         return []
 
 
@@ -180,6 +181,7 @@ def send_transition(bot, chat_id):
     """
     Har bir savoldan OLDIN 2 sekundlik “transition”:
     typing... + random motiv gap -> 2 sekund -> o'chirish.
+    ✅ Xato bo'lsa ham silent.
     """
     try:
         bot.send_chat_action(chat_id, "typing")
@@ -190,8 +192,9 @@ def send_transition(bot, chat_id):
             bot.delete_message(chat_id, msg.message_id)
         except Exception:
             pass
-    except Exception as e:
-        print(f"Transition xatolik: {e}")
+    except Exception:
+        # ✅ silent
+        pass
 
 
 def send_quiz_question(bot, chat_id, user_id, subject_key: str, level: str):
@@ -211,7 +214,7 @@ def send_quiz_question(bot, chat_id, user_id, subject_key: str, level: str):
     send_transition(bot, chat_id)
 
     q = random.choice(questions)
-    question_text = q.get("question", "").strip()
+    question_text = (q.get("question", "") or "").strip()
     options = q.get("options", [])
     correct_index = q.get("correct_index", 0)
 
@@ -319,28 +322,26 @@ def setup_quiz_handlers(bot):
                 return
 
             correct_index = session.get("correct_index", 0)
-            points = session.get("points", 1.0)
             level = session.get("level", "easy")
             subject_key = session.get("subject", "eng")
             last_msg_id = session.get("last_message_id")
             questions_answered = session.get("questions_answered", 0)
 
             # 🔥 1) ESKI SAVOLNI BOSSA ham ishlamasin
-            # call.message.message_id — user bosayotgan savol xabari id
             if last_msg_id and call.message.message_id != last_msg_id:
                 bot.answer_callback_query(call.id, "Bu savol eskirib qolgan 🙂", show_alert=False)
                 return
 
-            # 🔥 2) BIR SAVOLGA BIR MARTA JAVOB (multi-click farm fix)
+            # 🔥 2) BIR SAVOLGA BIR MARTA JAVOB
             if session.get("answered", False):
                 bot.answer_callback_query(call.id, "Bitta savolga bitta javob, jigar 😄", show_alert=False)
                 return
 
-            # birinchi bo'lib lock qilamiz (tez bosishni to'xtatish uchun)
+            # Lock
             session["answered"] = True
             quiz_sessions[user_id] = session
 
-            # Keyboardni ham o‘chirib qo'yamiz (yana bosib bo'lmasin)
+            # Keyboardni o‘chirib qo'yamiz
             if last_msg_id:
                 try:
                     bot.edit_message_reply_markup(
@@ -353,27 +354,21 @@ def setup_quiz_handlers(bot):
 
             is_correct = (chosen_idx == correct_index)
 
-            # 🔥 penalti / reward
+            # penalti / reward
             if level == "easy":
                 delta = EASY_CORRECT if is_correct else EASY_WRONG
             else:
                 delta = HARD_CORRECT if is_correct else HARD_WRONG
 
-            # To'g'ri / noto'g'ri xabari (oddiy message bilan)
-            if is_correct:
-                try:
-                    add_points(user_id, float(delta))
-                except Exception as e:
-                    print(f"Ball qo'shishda xato: {e}")
+            # Ball qo'shish/ayirish (xato bo'lsa ham silent)
+            try:
+                add_points(user_id, float(delta))
+            except Exception:
+                pass
 
+            if is_correct:
                 feedback_text = f"✅ To'g'ri javob! Sizga +{_fmt_points(delta)} ball berildi."
             else:
-                # xato bo'lsa ham ball ayriladi
-                try:
-                    add_points(user_id, float(delta))  # delta manfiy
-                except Exception as e:
-                    print(f"Ball ayirishda xato: {e}")
-
                 feedback_text = (
                     f"❌ Xato javob! Sizdan {_fmt_points(abs(delta))} ball olindi.\n\n"
                     "Iltimos, sekinroq va to‘g‘ri bajarishga harakat qiling ✅"
@@ -381,10 +376,8 @@ def setup_quiz_handlers(bot):
 
             feedback_msg = bot.send_message(call.message.chat.id, feedback_text)
 
-            # Callback spinnerni to'xtatamiz (ortiqcha textsiz)
             bot.answer_callback_query(call.id)
 
-            # 1 sekund kutamiz, keyin eski savol va feedbackni o'chiramiz
             time.sleep(1)
 
             if last_msg_id:
@@ -410,7 +403,7 @@ def setup_quiz_handlers(bot):
             session["questions_answered"] = questions_answered
             quiz_sessions[user_id] = session
 
-            # 7-savoldan keyin anti-spam warning (faqat bir marta)
+            # 7-savoldan keyin anti-spam warning
             if questions_answered == 7:
                 bot.send_message(call.message.chat.id, ANTI_SPAM_WARNING)
 

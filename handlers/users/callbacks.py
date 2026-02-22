@@ -283,6 +283,15 @@ def setup_user_callbacks(bot):
     def check_subscription_callback(call):
         try:
             if check_subscription(bot, call.from_user.id):
+                # ✅ Referral: if user came via referral and was pending,
+                # activate bonus right after subscription is confirmed.
+                try:
+                    from handlers.users.referrals import try_activate_pending_referral
+
+                    try_activate_pending_referral(bot, call.from_user.id, bonus_points=200)
+                except Exception:
+                    pass
+
                 bot.answer_callback_query(call.id, "✅ Obuna tekshirildi!")
                 try:
                     bot.delete_message(call.message.chat.id, call.message.message_id)

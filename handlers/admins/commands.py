@@ -7,32 +7,21 @@ from database.database import add_admin_group, get_points, create_connection
 from utils.givepoint import find_user_by_username, give_points_to_user, take_points_from_user
 from utils.stats import get_bot_stats
 
-# ✅ REFERRAL: /start argumentni pendingga yozib qo'yish uchun
-from handlers.users.referrals import process_start_referral
+"""Admin command handlers.
+
+NOTE:
+The /start handler is registered in `handlers/users/commands.py` and it already
+shows the admin menu for users listed in `config.ADMINS`.
+
+Previously this file also registered /start, which caused TeleBot handler
+collisions and broke referral flow (pending referrals could be overwritten and
+bonus could behave inconsistently).
+
+So we intentionally DO NOT register /start here.
+"""
 
 
 def setup_admin_commands(bot):
-    # /start — admin yoki oddiy userga qarab menyu
-    @bot.message_handler(commands=['start'])
-    def send_welcome(message):
-        # ✅ REFERRAL: agar /start <referrer_id> bo'lsa pendingga yozib qo'yadi (ball bermaydi)
-        # Bu faqat private chatda mantiqli
-        if message.chat.type == "private":
-            process_start_referral(message)
-
-        if message.from_user.id in ADMINS:
-            bot.send_message(
-                message.chat.id,
-                "👨‍💻 Admin menyusiga xush kelibsiz!",
-                reply_markup=admin_menu_keyboard()
-            )
-        else:
-            bot.send_message(
-                message.chat.id,
-                "🤖 Xush kelibsiz! Quyidagi menyudan kerakli bo'limni tanlang:",
-                reply_markup=main_menu_keyboard()
-            )
-
     # /admin — faqat adminlar uchun
     @bot.message_handler(commands=['admin'])
     def admin_panel(message):

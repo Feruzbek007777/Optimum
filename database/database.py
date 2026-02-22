@@ -130,6 +130,8 @@ def init_database():
                     user_id INTEGER PRIMARY KEY,
                     username TEXT,
                     full_name TEXT,
+                    points REAL DEFAULT 0,
+                    referrals_count INTEGER DEFAULT 0,
                     joined_at DATETIME DEFAULT CURRENT_TIMESTAMP
                 )
             ''')
@@ -555,6 +557,11 @@ def add_referral(referrer_id: int, referred_id: int, bonus_points: int = 200) ->
             INSERT INTO referrals (referrer_id, referred_id)
             VALUES (?, ?)
         ''', (referrer_id, referred_id))
+
+        # ✅ points ROUND bilan
+
+        # referrer users jadvalida bo'lmasa, row yaratib qo'yamiz (points yo'qolmasin)
+        cursor.execute('INSERT OR IGNORE INTO users (user_id) VALUES (?)', (referrer_id,))
 
         # ✅ points ROUND bilan
         cursor.execute('''
